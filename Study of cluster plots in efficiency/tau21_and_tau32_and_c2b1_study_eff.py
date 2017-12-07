@@ -54,10 +54,13 @@ for k in range(0,3):
                   
                 if(files_array[i]=="009"):
                     Color=2
+                    l=4
                 if(files_array[i]=="010"):
                     Color=3
+                    l=21
                 if(files_array[i]=="012"):
                     Color=4
+                    l=22
                 Color1=str(Color)
                 
                   
@@ -114,10 +117,13 @@ for k in range(0,3):
                                            
                 if(files_array[i]=="009"):
                     Color=2
+                    l=4
                 if(files_array[i]=="010"):
                     Color=3
+                    l=21
                 if(files_array[i]=="012"):
                     Color=4
+                    l=22
                 Color1=str(Color)
                                            
                                            
@@ -173,10 +179,13 @@ for k in range(0,3):
 
                 if(files_array[i]=="009"):
                     Color=2
+                    l=4
                 if(files_array[i]=="010"):
                     Color=3
+                    l=21
                 if(files_array[i]=="012"):
                     Color=4
+                    l=22
                 Color1=str(Color)
 
 

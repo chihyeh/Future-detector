@@ -1,0 +1,387 @@
+%yright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+% \documentclass[preprint,11pt]{elsarticle}
+
+
+\documentclass[final,1p,11pt]{elsarticle}
+
+%\documentclass[final,1p,times]{elsarticle}
+
+
+%% Use the option review to obtain double line spacing
+%%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig
+
+\usepackage{epsfig}
+%\usepackage{cite}
+%\usepackage{mcite}
+\usepackage{array,tabularx,epsfig,mathrsfs,graphicx,rotating}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{ragged2e}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hyphens]{url}
+\usepackage{hyperref} 
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+% Custom colors
+\usepackage{color}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{letltxmacro}
+\usepackage{gensymb}
+
+% to cross text
+\usepackage[normalem]{ulem} % either use this (simple) or
+\usepackage{soul} % use this (many fancier options)
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+
+
+
+\graphicspath{{figs/}}
+
+
+\pdfinfo{
+   /Author (Chih-Hsiang Yeh)
+   /Title  (Double pendulum of coupling effect)
+   /CreationDate (D:20171212195600)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+
+\textheight=22cm
+\textwidth=14.5cm
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\la}{\langle}
+\newcommand{\promc}{{\sc ProMC}}
+\newcommand{\ra}{\rangle}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\Ec}{\mathcal{E}}
+\newcommand{\Fc}{\mathcal{F}}
+\newcommand{\Za}{\mathrm{Z_1}}
+\newcommand{\Zb}{\mathrm{Z_2}}
+\newcommand{\Zn}{\mathrm{Z_n}}
+\newcommand{\F}{\mathrm{F}}
+
+\chardef\til=126
+\newcommand{\mev}{{\,\mathrm{MeV}}}
+\newcommand{\gev}{{\,\mathrm{GeV}}}
+\newcommand{\tev}{{\,\mathrm{TeV}}}
+\newcommand{\GEANTfour} {\textsc{geant4}}
+
+
+
+\begin{document}
+
+\definecolor{mygreen}{rgb}{0,0.6,0} \definecolor{mygray}{rgb}{0.5,0.5,0.5} \definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+ backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+ basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+ breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+ breaklines=true,                 % sets automatic line breaking
+ captionpos=b,                    % sets the caption-position to bottom
+ commentstyle=\color{mygreen},    % comment style
+ deletekeywords={...},            % if you want to delete keywords from the given language
+ escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+ extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+ keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+ frame=tb,
+ keywordstyle=\color{blue},       % keyword style
+ language=Python,                 % the language of the code
+ otherkeywords={*,...},            % if you want to add more keywords to the set
+ rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+ showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+ showstringspaces=false,          % underline spaces within strings only
+ showtabs=false,                  % show tabs within strings adding particular underscores
+ stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+ stringstyle=\color{mymauve},     % string literal style
+ tabsize=2,                        % sets default tabsize to 2 spaces
+ title=\lstname,                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+ numberstyle=\footnotesize,
+ basicstyle=\small,
+ basewidth={0.5em,0.5em}
+}
+
+
+\begin{frontmatter}
+
+\title{Double pendulum of coupling effect}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[add1]{Chih-Hsiang Yeh}
+\ead{a9510130375@gmail.com}
+\address[add1]{
+Department of Physics, National Central University, Chung-Li, Taoyuan City 32001, Taiwan}
+
+
+\begin{abstract}
+This experiment we do is the oscillation of the pendulum. We all know that the pendulum experiment, and the beating phenomenon, and we use near two months to finish the experiment of the double pendulum and see the coupling effect in the end. 
+\end{abstract}
+
+\begin{keyword}
+pendulum, beating, coupling effect
+\end{keyword}
+
+
+\end{frontmatter}
+
+
+% put line numbers
+% \linenumbers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We know the single pendulum features, and we know that on the math, when two waves have the close frequency, after this two waves add together, it can show the phenomenon "beating". The experiment is using this concept and thinking if two single pendulums use the spring to connect, what will it happen?\\
+
+Because when two pendulums are connected and oscillate these, it will be the same effect as two waves act on this system, and we expect to see this in our pendulum and see the waves of the coupling effect in. 
+
+\section{Theory in the coupling effect of double pendulum}
+Figure1 is our model of the Theory.\\
+\begin{figure}
+\caption{The theory of the experiment}
+\centering
+\includegraphics[width=8cm,height=5cm]{/Users/ms08962476/experimental_class/pictures 9.png}
+\end{figure} 
+
+The method we use to build the model is "Lagrange", because we can use this method to figure out the modes easily.
+First we can write down the express of the Lagrange:
+\begin{equation}
+L=T-V
+\end{equation}
+
+And we can write down this two terms:
+\begin{equation}
+T=\frac{1}{2} m_1\dot{x_1}^2+\frac{1}{2} m_2\dot{x_2}^2+\frac{1}{2}k(L\theta_1-L\theta_2)^2
+\end{equation}
+\begin{equation}
+V=mgL\cos\theta_1+mgL\cos\theta_2
+\end{equation}
+
+So we can write down the Lagrange again:
+\begin{equation}
+L=\frac{1}{2} m_1\dot{x_1}^2+\frac{1}{2} m_2\dot{x_2}^2+\frac{1}{2}k(L\theta_1-L\theta_2)^2-mgL\cos\theta_1-mgL\cos\theta_2
+\end{equation}
+
+And the next step is to solve the Lagrange equation, and the expression is as the following:
+\begin{equation}
+\frac{\partial L}{\partial \theta_1}=\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta_1}}
+\end{equation}
+\begin{equation}
+\frac{\partial L}{\partial \theta_2}=\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta_2}}
+\end{equation}
+
+After solving the Lagrange equation, we can see the expression as following:
+\begin{equation}
+\ddot{\theta_1}+(\frac{g}{L}+\frac{k}{m_1})\theta_1-\frac{k}{m_2}\theta_2=0
+\end{equation}
+\begin{equation}
+\ddot{\theta_2}+(\frac{g}{L}+\frac{k}{m_2})\theta_1-\frac{k}{m_1}\theta_1=0
+\end{equation}
+
+After writing this in Matrix forms, and we suppose this one:
+\begin{equation}
+\theta_1=u_1exp^{i\omega_1t}
+\end{equation}
+\begin{equation}
+\theta_2=u_2exp^{i\omega_2t}
+\end{equation}
+
+After solving the equation, represent (9)(10) in to (7)(8), we can see the equations, and we can solve two frequencies:
+\begin{equation}
+\omega_1^2=\frac{g}{L}+\frac{k}{m_1}-\frac{k}{m_2}
+\end{equation}
+\begin{equation}
+\omega_1^2=\frac{g}{L}+\frac{k}{m_2}-\frac{k}{m_1}
+\end{equation}
+
+And after we put our parameters in the theory, we can figure out the result like the following:
+\begin{equation}
+\omega_1=11.75(\frac{1}{s^2})  
+\end{equation}
+\begin{equation}
+\omega_2=6.8\iota(\frac{1}{s^2})  
+\end{equation}
+
+And it can be showed as:
+\begin{equation}
+f_1=1.87(\frac{1}{s^2}) 
+\end{equation}
+\begin{equation}
+ f_2=2.164\iota(\frac{1}{s^2})
+\end{equation}
+
+\section{Experiment setting and procedure}
+In this section, we will talk about our experiment and see whether data is close to our theory and see the coupling effect.\\ 
+\subsection{Material and setting}
+This part is the material of our experiment and setting. And in Figure2 is the picture of our setting:
+\begin{figure}
+\caption{The setting of the experiment}
+\centering
+\includegraphics[width=6cm,height=5cm]{/Users/ms08962476/Pictures/experimental_class/pictures_10.png}
+\end{figure} 
+
+Material is as following:
+\begin{enumerate}
+\item Two cycle stainless steel ( 5.2kg and 4.7kg )
+\item Two hooks to hang the pendulum
+\item Spring \(\times\) 1(k approximately 160N/m, we will try which one is the best)
+\item M3 screws are used to dig the tapping hole(0.25mm).
+\item Two cotton lines with 21cm to expand period of the pendulum.
+\item Two hooks to hang the spring
+\item Two Gasket to let the spring can lock on the stainless steel.
+\end{enumerate} 
+
+\subsection{Procedure of the experiment}
+\begin{enumerate}
+\item We first drug four holes on the stainless steel we find for the hooks.
+\item Hang the spring between two stainless steel.
+\item Use two cotton lines to hang the stainless steel on the basis(experiment class hooks).
+\item We push the lines left and right enough to let the spring can stay at the "non-nature length"
+\end{enumerate} 
+
+\section{Experimental result}
+We use the software to analyze the data about the location of the pendulum.\\
+And we choose three initial conditions to see whether we can see the coupling effect:\\
+\subsection{Three mode we will discuss}
+\begin{enumerate}
+\item The blue one at the initial angle at $-50\degree$
+\item The red one at the initial angle at $-30\degree$ and the blue one at the initial angle at $30\degree$
+\item The red one at the initial angle at $30\degree$
+\end{enumerate} 
+
+\subsection{Energy transfer in three modes}
+In Figure3 and Figure5, we can see that the energy transfer in mode1 and mode3, Because you can see that the wave packet in the plot of two waves, one wave packet will transfer the energy to the other one and you can see the other wave have the wave packet continuously.\\
+
+But in the Figure 4, we can't see the wave packet transfer,  one is our time is not enough to see (In the beautiful theory of two same mass pendulum, we can't see because they are same wave to compress the spring, no energy transfer between the spring, it means they are synchronization.) , and the second is our mass is not same, so because of the $\omega_1$ is different from $\omega_2$, it will see the energy transfer at the long time later.
+\begin{figure}
+\caption{Energy transfer result-mode1}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_5.png}
+\end{figure} 
+
+\begin{figure}
+\caption{Energy transfer result-mode2}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_1.png}
+\end{figure} 
+
+\begin{figure}
+\caption{Energy transfer result-mode3}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_2.png}
+\end{figure} 
+
+\subsection{FFT in result}
+Because we know that our result in reality, it will overlap two waves in any one wave individually, so we can use FFT in the data to see if the frequency we find in data can fit in theory. And you can see in the Figure 6,7, Our FFT results are all point to frequency at 0.29($\frac{1}{s^2}$), it means the period are $5(s)$.
+And that frequency(period) seems sensible to our data, because in our data, period is near $5(s)$\\
+
+But we know that there will be two frequency in, and we can see the other one in FFT in all pictures have the other frequency, but this frequency seems nonsense, because we expect that there have the frequency less than 0.29($\frac{1}{s^2}$), but there have an anther peak at the right side.\\   
+\begin{figure}
+\caption{FFT result-mode1(red)}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_7.png}
+\end{figure} 
+\begin{figure}
+\caption{FFT result-mode1(blue)}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_6.png}
+\begin{figure}
+\end{figure} 
+\caption{FFT result-mode3(red)}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_4.png}
+\end{figure} 
+\begin{figure}
+\caption{FFT result-mode3(blue)}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_3.png}
+\end{figure} 
+
+\section{Conclusion}
+\begin{enumerate}
+\item We can see the important part that coupling effect:Energy transfer, and it is clear that it will transfer between spring. 
+\item If our analysis is right, it doesn't matter what angle you push at the initial angle, in the stationary, the frequency will be all same for the two waves.
+\item Our experiment's value is very different from our result.(15)(16) are theory, and compare to our results before.
+\item FFT result shows the part of right, the one wave of but in the other hand, the other one is wrong in data.
+\end{enumerate} 
+\begin{figure}
+\caption{FFT result-mode3(blue)}
+\centering
+\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_3.png}
+\end{figure} 
+
+%%%%%%%%%%%%%% sections 
+\section*{Acknowledgements}
+Most of the time are from the assistant and partners' help, and see some reference from web.
+\newpage
+%%%%%%%%%%%%%%%%%%%%%% references %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{References}
+
+\bibliographystyle{elsarticle-num}
+\def\bibname{\Large\bf References}
+\def\refname{\Large\bf References}
+\pagestyle{plain}
+\bibliography{biblio}
+\begin{thebibliography}{9}
+%\bibitem{Swimming by reciprocal motion at low Reynolds number} 
+%Tian Qiu, Tung-Chun Lee, Andrew G. Mark, Konstantin . Morozov, Raphael Munster, Otto Mierka, Stefan Turek, Alexander M. Leshansky, Peer Fischer.
+%\textit{Swimming by reciprocal motion at low Reynolds number.}
+%Nature communication, 2014
+\bibitem{Swimming by reciprocal motion at low Reynolds number} 
+T\textit{https://www.youtube.com/watch?v=fZKrUgm9R1o}
+\bibitem{Swimming by reciprocal motion at low Reynolds number} 
+\textit{http://www.phys.nthu.edu.tw/~exphy/Download/ex12.pdf}
+\bibitem{Swimming by reciprocal motion at low Reynolds number} 
+\textit{http://www2.nsysu.edu.tw/physdemo/2012/B1/B1pic/201.pdf}
+
+
+\end{thebibliography}
+\end{document}

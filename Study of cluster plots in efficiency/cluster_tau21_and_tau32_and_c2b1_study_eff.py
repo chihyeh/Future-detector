@@ -1,6 +1,6 @@
 import ROOT
 import sys
-from ROOT import TFile, TH1F, gDirectory, TCanvas, TPad, TProfile,TGraph, TGraphAsymmErrors
+from ROOT import TFile, TH1F, gDirectory, TCanvas, TPad, TProfile,TGraph, TGraphAsymmErrors,TGraphErrors
 from ROOT import TH1D, TH1, TH1I
 from ROOT import gStyle
 from ROOT import gROOT
@@ -37,6 +37,7 @@ for k in range(0,3):
                 h2 = f2.Get("h_"+variable[k]+"_b1")
                 print h1,h2
                 print variable[k]
+                print '1'
                 h1.Scale(1.0/h1.Integral())
                 h2.Scale(1.0/h2.Integral())
                   
@@ -44,10 +45,14 @@ for k in range(0,3):
                 b=h2.Integral()
                 xarray=array("f",[])
                 yarray=array("f",[])
+                xarrayErrors=array("f",[])
+                yarrayErrors=array("f",[])
                 
-                for o in range(51):
+                for o in range(100):
                     xarray.append(h1.Integral(0,0+o)/a)
                     yarray.append(1-h2.Integral(0,0+o)/b)
+                    xarrayErrors.append((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a)
+                    yarrayErrors.append((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b)
                 print xarray
                 print yarray
                 n=51
@@ -67,7 +72,7 @@ for k in range(0,3):
                 c = TCanvas("c1", "c1",0,0,500,500)
                   
                   
-                gr = TGraph(n,xarray,yarray)
+                gr = TGraphErrors(n,xarray,yarray,xarrayErrors,yarrayErrors)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
                 gr.SetLineStyle(1)
@@ -82,9 +87,9 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff.root","RECREATE")
+                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
                 gr.Write()
-                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff.pdf")
+                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
                   
                   
 
@@ -108,10 +113,14 @@ for k in range(0,3):
                 b=h2.Integral()
                 xarray=array("f",[])
                 yarray=array("f",[])
-                                           
+                xarrayErrors=array("f",[])
+                yarrayErrors=array("f",[])
+                
                 for o in range(100):
                     xarray.append(h1.Integral(0,0+o)/a)
                     yarray.append(1-h2.Integral(0,0+o)/b)
+                    xarrayErrors.append((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a)
+                    yarrayErrors.append((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b)
                 print xarray
                 print yarray
                 n=51
@@ -131,7 +140,7 @@ for k in range(0,3):
                 c = TCanvas("c1", "c1",0,0,500,500)
                                            
                                            
-                gr = TGraph(n,xarray,yarray)
+                gr = TGraphErrors(n,xarray,yarray,xarrayErrors,yarrayErrors)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
                 gr.SetLineStyle(1)
@@ -143,9 +152,9 @@ for k in range(0,3):
                 gr.GetYaxis().SetTitle("1-background_efficiency")
                 gr.Draw()
                                            
-                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff.root","RECREATE")
+                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
                 gr.Write()
-                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff.pdf")
+                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
                                            
                                            
 
@@ -171,10 +180,14 @@ for k in range(0,3):
                 b=h2.Integral()
                 xarray=array("f",[])
                 yarray=array("f",[])
-
+                xarrayErrors=array("f",[])
+                yarrayErrors=array("f",[])
+                
                 for o in range(100):
                     xarray.append(h1.Integral(0,0+o)/a)
                     yarray.append(1-h2.Integral(0,0+o)/b)
+                    xarrayErrors.append((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a)
+                    yarrayErrors.append((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b)
                 print xarray
                 print yarray
                 n=51
@@ -194,7 +207,7 @@ for k in range(0,3):
                 c = TCanvas("c1", "c1",0,0,500,500)
 
 
-                gr = TGraph(n,xarray,yarray)
+                gr = TGraphErrors(n,xarray,yarray,xarrayErrors,yarrayErrors)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
                 gr.SetLineStyle(1)
@@ -206,8 +219,8 @@ for k in range(0,3):
                 gr.GetYaxis().SetTitle("1-background_efficiency")
                 gr.Draw()
 
-                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff.root","RECREATE")
+                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
                 gr.Write()
-                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff.pdf")
+                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
 
 

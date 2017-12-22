@@ -1,5 +1,6 @@
 import ROOT
 import sys
+import math
 from ROOT import TFile, TH1F, gDirectory, TCanvas, TPad, TProfile,TGraph, TGraphAsymmErrors,TGraphErrors
 from ROOT import TH1D, TH1, TH1I
 from ROOT import gStyle
@@ -48,14 +49,20 @@ for k in range(0,3):
                 xarrayErrors=array("f",[])
                 yarrayErrors=array("f",[])
                 
-                for o in range(100):
+                print b
+                print h2.Integral(0,0)
+                print h2.Integral(0,26)
+                for o in range(26):
                     xarray.append(h1.Integral(0,0+o)/a)
                     yarray.append(1-h2.Integral(0,0+o)/b)
-                    xarrayErrors.append((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a)
-                    yarrayErrors.append((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b)
+                    xarrayErrors.append(math.sqrt((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a))
+                    yarrayErrors.append(math.sqrt((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b))
                 print xarray
                 print yarray
-                n=51
+                print xarrayErrors
+                print yarrayErrors
+
+                n=26
                   
                 if(files_array[i]=="009"):
                     Color=2
@@ -74,11 +81,11 @@ for k in range(0,3):
                   
                 gr = TGraphErrors(n,xarray,yarray,xarrayErrors,yarrayErrors)
                 gr.SetLineColor(Color)
-                gr.SetLineWidth(3)
+                gr.SetLineWidth(1)
                 gr.SetLineStyle(1)
                 gr.SetMarkerColor(Color)
                 gr.SetMarkerStyle(l)
-                gr.SetMarkerSize(2)
+                gr.SetMarkerSize(1)
                 gr.GetXaxis().SetTitle("signal_efficiency")
                 gr.GetXaxis().SetTitleColor(4)
                 gr.GetYaxis().SetTitle("1-background_efficiency")
@@ -87,9 +94,9 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
                 gr.Write()
-                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
                   
                   
 
@@ -116,14 +123,14 @@ for k in range(0,3):
                 xarrayErrors=array("f",[])
                 yarrayErrors=array("f",[])
                 
-                for o in range(100):
+                for o in range(26):
                     xarray.append(h1.Integral(0,0+o)/a)
                     yarray.append(1-h2.Integral(0,0+o)/b)
-                    xarrayErrors.append((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a)
-                    yarrayErrors.append((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b)
+                    xarrayErrors.append(math.sqrt((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a))
+                    yarrayErrors.append(math.sqrt((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b))
                 print xarray
                 print yarray
-                n=51
+                n=26
                                            
                 if(files_array[i]=="009"):
                     Color=2
@@ -142,19 +149,19 @@ for k in range(0,3):
                                            
                 gr = TGraphErrors(n,xarray,yarray,xarrayErrors,yarrayErrors)
                 gr.SetLineColor(Color)
-                gr.SetLineWidth(3)
+                gr.SetLineWidth(1)
                 gr.SetLineStyle(1)
                 gr.SetMarkerColor(Color)
                 gr.SetMarkerStyle(l)
-                gr.SetMarkerSize(2)
+                gr.SetMarkerSize(1)
                 gr.GetXaxis().SetTitle("signal_efficiency")
                 gr.GetXaxis().SetTitleColor(4)
                 gr.GetYaxis().SetTitle("1-background_efficiency")
                 gr.Draw()
                                            
-                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
                 gr.Write()
-                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
                                            
                                            
 
@@ -183,14 +190,14 @@ for k in range(0,3):
                 xarrayErrors=array("f",[])
                 yarrayErrors=array("f",[])
                 
-                for o in range(100):
+                for o in range(26):
                     xarray.append(h1.Integral(0,0+o)/a)
                     yarray.append(1-h2.Integral(0,0+o)/b)
-                    xarrayErrors.append((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a)
-                    yarrayErrors.append((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b)
+                    xarrayErrors.append(math.sqrt((1-h1.Integral(0,0+o)/a)*(h1.Integral(0,0+o)/a)/a))
+                    yarrayErrors.append(math.sqrt((1-h2.Integral(0,0+o)/b)*(h2.Integral(0,0+o)/b)/b))
                 print xarray
                 print yarray
-                n=51
+                n=26
 
                 if(files_array[i]=="009"):
                     Color=2
@@ -209,18 +216,18 @@ for k in range(0,3):
 
                 gr = TGraphErrors(n,xarray,yarray,xarrayErrors,yarrayErrors)
                 gr.SetLineColor(Color)
-                gr.SetLineWidth(3)
+                gr.SetLineWidth(1)
                 gr.SetLineStyle(1)
                 gr.SetMarkerColor(Color)
                 gr.SetMarkerStyle(l)
-                gr.SetMarkerSize(2)
+                gr.SetMarkerSize(1)
                 gr.GetXaxis().SetTitle("signal_efficiency")
                 gr.GetXaxis().SetTitleColor(4)
                 gr.GetYaxis().SetTitle("1-background_efficiency")
                 gr.Draw()
 
-                f=TFile("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.root","RECREATE")
                 gr.Write()
-                c.Print("r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_error.pdf")
 
 

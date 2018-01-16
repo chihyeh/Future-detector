@@ -19,8 +19,6 @@
 %% SP 2008/03/01
 
 % \documentclass[preprint,11pt]{elsarticle}
-
-
 \documentclass[final,1p,11pt]{elsarticle}
 
 %\documentclass[final,1p,times]{elsarticle}
@@ -40,7 +38,8 @@
 
 %%% For including figures, graphicx.sty has been loaded in
 %% elsarticle.cls. If you prefer to use the old commands
-%% please give \usepackage{epsfig
+%% please give \usepackage{epsfig}
+
 
 \usepackage{epsfig}
 %\usepackage{cite}
@@ -51,17 +50,13 @@
 \usepackage{ragged2e}
 \PassOptionsToPackage{hyphens}{url}
 \usepackage[hyphens]{url}
-\usepackage{hyperref} 
+\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{subfigure}
 \usepackage{epstopdf}
 % Custom colors
 \usepackage{color}
 \usepackage{float}
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{letltxmacro}
-\usepackage{gensymb}
 
 % to cross text
 \usepackage[normalem]{ulem} % either use this (simple) or
@@ -82,9 +77,9 @@
 
 
 \pdfinfo{
-   /Author (Chih-Hsiang Yeh)
-   /Title  (Double pendulum of coupling effect)
-   /CreationDate (D:20171212195600)
+   /Author (Chekanov/Demarteau)
+   /Title  (Conceptual Design Studies for a CEPC Detector)
+   /CreationDate (D:20160102195600)
    /Subject (PDFLaTeX)
    /Keywords (PDF;LaTeX)
 }
@@ -112,6 +107,7 @@
 \newcommand{\gev}{{\,\mathrm{GeV}}}
 \newcommand{\tev}{{\,\mathrm{TeV}}}
 \newcommand{\GEANTfour} {\textsc{geant4}}
+\journal{XXX-XXX}
 
 
 
@@ -150,23 +146,66 @@
 
 \begin{frontmatter}
 
-\title{Double pendulum of coupling effect}
-
+\title{
+Studies of granularity of a hadronic calorimeter for tens-of-TeV jets  at a 100~TeV $pp$ collider 
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\author[add1]{Chih-Hsiang Yeh}
-\ead{a9510130375@gmail.com}
+\author[add1]{S.V.~Chekanov}
+\ead{chekanov@anl.gov}
+
+\author[addDuke,add2]{A.V.~Kotwal}
+\ead{ashutosh.kotwal@duke.edu}
+
+\author[add1]{J.~Proudfoot}
+\ead{proudfoot@anl.gov}
+
+\author[addDuke]{S.~Sen}
+\ead{sourav.sen@duke.edu}
+
+\author[add2]{N.V.~Tran}
+\ead{ntran@fnal.gov}
+
+\author[add3]{S.-S.~Yu}
+\ead{syu@cern.ch}
+
+\author[add3]{Chih-Hsiang Yeh}
+\ead{jwzuzelski18@gmail.com}
+
 \address[add1]{
-Department of Physics, National Central University, Chung-Li, Taoyuan City 32001, Taiwan}
+HEP Division, Argonne National Laboratory,
+9700 S.~Cass Avenue,
+Argonne, IL 60439, USA. 
+}
+
+\address[addDuke]{
+Department of Physics, Duke University, USA
+}
+
+\address[add2]{
+Fermi National Accelerator Laboratory
+}
+
+\address[addMSU]{
+Department of Physics, Michigan State University, 220
+Trowbridge Road, East Lansing, MI 48824 
+}
+
+
+\address[add3]{
+Department of Physics, National Central University, Chung-Li, Taoyuan City 32001, Taiwan
+}
 
 
 \begin{abstract}
-This experiment we do is the oscillation of the pendulum. We all know that the pendulum experiment, and the beating phenomenon, and we use near two months to finish the experiment of the double pendulum and see the coupling effect in the end. 
+Texts
+
 \end{abstract}
 
 \begin{keyword}
-pendulum, beating, coupling effect
+multi-TeV physics, $pp$ collider, future hadron colliders, FCC, SppC
 \end{keyword}
+
 
 
 \end{frontmatter}
@@ -179,188 +218,69 @@ pendulum, beating, coupling effect
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We know the single pendulum features, and we know that on the math, when two waves have the close frequency, after this two waves add together, it can show the phenomenon "beating". The experiment is using this concept and thinking if two single pendulums use the spring to connect, what will it happen?\\
+Particle collisions at energies  beyond those attained at the LHC will lead to many challenges for detector technologies.
+Future experiments, such as high-energy LHC (HE-LHC),
+future circular $pp$ colliders of the European initiative, FCC-hh~\cite{Benedikt:2206376} and the Chinese initiative, SppC~\cite{Tang:2015qga} will be required to measure high-momentum bosons ($W$, $Z$, $H$) and top quarks with strongly 
+collimated decay products that form jets.  Studies of jet substructure can help identify such particles.
 
-Because when two pendulums are connected and oscillate these, it will be the same effect as two waves act on this system, and we expect to see this in our pendulum and see the waves of the coupling effect in. 
+The reconstruction of jet substructure  variables for collimated jets with transverse momentum above 10 TeV 
+require an appropriate detector design. The most important for reconstruction of such jets are tracking and calorimeter.
+Recently, a number of studies \cite{Calkins:2013ega,Chekanov:2015ihl,Coleman:2017fiq} 
+have been discussed using various fast simulation tools, such as 
+Delphes  \cite{deFavereau:2013fsa}, in which momenta of particles
+are smeared to mimic detector response. 
 
-\section{Theory in the coupling effect of double pendulum}
-Figure1 is our model of the Theory.\\
-\begin{figure}
-\caption{The theory of the experiment}
-\centering
-\includegraphics[width=8cm,height=5cm]{/Users/ms08962476/experimental_class/pictures 9.png}
-\end{figure} 
+A major step towards the usage of full Geant4 simulation to verify the granularity requirements 
+for calorimeters was made in \cite{Chekanov:2016ppq}.
+The studies included in this paper have illustrated a significant impact 
+of granularity of electromagnetic (ECAL) and hadronic (HCAL) calorimeters on the
+shape of hadronic showers  calculated using calorimeter hits 
+for two particles separated  by some angle. It was concluded that high granularity is essential 
+in resolving two close-by particles for energies above 100 GeV. 
 
-The method we use to build the model is "Lagrange", because we can use this method to figure out the modes easily.
-First we can write down the express of the Lagrange:
-\begin{equation}
-L=T-V
-\end{equation}
+This paper makes another step in understanding understanding of this problem in terms 
+of high-level physics quantities typically used in physics analyses.
+Similar to the studies presented in \cite{Chekanov:2016ppq}, this paper is based on full
+Geant4 simulation with realistic jet reconstruction.
 
-And we can write down this two terms:
-\begin{equation}
-T=\frac{1}{2} m_1\dot{x_1}^2+\frac{1}{2} m_2\dot{x_2}^2+\frac{1}{2}k(L\theta_1-L\theta_2)^2
-\end{equation}
-\begin{equation}
-V=mgL\cos\theta_1+mgL\cos\theta_2
-\end{equation}
+\section{Simulation of detector response and event reconstruction}
+ 
+The description of the detector and software used for this paper is discussed in \cite{Chekanov:2016ppq}. 
+We use the SiFCC detector geometry with a software package that
+represents a versatile environment for simulations
+of detector performance, testing new technology options, event reconstruction techniques for future
+100~TeV colliders.
+The event samples used in this paper are  available from the
+HepSim  database~\cite{Chekanov:2014fga}.
 
-So we can write down the Lagrange again:
-\begin{equation}
-L=\frac{1}{2} m_1\dot{x_1}^2+\frac{1}{2} m_2\dot{x_2}^2+\frac{1}{2}k(L\theta_1-L\theta_2)^2-mgL\cos\theta_1-mgL\cos\theta_2
-\end{equation}
+The \GEANTfour\ (version 10.3)~\cite{Allison2016186} simulation of calorimeter response was complimented
+with full reconstruction of calorimeter clusters using the Pandora algorithm \cite{Charles:2009ta,Marshall:2013bda}.
+Calorimeter clusters were built from calorimeter hits in the  ECAL and HCAL after applying the corresponding sampling fractions.
+No other corrections are applied.
+Hadronic jets were 
+reconstructed with the {\sc FastJet} package~\cite{fastjet} using the anti-$k_T$ algorithm \cite{Cacciari:2008gp}
+with  a distance parameter of 0.5. 
 
-And the next step is to solve the Lagrange equation, and the expression is as the following:
-\begin{equation}
-\frac{\partial L}{\partial \theta_1}=\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta_1}}
-\end{equation}
-\begin{equation}
-\frac{\partial L}{\partial \theta_2}=\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta_2}}
-\end{equation}
-
-After solving the Lagrange equation, we can see the expression as following:
-\begin{equation}
-\ddot{\theta_1}+(\frac{g}{L}+\frac{k}{m_1})\theta_1-\frac{k}{m_2}\theta_2=0
-\end{equation}
-\begin{equation}
-\ddot{\theta_2}+(\frac{g}{L}+\frac{k}{m_2})\theta_1-\frac{k}{m_1}\theta_1=0
-\end{equation}
-
-After writing this in Matrix forms, and we suppose this one:
-\begin{equation}
-\theta_1=u_1exp^{i\omega_1t}
-\end{equation}
-\begin{equation}
-\theta_2=u_2exp^{i\omega_2t}
-\end{equation}
-
-After solving the equation, represent (9)(10) in to (7)(8), we can see the equations, and we can solve two frequencies:
-\begin{equation}
-\omega_1^2=\frac{g}{L}+\frac{k}{m_1}-\frac{k}{m_2}
-\end{equation}
-\begin{equation}
-\omega_1^2=\frac{g}{L}+\frac{k}{m_2}-\frac{k}{m_1}
-\end{equation}
-
-And after we put our parameters in the theory, we can figure out the result like the following:
-\begin{equation}
-\omega_1=11.75(\frac{1}{s^2})  
-\end{equation}
-\begin{equation}
-\omega_2=6.8\iota(\frac{1}{s^2})  
-\end{equation}
-
-And it can be showed as:
-\begin{equation}
-f_1=1.87(\frac{1}{s^2}) 
-\end{equation}
-\begin{equation}
- f_2=2.164\iota(\frac{1}{s^2})
-\end{equation}
-
-\section{Experiment setting and procedure}
-In this section, we will talk about our experiment and see whether data is close to our theory and see the coupling effect.\\ 
-\subsection{Material and setting}
-This part is the material of our experiment and setting. And in Figure2 is the picture of our setting:
-\begin{figure}
-\caption{The setting of the experiment}
-\centering
-\includegraphics[width=6cm,height=5cm]{/Users/ms08962476/Pictures/experimental_class/pictures_10.png}
-\end{figure} 
-
-Material is as following:
-\begin{enumerate}
-\item Two cycle stainless steel ( 5.2kg and 4.7kg )
-\item Two hooks to hang the pendulum
-\item Spring \(\times\) 1(k approximately 160N/m, we will try which one is the best)
-\item M3 screws are used to dig the tapping hole(0.25mm).
-\item Two cotton lines with 21cm to expand period of the pendulum.
-\item Two hooks to hang the spring
-\item Two Gasket to let the spring can lock on the stainless steel.
-\end{enumerate} 
-
-\subsection{Procedure of the experiment}
-\begin{enumerate}
-\item We first drug four holes on the stainless steel we find for the hooks.
-\item Hang the spring between two stainless steel.
-\item Use two cotton lines to hang the stainless steel on the basis(experiment class hooks).
-\item We push the lines left and right enough to let the spring can stay at the "non-nature length"
-\end{enumerate} 
-
-\section{Experimental result}
-We use the software to analyze the data about the location of the pendulum.\\
-And we choose three initial conditions to see whether we can see the coupling effect:\\
-\subsection{Three mode we will discuss}
-\begin{enumerate}
-\item The blue one at the initial angle at $-50\degree$
-\item The red one at the initial angle at $-30\degree$ and the blue one at the initial angle at $30\degree$
-\item The red one at the initial angle at $30\degree$
-\end{enumerate} 
-
-\subsection{Energy transfer in three modes}
-In Figure3 and Figure5, we can see that the energy transfer in mode1 and mode3, Because you can see that the wave packet in the plot of two waves, one wave packet will transfer the energy to the other one and you can see the other wave have the wave packet continuously.\\
-
-But in the Figure 4, we can't see the wave packet transfer,  one is our time is not enough to see (In the beautiful theory of two same mass pendulum, we can't see because they are same wave to compress the spring, no energy transfer between the spring, it means they are synchronization.) , and the second is our mass is not same, so because of the $\omega_1$ is different from $\omega_2$, it will see the energy transfer at the long time later.
-\begin{figure}
-\caption{Energy transfer result-mode1}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_5.png}
-\end{figure} 
-
-\begin{figure}
-\caption{Energy transfer result-mode2}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_1.png}
-\end{figure} 
-
-\begin{figure}
-\caption{Energy transfer result-mode3}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_2.png}
-\end{figure} 
-
-\subsection{FFT in result}
-Because we know that our result in reality, it will overlap two waves in any one wave individually, so we can use FFT in the data to see if the frequency we find in data can fit in theory. And you can see in the Figure 6,7, Our FFT results are all point to frequency at 0.29($\frac{1}{s^2}$), it means the period are $5(s)$.
-And that frequency(period) seems sensible to our data, because in our data, period is near $5(s)$\\
-
-But we know that there will be two frequency in, and we can see the other one in FFT in all pictures have the other frequency, but this frequency seems nonsense, because we expect that there have the frequency less than 0.29($\frac{1}{s^2}$), but there have an anther peak at the right side.\\   
-\begin{figure}
-\caption{FFT result-mode1(red)}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_7.png}
-\end{figure} 
-\begin{figure}
-\caption{FFT result-mode1(blue)}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_6.png}
-\begin{figure}
-\end{figure} 
-\caption{FFT result-mode3(red)}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_4.png}
-\end{figure} 
-\begin{figure}
-\caption{FFT result-mode3(blue)}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_3.png}
-\end{figure} 
-
-\section{Conclusion}
-\begin{enumerate}
-\item We can see the important part that coupling effect:Energy transfer, and it is clear that it will transfer between spring. 
-\item If our analysis is right, it doesn't matter what angle you push at the initial angle, in the stationary, the frequency will be all same for the two waves.
-\item Our experiment's value is very different from our result.(15)(16) are theory, and compare to our results before.
-\item FFT result shows the part of right, the one wave of but in the other hand, the other one is wrong in data.
-\end{enumerate} 
-\begin{figure}
-\caption{FFT result-mode3(blue)}
-\centering
-\includegraphics[scale=1]{/Users/ms08962476/Pictures/experimental_class/pictures_3.png}
-\end{figure} 
 
 %%%%%%%%%%%%%% sections 
+\input{fcc_jets.tex}
+
+\input{fcc_efficiency.tex}
+
+\input{fcc_Mannuwhitney.tex}
+
+
+
+
+
 \section*{Acknowledgements}
-Most of the time are from the assistant and partners' help, and see some reference from web.
+This research was performed using resources provided by the Open Science Grid,
+which is supported by the National Science Foundation and the U.S. Department of Energy's Office of Science. 
+We gratefully acknowledge the computing resources provided on Blues, 
+a high-performance computing cluster operated by the Laboratory Computing Resource Center at Argonne National Laboratory.
+Argonne National Laboratory's work was supported by the U.S. Department of Energy, Office of Science under contract DE-AC02-06CH11357.
+The Fermi National Accelerator Laboratory (Fermilab) is operated by Fermi Research Alliance, LLC under Contract No. DE-AC02-07CH11359 with the United States Department of Energy.
+
 \newpage
 %%%%%%%%%%%%%%%%%%%%%% references %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{References}
@@ -370,18 +290,7 @@ Most of the time are from the assistant and partners' help, and see some referen
 \def\refname{\Large\bf References}
 \pagestyle{plain}
 \bibliography{biblio}
-\begin{thebibliography}{9}
-%\bibitem{Swimming by reciprocal motion at low Reynolds number} 
-%Tian Qiu, Tung-Chun Lee, Andrew G. Mark, Konstantin . Morozov, Raphael Munster, Otto Mierka, Stefan Turek, Alexander M. Leshansky, Peer Fischer.
-%\textit{Swimming by reciprocal motion at low Reynolds number.}
-%Nature communication, 2014
-\bibitem{Swimming by reciprocal motion at low Reynolds number} 
-T\textit{https://www.youtube.com/watch?v=fZKrUgm9R1o}
-\bibitem{Swimming by reciprocal motion at low Reynolds number} 
-\textit{http://www.phys.nthu.edu.tw/~exphy/Download/ex12.pdf}
-\bibitem{Swimming by reciprocal motion at low Reynolds number} 
-\textit{http://www2.nsysu.edu.tw/physdemo/2012/B1/B1pic/201.pdf}
 
 
-\end{thebibliography}
+
 \end{document}

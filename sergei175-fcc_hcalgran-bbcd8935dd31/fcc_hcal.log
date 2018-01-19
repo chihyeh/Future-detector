@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  19 JAN 2018 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  19 JAN 2018 15:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1354,7 +1354,7 @@ Package pdftex.def Info: figs/raw_c2b1_summary_U-eps-converted-to.pdf used on i
 nput line 79.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 )
-(./fcc_c_variables_study.tex
+(./fcc_Appendix_c_variables_study.tex
 
 Package natbib Warning: Citation `Larkoski:2013eya' on page 8 undefined on inpu
 t line 2.
@@ -1712,7 +1712,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
  8650 strings out of 492995
- 133488 string characters out of 6132704
+ 133515 string characters out of 6132704
  247768 words of memory out of 5000000
  11902 multiletter control sequences out of 15000+600000
  17321 words of font info for 70 fonts, out of 8000000 for 9000

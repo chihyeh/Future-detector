@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  19 JAN 2018 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  21 JAN 2018 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1235,7 +1235,7 @@ Package pdftex.def Info: figs/r012_tau32b1_20tev_04_U-eps-converted-to.pdf used
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 
 
-LaTeX Warning: Float too large for page by 3.88495pt on input line 49.
+LaTeX Warning: Float too large for page by 4.38495pt on input line 49.
 
 Package epstopdf Info: Source file: <figs/cluster_tau21_summary_U.eps>
 (epstopdf)                    date: 2018-01-15 15:31:16
@@ -1708,12 +1708,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `fcc_hcal.out' has not changed.
 (rerunfilecheck)             Checksum: A6CC7F065E5BFC837E4E748EB81A1CF5;413.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
  8650 strings out of 492995
  133515 string characters out of 6132704
- 247768 words of memory out of 5000000
+ 247936 words of memory out of 5000000
  11902 multiletter control sequences out of 15000+600000
  17321 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1736,7 +1740,7 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on fcc_hcal.pdf (15 pages, 534404 bytes).
+Output written on fcc_hcal.pdf (15 pages, 535388 bytes).
 PDF statistics:
  820 PDF objects out of 1000 (max. 8388607)
  616 compressed objects within 7 object streams

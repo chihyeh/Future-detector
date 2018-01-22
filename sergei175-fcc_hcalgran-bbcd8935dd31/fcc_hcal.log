@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  22 JAN 2018 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  22 JAN 2018 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1357,39 +1357,34 @@ nput line 79.
 (./fcc_Appendix_c_variables_study.tex
 
 Package natbib Warning: Citation `Larkoski:2013eya' on page 8 undefined on inpu
-t line 2.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
+t line 6.
 
 [8] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3 
-     <./figs/r010_tau21b1_20tev_04_U-eps-converted-to.pdf> <./figs/r010_tau32b1
-_20tev_04_U-eps-converted-to.pdf> <./figs/r009_tau21b1_20tev_04_U-eps-converted
--to.pdf> <./figs/r009_tau32b1_20tev_04_U-eps-converted-to.pdf> <./figs/r012_tau
-21b1_20tev_04_U-eps-converted-to.pdf> <./figs/r012_tau32b1_20tev_04_U-eps-conve
-rted-to.pdf>] [10pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.7}) has been already used, duplicate ignored
+l.10 
+      <./figs/r010_tau21b1_20tev_04_U-eps-converted-to.pdf> <./figs/r010_tau32b
+1_20tev_04_U-eps-converted-to.pdf> <./figs/r009_tau21b1_20tev_04_U-eps-converte
+d-to.pdf> <./figs/r009_tau32b1_20tev_04_U-eps-converted-to.pdf> <./figs/r012_ta
+u21b1_20tev_04_U-eps-converted-to.pdf> <./figs/r012_tau32b1_20tev_04_U-eps-conv
+erted-to.pdf>] [10pdfTeX warning (ext4): destination with the same identifier (
+name{figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3 
-     <./figs/cluster_tau21_summary_U-eps-converted-to.pdf> <./figs/cluster_tau3
-2_summary_U-eps-converted-to.pdf> <./figs/cluster_c2b1_summary_U-eps-converted-
-to.pdf>] [11pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.8}) has been already used, duplicate ignored
+l.10 
+      <./figs/cluster_tau21_summary_U-eps-converted-to.pdf> <./figs/cluster_tau
+32_summary_U-eps-converted-to.pdf> <./figs/cluster_c2b1_summary_U-eps-converted
+-to.pdf>] [11pdfTeX warning (ext4): destination with the same identifier (name{
+figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3 
-     <./figs/raw_tau21_summary_U-eps-converted-to.pdf> <./figs/raw_tau32_summar
-y_U-eps-converted-to.pdf> <./figs/raw_c2b1_summary_U-eps-converted-to.pdf>]
+l.10 
+      <./figs/raw_tau21_summary_U-eps-converted-to.pdf> <./figs/raw_tau32_summa
+ry_U-eps-converted-to.pdf> <./figs/raw_c2b1_summary_U-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs/cluster_r010_c_variable_5tev_04_eff.e
 ps>
 (epstopdf)                    date: 2018-01-19 15:14:18
@@ -1401,7 +1396,7 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r010_c_variab
 le_5tev_04_eff-eps-converted-to.pdf figs/cluster_r010_c_variable_5tev_04_eff.ep
 s>
-(epstopdf)             \includegraphics on input line 12.
+(epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r010_c_variable_5tev_04_eff-eps-converted-to.pdf, id=501, 569.126
@@ -1411,7 +1406,7 @@ e (type pdf)
 
 <use figs/cluster_r010_c_variable_5tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r010_c_variable_5tev_04_eff-eps-converted
--to.pdf used on input line 12.
+-to.pdf used on input line 16.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r010_c_variable_10tev_04_eff.
 eps>
@@ -1424,7 +1419,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r010_c_variab
 le_10tev_04_eff-eps-converted-to.pdf figs/cluster_r010_c_variable_10tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 15.
+(epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r010_c_variable_10tev_04_eff-eps-converted-to.pdf, id=502, 569.12
@@ -1434,7 +1429,7 @@ le (type pdf)
 
 <use figs/cluster_r010_c_variable_10tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r010_c_variable_10tev_04_eff-eps-converte
-d-to.pdf used on input line 15.
+d-to.pdf used on input line 19.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r010_c_variable_20tev_04_eff.
 eps>
@@ -1447,7 +1442,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r010_c_variab
 le_20tev_04_eff-eps-converted-to.pdf figs/cluster_r010_c_variable_20tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 18.
+(epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r010_c_variable_20tev_04_eff-eps-converted-to.pdf, id=503, 569.12
@@ -1457,7 +1452,7 @@ le (type pdf)
 
 <use figs/cluster_r010_c_variable_20tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r010_c_variable_20tev_04_eff-eps-converte
-d-to.pdf used on input line 18.
+d-to.pdf used on input line 22.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r010_c_variable_40tev_04_eff.
 eps>
@@ -1470,7 +1465,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r010_c_variab
 le_40tev_04_eff-eps-converted-to.pdf figs/cluster_r010_c_variable_40tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 21.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r010_c_variable_40tev_04_eff-eps-converted-to.pdf, id=504, 569.12
@@ -1480,7 +1475,7 @@ le (type pdf)
 
 <use figs/cluster_r010_c_variable_40tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r010_c_variable_40tev_04_eff-eps-converte
-d-to.pdf used on input line 21.
+d-to.pdf used on input line 25.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r009_c_variable_5tev_04_eff.e
 ps>
@@ -1493,7 +1488,7 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r009_c_variab
 le_5tev_04_eff-eps-converted-to.pdf figs/cluster_r009_c_variable_5tev_04_eff.ep
 s>
-(epstopdf)             \includegraphics on input line 32.
+(epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r009_c_variable_5tev_04_eff-eps-converted-to.pdf, id=505, 569.126
@@ -1503,7 +1498,7 @@ e (type pdf)
 
 <use figs/cluster_r009_c_variable_5tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r009_c_variable_5tev_04_eff-eps-converted
--to.pdf used on input line 32.
+-to.pdf used on input line 36.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r009_c_variable_10tev_04_eff.
 eps>
@@ -1516,7 +1511,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r009_c_variab
 le_10tev_04_eff-eps-converted-to.pdf figs/cluster_r009_c_variable_10tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r009_c_variable_10tev_04_eff-eps-converted-to.pdf, id=506, 569.12
@@ -1526,7 +1521,7 @@ le (type pdf)
 
 <use figs/cluster_r009_c_variable_10tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r009_c_variable_10tev_04_eff-eps-converte
-d-to.pdf used on input line 35.
+d-to.pdf used on input line 39.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r009_c_variable_20tev_04_eff.
 eps>
@@ -1539,7 +1534,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r009_c_variab
 le_20tev_04_eff-eps-converted-to.pdf figs/cluster_r009_c_variable_20tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 38.
+(epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r009_c_variable_20tev_04_eff-eps-converted-to.pdf, id=507, 569.12
@@ -1549,7 +1544,7 @@ le (type pdf)
 
 <use figs/cluster_r009_c_variable_20tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r009_c_variable_20tev_04_eff-eps-converte
-d-to.pdf used on input line 38.
+d-to.pdf used on input line 42.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r009_c_variable_40tev_04_eff.
 eps>
@@ -1562,7 +1557,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r009_c_variab
 le_40tev_04_eff-eps-converted-to.pdf figs/cluster_r009_c_variable_40tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 41.
+(epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r009_c_variable_40tev_04_eff-eps-converted-to.pdf, id=508, 569.12
@@ -1572,7 +1567,7 @@ le (type pdf)
 
 <use figs/cluster_r009_c_variable_40tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r009_c_variable_40tev_04_eff-eps-converte
-d-to.pdf used on input line 41.
+d-to.pdf used on input line 45.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r012_c_variable_5tev_04_eff.e
 ps>
@@ -1585,7 +1580,7 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r012_c_variab
 le_5tev_04_eff-eps-converted-to.pdf figs/cluster_r012_c_variable_5tev_04_eff.ep
 s>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r012_c_variable_5tev_04_eff-eps-converted-to.pdf, id=509, 569.126
@@ -1595,7 +1590,7 @@ e (type pdf)
 
 <use figs/cluster_r012_c_variable_5tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r012_c_variable_5tev_04_eff-eps-converted
--to.pdf used on input line 52.
+-to.pdf used on input line 56.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r012_c_variable_10tev_04_eff.
 eps>
@@ -1608,7 +1603,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r012_c_variab
 le_10tev_04_eff-eps-converted-to.pdf figs/cluster_r012_c_variable_10tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 55.
+(epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r012_c_variable_10tev_04_eff-eps-converted-to.pdf, id=510, 569.12
@@ -1618,7 +1613,7 @@ le (type pdf)
 
 <use figs/cluster_r012_c_variable_10tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r012_c_variable_10tev_04_eff-eps-converte
-d-to.pdf used on input line 55.
+d-to.pdf used on input line 59.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r012_c_variable_20tev_04_eff.
 eps>
@@ -1631,7 +1626,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r012_c_variab
 le_20tev_04_eff-eps-converted-to.pdf figs/cluster_r012_c_variable_20tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 58.
+(epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r012_c_variable_20tev_04_eff-eps-converted-to.pdf, id=511, 569.12
@@ -1641,7 +1636,7 @@ le (type pdf)
 
 <use figs/cluster_r012_c_variable_20tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r012_c_variable_20tev_04_eff-eps-converte
-d-to.pdf used on input line 58.
+d-to.pdf used on input line 62.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 Package epstopdf Info: Source file: <figs/cluster_r012_c_variable_40tev_04_eff.
 eps>
@@ -1654,7 +1649,7 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_r012_c_variab
 le_40tev_04_eff-eps-converted-to.pdf figs/cluster_r012_c_variable_40tev_04_eff.
 eps>
-(epstopdf)             \includegraphics on input line 61.
+(epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/cluster_r012_c_variable_40tev_04_eff-eps-converted-to.pdf, id=512, 569.12
@@ -1664,7 +1659,7 @@ le (type pdf)
 
 <use figs/cluster_r012_c_variable_40tev_04_eff-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_r012_c_variable_40tev_04_eff-eps-converte
-d-to.pdf used on input line 61.
+d-to.pdf used on input line 65.
 (pdftex.def)             Requested size: 177.3999pt x 122.95973pt.
 ) [12pdfTeX warning (ext4): destination with the same identifier (name{figure.9
 }) has been already used, duplicate ignored
@@ -1713,7 +1708,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
 Here is how much of TeX's memory you used:
  8650 strings out of 492995
  133515 string characters out of 6132704
- 247885 words of memory out of 5000000
+ 248885 words of memory out of 5000000
  11902 multiletter control sequences out of 15000+600000
  17321 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1736,7 +1731,7 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on fcc_hcal.pdf (15 pages, 535303 bytes).
+Output written on fcc_hcal.pdf (15 pages, 535720 bytes).
 PDF statistics:
  820 PDF objects out of 1000 (max. 8388607)
  616 compressed objects within 7 object streams

@@ -1,0 +1,84 @@
+\section{Studies of signal and background separation using Mann-Whitney U test}
+%In this section, we study different jet substructure variables and compare their ability to separate the signal and the background for different detector sizes using Mann-Whitney U test.\\
+
+%In the Mann Whitney U test by definition, if U value is closed to 0.5, it means two distributions have similar compositions, and we can't distinguish them very well. On the other hand, if U value of two distributions are closed to 0, it means both distributions' compositions are much different from each other. For another point of view, if U value is closed to 0.5, separation power of certain variable is bad, instead, if U value is closed to 0, separation power is great.\\
+
+%Figure 6 shows the representative samples of the distributions about the U value for $\tau_{21}$,$\tau_{32}$ in different detector sizes. In $\tau_{21}$, separation power is improved when detector size is smaller, but in $\tau_{32}$, the smallest detector sizes isn't the best one to separate signal and background.\\
+
+%In Figure 7, it shows the summary plots about the clustering in Mann Whitney U test in three different variables. In $\tau_{21}$, 5TeV has better separation power when detector sizes are getting smaller, but when energy higher than that, there is no improvement in smaller detector. In $\tau_{32}$, the case is similar to  $\tau_{21}$. Even worse, at some collision energies, bigger detector sizes have better separation power than smaller detector sizes. In $c_2^{(1)}$, all separation power aren't improved by detector sizes.  In summary, $c_2^{(1)}$ is the best parameter, because all values are smaller than other parameters compare with the same energy collision, and its separation power don't have the significant improvement in higher energy collision.\\
+
+%In Figure 8 , it shows the summary plots about the rawhit cut at 0.5GeV in Mann Whitney U test in three different variables. In $\tau_{21}$, 5TeV and 10TeV have better separation power in smaller separation power, but when energy higher than that, it won't improve.  In $\tau_{32}$, all separation power aren't improved by detector sizes. In $c_2^{(1)}$, we can see in 5,10,20TeV, separation power will be improved slightly, but at 40TeV, it won't improve. In summary, $c_2^{(1)}$ has the highest power separation at highest collision energy.\\
+
+In this section, we study different jet substructure variables and compare their ability to separate the signal and background for different detector cell sizes using the Mann-Whitney U test.\\
+
+By the definition of the Mann-Whitney U test, if the value of U is close to 0.5, it means that the signal and background distributions have almost identical shapes, i.e. the separation power of the variable is bad. On the other hand, if the U value is close to 0, it means that the distributions of the signal and the background are very different from each other and the separation power of the variable is great.\\
+ 
+Figure \textcolor{blue}{6} shows the representative sample of the distributions for $\tau_{21}$,$\tau_{32}$, in different detector sizes with their corresponding U value. In $\tau_{21}$, the separation power is better when the detector size is smaller. However, the separation power of tau32 does not improve when the detector size gets smaller.\\
+
+Figure \textcolor{blue}{7} shows the summary plots of the clustering in Mann-Whitney U test for the three different variables.  In $\tau_{21}$, 5 TeV has the better separation power when the detector size is smaller. However, there is not much improvement in higher energy collisions. In $\tau_{32}$, 5 TeV has also better separation power on smaller detector size but higher energy collisions seem to have better separation power when the detector size is bigger. The $c_2^{(1)}$ does not seem to have any significant improvement in its separation power as the detector size gets smaller for all energy collision. Nevertheless, the U values of the $c_2^{(1)}$ are better than the$\tau_{21}$ and $\tau_{32}$. In conclusion, the $c_2^{(1)}$ variable is the best parameter as its separation power is better than the other variable and does not have a significant improvement in higher energy collision.\\
+
+Figure \textcolor{blue}{8} shows the summary plots of the rawhit cut at 0.5 GeV in Mann Whitney U test for the three different variables. In $\tau_{21}$, 5 and 10 TeV have better separation power on smaller detector sizes. However, there is no significant improvement in the separation power of higher energy collisions. The $\tau_{32}$ does not have any significant improvement in its separation power as the detector size gets smaller for all energy collision. Lastly, there is a slight improvement in separation power for 5, 10, and 20 TeV energy collision in $c_2^{(1)}$. At 40 TeV, no significant improvement is observed. In conclusion, the $c_2^{(1)}$ variable is the best parameter as it has the best separation power at 40 TeV energy collision than the other variables.\\
+
+\label{sec:Mann Whitney U test}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[20$\times$20(cm$\times$cm)] {
+   \includegraphics[width=0.43\textwidth]{figs/r010_tau21b1_20tev_04_U.eps}\hfill
+   }
+   \subfigure[20$\times$20(cm$\times$cm)] {
+   \includegraphics[width=0.43\textwidth]{figs/r010_tau32b1_20tev_04_U.eps}
+   }
+   \subfigure[5$\times$5(cm$\times$cm)] {
+   \includegraphics[width=0.43\textwidth]{figs/r009_tau21b1_20tev_04_U.eps}
+   }
+   \subfigure[5$\times$5(cm$\times$cm)] {
+   \includegraphics[width=0.43\textwidth]{figs/r009_tau32b1_20tev_04_U.eps}
+   }
+   \subfigure[1$\times$1(cm$\times$cm)] {
+   \includegraphics[width=0.43\textwidth]{figs/r012_tau21b1_20tev_04_U.eps}
+   }
+   \subfigure[1$\times$1(cm$\times$cm)] {
+   \includegraphics[width=0.43\textwidth]{figs/r012_tau32b1_20tev_04_U.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20TeV energy collision for $\tau_{21}$(left),$\tau_{32}$(right) in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[$\tau_{21}$] {
+   \includegraphics[width=0.43\textwidth]{figs/cluster_tau21_summary_U.eps}\hfill
+   }
+   \subfigure[$\tau_{32}$] {
+   \includegraphics[width=0.43\textwidth]{figs/cluster_tau32_summary_U.eps}
+   }
+   \subfigure[$c_2^{(1)}$] {
+   \includegraphics[width=0.43\textwidth]{figs/cluster_c2b1_summary_U.eps}
+   }
+\end{center}
+\caption{The Mann-Whitney U values for $\tau_{21}$,$\tau_{32}$ and $c_2^{(1)}$ reconstructed from calorimeter clusters at different collision energies correspond to different detector sizes in cluster. The energies of collision at 5, 10, 20, 40TeV are shown in each figure.}
+\label{fig:cluster_U_summary}
+\end{figure}
+
+%100bins
+\begin{figure}
+\begin{center}
+   \subfigure[$\tau_{21}$] {
+   \includegraphics[width=0.43\textwidth]{figs/raw_tau21_summary_U.eps}\hfill
+   }
+   \subfigure[$\tau_{32}$] {
+   \includegraphics[width=0.43\textwidth]{figs/raw_tau32_summary_U.eps}
+   }
+   \subfigure[$c_2^{(1)}$] {
+   \includegraphics[width=0.43\textwidth]{figs/raw_c2b1_summary_U.eps}
+   }
+\end{center}
+\caption{The Mann-Whitney U values for $\tau_{21}$,$\tau_{32}$ and $c_2^{(1)}$ reconstructed from calorimeter clusters at different collision energies correspond to different detector sizes in rawhit cut at 0.5GeV. The energies of collision at 5, 10, 20, 40TeV are shown in each figure.}
+\label{fig:raw_U_summary}
+\end{figure}
+

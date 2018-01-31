@@ -1,12 +1,15 @@
-# Future-detector
-git status
+#Mann-Whitney U Test
+-Add to python path to the directory where the MannWhitneytest
 
-git add -A
+```export PYTHONPATH=$PYTHONPATH:${PATH to directory containing MannWhitneyUtest.py}```
 
-git commit -m "xxx"
 
-git status
+in your script:
+```
+import ROOT
+import MannWhitneyUtest
 
-git pull --rebase
+U = MannWhitneyUtest(h1, h2)
 
-git push -u origin master
+#where h1 and h2 are TH1s
+```

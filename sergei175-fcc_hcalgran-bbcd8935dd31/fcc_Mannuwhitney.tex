@@ -1,3 +1,118 @@
+%yright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+% \documentclass[preprint,11pt]{elsarticle}
+\documentclass[final,1p,11pt]{elsarticle}
+
+%\documentclass[final,1p,times]{elsarticle}
+
+
+%% Use the option review to obtain double line spacing
+%%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+
+\usepackage{epsfig}
+%\usepackage{cite}
+%\usepackage{mcite}
+\usepackage{array,tabularx,epsfig,mathrsfs,graphicx,rotating}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{ragged2e}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+% Custom colors
+\usepackage{color}
+\usepackage{float}
+
+% to cross text
+\usepackage[normalem]{ulem} % either use this (simple) or
+\usepackage{soul} % use this (many fancier options)
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+
+
+
+\graphicspath{{figs/}}
+
+
+\pdfinfo{
+   /Author (Chekanov/Demarteau)
+   /Title  (Conceptual Design Studies for a CEPC Detector)
+   /CreationDate (D:20160102195600)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+
+\textheight=22cm
+\textwidth=14.5cm
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\la}{\langle}
+\newcommand{\promc}{{\sc ProMC}}
+\newcommand{\ra}{\rangle}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\Ec}{\mathcal{E}}
+\newcommand{\Fc}{\mathcal{F}}
+\newcommand{\Za}{\mathrm{Z_1}}
+\newcommand{\Zb}{\mathrm{Z_2}}
+\newcommand{\Zn}{\mathrm{Z_n}}
+\newcommand{\F}{\mathrm{F}}
+
+\chardef\til=126
+\newcommand{\mev}{{\,\mathrm{MeV}}}
+\newcommand{\gev}{{\,\mathrm{GeV}}}
+\newcommand{\tev}{{\,\mathrm{TeV}}}
+\newcommand{\GEANTfour} {\textsc{geant4}}
+\journal{XXX-XXX}
+
+
+
+\begin{document}
+
 \section{Studies of signal and background separation using Mann-Whitney U test}
 %In this section, we study different jet substructure variables and compare their ability to separate the signal and the background for different detector sizes using Mann-Whitney U test.\\
 
@@ -24,40 +139,490 @@ Figure \textcolor{blue}{8} shows the summary plots of the rawhit cut at 0.5 GeV 
 %25bins
 \begin{figure}
 \begin{center}
-   \subfigure[20$\times$20(cm$\times$cm)] {
-   \includegraphics[width=0.43\textwidth]{figs/r010_tau21b1_20tev_04_U.eps}\hfill
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_c2b1_5tev_04_Man.eps}\hfill
    }
-   \subfigure[20$\times$20(cm$\times$cm)] {
-   \includegraphics[width=0.43\textwidth]{figs/r010_tau32b1_20tev_04_U.eps}
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_c2b1_10tev_04_Man.eps}
    }
-   \subfigure[5$\times$5(cm$\times$cm)] {
-   \includegraphics[width=0.43\textwidth]{figs/r009_tau21b1_20tev_04_U.eps}
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_c2b1_5tev_04_Man.eps}
    }
-   \subfigure[5$\times$5(cm$\times$cm)] {
-   \includegraphics[width=0.43\textwidth]{figs/r009_tau32b1_20tev_04_U.eps}
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_c2b1_10tev_04_Man.eps}
    }
-   \subfigure[1$\times$1(cm$\times$cm)] {
-   \includegraphics[width=0.43\textwidth]{figs/r012_tau21b1_20tev_04_U.eps}
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_c2b1_5tev_04_Man.eps}
    }
-   \subfigure[1$\times$1(cm$\times$cm)] {
-   \includegraphics[width=0.43\textwidth]{figs/r012_tau32b1_20tev_04_U.eps}
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_c2b1_10tev_04_Man.eps}
    }
 
 \end{center}
-\caption{Distributions of Mann-Whitney value U in 20TeV energy collision for $\tau_{21}$(left),$\tau_{32}$(right) in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $c_2^{(1)}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_c2b1_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_c2b1_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_c2b1_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_c2b1_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_c2b1_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_c2b1_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $c_2^{(1)}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
 \label{fig:cluster_tau21_tau32}
 \end{figure}
 
 %25bins
 \begin{figure}
 \begin{center}
-   \subfigure[$\tau_{21}$] {
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau21_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau21_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau21_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau21_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau21_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau21_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $\tau_{21}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau21_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau21_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau21_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau21_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau21_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau21_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $\tau_{21}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau32_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau32_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau32_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau32_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau32_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau32_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $\tau_{32}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau32_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_010_tau32_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau32_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_009_tau32_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau32_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) in cluster] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_cluster_012_tau32_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $\tau_{32}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $c_2^{(1)}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_c2b1_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_c2b1_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_c2b1_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $c_2^{(1)}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $\tau_{21}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) icut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $\tau_{21}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $\tau_{32}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $\tau_{32}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_c2b1_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_c2b1_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_c2b1_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_c2b1_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_c2b1_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_c2b1_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $c_2^{(1)}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_c2b1_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_c2b1_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_c2b1_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_c2b1_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_c2b1_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_c2b1_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $c_2^{(1)}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau21_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau21_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau21_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $\tau_{21}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau21_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau21_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) icut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau21_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $\tau_{21}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[5TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_Man.eps}\hfill
+   }
+   \subfigure[10TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_Man.eps}
+   }
+   \subfigure[5TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_Man.eps}
+   }
+   \subfigure[10TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 5,10TeV energy collision for $\tau_{32}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+   \subfigure[20TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_Man.eps}\hfill
+   }
+   \subfigure[40TeV at 20$\times$20(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 5$\times$5(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_Man.eps}
+   }
+   \subfigure[20TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_Man.eps}
+   }
+   \subfigure[40TeV at 1$\times$1(cm$\times$cm) cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_Man.eps}
+   }
+
+\end{center}
+\caption{Distributions of Mann-Whitney value U in 20,40TeV energy collision for $\tau_{32}$ in different detector sizes. Cell Size in 20$\times$20, 5$\times$5, and 1$\times$1(cm$\times$cm) are shown here.}
+\label{fig:cluster_tau21_tau32}
+\end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[$\tau_{21}$ in cluster] {
    \includegraphics[width=0.43\textwidth]{figs/cluster_tau21_summary_U.eps}\hfill
    }
-   \subfigure[$\tau_{32}$] {
+   \subfigure[$\tau_{32}$ in cluster] {
    \includegraphics[width=0.43\textwidth]{figs/cluster_tau32_summary_U.eps}
    }
-   \subfigure[$c_2^{(1)}$] {
+   \subfigure[$c_2^{(1)}$ in cluster] {
    \includegraphics[width=0.43\textwidth]{figs/cluster_c2b1_summary_U.eps}
    }
 \end{center}
@@ -65,20 +630,41 @@ Figure \textcolor{blue}{8} shows the summary plots of the rawhit cut at 0.5 GeV 
 \label{fig:cluster_U_summary}
 \end{figure}
 
-%100bins
+
+%25bins
 \begin{figure}
 \begin{center}
-   \subfigure[$\tau_{21}$] {
-   \includegraphics[width=0.43\textwidth]{figs/raw_tau21_summary_U.eps}\hfill
+   \subfigure[$\tau_{21}$ rawhit cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau21_summary_U.eps}\hfill
    }
-   \subfigure[$\tau_{32}$] {
-   \includegraphics[width=0.43\textwidth]{figs/raw_tau32_summary_U.eps}
+   \subfigure[$\tau_{32}$ rawhit cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_tau32_summary_U.eps}
    }
-   \subfigure[$c_2^{(1)}$] {
-   \includegraphics[width=0.43\textwidth]{figs/raw_c2b1_summary_U.eps}
+   \subfigure[$c_2^{(1)}$ rawhit cut at 0.5GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_05GeV_c2b1_summary_U.eps}
    }
 \end{center}
-\caption{The Mann-Whitney U values for $\tau_{21}$,$\tau_{32}$ and $c_2^{(1)}$ reconstructed from calorimeter clusters at different collision energies correspond to different detector sizes in rawhit cut at 0.5GeV. The energies of collision at 5, 10, 20, 40TeV are shown in each figure.}
+\caption{The Mann-Whitney U values for $\tau_{21}$,$\tau_{32}$ and $c_2^{(1)}$ reconstructed from calorimeter hit at 05GeV cut at different collision energies correspond to different detector sizes in rawhit cut at 05GeV. The energies of collision at 5, 10, 20, 40TeV are shown in each figure.}
 \label{fig:raw_U_summary}
 \end{figure}
+
+%25bins
+\begin{figure}
+\begin{center}
+   \subfigure[$\tau_{21}$ rawhit cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_025GeV_tau21_summary_U.eps}\hfill
+   }
+   \subfigure[$\tau_{32}$ rawhit cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_025GeV_tau32_summary_U.eps}
+   }
+   \subfigure[$c_2^{(1)}$ rawhit cut at 0.25GeV] {
+   \includegraphics[width=0.43\textwidth]{figs/Rawhit_025GeV_c2b1_summary_U.eps}
+   }
+\end{center}
+\caption{The Mann-Whitney U values for $\tau_{21}$,$\tau_{32}$ and $c_2^{(1)}$ reconstructed from calorimeter hit at 0.25GeV cut at different collision energies correspond to different detector sizes in cluster. The energies of collision at 5, 10, 20, 40TeV are shown in each figure.}
+\label{fig:cluster_U_summary}
+\end{figure}
+\end{document}
+
+
 

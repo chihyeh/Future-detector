@@ -929,4 +929,35 @@ sed, duplicate ignored
                                                   \fi \fi 
 l.266 \newpage
                <./figs/h5tev_clus_d12_ww1-eps-converted-to.pdf> <./figs/h10tev_
-clus_d12_ww1-eps-converted-to.pdf> <./figs/h20tev_clus_d12_ww1-eps-c
+clus_d12_ww1-eps-converted-to.pdf> <./figs/h20tev_clus_d12_ww1-eps-converted-to
+.pdf> <./figs/h40tev_clus_d12_ww1-eps-converted-to.pdf>] (./fcc_efficiency.tex
+
+./fcc_efficiency.tex:22: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \documentclass
+                   [final,1p,11pt]{elsarticle}
+? 
+./fcc_efficiency.tex:22: Emergency stop.
+ ...                                              
+                                                  
+l.22 \documentclass
+                   [final,1p,11pt]{elsarticle}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 8417 strings out of 492995
+ 123676 string characters out of 6132704
+ 245136 words of memory out of 5000000
+ 11768 multiletter control sequences out of 15000+600000
+ 17321 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,7n,40p,407b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+./fcc_efficiency.tex:22:  ==> Fatal error occurred, no output PDF file produced
+!

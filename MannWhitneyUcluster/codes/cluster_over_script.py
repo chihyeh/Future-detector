@@ -11,6 +11,7 @@ from ROOT import TMath
 from ROOT import TPaveText
 from ROOT import TLatex
 variable=("tau21","tau32","c2b1")
+
 k=0
 if(variable[k]=="tau21"):
     f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyUcluster/Rawhit_0.5GeV_tau21_5tev_04_Man.root")

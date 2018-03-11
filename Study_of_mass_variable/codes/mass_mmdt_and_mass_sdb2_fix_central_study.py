@@ -18,7 +18,6 @@ files_array=(files1,files2,files3)
 energy_array=("f",[5,10,20,40])
 variable=("mass_mmdt","mass_sdb2")
 signal_we_want=("ww","tt")
-print energy_array[1][0]
 #---------------------------------------------setting the hisotgram in and normalize
 for k in range(0,2):
     for l in range(0,2):
@@ -27,63 +26,73 @@ for k in range(0,2):
                 if(variable[k]=="mass_mmdt"):
                     if(signal_we_want[l]=="tt"):
                         if(energy_array[1][m]<20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
                             h1 = f1.Get("h_mass_mmdt")
                             h2 = f2.Get("h_mass_mmdt")
-                            print f1,f2
 
                         if(energy_array[1][m]>=20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
                             h1 = f1.Get("h_mass_mmdt")
                             h2 = f2.Get("h_mass_mmdt")
-                            print f1,f2
 
                     if(signal_we_want[l]=="ww"):
                         if(energy_array[1][m]<20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
                             h1 = f1.Get("h_mass_mmdt")
                             h2 = f2.Get("h_mass_mmdt")
-                            print f1,f2
 
                         if(energy_array[1][m]>=20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_cluster_0.5GeV_tcalo_all.root", 'r')
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
                             h1 = f1.Get("h_mass_mmdt")
                             h2 = f2.Get("h_mass_mmdt")
-                            print f1,f2
 
                 if(variable[k]=="mass_sdb2"):
                     if(signal_we_want[l]=="tt"):
-                        if(energy_array[1][m]<20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
+                        if(energy_array[1][m]==5):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
                             h1 = f1.Get("h_mass_sdb2")
                             h2 = f2.Get("h_mass_sdb2")
-                            print f1,f2
-
-                        if(energy_array[1][m]>=20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
+                        if(energy_array[1][m]==10):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
                             h1 = f1.Get("h_mass_sdb2")
                             h2 = f2.Get("h_mass_sdb2")
-                            print f1,f2
+                        if(energy_array[1][m]==20):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+                            h1 = f1.Get("h_mass_sdb2")
+                            h2 = f2.Get("h_mass_sdb2")
+                        if(energy_array[1][m]==40):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+                            h1 = f1.Get("h_mass_sdb2")
+                            h2 = f2.Get("h_mass_sdb2")
                     if(signal_we_want[l]=="ww"):
-                        if(energy_array[1][m]<20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
+                        if(energy_array[1][m]==5):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
                             h1 = f1.Get("h_mass_sdb2")
                             h2 = f2.Get("h_mass_sdb2")
-                            print f1,f2
-
-                        if(energy_array[1][m]>=20):
-                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
-                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo80_for_mass_sdb2.root", 'r')
+                        if(energy_array[1][m]==10):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
                             h1 = f1.Get("h_mass_sdb2")
                             h2 = f2.Get("h_mass_sdb2")
-                            print f1,f2
+                        if(energy_array[1][m]==20):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+                            h1 = f1.Get("h_mass_sdb2")
+                            h2 = f2.Get("h_mass_sdb2")
+                        if(energy_array[1][m]==40):
+                            f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+                            f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+                            h1 = f1.Get("h_mass_sdb2")
+                            h2 = f2.Get("h_mass_sdb2")
                 #h1.Scale(1.0/h1.Integral())
                 #h2.Scale(1.0/h2.Integral())
     #------------------------------------------------
@@ -129,64 +138,64 @@ for k in range(0,2):
 
                 a=h1.Integral()
                 b=h2.Integral()
-                
+
+                numbin=h1.GetXaxis().GetNbins()
+                print str(numbin)
+                for p in range(0,numbin):
+                    if (h1.Integral(0,p)<(h1.Integral(0,numbin)/2)<h1.Integral(0,p+1)):
+                        break
+                print str((p+2)*5)
+
                 if(variable[k]=="mass_sdb2"):
                     if (signal_we_want[l]=="tt"):
                         if(energy_array[1][m]==5):
-                            central_energy=160
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==10):
-                            central_energy=200
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==20):
-                            central_energy=280
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==40):
-                            central_energy=310
+                            central_energy=(p+2)*5-20
                 if(variable[k]=="mass_sdb2"):
                     if (signal_we_want[l]=="ww"):
                         if(energy_array[1][m]==5):
-                            central_energy=80
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==10):
-                            central_energy=105
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==20):
-                            central_energy=180
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==40):
-                            central_energy=180
+                            central_energy=(p+2)*5-20
                 if(variable[k]=="mass_mmdt"):
                     if (signal_we_want[l]=="tt"):
                         if(energy_array[1][m]==5):
-                            central_energy=150
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==10):
-                            central_energy=150
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==20):
-                            central_energy=150
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==40):
-                            central_energy=150
+                            central_energy=(p+2)*5-20
                 if(variable[k]=="mass_mmdt"):
                     if (signal_we_want[l]=="ww"):
                         if(energy_array[1][m]==5):
-                            central_energy=60
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==10):
-                            central_energy=60
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==20):
-                            central_energy=60
+                            central_energy=(p+2)*5-20
                         if(energy_array[1][m]==40):
-                            central_energy=60
+                            central_energy=(p+2)*5-20
                 for j in range(0,9):
                     xarray=array("f",[])
                     yarray=array("f",[])
                     for d in range(central_energy/5+j-7,central_energy/5+j+1):
                         
-                        print d,str((central_energy/5+central_energy/5+1+2*j)-d)
-                        print '------------------'
+                        print str((p+2)*5)
                         print f1,f2
-                        print '------------------'
-                        print h1,h2
-                        print '------------------'
                         xarray.append(h1.Integral(d,(central_energy/5+central_energy/5+1+2*j)-d)/a)
-                        print '------------------'
                 #xarray.append(h1.Integral(0,0+i)/a)
-                        yarray.append(1-h2.Integral(d,(central_energy/5+central_energy/5+1+2*j)-d)/b)
-                    print yarray
-                    print xarray
+                        yarray.append(1/(h2.Integral(d,(central_energy/5+central_energy/5+1+2*j)-d)/b))
 
  
         #karray=array("f",[])
@@ -254,10 +263,10 @@ for k in range(0,2):
             #gr.SetTitle("raw_"+files+"_"+variable+"_"+energy1+"tev_"+energy1_cut+"GeV_eff")
                     gr.GetXaxis().SetTitle("signal_efficiency")
                     gr.GetXaxis().SetTitleColor(1)
-                    gr.GetYaxis().SetTitle("1-background_efficiency")
+                    gr.GetYaxis().SetTitle("background_efficiency LOG scale")
                     gr.Draw()
-
-
+                    c.SetLogy()
+                    
                     latex= TLatex(gr.GetX()[0],gr.GetY()[0],str(central_energy+5*j-40)+"-"+str(central_energy+5*j+40)+"(GeV)")
                     latex1=TLatex(gr.GetX()[1],gr.GetY()[1],str(central_energy+5*j-35)+"-"+str(central_energy+5*j+35))
                     latex2=TLatex(gr.GetX()[2],gr.GetY()[2],str(central_energy+5*j-30)+"-"+str(central_energy+5*j+30))
@@ -317,13 +326,13 @@ for k in range(0,2):
             #leg.Draw()
             #c.Draw()
 
-                    f=TFile("A_Cluster_"+str(files_array[i])+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_eff_"+str(efficiency_number1)+"_central_fix_at_"+central_energy1+"GeV_"+str(signal_we_want[l])+"_qq.root","RECREATE")
+                    f=TFile("A_Cluster_"+str(files_array[i])+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_eff_"+str(efficiency_number1)+"_central_fix_at_"+central_energy1+"GeV_"+str(signal_we_want[l])+"_qq_log.root","RECREATE")
             #f=TFile("raw_"+files+"_"+variable+"_"+energy1+"tev_"+energy1_cut+"GeV_eff.root","RECREATE");
                     gr.Write()
-
+                    c.Print("A_Cluster_"+str(files_array[i])+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_eff_"+str(efficiency_number1)+"_central_fix_at_"+central_energy1+"GeV_"+str(signal_we_want[l])+"_qq_log.pdf")
 
             #leg.Draw()
-                    c.Print("A_Cluster_"+str(files_array[i])+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_eff_"+str(efficiency_number1)+"_central_fix_at_"+central_energy1+"GeV_"+str(signal_we_want[l])+"_qq.pdf")
+#c.Print("A_Cluster_"+str(files_array[i])+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_eff_"+str(efficiency_number1)+"_central_fix_at_"+central_energy1+"GeV_"+str(signal_we_want[l])+"_qq.pdf")
             #c.Print("raw_"+files+"_"+variable+"_"+energy1+"tev_"+energy1_cut+"GeV_eff.pdf")
 
             #where h1 and h2 are TH1s

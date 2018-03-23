@@ -12,8 +12,8 @@ from ROOT import TLatex
 from array import array
 
 
-f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev5mumu_pythia6_zprime5tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_retcalo.root",'r')
-f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev5mumu_pythia6_zprime5tev_qqbar%rfull012_onlyhadronic/radius0.4_jetsubstructure_retcalo.root",'r')
+f1 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_rawhit_cut_plots_in_efficiency/codes/Rawhit_0.5GeV_r012_tau32_10tev_04_eff_log.root",'r')
+f2 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_rawhit_cut_plots_in_efficiency/codes/Rawhit_0.25GeV_r012_tau32_10tev_04_eff_log.root",'r')
 #f3 = ROOT.TFile.Open(sys.argv[3], 'r')
 energy= 5
 files="r012"
@@ -21,20 +21,16 @@ files="r012"
 
 #f4 = ROOT.TFile.Open(sys.argv[4], 'r')
 
-G1 = f1.Get("h_tau21_b1")
+G1 = f1.Get("Graph")
 #G1.SetName("G1")
-G2 = f2.Get("h_tau21_b1")
+G2 = f2.Get("Graph")
 #G2.SetName("G2")
 #G3 = f3.Get("Graph")
 #G3.SetName("G3")
 print G1,G2
-b=G1.GetEntries()
-d=G2.GetEntries()
 #G1.Scale(1.0/G1.Integral())
 #G2.Scale(1.0/G2.Integral())
 
-a=(G1.GetMaximumBin())
-print a
 c = TCanvas("c1", "c1",0,0,1000,1000)
 gStyle.SetOptStat(0)
 leg = TLegend(0.1,0.65,0.4,0.9)
@@ -48,8 +44,8 @@ G1.SetLineColor(2)
 G2.SetLineColor(1)
 G1.SetLineWidth(3)
 G2.SetLineWidth(3)
-G2.Draw("histo")
-G1.Draw("histosame")
+G2.Draw("")
+G1.Draw("same")
 #G3.Draw("ALPsame")
 #G4.Draw("ALPsame")
 variable="tau21"
@@ -58,6 +54,9 @@ energy_cut2= 0.5
 energy1=str(energy)
 energy1_cut=str(energy_cut1)
 energy2_cut=str(energy_cut2)
+mg=TMultiGraph()
+mg.Add(G1)
+mg.Add(G2)
 
 #mg.Add(G1)
 #mg.Add(G2)
@@ -82,24 +81,15 @@ energy2_cut=str(energy_cut2)
 #for i in range(3):
 #    t.DrawText(i+1,-0.03,label[i])
 
-leg.AddEntry("","signal:z'->ww","")
-leg.AddEntry("","background:z'->qq","")
-
-
-leg.AddEntry(G1,"z'->ww","l")
-leg.AddEntry(G2,"z'->qq","l")
-leg.AddEntry("","Signal_Entries="+str(b),"")
-leg.AddEntry("","Background_Entries="+str(d),"")
-
 #leg.AddEntry("G3","1*1","l")
 
 #leg.AddEntry("G4","#sqrt{s}=40TeV","l")
-
+c.SetLogy()
 c.Draw()
 leg.Draw()
 
 
-c.Print("Distribution_cluster_tau21_"+files+"_"+energy1+"tev_plot_ww_qq.pdf")
+c.Print("Distribution_cluster_tau21_"+files+"_"+energy1+"tev_plot_ww_qq_try.pdf")
 #c.Print("cluster_"+variable+"_"+energy1+"_tev_eff_compare_central_fixed.pdf")
 #c.Print("raw_"+variable+"_"+energy1+"tev_"+energy1_cut+"_compare_to_"+energy2_cut+"GeV_eff.pdf")
 

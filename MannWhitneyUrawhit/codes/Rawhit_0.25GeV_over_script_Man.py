@@ -13,10 +13,10 @@ from ROOT import TLatex
 variable=("tau21","tau32","c2b1")
 k=0
 if(variable[k]=="tau21"):
-    f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau21_5tev_04_Man.root")
-    f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau21_10tev_04_Man.root")
-    f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau21_20tev_04_Man.root")
-    f4 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau21_40tev_04_Man.root")
+    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau21_5tev_04_Man.root")
+    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau21_10tev_04_Man.root")
+    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau21_20tev_04_Man.root")
+    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau21_40tev_04_Man.root")
 
 
     G1 = f1.Get("Graph") #change the names of the histograms to the TH1's present in f1 and f2
@@ -83,10 +83,10 @@ if(variable[k]=="tau21"):
     c.Print("Rawhit_0.25GeV_tau21_summary_U.eps")
 
 if(variable[k+1]=="tau32"):
-    f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau32_5tev_04_Man.root")
-    f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau32_10tev_04_Man.root")
-    f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau32_20tev_04_Man.root")
-    f4 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_tau32_40tev_04_Man.root")
+    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau32_5tev_04_Man.root")
+    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau32_10tev_04_Man.root")
+    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau32_20tev_04_Man.root")
+    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_tau32_40tev_04_Man.root")
     
     
     G1 = f1.Get("Graph") #change the names of the histograms to the TH1's present in f1 and f2
@@ -152,10 +152,10 @@ if(variable[k+1]=="tau32"):
     c.Print("Rawhit_0.25GeV_tau32_summary_U.eps")
 
 if(variable[k+2]=="c2b1"):
-    f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_c2b1_5tev_04_Man.root")
-    f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_c2b1_10tev_04_Man.root")
-    f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_c2b1_20tev_04_Man.root")
-    f4 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/Rawhit_0.25GeV_c2b1_40tev_04_Man.root")
+    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_c2b1_5tev_04_Man.root")
+    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_c2b1_10tev_04_Man.root")
+    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_c2b1_20tev_04_Man.root")
+    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/Rawhit_0.25GeV_c2b1_40tev_04_Man.root")
     
     
     G1 = f1.Get("Graph") #change the names of the histograms to the TH1's present in f1 and f2

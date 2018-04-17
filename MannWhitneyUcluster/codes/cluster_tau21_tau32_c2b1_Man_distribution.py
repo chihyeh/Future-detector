@@ -24,7 +24,7 @@ print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-for k in range(2,6):
+for k in range(2,3):
     if(variable[k]=="mass_try"):
         f1=ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_009_mass_mmdt_5tev_eff_1_central_fix_at_80GeV_ww_qq_origin.root",'r')
         f2=ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_009_mass_mmdt_5tev_eff_1_central_fix_at_80GeV_ww_qq.root",'r')
@@ -164,11 +164,16 @@ for k in range(2,6):
                             
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
+                h3 = TH1F("h3","Ratio histogram",25,0,1)
+                h3=h1.Clone("h3")
+                h3.Divide(h2)
 
                 h1.Sumw2()
                 h2.Sumw2()
+                h3.Sumw2()
                 h1.Scale(1.0/h1.Integral())
                 h2.Scale(1.0/h2.Integral())
+                h3.Scale(1.0/h3.Integral())
 
                 U = MannWhitneyUtest.mannWU(h1, h2)
                 U_print = min (1-U, U)
@@ -188,22 +193,33 @@ for k in range(2,6):
                 h1.SetLineWidth(3)
                 h2.SetLineColor(1)
                 h2.SetLineWidth(3)
+                h3.SetLineColor(4)
+                h3.SetLineWidth(3)
                 h1.SetTitle(" ")
                 h2.SetTitle(" ")
+                h3.SetTitle(" ")
                 h1.SetXTitle("#tau_{21}")
                 h2.SetXTitle("#tau_{21}")
+                h3.SetXTitle("#tau_{21}")
                 h1.SetYTitle("Number of jet per 0.04")
                 h2.SetYTitle("Number of jet per 0.04")
+                h3.SetYTitle("Number of jet per 0.04")
                 h1.GetYaxis().SetLabelSize(0.03)
                 h2.GetYaxis().SetLabelSize(0.03)
+                h3.GetYaxis().SetLabelSize(0.03)
                 h1.GetXaxis().SetTitleFont(22)
                 h2.GetXaxis().SetTitleFont(22)
+                h3.GetXaxis().SetTitleFont(22)
                 h1.GetYaxis().SetTitleFont(22)
                 h2.GetYaxis().SetTitleFont(22)
+                h3.GetYaxis().SetTitleFont(22)
                 h1.GetXaxis().SetLabelFont(22)
                 h2.GetXaxis().SetLabelFont(22)
+                h3.GetXaxis().SetLabelFont(22)
                 h1.GetYaxis().SetLabelFont(22)
                 h2.GetYaxis().SetLabelFont(22)
+                h3.GetYaxis().SetLabelFont(22)
+
 
 
 
@@ -215,9 +231,11 @@ for k in range(2,6):
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
                     h1.Draw("hist")
                     h2.Draw("histsame")
+                    h3.Draw("histsame")
                 else:
                     h2.Draw("hist")
                     h1.Draw("histsame")
+                    h3.Draw("histsame")
 
                 leg.AddEntry("","MannWhitneyUtest:","")
                 leg.AddEntry("",a,"")

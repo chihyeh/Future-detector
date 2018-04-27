@@ -24,7 +24,7 @@ print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-for k in range(0,3):
+for k in range(0,2):
     if(variable[k]=="tau21"):
         for j in range(0,3):
             for m in range(0,4):
@@ -62,6 +62,7 @@ for k in range(0,3):
                 h1.SetLineWidth(3)
                 h2.SetLineColor(1)
                 h2.SetLineWidth(3)
+                h1.SetLineStyle(1)
                 h2.SetLineStyle(9)
                 h1.SetTitle(" ")
                 h2.SetTitle(" ")
@@ -147,6 +148,7 @@ for k in range(0,3):
                 h1.SetLineWidth(3)
                 h2.SetLineColor(1)
                 h2.SetLineWidth(3)
+                h1.SetLineStyle(1)
                 h2.SetLineStyle(9)
                 h1.SetTitle(" ")
                 h2.SetTitle(" ")

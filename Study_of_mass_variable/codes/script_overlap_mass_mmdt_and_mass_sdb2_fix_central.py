@@ -19,8 +19,8 @@ variable_array=("mass_mmdt","mass_sdb2")
 #width_array=("f",[40,40,40,40])
 signal_we_want=("tt","ww")
 #for j in range(0,2):
-for k in range(1,2):
-    for d in range(0,1):
+for k in range(0,2):
+    for d in range(0,2):
         for i in range(0,4):
             if(variable_array[k]=="mass_sdb2"):
                 if(signal_we_want[d]=="tt"):
@@ -239,7 +239,12 @@ for k in range(1,2):
     #h=min(G1.GetHistogram().GetMinimum(),G2.GetHistogram().GetMinimum(),G3.GetHistogram().GetMinimum())
         #l=max(G1.GetHistogram().GetMaximum(),G2.GetHistogram().GetMaximum(),G3.GetHistogram().GetMaximum())
         #mg.GetXaxis().SetRangeUser(-2,1.1)
-            mg.GetYaxis().SetRangeUser(5,100)
+            if(signal_we_want[d]=="tt"):
+                mg.GetYaxis().SetRangeUser(1,100)#1~80
+            if(signal_we_want[d]=="ww"):
+                mg.GetYaxis().SetRangeUser(1,80)#1~80
+        #-----------------------------------------------#
+
             mg.GetXaxis().SetLabelSize(0.05)
             mg.GetYaxis().SetLabelSize(0.05)
             mg.GetXaxis().SetLabelFont(60)
@@ -271,7 +276,7 @@ for k in range(1,2):
     #leg.AddEntry(G4,"z'->qq(truth-level-20*20)","l")
     #leg.AddEntry(G5,"z'->qq(truth-level-5*5)","l")
     #leg.AddEntry(G6,"z'->qq(truth-level-1*1)","l")
-            leg1=TLegend(0.4,0.7,0.9,1)
+            leg1=TLegend(0.05,0.3,0.35,0.4)
             leg1.SetFillColor(0)
             leg1.SetFillStyle(0)
             leg1.SetTextSize(0.05)
@@ -291,7 +296,7 @@ for k in range(1,2):
             
             
             
-            leg = TLegend(0.55,0.6,0.85,0.8)
+            leg = TLegend(0.1,0.1,0.5,0.3)
             leg.SetFillColor(0)
             leg.SetFillStyle(0)
             leg.SetTextSize(0.05)
@@ -300,6 +305,8 @@ for k in range(1,2):
             leg.AddEntry(G4,"20#times20 cm HCAL","l")
             leg.AddEntry(G5,"5#times5 cm HCAL","l")
             leg.AddEntry(G6,"1#times1 cm HCAL","l")
+            
+            
             #leg.AddEntry(G1,"#tau_{21} #beta=1","l")
             #leg.AddEntry(G2,"#tau_{21} #beta=1.5","l")
             #leg.AddEntry(G3,"#tau_{21} #beta=2","l")
@@ -316,6 +323,7 @@ for k in range(1,2):
     #leg.AddEntry("G4","#sqrt{s}=40TeV","l")
 
             c.Draw()
+            c.Update()
             c.SetLogy()
             leg.Draw()
             leg1.Draw()

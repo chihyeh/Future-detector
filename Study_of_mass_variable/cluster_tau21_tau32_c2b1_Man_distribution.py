@@ -17,13 +17,13 @@ files2="010"
 files3="012"
 files_array=(files1,files2,files3)
 energy_array=("f",[5,10,20,40])
-variable=("mass_mmdt_tt","mass_mmdt","tau21","tau32","c2b1")
+variable=("mass_mmdt_tt","mass_mmdt","mass_sdb2_ww","mass_sdb2_tt","tau21","tau32","c2b1")
 print variable[0],variable[1],variable[2]
 print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-for k in range(0,2):
+for k in range(0,4):
     if(variable[k]=="mass_mmdt_tt"):
         for n in range(0,3):
             for m in range(0,4):
@@ -56,12 +56,14 @@ for k in range(0,2):
                 h1.SetLineWidth(3)
                 h2.SetLineColor(1)
                 h2.SetLineWidth(3)
+                h1.SetLineStyle(1)
+                h2.SetLineStyle(9)
                 h1.SetTitle(" ")
                 h2.SetTitle(" ")
                 h1.SetXTitle("Mass_mmdt")
                 h2.SetXTitle("Mass_mmdt")
-                h1.SetYTitle("Number of jet per 0.04")
-                h2.SetYTitle("Number of jet per 0.04")
+                h1.SetYTitle("Arbitrary Units")
+                h2.SetYTitle("Arbitrary Units")
                 h1.GetYaxis().SetLabelSize(0.03)
                 h2.GetYaxis().SetLabelSize(0.03)
                 h1.GetXaxis().SetTitleFont(22)
@@ -136,12 +138,14 @@ for k in range(0,2):
                     h1.SetLineWidth(3)
                     h2.SetLineColor(1)
                     h2.SetLineWidth(3)
+                    h1.SetLineStyle(1)
+                    h2.SetLineStyle(9)
                     h1.SetTitle(" ")
                     h2.SetTitle(" ")
                     h1.SetXTitle("Mass_mmdt")
                     h2.SetXTitle("Mass_mmdt")
-                    h1.SetYTitle("Number of jet per 0.04")
-                    h2.SetYTitle("Number of jet per 0.04")
+                    h1.SetYTitle("Arbitrary Units")
+                    h2.SetYTitle("Arbitrary Units")
                     h1.GetYaxis().SetLabelSize(0.03)
                     h2.GetYaxis().SetLabelSize(0.03)
                     h1.GetXaxis().SetTitleFont(22)
@@ -179,6 +183,172 @@ for k in range(0,2):
                     f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.root","RECREATE")
                     c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.pdf")
                     c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.eps")
+    elif(variable[k]=="mass_sdb2_ww"):
+        for n in range(0,3):
+            for m in range(0,4):
+                if(energy_array[1][m]<20):
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
+                if(energy_array[1][m]>=20):
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+        
+        
+                h1 = f1.Get("h_mass_sdb2")
+                h2 = f2.Get("h_mass_sdb2")
+                
+                h1.Sumw2()
+                h2.Sumw2()
+                h1.Scale(1.0/h1.Integral())
+                h2.Scale(1.0/h2.Integral())
+                
+                leg = TLegend(0.4,0.7,0.7,0.9)
+                leg.SetFillColor(0)
+                leg.SetFillStyle(0)
+                leg.SetTextSize(0.04)
+                leg.SetBorderSize(0)
+                leg.SetTextFont(22)
+                
+                c = TCanvas("c1", "c1",0,0,500,500)
+                gStyle.SetOptStat(0)
+                h1.SetLineColor(2)
+                h1.SetLineWidth(3)
+                h2.SetLineColor(1)
+                h2.SetLineWidth(3)
+                h1.SetLineStyle(1)
+                h2.SetLineStyle(9)
+                h1.SetTitle(" ")
+                h2.SetTitle(" ")
+                h1.SetXTitle("Mass_sdb2")
+                h2.SetXTitle("Mass_sdb2")
+                h1.SetYTitle("Arbitrary Units")
+                h2.SetYTitle("Arbitrary Units")
+                h1.GetYaxis().SetLabelSize(0.03)
+                h2.GetYaxis().SetLabelSize(0.03)
+                h1.GetXaxis().SetTitleFont(22)
+                h2.GetXaxis().SetTitleFont(22)
+                h1.GetYaxis().SetTitleFont(22)
+                h2.GetYaxis().SetTitleFont(22)
+                h1.GetXaxis().SetLabelFont(22)
+                h2.GetXaxis().SetLabelFont(22)
+                h1.GetYaxis().SetLabelFont(22)
+                h2.GetYaxis().SetLabelFont(22)
+                
+                
+                
+                numbin=h1.GetXaxis().GetNbins()
+                print str(numbin)
+                for p in range(0,240):
+                    if (h1.Integral(0,p)<(h1.Integral(0,240)/2)<h1.Integral(0,p+1)):
+                        break
+                print str((p+2)*5)
+                
+                #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
+                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry("","Median:","")
+                leg.AddEntry("",str((p+1)*5)+" to "+str((p+2)*5),"")
+                
+                if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
+                    h1.Draw("hist")
+                    h2.Draw("histsame")
+                else:
+                    h2.Draw("hist")
+                    h1.Draw("histsame")
+            
+                leg.Draw()
+                c.Draw()
+                if(energy_array[1][m]<20):
+                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800.root","RECREATE")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800.eps")
+                if(energy_array[1][m]>=20):
+                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600.root","RECREATE")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600.eps")
+    elif(variable[k]=="mass_sdb2_tt"):
+        for n in range(0,3):
+            for m in range(0,4):
+                if(energy_array[1][m]<20):
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
+                if(energy_array[1][m]>=20):
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+        
+        
+                h1 = f1.Get("h_mass_sdb2")
+                h2 = f2.Get("h_mass_sdb2")
+                
+                h1.Sumw2()
+                h2.Sumw2()
+                h1.Scale(1.0/h1.Integral())
+                h2.Scale(1.0/h2.Integral())
+                
+                leg = TLegend(0.4,0.7,0.7,0.9)
+                leg.SetFillColor(0)
+                leg.SetFillStyle(0)
+                leg.SetTextSize(0.04)
+                leg.SetBorderSize(0)
+                leg.SetTextFont(22)
+                
+                c = TCanvas("c1", "c1",0,0,500,500)
+                gStyle.SetOptStat(0)
+                h1.SetLineColor(2)
+                h1.SetLineWidth(3)
+                h2.SetLineColor(1)
+                h2.SetLineWidth(3)
+                h1.SetLineStyle(1)
+                h2.SetLineStyle(9)
+                h1.SetTitle(" ")
+                h2.SetTitle(" ")
+                h1.SetXTitle("Mass_sdb2")
+                h2.SetXTitle("Mass_sdb2")
+                h1.SetYTitle("Arbitrary Units")
+                h2.SetYTitle("Arbitrary Units")
+                h1.GetYaxis().SetLabelSize(0.03)
+                h2.GetYaxis().SetLabelSize(0.03)
+                h1.GetXaxis().SetTitleFont(22)
+                h2.GetXaxis().SetTitleFont(22)
+                h1.GetYaxis().SetTitleFont(22)
+                h2.GetYaxis().SetTitleFont(22)
+                h1.GetXaxis().SetLabelFont(22)
+                h2.GetXaxis().SetLabelFont(22)
+                h1.GetYaxis().SetLabelFont(22)
+                h2.GetYaxis().SetLabelFont(22)
+                
+                
+                
+                numbin=h1.GetXaxis().GetNbins()
+                print str(numbin)
+                for p in range(0,240):
+                    if (h1.Integral(0,p)<(h1.Integral(0,240)/2)<h1.Integral(0,p+1)):
+                        break
+                print str((p+2)*5)
+                
+                #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
+                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry("","Median:","")
+                leg.AddEntry("",str((p+1)*5)+" to "+str((p+2)*5),"")
+                
+                if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
+                    h1.Draw("hist")
+                    h2.Draw("histsame")
+                else:
+                    h2.Draw("hist")
+                    h1.Draw("histsame")
+                
+                leg.Draw()
+                c.Draw()
+                if(energy_array[1][m]<20):
+                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.root","RECREATE")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.eps")
+                if(energy_array[1][m]>=20):
+                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.root","RECREATE")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.eps")
 
     if(variable[k]=="tau21"):
         for n in range(0,3):
@@ -213,12 +383,14 @@ for k in range(0,2):
                 h1.SetLineWidth(3)
                 h2.SetLineColor(2)
                 h2.SetLineWidth(3)
+                h1.SetLineStyle(1)
+                h2.SetLineStyle(10)
                 h1.SetTitle(" ")
                 h2.SetTitle(" ")
                 h1.SetXTitle("#tau_{21}")
                 h2.SetXTitle("#tau_{21}")
-                h1.SetYTitle("Number of jet per 0.04")
-                h2.SetYTitle("Number of jet per 0.04")
+                h1.SetYTitle("Arbitrary Units")
+                h2.SetYTitle("Arbitrary Units")
                 h1.GetYaxis().SetLabelSize(0.03)
                 h2.GetYaxis().SetLabelSize(0.03)
                 h1.GetXaxis().SetTitleFont(22)
@@ -301,8 +473,8 @@ for k in range(0,2):
                 h2.SetTitle(" ")
                 h1.SetXTitle("#tau_{32}")
                 h2.SetXTitle("#tau_{32}")
-                h1.SetYTitle("Number of jet per 0.04")
-                h2.SetYTitle("Number of jet per 0.04")
+                h1.SetYTitle("Arbitrary Units")
+                h2.SetYTitle("Arbitrary Units")
                 h1.GetYaxis().SetLabelSize(0.03)
                 h2.GetYaxis().SetLabelSize(0.03)
                 h1.GetXaxis().SetTitleFont(22)
@@ -378,8 +550,8 @@ for k in range(0,2):
                 h2.SetTitle(" ")
                 h1.SetXTitle("c_{2}^{1}")
                 h2.SetXTitle("c_{2}^{1}")
-                h1.SetYTitle("Number of jet per 0.04")
-                h2.SetYTitle("Number of jet per 0.04")
+                h1.SetYTitle("Arbitrary Units")
+                h2.SetYTitle("Arbitrary Units")
                 h1.GetYaxis().SetLabelSize(0.03)
                 h2.GetYaxis().SetLabelSize(0.03)
                 h1.GetXaxis().SetTitleFont(22)

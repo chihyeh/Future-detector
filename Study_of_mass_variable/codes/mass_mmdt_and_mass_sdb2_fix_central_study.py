@@ -186,6 +186,7 @@ for k in range(0,2):
                             central_energy=(p+2)*5-20
                         if(energy_array[1][m]==40):
                             central_energy=(p+2)*5-20
+
                 for j in range(0,9):
                     xarray=array("f",[])
                     yarray=array("f",[])
@@ -217,8 +218,6 @@ for k in range(0,2):
                     if(files_array[i]=="012"):
                         Color=4
                     Color1=str(Color)
-
-
                     c = TCanvas("c1", "c1",0,0,500,500)
             #gStyle.SetOptStat(0)
             #leg = TLegend(0.1,0.6,0.35,0.9)
@@ -258,7 +257,7 @@ for k in range(0,2):
                     gr.SetLineWidth(2)
                     gr.SetLineStyle(1)
                     gr.SetMarkerColor(4)
-                    gr.SetMarkerStyle(3)
+                    gr.SetMarkerSize(0)
                     gr.SetTitle("cluster_r"+str(files_array[i])+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_eff_fix_central_to_"+str(central_energy+5*j)+"GeV_"+signal_we_want[l]+"_qq")
             #gr.SetTitle("raw_"+files+"_"+variable+"_"+energy1+"tev_"+energy1_cut+"GeV_eff")
                     gr.GetXaxis().SetTitle("signal_efficiency")
@@ -266,58 +265,6 @@ for k in range(0,2):
                     gr.GetYaxis().SetTitle("background_efficiency LOG scale")
                     gr.Draw()
                     c.SetLogy()
-                    
-                    latex= TLatex(gr.GetX()[0],gr.GetY()[0],str(central_energy+5*j-40)+"-"+str(central_energy+5*j+40)+"(GeV)")
-                    latex1=TLatex(gr.GetX()[1],gr.GetY()[1],str(central_energy+5*j-35)+"-"+str(central_energy+5*j+35))
-                    latex2=TLatex(gr.GetX()[2],gr.GetY()[2],str(central_energy+5*j-30)+"-"+str(central_energy+5*j+30))
-                    latex3=TLatex(gr.GetX()[3],gr.GetY()[3],str(central_energy+5*j-25)+"-"+str(central_energy+5*j+25))
-                    latex4=TLatex(gr.GetX()[4],gr.GetY()[4],str(central_energy+5*j-20)+"-"+str(central_energy+5*j+20))
-                    latex5=TLatex(gr.GetX()[5],gr.GetY()[5],str(central_energy+5*j-15)+"-"+str(central_energy+5*j+15))
-                    latex6=TLatex(gr.GetX()[6],gr.GetY()[6],str(central_energy+5*j-10)+"-"+str(central_energy+5*j+10))
-                    latex7=TLatex(gr.GetX()[7],gr.GetY()[7],str(central_energy+5*j-5)+"-"+str(central_energy+5*j+5))
-                    latex.SetTextSize(0.02)
-                    latex1.SetTextSize(0.02)
-                    latex2.SetTextSize(0.02)
-                    latex3.SetTextSize(0.02)
-                    latex4.SetTextSize(0.02)
-                    latex5.SetTextSize(0.02)
-                    latex6.SetTextSize(0.02)
-                    latex7.SetTextSize(0.02)
-                    gr.GetListOfFunctions().Add(latex)
-                    gr.GetListOfFunctions().Add(latex1)
-                    gr.GetListOfFunctions().Add(latex2)
-                    gr.GetListOfFunctions().Add(latex3)
-                    gr.GetListOfFunctions().Add(latex4)
-                    gr.GetListOfFunctions().Add(latex5)
-                    gr.GetListOfFunctions().Add(latex6)
-                    gr.GetListOfFunctions().Add(latex7)
-                    latex.Draw()
-                    latex1.Draw()
-                    latex2.Draw()
-                    latex3.Draw()
-                    latex4.Draw()
-                    latex5.Draw()
-                    latex6.Draw()
-                    latex7.Draw()
-
-                    gr.GetListOfFunctions().Add(latex)
-                    gr.GetListOfFunctions().Add(latex1)
-                    gr.GetListOfFunctions().Add(latex2)
-                    gr.GetListOfFunctions().Add(latex3)
-                    gr.GetListOfFunctions().Add(latex4)
-                    gr.GetListOfFunctions().Add(latex5)
-                    gr.GetListOfFunctions().Add(latex6)
-                    gr.GetListOfFunctions().Add(latex7)
-
-
-                    latex.Draw()
-                    latex1.Draw()
-                    latex2.Draw()
-                    latex3.Draw()
-                    latex4.Draw()
-                    latex5.Draw()
-                    latex6.Draw()
-                    latex7.Draw()
             #-----------------------------------------out of the rootfiles and pdf files
 
 

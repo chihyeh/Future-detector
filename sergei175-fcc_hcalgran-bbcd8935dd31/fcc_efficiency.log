@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  24 APR 2018 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  27 APR 2018 20:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -570,8 +570,8 @@ eff-eps-converted-to.pdf figs/cluster_c2b1_5tev_04_eff.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_5tev_04_eff-eps-converted-to.pdf, id=20, 569.12625pt x 394.4
-7375pt>
+<figs/cluster_c2b1_5tev_04_eff-eps-converted-to.pdf, id=4, 569.12625pt x 394.47
+375pt>
 File: figs/cluster_c2b1_5tev_04_eff-eps-converted-to.pdf Graphic file (type pdf
 )
  <use figs/cluster_c2b1_5tev_04_eff-eps-converted-to.pdf>
@@ -583,4 +583,4 @@ Package epstopdf Info: Source file: <figs/cluster_c2b1_10tev_04_eff.eps>
 (epstopdf)                    size: 11364 bytes
 (epstopdf)             Output file: <figs/cluster_c2b1_10tev_04_eff-eps-convert
 ed-to.pdf>
-(epstopd
+(epstopdf

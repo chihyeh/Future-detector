@@ -325,7 +325,7 @@ for k in range(0,2):
                                 print str(h1.GetBinContent(R))
                                 print '----15'
                         #------------------------------------------
-                if(h3.Integral(0,L-1)==0 and h3.Integral(R+1,100)==0):
+                if(h3.Integral(L,R)>a/2):
                     break
                 n=R-L
                 print n
@@ -362,9 +362,9 @@ for k in range(0,2):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
                 gr.Write()
-                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
                   
                   
 
@@ -665,7 +665,7 @@ for k in range(0,2):
                                 print str(h1.GetBinContent(R))
                                 print '----15'
 #------------------------------------------
-                if(h3.Integral(0,L-1)==0 and h3.Integral(R+1,100)==0):
+                if(h3.Integral(L,R)>a/2):
                     break
                 n=R-L
                 print n
@@ -702,9 +702,9 @@ for k in range(0,2):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
                 gr.Write()
-                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
 
 
 
@@ -726,26 +726,299 @@ for k in range(0,2):
                 #h1.Scale(1.0/h1.Integral())
                 #h2.Scale(1.0/h2.Integral())
 
+                h1_Max_y=h1.GetBinContent(h1.GetMaximumBin())
+                h2_Max_y=h2.GetBinContent(h2.GetMaximumBin())
+                print h1_Max_y,h2_Max_y
+                Maximum_in_histogram=max(h1_Max_y,h2_Max_y)
+                h3 = TH1F("h3","Ratio histogram",100,0,1)
+                h3=h1.Clone("h3")
+                h3.Divide(h2)
+                
+                #print h1,h2
+                #print variable[k]
+                #print '1'
+                #h1.Scale(1.0/h1.Integral())
+                #h2.Scale(1.0/h2.Integral())
+                
                 a=h1.Integral()
                 b=h2.Integral()
                 xarray=array("f",[])
                 yarray=array("f",[])
-
-                for q in range(101):
-                    if (h2.Integral(0,q)==0):
-                        continue
-                    else:
-                        break
-                d=q
-                print str(d)
+                ratio_BinContent_1=0
+                ratio_BinContent_2=0
+                M=h3.GetMaximumBin()
+                L=M
+                R=M
+                print M
+                for Q in range(101):
+                    print M
+                    print 'next-step'
+                    print Q
+                    
+                    print str(h1.GetBinContent(L-1))
+                    print str(h1.GetBinContent(R+1))
+                    #---------------------------
+                    if(h3.Integral(R+2,100)!=0 and h3.Integral(R+2,100)==0):
+                        ratio_BinContent_2=9999
+                        print 'this bin is zero, after:no background'
+                    elif(h3.Integral(R+2,100)==0 and h3.Integral(R+2,100)==0):
+                        ratio_BinContent_2=-1
+                        print 'this bin is zero, after:no signal and background'
+                    elif(h3.Integral(R+2,100)!=0 and h3.Integral(R+2,100)!=0):
+                        ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
+                        print 'this bin is zero'
+                    elif(h3.Integral(0,L-2)!=0 and h3.Integral(0,L-2)==0):
+                        ratio_BinContent_1=9999
+                        print 'this bin is zero, before:no background'
+                    elif(h3.Integral(0,L-2)==0 and h3.Integral(0,L-2)==0):
+                        ratio_BinContent_1=-1
+                        print 'this bin is zero, before:no signal and background'
+                    elif(h3.Integral(0,L-2)!=0 and h3.Integral(0,L-2)!=0):
+                        ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
+                        print 'this bin is zero'
+                    #---------------------------
+                    
+                    #---------------------------
+                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                        if(h3.GetBinContent(R+1)==0):
+                            if(h3.GetBinContent(L-1)>ratio_BinContent_2):
+                                print'YA4'
+                                xarray.append(h1.Integral(L-1,R)/a)
+                                yarray.append(1/(h2.Integral(L-1,R)/b))
+                                print h1.Integral(L-1,R), a
+                                print yarray
+                                L=L-1
+                                R=R
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----1'
+                            if(h3.GetBinContent(L-1)<ratio_BinContent_2):
+                                print 'YA4'
+                                xarray.append(h1.Integral(L,R+1)/a)
+                                yarray.append(1/((h2.Integral(L,R+1))/b))
+                                print h1.Integral(L,R+1), a
+                                print yarray
+                                L=L
+                                R=R+1
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----2'
+                            if(h3.GetBinContent(L-1)==ratio_BinContent_2):
+                                print 'YA4'
+                                Random=randint(1,3)
+                                if(Random==1):
+                                    xarray.append(h1.Integral(L-1,R)/a)
+                                    yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    print h1.Integral(L-1,R), a
+                                    print yarray
+                                    C=h2.Integral(L-1,R)
+                                    L=L-1
+                                    R=R
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----3'
+                                if(Random==2):
+                                    xarray.append(h1.Integral(L,R+1)/a)
+                                    yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    print h1.Integral(L,R+1), a
+                                    print yarray
+                                    C=h2.Integral(L,R+1)
+                                    L=L
+                                    R=R+1
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----4'
+                        #--------------------------------
+                        else:
+                            xarray.append(h1.Integral(L-1,R)/a)
+                            yarray.append(1/(h2.Integral(L-1,R)/b))
+                            print h1.Integral(L-1,R), a
+                            print yarray
+                            C=h2.Integral(L-1,R)
+                            L=L-1
+                            R=R
+                            print str(L)
+                            print str(R)
+                            print str(h1.GetBinContent(L))
+                            print str(h1.GetBinContent(R))
+                            print '----5'
+                    #---------------------------
+                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                        if(h3.GetBinContent(L-1)==0):
+                            if(h3.GetBinContent(R+1)>ratio_BinContent_1):
+                                print'YA5'
+                                xarray.append(h1.Integral(L,R+1)/a)
+                                yarray.append(1/(h2.Integral(L,R+1)/b))
+                                print h1.Integral(L,R+1), a
+                                print yarray
+                                C=h2.Integral(L,R+1)
+                                L=L
+                                R=R+1
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----6'
+                            if(h3.GetBinContent(R+1)<ratio_BinContent_1):
+                                'YA5'
+                                xarray.append(h1.Integral(L-1,R)/a)
+                                yarray.append(1/(h2.Integral(L-1,R)/b))
+                                print h1.Integral(L-1,R), a
+                                print yarray
+                                L=L-1
+                                R=R
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----7'
+                            if(h3.GetBinContent(R+1)==ratio_BinContent_1):
+                                print 'YA5'
+                                Random=randint(1,3)
+                                if(Random==1):
+                                    xarray.append(h1.Integral(L-1,R)/a)
+                                    yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    print h1.Integral(L-1,R), a
+                                    print yarray
+                                    C=h2.Integral(L-1,R)
+                                    L=L-1
+                                    R=R
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----8'
+                                if(Random==2):
+                                    xarray.append(h1.Integral(L,R+1)/a)
+                                    yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    print h1.Integral(L,R+1), a
+                                    print yarray
+                                    C=h2.Integral(L,R+1)
+                                    L=L
+                                    R=R+1
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----9'
+                        #---------------------------
+                        else:
+                            xarray.append(h1.Integral(L,R+1)/a)
+                            yarray.append(1/(h2.Integral(L,R+1)/b))
+                            print h1.Integral(L,R+1), a
+                            print yarray
+                            C=h2.Integral(L,R+1)
+                            L=L
+                            R=R+1
+                            print str(L)
+                            print str(R)
+                            print str(h1.GetBinContent(L))
+                            print str(h1.GetBinContent(R))
+                            print '----10'
+                    #-----------------------------------
+                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                        if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
+                            if(ratio_BinContent_2>ratio_BinContent_1):
+                                print 'YA6'
+                                xarray.append(h1.Integral(L,R+1)/a)
+                                yarray.append(1/(h2.Integral(L,R+1)/b))
+                                print h1.Integral(L,R+1), a
+                                print yarray
+                                C=h2.Integral(L,R+1)
+                                L=L
+                                R=R+1
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----11'
+                            elif(ratio_BinContent_2<ratio_BinContent_1):
+                                print 'YA6'
+                                xarray.append(h1.Integral(L-1,R)/a)
+                                yarray.append(1/(h2.Integral(L-1,R)/b))
+                                print h1.Integral(L-1,R), a
+                                print yarray
+                                L=L-1
+                                R=R
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----12'
+                            elif(ratio_BinContent_2==ratio_BinContent_1):
+                                print 'YA6'
+                                Random=randint(1,3)
+                                if(Random==1):
+                                    xarray.append(h1.Integral(L-1,R)/a)
+                                    yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    print h1.Integral(L-1,R), a
+                                    print yarray
+                                    C=h2.Integral(L-1,R)
+                                    L=L-1
+                                    R=R
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----13'
+                                if(Random==2):
+                                    xarray.append(h1.Integral(L,R+1)/a)
+                                    yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    print h1.Integral(L,R+1), a
+                                    print yarray
+                                    C=h2.Integral(L,R+1)
+                                    L=L
+                                    R=R+1
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----14'
+                    
+                        else:
+                            Random=randint(1,3)
+                            print Random
+                            if(Random==1):
+                                xarray.append(h1.Integral(L-1,R)/a)
+                                yarray.append(1/(h2.Integral(L-1,R)/b))
+                                print h1.Integral(L-1,R), a
+                                print yarray
+                                C=h2.Integral(L-1,R)
+                                L=L-1
+                                R=R
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----14'
+                            if(Random==2):
+                                xarray.append(h1.Integral(L,R+1)/a)
+                                yarray.append(1/(h2.Integral(L,R+1)/b))
+                                print h1.Integral(L,R+1), a
+                                print yarray
+                                C=h2.Integral(L,R+1)
+                                L=L
+                                R=R+1
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----15'
+    #------------------------------------------
+                if(h3.Integral(L,R)>a/2):
+                    break
+                n=R-L
+                print n
                 
-                for o in range(101-d):
-                    print h2.Integral(d,d+o)
-                    xarray.append(h1.Integral(d,d+o)/a)
-                    yarray.append(1/(h2.Integral(d,d+o)/b))
-                        
-                n=101-d
-
+                
                 if(files_array[i]=="009"):
                     Color=2
                     l=4
@@ -756,11 +1029,11 @@ for k in range(0,2):
                     Color=4
                     l=22
                 Color1=str(Color)
-
-
+                
+                
                 c = TCanvas("c1", "c1",0,0,500,500)
-
-
+                
+                
                 gr = TGraph(n,xarray,yarray)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
@@ -773,7 +1046,10 @@ for k in range(0,2):
                 gr.GetYaxis().SetTitle("1-background_efficiency")
                 gr.Draw()
                 c.SetLogy()
-
-                f=TFile("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New.root","RECREATE")
+                
+                print files_array[i]
+                print variable[k]
+                print str(energy_array[1][m])
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")

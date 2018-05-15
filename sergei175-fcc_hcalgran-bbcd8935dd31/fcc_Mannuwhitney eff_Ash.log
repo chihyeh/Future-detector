@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  24 APR 2018 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  7 MAY 2018 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -423,7 +423,7 @@ LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
 LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
 
 
-LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+LaTeX Warning: Label `fig:rawhit_0.25GeV_tau21' multiply defined.
 
 
 LaTeX Warning: Label `fig:cluster_U_summary' multiply defined.
@@ -928,586 +928,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--166
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/cluster_c2b1_5tev_eff_1_log.eps>
-(epstopdf)                    date: 2018-04-24 16:19:17
-(epstopdf)                    size: 12447 bytes
-(epstopdf)             Output file: <figs/cluster_c2b1_5tev_eff_1_log-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:26:15
-(epstopdf)                    size: 11569 bytes
+Package epstopdf Info: Source file: <figs/cluster_c2b1_5tev_eff_1_New2.eps>
+(epstopdf)                    date: 2018-05-04 23:33:32
+(epstopdf)                    size: 12297 bytes
+(epstopdf)             Output file: <figs/cluster_c2b1_5tev_eff_1_New2-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2018-05-04 23:54:48
+(epstopdf)                    size: 10950 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_5tev_eff
-_1_log-eps-converted-to.pdf figs/cluster_c2b1_5tev_eff_1_log.eps>
+_1_New2-eps-converted-to.pdf figs/cluster_c2b1_5tev_eff_1_New2.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_5tev_eff_1_log-eps-converted-to.pdf, id=20, 569.12625pt x 39
-5.4775pt>
-File: figs/cluster_c2b1_5tev_eff_1_log-eps-converted-to.pdf Graphic file (type 
-pdf)
- <use figs/cluster_c2b1_5tev_eff_1_log-eps-converted-to.pdf>
-Package pdftex.def Info: figs/cluster_c2b1_5tev_eff_1_log-eps-converted-to.pdf 
-used on input line 176.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/cluster_c2b1_10tev_eff_1_log.eps>
-(epstopdf)                    date: 2018-04-24 16:19:17
-(epstopdf)                    size: 12344 bytes
-(epstopdf)             Output file: <figs/cluster_c2b1_10tev_eff_1_log-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:26:15
-(epstopdf)                    size: 11521 bytes
+<figs/cluster_c2b1_5tev_eff_1_New2-eps-converted-to.pdf, id=20, 569.12625pt x 3
+96.48125pt>
+File: figs/cluster_c2b1_5tev_eff_1_New2-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use figs/cluster_c2b1_5tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/cluster_c2b1_5tev_eff_1_New2-eps-converted-to.pdf
+ used on input line 176.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/cluster_c2b1_10tev_eff_1_New2.eps>
+(epstopdf)                    date: 2018-05-04 23:33:33
+(epstopdf)                    size: 11380 bytes
+(epstopdf)             Output file: <figs/cluster_c2b1_10tev_eff_1_New2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2018-05-04 23:54:49
+(epstopdf)                    size: 10915 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_10tev_ef
-f_1_log-eps-converted-to.pdf figs/cluster_c2b1_10tev_eff_1_log.eps>
+f_1_New2-eps-converted-to.pdf figs/cluster_c2b1_10tev_eff_1_New2.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_10tev_eff_1_log-eps-converted-to.pdf, id=21, 569.12625pt x 3
-95.4775pt>
-File: figs/cluster_c2b1_10tev_eff_1_log-eps-converted-to.pdf Graphic file (type
- pdf)
- <use figs/cluster_c2b1_10tev_eff_1_log-eps-converted-to.pdf>
-Package pdftex.def Info: figs/cluster_c2b1_10tev_eff_1_log-eps-converted-to.pdf
- used on input line 179.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/cluster_c2b1_20tev_eff_1_log.eps>
-(epstopdf)                    date: 2018-04-24 16:19:18
-(epstopdf)                    size: 12391 bytes
-(epstopdf)             Output file: <figs/cluster_c2b1_20tev_eff_1_log-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:26:16
-(epstopdf)                    size: 11562 bytes
+<figs/cluster_c2b1_10tev_eff_1_New2-eps-converted-to.pdf, id=21, 569.12625pt x 
+396.48125pt>
+File: figs/cluster_c2b1_10tev_eff_1_New2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+ <use figs/cluster_c2b1_10tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/cluster_c2b1_10tev_eff_1_New2-eps-converted-to.pd
+f used on input line 179.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/cluster_c2b1_20tev_eff_1_New2.eps>
+(epstopdf)                    date: 2018-05-04 23:33:33
+(epstopdf)                    size: 11423 bytes
+(epstopdf)             Output file: <figs/cluster_c2b1_20tev_eff_1_New2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2018-05-04 23:54:50
+(epstopdf)                    size: 10927 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_20tev_ef
-f_1_log-eps-converted-to.pdf figs/cluster_c2b1_20tev_eff_1_log.eps>
+f_1_New2-eps-converted-to.pdf figs/cluster_c2b1_20tev_eff_1_New2.eps>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_20tev_eff_1_log-eps-converted-to.pdf, id=22, 569.12625pt x 3
-95.4775pt>
-File: figs/cluster_c2b1_20tev_eff_1_log-eps-converted-to.pdf Graphic file (type
- pdf)
- <use figs/cluster_c2b1_20tev_eff_1_log-eps-converted-to.pdf>
-Package pdftex.def Info: figs/cluster_c2b1_20tev_eff_1_log-eps-converted-to.pdf
- used on input line 182.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/cluster_c2b1_40tev_eff_1_log.eps>
-(epstopdf)                    date: 2018-04-24 16:19:18
-(epstopdf)                    size: 12485 bytes
-(epstopdf)             Output file: <figs/cluster_c2b1_40tev_eff_1_log-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:26:16
-(epstopdf)                    size: 11705 bytes
+<figs/cluster_c2b1_20tev_eff_1_New2-eps-converted-to.pdf, id=22, 569.12625pt x 
+396.48125pt>
+File: figs/cluster_c2b1_20tev_eff_1_New2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+ <use figs/cluster_c2b1_20tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/cluster_c2b1_20tev_eff_1_New2-eps-converted-to.pd
+f used on input line 182.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/cluster_c2b1_40tev_eff_1_New2.eps>
+(epstopdf)                    date: 2018-05-04 23:33:33
+(epstopdf)                    size: 11392 bytes
+(epstopdf)             Output file: <figs/cluster_c2b1_40tev_eff_1_New2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2018-05-04 23:54:51
+(epstopdf)                    size: 10981 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_40tev_ef
-f_1_log-eps-converted-to.pdf figs/cluster_c2b1_40tev_eff_1_log.eps>
+f_1_New2-eps-converted-to.pdf figs/cluster_c2b1_40tev_eff_1_New2.eps>
 (epstopdf)             \includegraphics on input line 185.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_40tev_eff_1_log-eps-converted-to.pdf, id=23, 569.12625pt x 3
-95.4775pt>
-File: figs/cluster_c2b1_40tev_eff_1_log-eps-converted-to.pdf Graphic file (type
- pdf)
- <use figs/cluster_c2b1_40tev_eff_1_log-eps-converted-to.pdf>
-Package pdftex.def Info: figs/cluster_c2b1_40tev_eff_1_log-eps-converted-to.pdf
- used on input line 185.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Ma
-n.eps>
-(epstopdf)                    date: 2018-04-24 15:44:47
-(epstopdf)                    size: 13401 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Ma
-n-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:36
-(epstopdf)                    size: 10466 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
-tau21_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_
-Man.eps>
-(epstopdf)             \includegraphics on input line 198.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf, id=24, 569.1
-2625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf Graphic 
-file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Man-eps-conver
-ted-to.pdf used on input line 198.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\OT1/cmr/m/n/9 (a) 5TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:48
-(epstopdf)                    size: 12407 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:36
-(epstopdf)                    size: 10293 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
-tau21_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau21_10tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 201.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf, id=25, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_Man-eps-conve
-rted-to.pdf used on input line 201.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
-[]\OT1/cmr/m/n/9 (b) 10TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:48
-(epstopdf)                    size: 12804 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:37
-(epstopdf)                    size: 10345 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
-tau21_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau21_20tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 204.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf, id=26, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_Man-eps-conve
-rted-to.pdf used on input line 204.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-[]\OT1/cmr/m/n/9 (c) 20TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:48
-(epstopdf)                    size: 12812 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:38
-(epstopdf)                    size: 10369 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
-tau21_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau21_40tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf, id=27, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau21_40tev_04_Man-eps-conve
-rted-to.pdf used on input line 207.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
-[]\OT1/cmr/m/n/9 (d) 40TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Ma
-n.eps>
-(epstopdf)                    date: 2018-04-24 15:44:46
-(epstopdf)                    size: 13601 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Ma
-n-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:38
-(epstopdf)                    size: 10507 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
-tau21_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_
-Man.eps>
-(epstopdf)             \includegraphics on input line 210.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf, id=28, 569.1
-2625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf Graphic 
-file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau21_5tev_04_Man-eps-conver
-ted-to.pdf used on input line 210.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-[]\OT1/cmr/m/n/9 (e) 5TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:46
-(epstopdf)                    size: 12480 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:39
-(epstopdf)                    size: 10338 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
-tau21_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau21_10tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 213.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf, id=29, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau21_10tev_04_Man-eps-conve
-rted-to.pdf used on input line 213.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-[]\OT1/cmr/m/n/9 (f) 10TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:47
-(epstopdf)                    size: 12637 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:40
-(epstopdf)                    size: 10336 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
-tau21_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau21_20tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 216.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf, id=30, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau21_20tev_04_Man-eps-conve
-rted-to.pdf used on input line 216.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-[]\OT1/cmr/m/n/9 (g) 20TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:47
-(epstopdf)                    size: 12377 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:40
-(epstopdf)                    size: 10256 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
-tau21_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau21_40tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 219.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf, id=31, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_Man-eps-conve
-rted-to.pdf used on input line 219.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]\OT1/cmr/m/n/9 (h) 40TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Ma
-n.eps>
-(epstopdf)                    date: 2018-04-24 15:44:49
-(epstopdf)                    size: 13082 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Ma
-n-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:41
-(epstopdf)                    size: 10422 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
-tau21_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_
-Man.eps>
-(epstopdf)             \includegraphics on input line 222.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf, id=32, 569.1
-2625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf Graphic 
-file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Man-eps-conver
-ted-to.pdf used on input line 222.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
-[]\OT1/cmr/m/n/9 (i) 5TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:49
-(epstopdf)                    size: 13123 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:42
-(epstopdf)                    size: 10447 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
-tau21_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau21_10tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 225.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf, id=33, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_Man-eps-conve
-rted-to.pdf used on input line 225.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[]\OT1/cmr/m/n/9 (j) 10TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:50
-(epstopdf)                    size: 13262 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:42
-(epstopdf)                    size: 10434 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
-tau21_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau21_20tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 228.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf, id=34, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_Man-eps-conve
-rted-to.pdf used on input line 228.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
-[]\OT1/cmr/m/n/9 (k) 20TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:44:50
-(epstopdf)                    size: 12799 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:49:43
-(epstopdf)                    size: 10346 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
-tau21_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau21_40tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 231.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf, id=35, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_Man-eps-conve
-rted-to.pdf used on input line 231.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
-[]\OT1/cmr/m/n/9 (l) 40TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2.ep
-s>
-(epstopdf)                    date: 2018-04-24 16:10:24
-(epstopdf)                    size: 13335 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:26
-(epstopdf)                    size: 12831 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_5t
-ev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_5tev_eff_1_New2.eps>
-
-(epstopdf)             \includegraphics on input line 241.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf, id=36, 569.12625
-pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2-eps-converted-
-to.pdf used on input line 241.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:10:25
-(epstopdf)                    size: 13138 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:27
-(epstopdf)                    size: 12756 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_10
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_10tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 244.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf, id=37, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2-eps-converted
--to.pdf used on input line 244.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:10:25
-(epstopdf)                    size: 12700 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:27
-(epstopdf)                    size: 12490 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_20
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_20tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 247.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf, id=38, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2-eps-converted
--to.pdf used on input line 247.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:10:25
-(epstopdf)                    size: 12411 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:28
-(epstopdf)                    size: 12392 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_40
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_40tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 250.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf, id=39, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2-eps-converted
--to.pdf used on input line 250.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+<figs/cluster_c2b1_40tev_eff_1_New2-eps-converted-to.pdf, id=23, 569.12625pt x 
+396.48125pt>
+File: figs/cluster_c2b1_40tev_eff_1_New2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+ <use figs/cluster_c2b1_40tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/cluster_c2b1_40tev_eff_1_New2-eps-converted-to.pd
+f used on input line 185.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_M
 an.eps>
 (epstopdf)                    date: 2018-04-24 15:46:31
@@ -1519,25 +1019,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
 _tau21_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau21_5tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 263.
+(epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf, id=40, 569.
+<figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf, id=24, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man-eps-conve
-rted-to.pdf used on input line 263.
+rted-to.pdf used on input line 202.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\OT1/cmr/m/n/9 (a) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1553,25 +1053,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
 _tau21_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau21_10tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 266.
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf, id=41, 569
+<figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf, id=25, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man-eps-conv
-erted-to.pdf used on input line 266.
+erted-to.pdf used on input line 205.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\OT1/cmr/m/n/9 (b) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1587,25 +1087,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
 _tau21_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau21_20tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 269.
+(epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf, id=42, 569
+<figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf, id=26, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man-eps-conv
-erted-to.pdf used on input line 269.
+erted-to.pdf used on input line 208.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 []\OT1/cmr/m/n/9 (c) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1621,25 +1121,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
 _tau21_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau21_40tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 272.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf, id=43, 569
+<figs/Dis_Rawhit_025GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf, id=27, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau21_40tev_04_Man-eps-conv
-erted-to.pdf used on input line 272.
+erted-to.pdf used on input line 211.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 []\OT1/cmr/m/n/9 (d) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1655,25 +1155,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
 _tau21_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau21_5tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 214.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf, id=44, 569.
+<figs/Dis_Rawhit_025GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf, id=28, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau21_5tev_04_Man-eps-conve
-rted-to.pdf used on input line 275.
+rted-to.pdf used on input line 214.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--275
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []\OT1/cmr/m/n/9 (e) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--275
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1689,25 +1189,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
 _tau21_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau21_10tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf, id=45, 569
+<figs/Dis_Rawhit_025GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf, id=29, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_009_tau21_10tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau21_10tev_04_Man-eps-conv
-erted-to.pdf used on input line 278.
+erted-to.pdf used on input line 217.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []\OT1/cmr/m/n/9 (f) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1723,25 +1223,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
 _tau21_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau21_20tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 281.
+(epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf, id=46, 569
+<figs/Dis_Rawhit_025GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf, id=30, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_009_tau21_20tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau21_20tev_04_Man-eps-conv
-erted-to.pdf used on input line 281.
+erted-to.pdf used on input line 220.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []\OT1/cmr/m/n/9 (g) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1757,25 +1257,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
 _tau21_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau21_40tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf, id=47, 569
+<figs/Dis_Rawhit_025GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf, id=31, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_009_tau21_40tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau21_40tev_04_Man-eps-conv
-erted-to.pdf used on input line 284.
+erted-to.pdf used on input line 223.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--284
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []\OT1/cmr/m/n/9 (h) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--284
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1791,25 +1291,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
 _tau21_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau21_5tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 287.
+(epstopdf)             \includegraphics on input line 226.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf, id=48, 569.
+<figs/Dis_Rawhit_025GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf, id=32, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_012_tau21_5tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau21_5tev_04_Man-eps-conve
-rted-to.pdf used on input line 287.
+rted-to.pdf used on input line 226.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 []\OT1/cmr/m/n/9 (i) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1825,25 +1325,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
 _tau21_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau21_10tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf, id=49, 569
+<figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf, id=33, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man-eps-conv
-erted-to.pdf used on input line 290.
+erted-to.pdf used on input line 229.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\OT1/cmr/m/n/9 (j) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1859,25 +1359,25 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
 _tau21_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau21_20tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf, id=50, 569
+<figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf, id=34, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man-eps-conv
-erted-to.pdf used on input line 293.
+erted-to.pdf used on input line 232.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []\OT1/cmr/m/n/9 (k) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1893,121 +1393,121 @@ Man-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
 _tau21_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau21_40tev
 _04_Man.eps>
-(epstopdf)             \includegraphics on input line 296.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf, id=51, 569
+<figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf, id=35, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man-eps-conv
-erted-to.pdf used on input line 296.
+erted-to.pdf used on input line 235.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 []\OT1/cmr/m/n/9 (l) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_5tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:09:26
-(epstopdf)                    size: 13232 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_5tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:29
-(epstopdf)                    size: 12787 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau21_5
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_5tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 306.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_025GeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf, id=52, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_025GeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau21_5tev_eff_1_New2-eps-converted
--to.pdf used on input line 306.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_10tev_eff_1_New2.
+Package epstopdf Info: Source file: <figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2.
 eps>
-(epstopdf)                    date: 2018-04-24 16:09:26
-(epstopdf)                    size: 13025 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_10tev_eff_1_New2-
+(epstopdf)                    date: 2018-05-07 08:02:19
+(epstopdf)                    size: 12428 bytes
+(epstopdf)             Output file: <figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:29
-(epstopdf)                    size: 12677 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau21_1
-0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_10tev_eff_1_New2.
+(epstopdf)                    date: 2018-05-07 08:07:00
+(epstopdf)                    size: 11013 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GgeV_tau21_
+5tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2.
 eps>
-(epstopdf)             \includegraphics on input line 309.
+(epstopdf)             \includegraphics on input line 245.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf, id=53, 569.126
-25pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf Graphic fi
+<figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf, id=36, 569.126
+25pt x 396.48125pt>
+File: figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
-<use figs/Rawhit_025GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau21_10tev_eff_1_New2-eps-converte
-d-to.pdf used on input line 309.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_20tev_eff_1_New2.
-eps>
-(epstopdf)                    date: 2018-04-24 16:09:26
-(epstopdf)                    size: 12604 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_20tev_eff_1_New2-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:30
-(epstopdf)                    size: 12438 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau21_2
-0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_20tev_eff_1_New2.
-eps>
-(epstopdf)             \includegraphics on input line 312.
+<use figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2-eps-converte
+d-to.pdf used on input line 245.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2
+.eps>
+(epstopdf)                    date: 2018-05-07 08:02:19
+(epstopdf)                    size: 12293 bytes
+(epstopdf)             Output file: <figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-07 08:07:01
+(epstopdf)                    size: 10968 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GgeV_tau21_
+10tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GgeV_tau21_10tev_eff_1_New
+2.eps>
+(epstopdf)             \includegraphics on input line 248.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf, id=54, 569.126
-25pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf Graphic fi
-le (type pdf)
+<figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf, id=37, 569.12
+625pt x 396.48125pt>
+File: figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf Graphic f
+ile (type pdf)
 
-<use figs/Rawhit_025GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau21_20tev_eff_1_New2-eps-converte
-d-to.pdf used on input line 312.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_40tev_eff_1_New2.
-eps>
-(epstopdf)                    date: 2018-04-24 16:09:27
-(epstopdf)                    size: 12335 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_40tev_eff_1_New2-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:31
-(epstopdf)                    size: 12360 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau21_4
-0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_40tev_eff_1_New2.
-eps>
-(epstopdf)             \includegraphics on input line 315.
+<use figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2-eps-convert
+ed-to.pdf used on input line 248.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2
+.eps>
+(epstopdf)                    date: 2018-05-07 08:02:19
+(epstopdf)                    size: 11854 bytes
+(epstopdf)             Output file: <figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-07 08:07:01
+(epstopdf)                    size: 10872 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GgeV_tau21_
+20tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GgeV_tau21_20tev_eff_1_New
+2.eps>
+(epstopdf)             \includegraphics on input line 251.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf, id=55, 569.126
-25pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf Graphic fi
-le (type pdf)
+<figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf, id=38, 569.12
+625pt x 396.48125pt>
+File: figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf Graphic f
+ile (type pdf)
 
-<use figs/Rawhit_025GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau21_40tev_eff_1_New2-eps-converte
-d-to.pdf used on input line 315.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+<use figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2-eps-convert
+ed-to.pdf used on input line 251.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/Rawhit_025GgeV_tau21_40tev_eff_1_New2
+.eps>
+(epstopdf)                    date: 2018-05-07 08:02:20
+(epstopdf)                    size: 11959 bytes
+(epstopdf)             Output file: <figs/Rawhit_025GgeV_tau21_40tev_eff_1_New2
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-07 08:07:02
+(epstopdf)                    size: 10915 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GgeV_tau21_
+40tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GgeV_tau21_40tev_eff_1_New
+2.eps>
+(epstopdf)             \includegraphics on input line 254.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/Rawhit_025GgeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf, id=39, 569.12
+625pt x 396.48125pt>
+File: figs/Rawhit_025GgeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use figs/Rawhit_025GgeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_025GgeV_tau21_40tev_eff_1_New2-eps-convert
+ed-to.pdf used on input line 254.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Ma
 n.eps>
 (epstopdf)                    date: 2018-04-24 15:44:51
@@ -2019,25 +1519,25 @@ n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
 tau32_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_
 Man.eps>
-(epstopdf)             \includegraphics on input line 327.
+(epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf, id=56, 569.1
+<figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf, id=40, 569.1
 2625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man-eps-conver
-ted-to.pdf used on input line 327.
+ted-to.pdf used on input line 266.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
 []\OT1/cmr/m/n/9 (a) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2053,25 +1553,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
 tau32_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau32_10tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 330.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf, id=57, 569.
+<figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf, id=41, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man-eps-conve
-rted-to.pdf used on input line 330.
+rted-to.pdf used on input line 269.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 []\OT1/cmr/m/n/9 (b) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2087,25 +1587,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
 tau32_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau32_20tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 333.
+(epstopdf)             \includegraphics on input line 272.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf, id=58, 569.
+<figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf, id=42, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man-eps-conve
-rted-to.pdf used on input line 333.
+rted-to.pdf used on input line 272.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []\OT1/cmr/m/n/9 (c) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2121,25 +1621,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_010_
 tau32_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_010_tau32_40tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 336.
+(epstopdf)             \includegraphics on input line 275.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf, id=59, 569.
+<figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf, id=43, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_010_tau32_40tev_04_Man-eps-conve
-rted-to.pdf used on input line 336.
+rted-to.pdf used on input line 275.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\OT1/cmr/m/n/9 (d) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2155,25 +1655,25 @@ n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
 tau32_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_
 Man.eps>
-(epstopdf)             \includegraphics on input line 339.
+(epstopdf)             \includegraphics on input line 278.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf, id=60, 569.1
+<figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf, id=44, 569.1
 2625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau32_5tev_04_Man-eps-conver
-ted-to.pdf used on input line 339.
+ted-to.pdf used on input line 278.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []\OT1/cmr/m/n/9 (e) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2189,25 +1689,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
 tau32_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau32_10tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 342.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf, id=61, 569.
+<figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf, id=45, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau32_10tev_04_Man-eps-conve
-rted-to.pdf used on input line 342.
+rted-to.pdf used on input line 281.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 []\OT1/cmr/m/n/9 (f) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2223,25 +1723,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
 tau32_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau32_20tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 345.
+(epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf, id=62, 569.
+<figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf, id=46, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau32_20tev_04_Man-eps-conve
-rted-to.pdf used on input line 345.
+rted-to.pdf used on input line 284.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\OT1/cmr/m/n/9 (g) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2257,25 +1757,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_009_
 tau32_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_009_tau32_40tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 348.
+(epstopdf)             \includegraphics on input line 287.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf, id=63, 569.
+<figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf, id=47, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_009_tau32_40tev_04_Man-eps-conve
-rted-to.pdf used on input line 348.
+rted-to.pdf used on input line 287.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
 []\OT1/cmr/m/n/9 (h) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--348
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2291,25 +1791,25 @@ n-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
 tau32_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_
 Man.eps>
-(epstopdf)             \includegraphics on input line 351.
+(epstopdf)             \includegraphics on input line 290.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf, id=64, 569.1
+<figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf, id=48, 569.1
 2625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man-eps-conver
-ted-to.pdf used on input line 351.
+ted-to.pdf used on input line 290.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []\OT1/cmr/m/n/9 (i) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2325,25 +1825,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
 tau32_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau32_10tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 354.
+(epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf, id=65, 569.
+<figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf, id=49, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man-eps-conve
-rted-to.pdf used on input line 354.
+rted-to.pdf used on input line 293.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 []\OT1/cmr/m/n/9 (j) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2359,25 +1859,25 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
 tau32_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau32_20tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 357.
+(epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf, id=66, 569.
+<figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf, id=50, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man-eps-conve
-rted-to.pdf used on input line 357.
+rted-to.pdf used on input line 296.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--357
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 []\OT1/cmr/m/n/9 (k) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--357
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2393,621 +1893,121 @@ an-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_05GeV_012_
 tau32_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_05GeV_012_tau32_40tev_0
 4_Man.eps>
-(epstopdf)             \includegraphics on input line 360.
+(epstopdf)             \includegraphics on input line 299.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf, id=67, 569.
+<figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf, id=51, 569.
 12625pt x 543.02875pt>
 File: figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-conve
-rted-to.pdf used on input line 360.
+rted-to.pdf used on input line 299.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--360
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 []\OT1/cmr/m/n/9 (l) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--360
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2.ep
-s>
-(epstopdf)                    date: 2018-04-24 16:10:26
-(epstopdf)                    size: 12076 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:31
-(epstopdf)                    size: 12126 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_5t
-ev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_5tev_eff_1_New2.eps>
-
-(epstopdf)             \includegraphics on input line 370.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf, id=68, 569.12625
-pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2-eps-converted-
-to.pdf used on input line 370.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2.e
+Package epstopdf Info: Source file: <figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2.e
 ps>
-(epstopdf)                    date: 2018-04-24 16:10:26
-(epstopdf)                    size: 12202 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2-e
+(epstopdf)                    date: 2018-05-07 08:04:31
+(epstopdf)                    size: 12443 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:32
-(epstopdf)                    size: 12216 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_10
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_10tev_eff_1_New2.ep
+(epstopdf)                    date: 2018-05-07 08:09:11
+(epstopdf)                    size: 10946 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GgeV_tau32_5
+tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2.ep
 s>
-(epstopdf)             \includegraphics on input line 373.
+(epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf, id=69, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf Graphic fil
+<figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf, id=52, 569.1262
+5pt x 396.48125pt>
+File: figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf Graphic fil
 e (type pdf)
 
-<use figs/Rawhit_05GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2-eps-converted
--to.pdf used on input line 373.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:10:27
-(epstopdf)                    size: 12239 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:33
-(epstopdf)                    size: 12223 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_20
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_20tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 376.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf, id=70, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2-eps-converted
--to.pdf used on input line 376.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:10:27
-(epstopdf)                    size: 12035 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:33
-(epstopdf)                    size: 12160 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_40
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_40tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 379.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_05GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf, id=71, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2-eps-converted
--to.pdf used on input line 379.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:46:34
-(epstopdf)                    size: 12565 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:00
-(epstopdf)                    size: 10629 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
-_tau32_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau32_5tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 390.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf, id=72, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_Man-eps-conve
-rted-to.pdf used on input line 390.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
-[]\OT1/cmr/m/n/9 (a) 5TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:34
-(epstopdf)                    size: 12575 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:01
-(epstopdf)                    size: 10634 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
-_tau32_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau32_10tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 393.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf, id=73, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_Man-eps-conv
-erted-to.pdf used on input line 393.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
-[]\OT1/cmr/m/n/9 (b) 10TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:34
-(epstopdf)                    size: 12538 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:01
-(epstopdf)                    size: 10624 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
-_tau32_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau32_20tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 396.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf, id=74, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_Man-eps-conv
-erted-to.pdf used on input line 396.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
-[]\OT1/cmr/m/n/9 (c) 20TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:35
-(epstopdf)                    size: 12750 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:02
-(epstopdf)                    size: 10688 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_010
-_tau32_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_010_tau32_40tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 399.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf, id=75, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_010_tau32_40tev_04_Man-eps-conv
-erted-to.pdf used on input line 399.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
-[]\OT1/cmr/m/n/9 (d) 40TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
-\OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
-\OT1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:46:33
-(epstopdf)                    size: 12550 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:03
-(epstopdf)                    size: 10634 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
-_tau32_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau32_5tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 402.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf, id=76, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau32_5tev_04_Man-eps-conve
-rted-to.pdf used on input line 402.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
-[]\OT1/cmr/m/n/9 (e) 5TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:33
-(epstopdf)                    size: 12988 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:03
-(epstopdf)                    size: 10723 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
-_tau32_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau32_10tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 405.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf, id=77, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau32_10tev_04_Man-eps-conv
-erted-to.pdf used on input line 405.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
-[]\OT1/cmr/m/n/9 (f) 10TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:33
-(epstopdf)                    size: 12172 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:04
-(epstopdf)                    size: 10578 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
-_tau32_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau32_20tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 408.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf, id=78, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau32_20tev_04_Man-eps-conv
-erted-to.pdf used on input line 408.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--408
-[]\OT1/cmr/m/n/9 (g) 20TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--408
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:34
-(epstopdf)                    size: 12198 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:05
-(epstopdf)                    size: 10590 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_009
-_tau32_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_009_tau32_40tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 411.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf, id=79, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_009_tau32_40tev_04_Man-eps-conv
-erted-to.pdf used on input line 411.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--411
-[]\OT1/cmr/m/n/9 (h) 40TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--411
-\OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_M
-an.eps>
-(epstopdf)                    date: 2018-04-24 15:46:35
-(epstopdf)                    size: 12420 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_M
-an-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:05
-(epstopdf)                    size: 10626 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
-_tau32_5tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau32_5tev_0
-4_Man.eps>
-(epstopdf)             \includegraphics on input line 414.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf, id=80, 569.
-12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_Man-eps-conve
-rted-to.pdf used on input line 414.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
-[]\OT1/cmr/m/n/9 (i) 5TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:35
-(epstopdf)                    size: 12769 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:06
-(epstopdf)                    size: 10682 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
-_tau32_10tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau32_10tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 417.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf, id=81, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_Man-eps-conv
-erted-to.pdf used on input line 417.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--417
-[]\OT1/cmr/m/n/9 (j) 10TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--417
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:35
-(epstopdf)                    size: 12753 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:07
-(epstopdf)                    size: 10696 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
-_tau32_20tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau32_20tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 420.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf, id=82, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_Man-eps-conv
-erted-to.pdf used on input line 420.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
-[]\OT1/cmr/m/n/9 (k) 20TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--420
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_
-Man.eps>
-(epstopdf)                    date: 2018-04-24 15:46:36
-(epstopdf)                    size: 12607 bytes
-(epstopdf)             Output file: <figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_
-Man-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 15:50:07
-(epstopdf)                    size: 10681 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Dis_Rawhit_025GeV_012
-_tau32_40tev_04_Man-eps-converted-to.pdf figs/Dis_Rawhit_025GeV_012_tau32_40tev
-_04_Man.eps>
-(epstopdf)             \includegraphics on input line 423.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf, id=83, 569
-.12625pt x 543.02875pt>
-File: figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_Man-eps-conv
-erted-to.pdf used on input line 423.
-(pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
-[]\OT1/cmr/m/n/9 (l) 40TeV at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
-\OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
-T1/cmr/m/n/9 cm) in
- []
-
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_5tev_eff_1_New2.e
-ps>
-(epstopdf)                    date: 2018-04-24 16:09:27
-(epstopdf)                    size: 12019 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_5tev_eff_1_New2-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:34
-(epstopdf)                    size: 12089 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau32_5
-tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_5tev_eff_1_New2.ep
-s>
-(epstopdf)             \includegraphics on input line 434.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/Rawhit_025GeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf, id=84, 569.1262
-5pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_025GeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau32_5tev_eff_1_New2-eps-converted
--to.pdf used on input line 434.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_10tev_eff_1_New2.
+<use figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2-eps-converted
+-to.pdf used on input line 309.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2.
 eps>
-(epstopdf)                    date: 2018-04-24 16:09:27
-(epstopdf)                    size: 12076 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_10tev_eff_1_New2-
+(epstopdf)                    date: 2018-05-07 08:04:31
+(epstopdf)                    size: 12397 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:35
-(epstopdf)                    size: 12135 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau32_1
-0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_10tev_eff_1_New2.
+(epstopdf)                    date: 2018-05-07 08:09:11
+(epstopdf)                    size: 10899 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GgeV_tau32_1
+0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2.
 eps>
-(epstopdf)             \includegraphics on input line 437.
+(epstopdf)             \includegraphics on input line 312.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf, id=85, 569.126
-25pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf Graphic fi
+<figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf, id=53, 569.126
+25pt x 396.48125pt>
+File: figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
-<use figs/Rawhit_025GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau32_10tev_eff_1_New2-eps-converte
-d-to.pdf used on input line 437.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_20tev_eff_1_New2.
+<use figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2-eps-converte
+d-to.pdf used on input line 312.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2.
 eps>
-(epstopdf)                    date: 2018-04-24 16:09:28
-(epstopdf)                    size: 12125 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_20tev_eff_1_New2-
+(epstopdf)                    date: 2018-05-07 08:04:32
+(epstopdf)                    size: 12256 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:36
-(epstopdf)                    size: 12149 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau32_2
-0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_20tev_eff_1_New2.
+(epstopdf)                    date: 2018-05-07 08:09:12
+(epstopdf)                    size: 10827 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GgeV_tau32_2
+0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2.
 eps>
-(epstopdf)             \includegraphics on input line 440.
+(epstopdf)             \includegraphics on input line 315.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf, id=86, 569.126
-25pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf Graphic fi
+<figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf, id=54, 569.126
+25pt x 396.48125pt>
+File: figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
-<use figs/Rawhit_025GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau32_20tev_eff_1_New2-eps-converte
-d-to.pdf used on input line 440.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
-Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_40tev_eff_1_New2.
+<use figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_05GgeV_tau32_20tev_eff_1_New2-eps-converte
+d-to.pdf used on input line 315.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Package epstopdf Info: Source file: <figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2.
 eps>
-(epstopdf)                    date: 2018-04-24 16:09:28
-(epstopdf)                    size: 12197 bytes
-(epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_40tev_eff_1_New2-
+(epstopdf)                    date: 2018-05-07 08:04:32
+(epstopdf)                    size: 12272 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-24 16:11:37
-(epstopdf)                    size: 12258 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau32_4
-0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_40tev_eff_1_New2.
+(epstopdf)                    date: 2018-05-07 08:09:13
+(epstopdf)                    size: 10898 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GgeV_tau32_4
+0tev_eff_1_New2-eps-converted-to.pdf figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2.
 eps>
-(epstopdf)             \includegraphics on input line 443.
+(epstopdf)             \includegraphics on input line 318.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf, id=87, 569.126
-25pt x 395.4775pt>
-File: figs/Rawhit_025GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf Graphic fi
+<figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf, id=55, 569.126
+25pt x 396.48125pt>
+File: figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
-<use figs/Rawhit_025GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf>
-Package pdftex.def Info: figs/Rawhit_025GeV_tau32_40tev_eff_1_New2-eps-converte
-d-to.pdf used on input line 443.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+<use figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_05GgeV_tau32_40tev_eff_1_New2-eps-converte
+d-to.pdf used on input line 318.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau21_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:30:39
 (epstopdf)                    size: 12046 bytes
@@ -3017,16 +2017,16 @@ Package epstopdf Info: Source file: <figs/cluster_tau21_summary_U.eps>
 (epstopdf)                    size: 9023 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_tau21_summary
 _U-eps-converted-to.pdf figs/cluster_tau21_summary_U.eps>
-(epstopdf)             \includegraphics on input line 474.
+(epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_tau21_summary_U-eps-converted-to.pdf, id=88, 569.12625pt x 543.02
+<figs/cluster_tau21_summary_U-eps-converted-to.pdf, id=56, 569.12625pt x 543.02
 875pt>
 File: figs/cluster_tau21_summary_U-eps-converted-to.pdf Graphic file (type pdf)
 
  <use figs/cluster_tau21_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau21_summary_U-eps-converted-to.pdf used
- on input line 474.
+ on input line 350.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/cluster_tau32_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:30:39
@@ -3037,16 +2037,16 @@ Package epstopdf Info: Source file: <figs/cluster_tau32_summary_U.eps>
 (epstopdf)                    size: 8681 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_tau32_summary
 _U-eps-converted-to.pdf figs/cluster_tau32_summary_U.eps>
-(epstopdf)             \includegraphics on input line 477.
+(epstopdf)             \includegraphics on input line 353.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_tau32_summary_U-eps-converted-to.pdf, id=89, 569.12625pt x 543.02
+<figs/cluster_tau32_summary_U-eps-converted-to.pdf, id=57, 569.12625pt x 543.02
 875pt>
 File: figs/cluster_tau32_summary_U-eps-converted-to.pdf Graphic file (type pdf)
 
  <use figs/cluster_tau32_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau32_summary_U-eps-converted-to.pdf used
- on input line 477.
+ on input line 353.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/cluster_c2b1_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:30:39
@@ -3057,15 +2057,15 @@ to.pdf>
 (epstopdf)                    size: 9005 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_summary_
 U-eps-converted-to.pdf figs/cluster_c2b1_summary_U.eps>
-(epstopdf)             \includegraphics on input line 480.
+(epstopdf)             \includegraphics on input line 356.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_summary_U-eps-converted-to.pdf, id=90, 569.12625pt x 543.028
+<figs/cluster_c2b1_summary_U-eps-converted-to.pdf, id=58, 569.12625pt x 543.028
 75pt>
 File: figs/cluster_c2b1_summary_U-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/cluster_c2b1_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_c2b1_summary_U-eps-converted-to.pdf used 
-on input line 480.
+on input line 356.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:18:01
@@ -3076,16 +2076,16 @@ erted-to.pdf>
 (epstopdf)                    size: 9035 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_su
 mmary_U-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_summary_U.eps>
-(epstopdf)             \includegraphics on input line 492.
+(epstopdf)             \includegraphics on input line 368.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf, id=91, 569.12625pt x 5
+<figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf, id=59, 569.12625pt x 5
 43.02875pt>
 File: figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf
- used on input line 492.
+ used on input line 368.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:18:01
@@ -3096,16 +2096,16 @@ erted-to.pdf>
 (epstopdf)                    size: 8693 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_su
 mmary_U-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_summary_U.eps>
-(epstopdf)             \includegraphics on input line 495.
+(epstopdf)             \includegraphics on input line 371.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf, id=92, 569.12625pt x 5
+<figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf, id=60, 569.12625pt x 5
 43.02875pt>
 File: figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf
- used on input line 495.
+ used on input line 371.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:53:27
@@ -3116,16 +2116,16 @@ rted-to.pdf>
 (epstopdf)                    size: 9008 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_c2b1_sum
 mary_U-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_summary_U.eps>
-(epstopdf)             \includegraphics on input line 498.
+(epstopdf)             \includegraphics on input line 374.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf, id=93, 569.12625pt x 54
+<figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf, id=61, 569.12625pt x 54
 3.02875pt>
 File: figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf 
-used on input line 498.
+used on input line 374.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:21:22
@@ -3136,16 +2136,16 @@ verted-to.pdf>
 (epstopdf)                    size: 9040 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau21_s
 ummary_U-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_summary_U.eps>
-(epstopdf)             \includegraphics on input line 509.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf, id=94, 569.12625pt x 
+<figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf, id=62, 569.12625pt x 
 543.02875pt>
 File: figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pd
-f used on input line 509.
+f used on input line 385.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:21:23
@@ -3156,16 +2156,16 @@ verted-to.pdf>
 (epstopdf)                    size: 8691 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_tau32_s
 ummary_U-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_summary_U.eps>
-(epstopdf)             \includegraphics on input line 512.
+(epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf, id=95, 569.12625pt x 
+<figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf, id=63, 569.12625pt x 
 543.02875pt>
 File: figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pd
-f used on input line 512.
+f used on input line 388.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_c2b1_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:21:23
@@ -3176,18 +2176,18 @@ erted-to.pdf>
 (epstopdf)                    size: 9016 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_025GeV_c2b1_su
 mmary_U-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_summary_U.eps>
-(epstopdf)             \includegraphics on input line 515.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf, id=96, 569.12625pt x 5
+<figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf, id=64, 569.12625pt x 5
 43.02875pt>
 File: figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf
- used on input line 515.
+ used on input line 391.
 (pdftex.def)             Requested size: 177.3999pt x 169.26518pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 520.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 396.
 
 [1
 
@@ -3197,7 +2197,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
+l.396 \end{document}
                      <./figs/Dis_cluster_010_c2b1_5tev_04_Man-eps-converted-to.
 pdf> <./figs/Dis_cluster_010_c2b1_10tev_04_Man-eps-converted-to.pdf> <./figs/Di
 s_cluster_010_c2b1_20tev_04_Man-eps-converted-to.pdf> <./figs/Dis_cluster_010_c
@@ -3213,43 +2213,16 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
-                     <./figs/cluster_c2b1_5tev_eff_1_log-eps-converted-to.pdf> 
-<./figs/cluster_c2b1_10tev_eff_1_log-eps-converted-to.pdf> <./figs/cluster_c2b1
-_20tev_eff_1_log-eps-converted-to.pdf> <./figs/cluster_c2b1_40tev_eff_1_log-eps
--converted-to.pdf>] [4pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.3}) has been already used, duplicate ignored
+l.396 \end{document}
+                     <./figs/cluster_c2b1_5tev_eff_1_New2-eps-converted-to.pdf>
+ <./figs/cluster_c2b1_10tev_eff_1_New2-eps-converted-to.pdf> <./figs/cluster_c2
+b1_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/cluster_c2b1_40tev_eff_1_New2
+-eps-converted-to.pdf>] [4pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
-                     <./figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Man-eps-convert
-ed-to.pdf> <./figs/Dis_Rawhit_05GeV_010_tau21_10tev_04_Man-eps-converted-to.pdf
-> <./figs/Dis_Rawhit_05GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf> <./figs
-/Dis_Rawhit_05GeV_010_tau21_40tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawh
-it_05GeV_009_tau21_5tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_05GeV_0
-09_tau21_10tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_05GeV_009_tau21_
-20tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_05GeV_009_tau21_40tev_04_
-Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_05GeV_012_tau21_5tev_04_Man-eps-co
-nverted-to.pdf> <./figs/Dis_Rawhit_05GeV_012_tau21_10tev_04_Man-eps-converted-t
-o.pdf> <./figs/Dis_Rawhit_05GeV_012_tau21_20tev_04_Man-eps-converted-to.pdf> <.
-/figs/Dis_Rawhit_05GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf>] [5pdfTeX w
-arning (ext4): destination with the same identifier (name{figure.4}) has been a
-lready used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.520 \end{document}
-                     <./figs/Rawhit_05GeV_tau21_5tev_eff_1_New2-eps-converted-t
-o.pdf> <./figs/Rawhit_05GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf> <./fig
-s/Rawhit_05GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/Rawhit_05Ge
-V_tau21_40tev_eff_1_New2-eps-converted-to.pdf>] [6pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.5}) has been already used, duplicat
-e ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.520 \end{document}
+l.396 \end{document}
                      <./figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_Man-eps-conver
 ted-to.pdf> <./figs/Dis_Rawhit_025GeV_010_tau21_10tev_04_Man-eps-converted-to.p
 df> <./figs/Dis_Rawhit_025GeV_010_tau21_20tev_04_Man-eps-converted-to.pdf> <./f
@@ -3261,22 +2234,22 @@ _tau21_20tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_025GeV_009_tau21_4
 an-eps-converted-to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau21_10tev_04_Man-eps-c
 onverted-to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau21_20tev_04_Man-eps-converted
 -to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau21_40tev_04_Man-eps-converted-to.pdf>
-] [7pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+] [5pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
-                     <./figs/Rawhit_025GeV_tau21_5tev_eff_1_New2-eps-converted-
-to.pdf> <./figs/Rawhit_025GeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf> <./f
-igs/Rawhit_025GeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/Rawhit_0
-25GeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf>] [8pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.7}) has been already used, dupl
-icate ignored
+l.396 \end{document}
+                     <./figs/Rawhit_025GgeV_tau21_5tev_eff_1_New2-eps-converted
+-to.pdf> <./figs/Rawhit_025GgeV_tau21_10tev_eff_1_New2-eps-converted-to.pdf> <.
+/figs/Rawhit_025GgeV_tau21_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/Rawhi
+t_025GgeV_tau21_40tev_eff_1_New2-eps-converted-to.pdf>] [6pdfTeX warning (ext4)
+: destination with the same identifier (name{figure.5}) has been already used, 
+duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
+l.396 \end{document}
                      <./figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Man-eps-convert
 ed-to.pdf> <./figs/Dis_Rawhit_05GeV_010_tau32_10tev_04_Man-eps-converted-to.pdf
 > <./figs/Dis_Rawhit_05GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf> <./figs
@@ -3287,74 +2260,47 @@ it_05GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_05GeV_0
 Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_05GeV_012_tau32_5tev_04_Man-eps-co
 nverted-to.pdf> <./figs/Dis_Rawhit_05GeV_012_tau32_10tev_04_Man-eps-converted-t
 o.pdf> <./figs/Dis_Rawhit_05GeV_012_tau32_20tev_04_Man-eps-converted-to.pdf> <.
-/figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf>] [9pdfTeX w
-arning (ext4): destination with the same identifier (name{figure.8}) has been a
+/figs/Dis_Rawhit_05GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf>] [7pdfTeX w
+arning (ext4): destination with the same identifier (name{figure.6}) has been a
 lready used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
-                     <./figs/Rawhit_05GeV_tau32_5tev_eff_1_New2-eps-converted-t
-o.pdf> <./figs/Rawhit_05GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf> <./fig
-s/Rawhit_05GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/Rawhit_05Ge
-V_tau32_40tev_eff_1_New2-eps-converted-to.pdf>] [10pdfTeX warning (ext4): desti
-nation with the same identifier (name{figure.9}) has been already used, duplica
-te ignored
+l.396 \end{document}
+                     <./figs/Rawhit_05GgeV_tau32_5tev_eff_1_New2-eps-converted-
+to.pdf> <./figs/Rawhit_05GgeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf> <./f
+igs/Rawhit_05GgeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/Rawhit_0
+5GgeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf>] [8pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.7}) has been already used, dupl
+icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
-                     <./figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_Man-eps-conver
-ted-to.pdf> <./figs/Dis_Rawhit_025GeV_010_tau32_10tev_04_Man-eps-converted-to.p
-df> <./figs/Dis_Rawhit_025GeV_010_tau32_20tev_04_Man-eps-converted-to.pdf> <./f
-igs/Dis_Rawhit_025GeV_010_tau32_40tev_04_Man-eps-converted-to.pdf> <./figs/Dis_
-Rawhit_025GeV_009_tau32_5tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_02
-5GeV_009_tau32_10tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_025GeV_009
-_tau32_20tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_025GeV_009_tau32_4
-0tev_04_Man-eps-converted-to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau32_5tev_04_M
-an-eps-converted-to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau32_10tev_04_Man-eps-c
-onverted-to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau32_20tev_04_Man-eps-converted
--to.pdf> <./figs/Dis_Rawhit_025GeV_012_tau32_40tev_04_Man-eps-converted-to.pdf>
-] [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.520 \end{document}
-                     <./figs/Rawhit_025GeV_tau32_5tev_eff_1_New2-eps-converted-
-to.pdf> <./figs/Rawhit_025GeV_tau32_10tev_eff_1_New2-eps-converted-to.pdf> <./f
-igs/Rawhit_025GeV_tau32_20tev_eff_1_New2-eps-converted-to.pdf> <./figs/Rawhit_0
-25GeV_tau32_40tev_eff_1_New2-eps-converted-to.pdf>] [12pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.11}) has been already used, du
-plicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.520 \end{document}
+l.396 \end{document}
                      <./figs/cluster_tau21_summary_U-eps-converted-to.pdf> <./f
 igs/cluster_tau32_summary_U-eps-converted-to.pdf> <./figs/cluster_c2b1_summary_
-U-eps-converted-to.pdf>] [13pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.12}) has been already used, duplicate ignored
+U-eps-converted-to.pdf>] [9pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
+l.396 \end{document}
                      <./figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf>
  <./figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf> <./figs/Rawhit_05Ge
-V_c2b1_summary_U-eps-converted-to.pdf>] [14pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.13}) has been already used, duplicate igno
-red
+V_c2b1_summary_U-eps-converted-to.pdf>] [10pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.9}) has been already used, duplicate ignor
+ed
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.520 \end{document}
+l.396 \end{document}
                      <./figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf
 > <./figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf> <./figs/Rawhit_02
 5GeV_c2b1_summary_U-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 520.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 396.
  (./fcc_Mannuwhitney eff_Ash.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 520.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 520.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 396.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 396.
 Package rerunfilecheck Info: File `"fcc_Mannuwhitney eff_Ash".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: A7B14D89E6FE71ED2C3C32A4F4185103;125.
@@ -3362,13 +2308,13 @@ ged.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 520.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 396.
  ) 
 Here is how much of TeX's memory you used:
- 8767 strings out of 492995
- 148295 string characters out of 6132704
- 273525 words of memory out of 5000000
- 11979 multiletter control sequences out of 15000+600000
+ 8567 strings out of 492995
+ 137671 string characters out of 6132704
+ 250530 words of memory out of 5000000
+ 11851 multiletter control sequences out of 15000+600000
  12718 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,7n,32p,796b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3378,10 +2324,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on "fcc_Mannuwhitney eff_Ash.pdf" (14 pages, 666490 bytes).
+Output written on "fcc_Mannuwhitney eff_Ash.pdf" (10 pages, 431757 bytes).
 PDF statistics:
- 1501 PDF objects out of 1728 (max. 8388607)
- 1104 compressed objects within 12 object streams
- 118 named destinations out of 1000 (max. 500000)
- 454 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 939 PDF objects out of 1000 (max. 8388607)
+ 695 compressed objects within 7 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

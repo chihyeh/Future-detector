@@ -17,8 +17,18 @@ variable_array=("tau21","tau32","c2b1")
 #width_array=("f",[40,40,40,40])
 signal_we_want=("ww","tt")
 #for j in range(0,2):
-for k in range(2,3):
+for k in range(0,3):
     for j in range(0,4):
+        if(variable_array[k]=="tau21"):
+            signal_we_want="ww"
+            if(energy_array[1][j]<20):
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][j])+"mumu_pythia6_zprime"+str(energy_array[1][j])+"tev_ww%rfull010_onlyhadronic/radius0.4_jetsubstructure_tcalo.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][j])+"mumu_pythia6_zprime"+str(energy_array[1][j])+"tev_ww%rfull009_onlyhadronic/radius0.4_jetsubstructure_tcalo.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][j])+"mumu_pythia6_zprime"+str(energy_array[1][j])+"tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_tcalo.root", 'r')
+            if(energy_array[1][j]>=20):
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][j])+"mumu_pythia6_zprime"+str(energy_array[1][j])+"tev_ww%rfull010_onlyhadronic/radius0.4_jetsubstructure_tcalo.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][j])+"mumu_pythia6_zprime"+str(energy_array[1][j])+"tev_ww%rfull009_onlyhadronic/radius0.4_jetsubstructure_tcalo.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][j])+"mumu_pythia6_zprime"+str(energy_array[1][j])+"tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_tcalo.root", 'r')
         if(variable_array[k]=="tau21"):
             signal_we_want="ww"
             if(energy_array[1][j]<20):
@@ -46,26 +56,25 @@ for k in range(2,3):
         #print detector_size_array[i]
         #print "energy="+str(energy_array[1][j])
         #print "width="+str(width_array[1][i])
-        f4 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r010_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_Tra.root",'r')
+        f4 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r010_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_New2_50%.root",'r')
         #f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r010_mass_mmdt_40tev_eff_1_width_40GeV_fix_tt.root",'r')
         #f1= ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r010_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_1_width_40GeV_fix_"+signal_we_want[k]+".root",'r')
         G4=f4.Get("Graph")
         G4.SetLineStyle(1)
         G4.SetLineColor(2)
         G4.SetLineWidth(2)
-        f5 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r009_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_Tra.root",'r')
+        f5 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r009_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_New2_50%.root",'r')
         #f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r009_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_1_width_40GeV_fix_"+signal_we_want[k]+".root",'r')
         #f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r009_mass_mmdt_40tev_eff_1_width_40GeV_fix_tt.root",'r')
         G5=f5.Get("Graph")
         G5.SetLineStyle(7)
         G5.SetLineColor(3)
         G5.SetLineWidth(2)
-        f6 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r012_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_Tra.root",'r')
+        f6 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r012_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_New2_50%.root",'r')
         G6=f6.Get("Graph")
         G6.SetLineStyle(10)
         G6.SetLineColor(4)
         G6.SetLineWidth(2)
-
         #f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r012_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_1_width_40GeV_fix_"+signal_we_want[k]+".root",'r')
         #f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r012_mass_mmdt_40tev_eff_1_width_40GeV_fix_tt.root",'r')
         #f4 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_cluster_plots_in_efficiency/codes/cluster_r010_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_log_Tra.root",'r')
@@ -210,7 +219,7 @@ for k in range(2,3):
 #h=min(G1.GetHistogram().GetMinimum(),G2.GetHistogram().GetMinimum(),G3.GetHistogram().GetMinimum())
     #l=max(G1.GetHistogram().GetMaximum(),G2.GetHistogram().GetMaximum(),G3.GetHistogram().GetMaximum())
     #mg.GetXaxis().SetRangeUser(-2,1.1)
-        mg.GetYaxis().SetRangeUser(1,100)
+        mg.GetYaxis().SetRangeUser(1,1000)
         mg.GetXaxis().SetRangeUser(0.1,1)
         mg.GetXaxis().SetLabelSize(0.05)
         mg.GetYaxis().SetLabelSize(0.05)
@@ -306,7 +315,7 @@ for k in range(2,3):
         #leg1.Draw()
         #c.Print("cluster_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_40GeV_"+signal_we_want[k]+"_qq.eps")
         #c.Print("cluster_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_40GeV_"+signal_we_want[k]+"_qq.pdf")
-        c.Print("cluster_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_eff_1_log.eps")
+        c.Print("cluster_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_eff_1_New1.eps")
 #c.Print("cluster_"+variable+"_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_"+str(width_array[1][i])+"GeV_"+signal_we_want[j]+"_qq.pdf")
 #c.Print("cluster_"+variable+"_"+energy1+"tev_eff_fixed_width_to_"+fixed_width1+"GeV_tt_qq.pdf")
 #c.Print("Study_of_difference_in_"+variable+"_truth_level_"+energy1+"tev.pdf")

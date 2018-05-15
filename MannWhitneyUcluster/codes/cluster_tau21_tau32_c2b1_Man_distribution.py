@@ -24,12 +24,20 @@ print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-for k in range(2,5):
+for k in range(0,1):
     if(variable[k]=="mass_try"):
-        f1=ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_009_mass_mmdt_5tev_eff_1_central_fix_at_80GeV_ww_qq_origin.root",'r')
-        f2=ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_009_mass_mmdt_5tev_eff_1_central_fix_at_80GeV_ww_qq.root",'r')
-        h1 = f1.Get("Graph")
-        h2 = f2.Get("Graph")
+        f1=ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev40mumu_pythia6_zprime40tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3.root",'r')
+        f2=ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev40mumu_pythia6_zprime40tev_qq%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3.root",'r')
+        h1 = f1.Get("h_c2_b1")
+        h2 = f2.Get("h_c2_b1")
+        h3 = TH1F("h3","Ratio histogram",30,0,0.3)
+        h3=h1.Clone("h3")
+        h3.Divide(h2)
+        
+        h1.Sumw2()
+        h2.Sumw2()
+        h1.Scale(1.0/h1.Integral())
+        h2.Scale(1.0/h2.Integral())
 
         leg = TLegend(0.4,0.7,0.7,0.9)
         leg.SetFillColor(0)
@@ -40,10 +48,12 @@ for k in range(2,5):
         
         c = TCanvas("c1", "c1",0,0,500,500)
         gStyle.SetOptStat(0)
-        h1.SetLineColor(1)
+        h1.SetLineColor(2)
         h1.SetLineWidth(3)
-        h2.SetLineColor(2)
+        h2.SetLineColor(1)
         h2.SetLineWidth(3)
+        h3.SetLineColor(4)
+        h3.SetLineWidth(3)
         h1.SetTitle(" ")
         h2.SetTitle(" ")
         h1.GetYaxis().SetLabelSize(0.03)
@@ -57,22 +67,27 @@ for k in range(2,5):
         h1.GetYaxis().SetLabelFont(22)
         h2.GetYaxis().SetLabelFont(22)
         
-        
+        h1.GetYaxis().SetRangeUser(0,2)
+        h2.GetYaxis().SetRangeUser(0,2)
+        h3.GetYaxis().SetRangeUser(0,2)
+
         
         
         #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-        leg.AddEntry(h1,"origin","l")
-        leg.AddEntry(h2,"After","l")
-        
-        h1.Draw()
-        h2.Draw("same")
- 
+        leg.AddEntry(h1,"Z'-> WW","l")
+        leg.AddEntry(h2,"Z'-> qq","l")
+        leg.AddEntry(h3,"Ratio histogram","l")
+
+        h1.Draw("histo")
+        h2.Draw("histosame")
+        h3.Draw("histosame")
+
     
         leg.Draw()
         c.Draw()
         
         #f=TFile("Dis_cluster_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.root","RECREATE")
-        c.Print("A_Cluster_009_mass_mmdt_5tev_eff_1_central_fix_at_80GeV_ww_qq_compare.pdf")
+        c.Print("C2b1_Ratio_test_no_normalize.pdf")
             #c.Print("Dis_cluster_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.root.eps")
 
     elif(variable[k]=="mass_mmdt"):

@@ -765,7 +765,7 @@ int *cut_tt(int files, int energy)
     return(cut_use);
 }
 
-float cluster_mass_cut(int subjet , int energy, int signal, int Dir, float radius=0.4, int mode=0)
+/*float cluster_mass_cut(int subjet , int energy, int signal, int Dir, float radius=0.4, int mode=0)
 {
     int Dirvec[3]={9,10,12};
     int *Dirvec_use=Dirvec;
@@ -872,7 +872,7 @@ float cluster_mass_cut(int subjet , int energy, int signal, int Dir, float radiu
 
     }
 
-}
+}*/
 
 void jetSubstructure(float radius=0.4, int mode=0){
     
@@ -900,6 +900,7 @@ for ( int signal=0 ; signal <1 ; signal++)
           else if(inputDir.find("rfull010")!=std::string::npos)decversion="rfull010";
 
           std::string treeName = "trawhits";
+          std::string treeName_cut = "tcalo";
           std::string title = mode==0? Form("Anti-kt jet //Delta R = %.1f",radius):
             Form("Simple jet //Delta R = %.1f",radius);
 
@@ -921,18 +922,41 @@ for ( int signal=0 ; signal <1 ; signal++)
             //"d2_b1_mmdt",
             "tau32_b1"
           };
+          const std::string histonames_cut[]=
+          {
+            //"mass_trim",
+            "mass_mmdt"
+            //"mass_prun",
+            //"mass_sdb2",
+            //"mass_sdm1",
+            //"tau21_b1",
+            //"c2_b1",
+            //"d2_b1",
+            //"n2_b1",
+            //"tau21_b1_mmdt",
+            //"c2_b1_mmdt",
+            //"d2_b1_mmdt",
+            //"tau32_b1"
+          };
 
         
 
           //  int ntemp_histos=sizeof(histonames)/sizeof(histonames[0]);
           const int nhistos=3;//ntemp_histos;
-
+          const int nhistos_cut=1
+            
           std::cout << "Total number of histograms is " << nhistos << std::endl;
           const float xmax[nhistos]={1,0.3,1};
+        //======================This range is from the previous study================//
+          const float xmax_cut[nhistos_cut]={1200};
 
           TH1F* h_sub[nhistos];
+          TH1F* h_sub_cut[nhistos_cut];
           const float xmin=0;
+          const float xmin_cut=0;
+
           const int nbins=100;
+          const int nbins_cut=100;
           for(int ih=0; ih < nhistos; ih++)
             {
             // [(xmax[ih]-xmin)/nbins]*L or R to find the mass_cut value
@@ -941,16 +965,28 @@ for ( int signal=0 ; signal <1 ; signal++)
               h_sub[ih]->SetXTitle(histonames[ih].data());
               h_sub[ih]->SetYTitle(Form("Number of jets per %.2f",binwidth));
             }
+          for(int ih=0; ih < nhistos_cut; ih++)
+          {
+            // [(xmax[ih]-xmin)/nbins]*L or R to find the mass_cut value
+             h_sub_cut[ih] = new TH1F(Form("h_%s",histonames_cut[ih].data()), histonames_cut[ih].data(), nbins_cut,xmin_cut,xmax_cut[ih]);
+             float binwidth = (xmax_cut[ih]-xmin_cut)/(float)nbins_cut;
+             h_sub_cut[ih]->SetXTitle(histonames_cut[ih].data());
+             h_sub_cut[ih]->SetYTitle(Form("Number of jets per %.2f",binwidth));
+          }
           string inputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_rawhit_fastjet_mode0_0.5GeV.root";
+          string inputFile_cut = inputDir + "/radius" + Form("%0.1f",radius)+ "_response_e2.root";
           cout << "opening " << inputFile.data() << endl;
+          cout << "opening " << inputFile_cut.data() << endl;
           TreeReader genTree(inputFile.data(),"tGEN_nonu");
           TreeReader caloTree(inputFile.data(),treeName.data());
-        
+          TreeReader caloTree_cut(inputFile_cut.data(),treeName_cut.data());
+
 
           for(Long64_t jEntry=0; jEntry< genTree.GetEntriesFast() ;jEntry++){
 
             genTree.GetEntry(jEntry);
             caloTree.GetEntry(jEntry);
+            caloTree_cut.GetEntry(jEntry);
 
             Float_t*  gen_je = genTree.GetPtrFloat("je");
             Float_t*  gen_jeta = genTree.GetPtrFloat("jeta");
@@ -960,21 +996,29 @@ for ( int signal=0 ; signal <1 ; signal++)
             Float_t*  calo_je = caloTree.GetPtrFloat("je");
             Float_t*  calo_jeta = caloTree.GetPtrFloat("jeta");
             Float_t*  calo_jphi = caloTree.GetPtrFloat("jphi");
-            Int_t     calo_njets    = caloTree.GetInt("njets");
+            Int_t     calo_njets = caloTree.GetInt("njets");
+
+            Float_t*  calo_cut_je = caloTree_cut.GetPtrFloat("je");
+            Float_t*  calo_cut_jeta = caloTree_cut.GetPtrFloat("jeta");
+            Float_t*  calo_cut_jphi = caloTree_cut.GetPtrFloat("jphi");
+            Int_t     calo_cut_njets = caloTree_cut.GetInt("njets");
 
             Float_t*  sub[nhistos];
+            Float_t*  sub_cut[nhistos];
 
             for(int ih=0; ih < nhistos; ih++)
               sub[ih] = caloTree.GetPtrFloat(Form("j_%s",histonames[ih].data()));
+              sub_cut[ih] = caloTree_cut.GetPtrFloat(Form("j_%s",histonames_cut[ih].data()));
 
 
             for(int i=0; i< calo_njets; i++){
 
               
               if(fabs(calo_jeta[i])>1.1)continue;
-
+            //================================find match between Gentree and trawhit=======================//
               int findGenMatch=-1;
-              for(int k=0; k< gen_njets; k++){
+              for(int k=0; k< gen_njets; k++)
+              {
             
             
             float dr = myDeltaR(gen_jeta[k], calo_jeta[i],
@@ -988,13 +1032,34 @@ for ( int signal=0 ; signal <1 ; signal++)
               }
             
               if(findGenMatch<0)continue;
+            //================================find match between cluster cut and trawhit=======================//
+              int findtcaloMatch=-1;
+              for(int k=0; k< calo_njets; k++)
+              {
+                    
+                    
+                    float dr = myDeltaR(calo_jeta[k], calo_cut_jeta[i],
+                                        calo_jphi[k], calo_cut_jphi[i]);
+                    
+                    if(dr<0.1)
+                    {
+                        findGenMatch=k;
+                        break;
+                    }
+                }
+                
+              if(findtcaloMatch<0)continue;
+            
+            //===========Pre-selection -> Find the cut in the function ( You can see the function before=========//
+            // The concept is find the signal from the highest bincentent and in the 50% region use method 2
+            // Look the left and the right bin and see which one is bigger, add that side bin to be the mass window
+            //If bump into the zero bin, we use the mean value after that bin ( or before that if the side bin is at the left )
+              
               if(Signal_use[signal]=="ww")
               {
                  int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
-                  float a=cluster_mass_cut(i,energy,signal,Dir);
-                  cout << a << endl;
                   //int *Cut_ww=cut_ww(1,Enevec_use[energy]);
-                 if((a<((Cut_ww[0])*5))||(a>((Cut_ww[1])*5)))continue;
+                 if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
                  cout << ih << endl;
@@ -1004,10 +1069,8 @@ for ( int signal=0 ; signal <1 ; signal++)
               if(Signal_use[signal]=="ttbar")
               {
                 int *Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
-                  float a=cluster_mass_cut(i,energy,signal,Dir);
-                  cout << a << endl;
                 //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
-                if((a<((Cut_tt[0])*5))||(a>((Cut_tt[1])*5)))continue;
+                if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;
                 for(int ih=0; ih < nhistos; ih++)
                 {
                 cout << ih << endl;
@@ -1018,10 +1081,8 @@ for ( int signal=0 ; signal <1 ; signal++)
              {
                 
                  int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
-                 float a=cluster_mass_cut(i,energy,signal,Dir);
-                 cout << a << endl;
                  //int *Cut_ww=cut_ww(1,Enevec_use[energy]);
-                 if((a<((Cut_ww[0])*5))||(a>((Cut_ww[1])*5)))continue;
+                 if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
                      cout << ih << endl;

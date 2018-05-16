@@ -943,7 +943,7 @@ for ( int signal=0 ; signal <1 ; signal++)
 
           //  int ntemp_histos=sizeof(histonames)/sizeof(histonames[0]);
           const int nhistos=3;//ntemp_histos;
-          const int nhistos_cut=1
+          const int nhistos_cut=1;
             
           std::cout << "Total number of histograms is " << nhistos << std::endl;
           const float xmax[nhistos]={1,0.3,1};
@@ -979,13 +979,15 @@ for ( int signal=0 ; signal <1 ; signal++)
           cout << "opening " << inputFile_cut.data() << endl;
           TreeReader genTree(inputFile.data(),"tGEN_nonu");
           TreeReader caloTree(inputFile.data(),treeName.data());
+          TreeReader genTree_cut(inputFile_cut.data(),"tGEN_nonu");
           TreeReader caloTree_cut(inputFile_cut.data(),treeName_cut.data());
 
 
           for(Long64_t jEntry=0; jEntry< genTree.GetEntriesFast() ;jEntry++){
-
+              cout << jEntry << endl;
             genTree.GetEntry(jEntry);
             caloTree.GetEntry(jEntry);
+            genTree_cut.GetEntry(jEntry);
             caloTree_cut.GetEntry(jEntry);
 
             Float_t*  gen_je = genTree.GetPtrFloat("je");
@@ -997,6 +999,11 @@ for ( int signal=0 ; signal <1 ; signal++)
             Float_t*  calo_jeta = caloTree.GetPtrFloat("jeta");
             Float_t*  calo_jphi = caloTree.GetPtrFloat("jphi");
             Int_t     calo_njets = caloTree.GetInt("njets");
+    
+            Float_t*  gen_cut_je = genTree_cut.GetPtrFloat("je");
+            Float_t*  gen_cut_jeta = genTree_cut.GetPtrFloat("jeta");
+            Float_t*  gen_cut_jphi = genTree_cut.GetPtrFloat("jphi");
+            Int_t     gen_cut_njets = genTree_cut.GetInt("njets");
 
             Float_t*  calo_cut_je = caloTree_cut.GetPtrFloat("je");
             Float_t*  calo_cut_jeta = caloTree_cut.GetPtrFloat("jeta");
@@ -1007,9 +1014,13 @@ for ( int signal=0 ; signal <1 ; signal++)
             Float_t*  sub_cut[nhistos];
 
             for(int ih=0; ih < nhistos; ih++)
+            {
               sub[ih] = caloTree.GetPtrFloat(Form("j_%s",histonames[ih].data()));
+            }
+            for(int ih=0; ih< nhistos_cut ; ih++)
+            {
               sub_cut[ih] = caloTree_cut.GetPtrFloat(Form("j_%s",histonames_cut[ih].data()));
-
+            }
 
             for(int i=0; i< calo_njets; i++){
 
@@ -1034,16 +1045,16 @@ for ( int signal=0 ; signal <1 ; signal++)
               if(findGenMatch<0)continue;
             //================================find match between cluster cut and trawhit=======================//
               int findtcaloMatch=-1;
-              for(int k=0; k< calo_njets; k++)
+              for(int k=0; k< gen_cut_njets; k++)
               {
                     
                     
-                    float dr = myDeltaR(calo_jeta[k], calo_cut_jeta[i],
-                                        calo_jphi[k], calo_cut_jphi[i]);
+                    float dr = myDeltaR(gen_cut_jeta[k], calo_cut_jeta[i],
+                                        gen_cut_jphi[k], calo_cut_jphi[i]);
                     
                     if(dr<0.1)
                     {
-                        findGenMatch=k;
+                        findtcaloMatch=k;
                         break;
                     }
                 }
@@ -1062,8 +1073,15 @@ for ( int signal=0 ; signal <1 ; signal++)
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
+                 cout << "Storing rawhits" << endl;
                  cout << ih << endl;
                  h_sub[ih]->Fill(sub[ih][i]);
+                 }
+                 for(int ih=0; ih < nhistos_cut; ih++)
+                 {
+                 cout << "Storing cluster" << endl;
+                 cout << ih << endl;
+                 h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                  }
               }
               if(Signal_use[signal]=="ttbar")
@@ -1073,20 +1091,33 @@ for ( int signal=0 ; signal <1 ; signal++)
                 if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;
                 for(int ih=0; ih < nhistos; ih++)
                 {
+                cout << "Storing rawhits" << endl;
                 cout << ih << endl;
                 h_sub[ih]->Fill(sub[ih][i]);
+                }
+                for(int ih=0; ih < nhistos_cut; ih++)
+                {
+                cout << "Storing cluster" << endl;
+                cout << ih << endl;
+                h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                 }
               }
              if(Signal_use[signal]=="qq")
              {
-                
                  int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
                  //int *Cut_ww=cut_ww(1,Enevec_use[energy]);
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
-                     cout << ih << endl;
-                     h_sub[ih]->Fill(sub[ih][i]);
+                 cout << "Storing rawhits" << endl;
+                 cout << ih << endl;
+                 h_sub[ih]->Fill(sub[ih][i]);
+                 }
+                 for(int ih=0; ih < nhistos_cut; ih++)
+                 {
+                 cout << "Storing cluster" << endl;
+                 cout << ih << endl;
+                 h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                  }
                  
             }
@@ -1102,8 +1133,13 @@ for ( int signal=0 ; signal <1 ; signal++)
           TFile* outFile = new TFile(outputFile.data(),"recreate");
           for(int ih=0;ih<nhistos;ih++)
           {
-              cout << "Writing_files" << ih << endl;
-              h_sub[ih]->Write();
+          cout << "Writing_files" << ih << endl;
+          h_sub[ih]->Write();
+          }
+          for(int ih=0;ih<nhistos_cut;ih++)
+          {
+          cout << "Writing_files" << ih << endl;
+          h_sub_cut[ih]->Write();
           }
           outFile->Close();
           }
@@ -1117,8 +1153,13 @@ for ( int signal=0 ; signal <1 ; signal++)
           TFile* outFile = new TFile(outputFile.data(),"recreate");
           for(int ih=0;ih<nhistos;ih++)
           {
-              cout << "Writing_files" << ih << endl;
-              h_sub[ih]->Write();
+          cout << "Writing_files" << ih << endl;
+          h_sub[ih]->Write();
+          }
+          for(int ih=0;ih<nhistos_cut;ih++)
+          {
+          cout << "Writing_files" << ih << endl;
+          h_sub_cut[ih]->Write();
           }
           outFile->Close();
           }

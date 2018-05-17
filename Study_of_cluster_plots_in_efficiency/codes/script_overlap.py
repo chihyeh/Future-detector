@@ -315,7 +315,7 @@ for k in range(0,3):
         #leg1.Draw()
         #c.Print("cluster_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_40GeV_"+signal_we_want[k]+"_qq.eps")
         #c.Print("cluster_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_40GeV_"+signal_we_want[k]+"_qq.pdf")
-        c.Print("cluster_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_eff_1_New1.eps")
+        c.Print("cluster_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_eff_1_New2_after_cut.eps")
 #c.Print("cluster_"+variable+"_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_"+str(width_array[1][i])+"GeV_"+signal_we_want[j]+"_qq.pdf")
 #c.Print("cluster_"+variable+"_"+energy1+"tev_eff_fixed_width_to_"+fixed_width1+"GeV_tt_qq.pdf")
 #c.Print("Study_of_difference_in_"+variable+"_truth_level_"+energy1+"tev.pdf")

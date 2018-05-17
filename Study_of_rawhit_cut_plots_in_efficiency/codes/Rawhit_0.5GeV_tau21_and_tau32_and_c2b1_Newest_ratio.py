@@ -29,11 +29,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
                 
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
@@ -121,12 +121,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----1'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(L-1)<ratio_BinContent_2):
+                            elif(h3.GetBinContent(L-1)<ratio_BinContent_2):
                                 print 'YA4'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -139,12 +134,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----2'
-                                if(h3.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(L-1)==ratio_BinContent_2):
+                            elif(h3.GetBinContent(L-1)==ratio_BinContent_2):
                                 print 'YA4'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -160,11 +150,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----3'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -178,11 +163,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----4'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                         #--------------------------------
                         else:
                             xarray.append(h1.Integral(L-1,R)/a)
@@ -197,11 +177,6 @@ for k in range(0,3):
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----5'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
                     #---------------------------
                     if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
@@ -219,12 +194,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----6'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(R+1)<ratio_BinContent_1):
+                            elif(h3.GetBinContent(R+1)<ratio_BinContent_1):
                                 'YA5'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -237,12 +207,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----7'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(R+1)==ratio_BinContent_1):
+                            elif(h3.GetBinContent(R+1)==ratio_BinContent_1):
                                 print 'YA5'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -258,11 +223,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----8'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -276,11 +236,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----9'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
 
                         #---------------------------
                         else:
@@ -296,11 +251,6 @@ for k in range(0,3):
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----10'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
         #-----------------------------------
                     if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
@@ -318,11 +268,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----11'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
                             elif(ratio_BinContent_2<ratio_BinContent_1):
                                 print 'YA6'
                                 xarray.append(h1.Integral(L-1,R)/a)
@@ -336,11 +281,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----12'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
 
                             elif(ratio_BinContent_2==ratio_BinContent_1):
                                 print 'YA6'
@@ -358,13 +298,8 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----13'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
 
-                                if(Random==2):
+                                elif(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
@@ -377,11 +312,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----14'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                     
                         else:
                             Random=randint(1,3)
@@ -399,12 +329,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----14'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(Random==2):
+                            elif(Random==2):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
@@ -417,11 +342,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----15'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
                         #------------------------------------------
                 n=R-L
                 print n
@@ -467,11 +387,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt.root",'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt.root",'r')
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
                 print h1,h2
@@ -559,12 +479,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----1'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(L-1)<ratio_BinContent_2):
+                            elif(h3.GetBinContent(L-1)<ratio_BinContent_2):
                                 print 'YA4'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -577,12 +492,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----2'
-                                if(h3.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(L-1)==ratio_BinContent_2):
+                            elif(h3.GetBinContent(L-1)==ratio_BinContent_2):
                                 print 'YA4'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -598,11 +508,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----3'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -616,11 +521,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----4'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                         #--------------------------------
                         else:
                             xarray.append(h1.Integral(L-1,R)/a)
@@ -635,11 +535,6 @@ for k in range(0,3):
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----5'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
                     #---------------------------
                     if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
@@ -657,12 +552,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----6'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(R+1)<ratio_BinContent_1):
+                            elif(h3.GetBinContent(R+1)<ratio_BinContent_1):
                                 'YA5'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -675,12 +565,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----7'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(R+1)==ratio_BinContent_1):
+                            elif(h3.GetBinContent(R+1)==ratio_BinContent_1):
                                 print 'YA5'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -696,11 +581,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----8'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -714,12 +594,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----9'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
-                    
                         #---------------------------
                         else:
                             xarray.append(h1.Integral(L,R+1)/a)
@@ -734,11 +608,6 @@ for k in range(0,3):
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----10'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
         #-----------------------------------
                     if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
@@ -756,71 +625,48 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----11'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                        elif(ratio_BinContent_2<ratio_BinContent_1):
-                            print 'YA6'
-                            xarray.append(h1.Integral(L-1,R)/a)
-                            yarray.append(1/(h2.Integral(L-1,R)/b))
-                            print h1.Integral(L-1,R), a
-                            print yarray
-                            L=L-1
-                            R=R
-                            print str(L)
-                            print str(R)
-                            print str(h1.GetBinContent(L))
-                            print str(h1.GetBinContent(R))
-                            print '----12'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
-                        
-                        elif(ratio_BinContent_2==ratio_BinContent_1):
-                            print 'YA6'
-                            Random=randint(1,3)
-                            if(Random==1):
+                            elif(ratio_BinContent_2<ratio_BinContent_1):
+                                print 'YA6'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
                                 print yarray
-                                C=h2.Integral(L-1,R)
                                 L=L-1
                                 R=R
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
-                                print '----13'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                        
-                            if(Random==2):
-                                xarray.append(h1.Integral(L,R+1)/a)
-                                yarray.append(1/(h2.Integral(L,R+1)/b))
-                                print h1.Integral(L,R+1), a
-                                print yarray
-                                C=h2.Integral(L,R+1)
-                                L=L
-                                R=R+1
-                                print str(L)
-                                print str(R)
-                                print str(h1.GetBinContent(L))
-                                print str(h1.GetBinContent(R))
-                                print '----14'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-        
+                                print '----12'
+                            elif(ratio_BinContent_2==ratio_BinContent_1):
+                                print 'YA6'
+                                Random=randint(1,3)
+                                if(Random==1):
+                                    xarray.append(h1.Integral(L-1,R)/a)
+                                    yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    print h1.Integral(L-1,R), a
+                                    print yarray
+                                    C=h2.Integral(L-1,R)
+                                    L=L-1
+                                    R=R
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----13'
+                                if(Random==2):
+                                    xarray.append(h1.Integral(L,R+1)/a)
+                                    yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    print h1.Integral(L,R+1), a
+                                    print yarray
+                                    C=h2.Integral(L,R+1)
+                                    L=L
+                                    R=R+1
+                                    print str(L)
+                                    print str(R)
+                                    print str(h1.GetBinContent(L))
+                                    print str(h1.GetBinContent(R))
+                                    print '----14'
                         else:
                             Random=randint(1,3)
                             print Random
@@ -837,11 +683,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----14'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
                             if(Random==2):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -855,11 +696,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----15'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
 #------------------------------------------
                 n=R-L
                 print n
@@ -907,11 +743,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.25GeV_3.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
 
                 h1 = f1.Get("h_c2_b1")
                 h2 = f2.Get("h_c2_b1")
@@ -1005,12 +841,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----1'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(L-1)<ratio_BinContent_2):
+                            elif(h3.GetBinContent(L-1)<ratio_BinContent_2):
                                 print 'YA4'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -1023,12 +854,7 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----2'
-                                if(h3.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                            if(h3.GetBinContent(L-1)==ratio_BinContent_2):
+                            elif(h3.GetBinContent(L-1)==ratio_BinContent_2):
                                 print 'YA4'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -1044,11 +870,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----3'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -1062,11 +883,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----4'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                         #--------------------------------
                         else:
                             xarray.append(h1.Integral(L-1,R)/a)
@@ -1081,11 +897,6 @@ for k in range(0,3):
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----5'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
                     #---------------------------
                     if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
@@ -1103,11 +914,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----6'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
                             if(h3.GetBinContent(R+1)<ratio_BinContent_1):
                                 'YA5'
                                 xarray.append(h1.Integral(L-1,R)/a)
@@ -1121,11 +927,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----7'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
                             if(h3.GetBinContent(R+1)==ratio_BinContent_1):
                                 print 'YA5'
                                 Random=randint(1,3)
@@ -1142,11 +943,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----8'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -1160,12 +956,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----9'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
-                    
                         #---------------------------
                         else:
                             xarray.append(h1.Integral(L,R+1)/a)
@@ -1180,11 +970,6 @@ for k in range(0,3):
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----10'
-                            if(h1.Integral(L,R)>a/2):
-                                print str(h1.Integral(L,R))+'More than half'
-                                print '================================================fuck=============================================================='
-                                print '=========================================================================================================================='
-                                break
         #-----------------------------------
                     if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
@@ -1202,11 +987,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----11'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
                             elif(ratio_BinContent_2<ratio_BinContent_1):
                                 print 'YA6'
                                 xarray.append(h1.Integral(L-1,R)/a)
@@ -1220,12 +1000,6 @@ for k in range(0,3):
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----12'
-                                if(h1.Integral(L,R)>a/2):
-                                    print str(h1.Integral(L,R))+'More than half'
-                                    print '================================================fuck=============================================================='
-                                    print '=========================================================================================================================='
-                                    break
-                    
                             elif(ratio_BinContent_2==ratio_BinContent_1):
                                 print 'YA6'
                                 Random=randint(1,3)
@@ -1242,12 +1016,6 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----13'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
-                        
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
@@ -1261,52 +1029,35 @@ for k in range(0,3):
                                     print str(h1.GetBinContent(L))
                                     print str(h1.GetBinContent(R))
                                     print '----14'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
-                                    
-                            else:
-                                Random=randint(1,3)
-                                print Random
-                                if(Random==1):
-                                    xarray.append(h1.Integral(L-1,R)/a)
-                                    yarray.append(1/(h2.Integral(L-1,R)/b))
-                                    print h1.Integral(L-1,R), a
-                                    print yarray
-                                    C=h2.Integral(L-1,R)
-                                    L=L-1
-                                    R=R
-                                    print str(L)
-                                    print str(R)
-                                    print str(h1.GetBinContent(L))
-                                    print str(h1.GetBinContent(R))
-                                    print '----14'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
-                                if(Random==2):
-                                    xarray.append(h1.Integral(L,R+1)/a)
-                                    yarray.append(1/(h2.Integral(L,R+1)/b))
-                                    print h1.Integral(L,R+1), a
-                                    print yarray
-                                    C=h2.Integral(L,R+1)
-                                    L=L
-                                    R=R+1
-                                    print str(L)
-                                    print str(R)
-                                    print str(h1.GetBinContent(L))
-                                    print str(h1.GetBinContent(R))
-                                    print '----15'
-                                    if(h1.Integral(L,R)>a/2):
-                                        print str(h1.Integral(L,R))+'More than half'
-                                        print '================================================fuck=============================================================='
-                                        print '=========================================================================================================================='
-                                        break
-                                                                                                                                                                                                #------------------------------------------
+                        else:
+                            Random=randint(1,3)
+                            print Random
+                            if(Random==1):
+                                xarray.append(h1.Integral(L-1,R)/a)
+                                yarray.append(1/(h2.Integral(L-1,R)/b))
+                                print h1.Integral(L-1,R), a
+                                print yarray
+                                C=h2.Integral(L-1,R)
+                                L=L-1
+                                R=R
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----14'
+                            if(Random==2):
+                                xarray.append(h1.Integral(L,R+1)/a)
+                                yarray.append(1/(h2.Integral(L,R+1)/b))
+                                print h1.Integral(L,R+1), a
+                                print yarray
+                                C=h2.Integral(L,R+1)
+                                L=L
+                                R=R+1
+                                print str(L)
+                                print str(R)
+                                print str(h1.GetBinContent(L))
+                                print str(h1.GetBinContent(R))
+                                print '----15'                                                                                                                                                                                                #------------------------------------------
                 n=R-L
                 print n
                 

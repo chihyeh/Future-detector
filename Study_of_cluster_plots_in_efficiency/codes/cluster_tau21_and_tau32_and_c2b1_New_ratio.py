@@ -24,7 +24,7 @@ print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-for k in range(2,3):
+for k in range(1,3):
     if(variable[k]=="tau21"):
         for m in range(0,4):
             for i in range(0,3):
@@ -63,6 +63,8 @@ for k in range(2,3):
                 L=M
                 R=M
                 print M
+                xarray.append(h1.Integral(L,R)/a)
+                yarray.append(1/(h2.Integral(L,R)/b))
                 for Q in range(101):
                     print '==============================================='
                     print 'signal total'+str(a)
@@ -355,7 +357,7 @@ for k in range(2,3):
                 c = TCanvas("c1", "c1",0,0,500,500)
                   
                   
-                gr = TGraph(n,xarray,yarray)
+                gr = TGraph(n+1,xarray,yarray)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
                 gr.SetLineStyle(1)
@@ -415,6 +417,8 @@ for k in range(2,3):
                 L=M
                 R=M
                 print M
+                xarray.append(h1.Integral(L,R)/a)
+                yarray.append(1/(h2.Integral(L,R)/b))
                 for Q in range(101):
                     print '==============================================='
                     print 'signal total'+str(a)
@@ -707,7 +711,7 @@ for k in range(2,3):
                 c = TCanvas("c1", "c1",0,0,500,500)
                 
                 
-                gr = TGraph(n,xarray,yarray)
+                gr = TGraph(n+1,xarray,yarray)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
                 gr.SetLineStyle(1)
@@ -772,6 +776,8 @@ for k in range(2,3):
                 L=M
                 R=M
                 print M
+                xarray.append(h1.Integral(L,R)/a)
+                yarray.append(1/(h2.Integral(L,R)/b))
                 for Q in range(101):
                     print '==============================================='
                     print 'signal total'+str(a)
@@ -1064,7 +1070,7 @@ for k in range(2,3):
                 c = TCanvas("c1", "c1",0,0,500,500)
                 
                 
-                gr = TGraph(n,xarray,yarray)
+                gr = TGraph(n+1,xarray,yarray)
                 gr.SetLineColor(Color)
                 gr.SetLineWidth(3)
                 gr.SetLineStyle(1)

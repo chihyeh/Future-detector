@@ -882,11 +882,11 @@ void jetSubstructure(float radius=0.4, int mode=0){
     int *Enevec_use=Enevec;
     char const *Signal_use[] = {"ww", "ttbar","qq",};
 
-for ( int signal=0 ; signal <1 ; signal++)
+for ( int signal=0 ; signal <3 ; signal++)
 {
-    for ( int Dir=0 ; Dir <1 ; Dir++)
+    for ( int Dir=0 ; Dir <3 ; Dir++)
     {
-        for(int energy=0 ; energy < 1 ; energy++)
+        for(int energy=0 ; energy < 4 ; energy++)
         {
             cout << "===========================================" << endl;
             cout << "signal:" << Signal_use[signal] << endl;
@@ -973,7 +973,7 @@ for ( int signal=0 ; signal <1 ; signal++)
              h_sub_cut[ih]->SetXTitle(histonames_cut[ih].data());
              h_sub_cut[ih]->SetYTitle(Form("Number of jets per %.2f",binwidth));
           }
-          string inputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_rawhit_fastjet_mode0_0.5GeV.root";
+          string inputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_rawhit_fastjet_mode0_0.250000GeV.root";
           string inputFile_cut = inputDir + "/radius" + Form("%0.1f",radius)+ "_response_e2.root";
           cout << "opening " << inputFile.data() << endl;
           cout << "opening " << inputFile_cut.data() << endl;
@@ -981,8 +981,10 @@ for ( int signal=0 ; signal <1 ; signal++)
           TreeReader caloTree(inputFile.data(),treeName.data());
           TreeReader genTree_cut(inputFile_cut.data(),"tGEN_nonu");
           TreeReader caloTree_cut(inputFile_cut.data(),treeName_cut.data());
-
-
+           //============ Cut function============//
+          int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
+          int *Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
+           //=====================================//
           for(Long64_t jEntry=0; jEntry< genTree.GetEntriesFast() ;jEntry++){
               cout << jEntry << endl;
             genTree.GetEntry(jEntry);
@@ -1000,11 +1002,6 @@ for ( int signal=0 ; signal <1 ; signal++)
             Float_t*  calo_jphi = caloTree.GetPtrFloat("jphi");
             Int_t     calo_njets = caloTree.GetInt("njets");
     
-            Float_t*  gen_cut_je = genTree_cut.GetPtrFloat("je");
-            Float_t*  gen_cut_jeta = genTree_cut.GetPtrFloat("jeta");
-            Float_t*  gen_cut_jphi = genTree_cut.GetPtrFloat("jphi");
-            Int_t     gen_cut_njets = genTree_cut.GetInt("njets");
-
             Float_t*  calo_cut_je = caloTree_cut.GetPtrFloat("je");
             Float_t*  calo_cut_jeta = caloTree_cut.GetPtrFloat("jeta");
             Float_t*  calo_cut_jphi = caloTree_cut.GetPtrFloat("jphi");
@@ -1044,22 +1041,22 @@ for ( int signal=0 ; signal <1 ; signal++)
             
               if(findGenMatch<0)continue;
             //================================find match between cluster cut and trawhit=======================//
-              int findtcaloMatch=-1;
-              for(int k=0; k< gen_cut_njets; k++)
+              int findGenMatch_2=-1;
+              for(int k=0; k< gen_njets; k++)
               {
                     
                     
-                    float dr = myDeltaR(gen_cut_jeta[k], calo_cut_jeta[i],
-                                        gen_cut_jphi[k], calo_cut_jphi[i]);
+                    float dr = myDeltaR(gen_jeta[k], calo_cut_jeta[i],
+                                        gen_jphi[k], calo_cut_jphi[i]);
                     
                     if(dr<0.1)
                     {
-                        findtcaloMatch=k;
+                        findGenMatch_2=k;
                         break;
                     }
                 }
                 
-              if(findtcaloMatch<0)continue;
+              if(findGenMatch_2<0)continue;
             
             //===========Pre-selection -> Find the cut in the function ( You can see the function before=========//
             // The concept is find the signal from the highest bincentent and in the 50% region use method 2
@@ -1068,7 +1065,6 @@ for ( int signal=0 ; signal <1 ; signal++)
               
               if(Signal_use[signal]=="ww")
               {
-                 int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
                   //int *Cut_ww=cut_ww(1,Enevec_use[energy]);
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
@@ -1086,7 +1082,6 @@ for ( int signal=0 ; signal <1 ; signal++)
               }
               if(Signal_use[signal]=="ttbar")
               {
-                int *Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
                 //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
                 if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;
                 for(int ih=0; ih < nhistos; ih++)
@@ -1104,22 +1099,20 @@ for ( int signal=0 ; signal <1 ; signal++)
               }
              if(Signal_use[signal]=="qq")
              {
-                 int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
-                 //int *Cut_ww=cut_ww(1,Enevec_use[energy]);
+                 //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
-                 cout << "Storing rawhits" << endl;
-                 cout << ih << endl;
-                 h_sub[ih]->Fill(sub[ih][i]);
+                     cout << "Storing rawhits" << endl;
+                     cout << ih << endl;
+                     h_sub[ih]->Fill(sub[ih][i]);
                  }
                  for(int ih=0; ih < nhistos_cut; ih++)
                  {
-                 cout << "Storing cluster" << endl;
-                 cout << ih << endl;
-                 h_sub_cut[ih]->Fill(sub_cut[ih][i]);
+                     cout << "Storing cluster" << endl;
+                     cout << ih << endl;
+                     h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                  }
-                 
             }
             }// end of loop over calo jets
           }// end loop of entries
@@ -1127,7 +1120,7 @@ for ( int signal=0 ; signal <1 ; signal++)
            //===========================================================//
           if((Signal_use[signal]=="ttbar")||(Signal_use[signal]=="ww"))
           {
-          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_" + treeName + "_mass_cut_0.5GeV_for_"+Form("%s",Signal_use[signal])+".root";
+          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_" + treeName + "_mass_cut_0.25GeV_for_"+Form("%s",Signal_use[signal])+".root";
           cout << "writing output to " << outputFile.data() << endl;
           cout << "====================================================================================================" << endl;
           TFile* outFile = new TFile(outputFile.data(),"recreate");
@@ -1147,7 +1140,7 @@ for ( int signal=0 ; signal <1 ; signal++)
 
           if(Signal_use[signal]=="qq")
           {
-          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_"+ treeName + "_mass_cut_0.5GeV_for_ww.root";
+          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_"+ treeName + "_mass_cut_0.25GeV_for_ww.root";
           cout << "writing output to " << outputFile.data() << endl;
           cout << "====================================================================================================" << endl;
           TFile* outFile = new TFile(outputFile.data(),"recreate");

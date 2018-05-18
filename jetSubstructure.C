@@ -1113,12 +1113,12 @@ for ( int signal=0 ; signal <3 ; signal++)
               if(findGenMatch<0)continue;
             //================================find match between cluster cut and trawhit=======================//
               int findGenMatch_2=-1;
-              for(int k=0; k< gen_njets; k++)
+              for(int k=0; k< calo_cut_njets; k++)
               {
                     
                     
-                    float dr = myDeltaR(gen_jeta[k], calo_cut_jeta[i],
-                                        gen_jphi[k], calo_cut_jphi[i]);
+                    float dr = myDeltaR(gen_jeta[findGenMatch], calo_cut_jeta[k],
+                                        gen_jphi[findGenMatch], calo_cut_jphi[k]);
                     
                     if(dr<0.1)
                     {

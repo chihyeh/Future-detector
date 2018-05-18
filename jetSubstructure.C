@@ -35,6 +35,9 @@ float myDeltaR(float eta1, float eta2, float phi1, float phi2)
 int *cut_ww(int files, int energy)
 {
     TFile* f1 = TFile::Open(Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_wwrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root",energy,energy,files));
+    cout << "============================================================================================================================================================" << endl;
+    cout << Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_wwrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root",energy,energy,files) << endl;
+    cout << "============================================================================================================================================================" << endl;
     TH1F *h1;
     h1=(TH1F*) f1->Get("h_mass_mmdt");
     float a=h1->Integral();
@@ -43,7 +46,7 @@ int *cut_ww(int files, int energy)
     int R=M;
     float ratio_BinContent_1=0;
     float ratio_BinContent_2=0;
-    for(int Q=0 ; Q<101 ; Q++)
+    for(int Q=0 ; Q<241 ; Q++)
     {
         cout <<  "Run number: " << Q << endl;
         cout <<  "===============================================" <<endl;
@@ -54,24 +57,24 @@ int *cut_ww(int files, int energy)
         cout <<  "===============================================" << endl;
         cout <<  "next-step" << endl;
     //================================================================================Define the zero bin first
-        if(h1->Integral(R+2,100)!=0)
+        if(h1->Integral(R+2,240)!=0)
         {
             h1->GetXaxis()->SetRange(R+2,100);
             ratio_BinContent_2=h1->GetMean();
-            h1->GetXaxis()->SetRange();
+            h1->GetXaxis()->SetRange(L,R);
             cout <<  "Right: this bin is zero, average it" << endl;
         }
-        if(h1->Integral(R+2,100)==0)
+        if(h1->Integral(R+2,240)==0)
         {
             ratio_BinContent_2=0;
             cout <<  "Right: this bin is zero, after:no signal" << endl;
         }
-       //================================================================================Define the zero bin first
+    //================================================================================Define the zero bin first
         if(h1->Integral(0,L-2)!=0)
         {
             h1->GetXaxis()->SetRange(0,L-2);
             ratio_BinContent_1=h1->GetMean();
-            h1->GetXaxis()->SetRange();
+            h1->GetXaxis()->SetRange(L,R);
             cout <<  "Left: this bin is zero, before:avergae it" << endl;
         }
         if(h1->Integral(0,L-2)==0)
@@ -79,10 +82,43 @@ int *cut_ww(int files, int energy)
             ratio_BinContent_1=0;
             cout <<  "Left: this bin is zero, before:no signal" << endl;
         }
-//---------------------------
     
-//---------------------------
-        if(h1->GetBinContent(L-1)>h1->GetBinContent(R+1))
+//---------------------------Define the boundary condition---------------------//
+        if(L<0)
+        {
+            cout << "YA14" << endl;
+            cout << "Now we have "<< h1->Integral(L,R+1) << "Total" << a << endl;
+            L=L;
+            R=R+1;
+            cout <<  "Left bin:" << L << endl;
+            cout <<  "Right bin:" << R << endl;
+            cout <<  "----1" << endl;
+            if(h1->Integral(L,R)>a/2)
+            {
+                cout <<  "More than half :" << h1->Integral(L,R) << endl;
+                cout <<  "==========" << endl;
+                break;
+            }
+        }
+        else if(R>240)
+        {
+            cout << "YA14" << endl;
+            cout << "Now we have "<< h1->Integral(L-1,R) << "Total" << a << endl;
+            L=L-1;
+            R=R;
+            cout <<  "Left bin:" << L << endl;
+            cout <<  "Right bin:" << R << endl;
+            cout <<  "----1" << endl;
+            if(h1->Integral(L,R)>a/2)
+            {
+                cout <<  "More than half :" << h1->Integral(L,R) << endl;
+                cout <<  "==========" << endl;
+                break;
+            }
+        }
+//--------------------------Use the Method 2--------------------------------//
+        //The first condition-->Left>right
+        else if(h1->GetBinContent(L-1)>h1->GetBinContent(R+1))
         {
             if(h1->GetBinContent(R+1)==0)
             {
@@ -157,7 +193,6 @@ int *cut_ww(int files, int energy)
                     }
                 }
             }
-//--------------------------------
             else
             {
                 cout << "YA4" << endl;
@@ -176,7 +211,7 @@ int *cut_ww(int files, int energy)
             }
         }
         
-//---------------------------
+        //The second condition-->Left<right
         else if(h1->GetBinContent(L-1)<h1->GetBinContent(R+1))
         {
             if(h1->GetBinContent(L-1)==0)
@@ -271,8 +306,8 @@ int *cut_ww(int files, int energy)
                 }
             }
         }
-//-----------------------------------
-        if(h1->GetBinContent(L-1)==h1->GetBinContent(R+1))
+        //The Third condition-->Left==right
+        else if(h1->GetBinContent(L-1)==h1->GetBinContent(R+1))
         {
             if(h1->GetBinContent(L-1)==0 && h1->GetBinContent(R+1)==0)
             {
@@ -295,7 +330,7 @@ int *cut_ww(int files, int energy)
                 else if(ratio_BinContent_2<ratio_BinContent_1)
                 {
                     cout <<  "YA10" << endl;
-                    cout <<  "Now we have" << h1->Integral(L,R+1) << "Total" << a << endl;
+                    cout <<  "Now we have" << h1->Integral(L-1,R) << "Total" << a << endl;
                     L=L;
                     R=R+1;
                     cout <<  "Left bin:" << L << endl;
@@ -399,10 +434,13 @@ int *cut_ww(int files, int energy)
     //------------------------------------------
 
 
-
+//This one function is same as before, just the ttbar cut (files name are different//
 int *cut_tt(int files, int energy)
 {
     TFile* f1 = TFile::Open(Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_ttbarrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root",energy,energy,files));
+    cout << "============================================================================================================================================================" << endl;
+    cout<<Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_ttbarrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root",energy,energy,files)<<endl;
+    cout << "============================================================================================================================================================" << endl;
     TH1F *h1;
     h1=(TH1F*) f1->Get("h_mass_mmdt");
     float a=h1->Integral();
@@ -411,7 +449,7 @@ int *cut_tt(int files, int energy)
     int R=M;
     float ratio_BinContent_1=0;
     float ratio_BinContent_2=0;
-    for( int Q=0 ; Q<101 ; Q++)
+    for( int Q=0 ; Q<241 ; Q++)
     {
         cout <<  "Run number: " << Q << endl;
         cout <<  "===============================================" <<endl;
@@ -422,14 +460,14 @@ int *cut_tt(int files, int energy)
         cout <<  "===============================================" << endl;
         cout <<  "next-step" << endl;
         //================================================================================Define the zero bin first
-        if(h1->Integral(R+2,100)!=0)
+        if(h1->Integral(R+2,240)!=0)
         {
-            h1->GetXaxis()->SetRange(R+2,100);
+            h1->GetXaxis()->SetRange(R+2,240);
             ratio_BinContent_2=h1->GetMean();
-            h1->GetXaxis()->SetRange();
+            h1->GetXaxis()->SetRange(L,R);
             cout <<  "Right: this bin is zero, average it" << endl;
         }
-        if(h1->Integral(R+2,100)==0)
+        if(h1->Integral(R+2,240)==0)
         {
             ratio_BinContent_2=0;
             cout <<  "Right: this bin is zero, after:no signal" << endl;
@@ -439,7 +477,7 @@ int *cut_tt(int files, int energy)
         {
             h1->GetXaxis()->SetRange(0,L-2);
             ratio_BinContent_1=h1->GetMean();
-            h1->GetXaxis()->SetRange();
+            h1->GetXaxis()->SetRange(L,R);
             cout <<  "Left: this bin is zero, before:avergae it" << endl;
         }
         if(h1->Integral(0,L-2)==0)
@@ -450,7 +488,39 @@ int *cut_tt(int files, int energy)
         //---------------------------
         
         //---------------------------
-        if(h1->GetBinContent(L-1)>h1->GetBinContent(R+1))
+        if(L<0)
+        {
+            cout << "YA14" << endl;
+            cout << "Now we have "<< h1->Integral(L,R+1) << "Total" << a << endl;
+            L=L;
+            R=R+1;
+            cout <<  "Left bin:" << L << endl;
+            cout <<  "Right bin:" << R << endl;
+            cout <<  "----1" << endl;
+            if(h1->Integral(L,R)>a/2)
+            {
+                cout <<  "More than half :" << h1->Integral(L,R) << endl;
+                cout <<  "==========" << endl;
+                break;
+            }
+        }
+        else if(R>240)
+        {
+            cout << "YA15" << endl;
+            cout << "Now we have "<< h1->Integral(L-1,R) << "Total" << a << endl;
+            L=L-1;
+            R=R;
+            cout <<  "Left bin:" << L << endl;
+            cout <<  "Right bin:" << R << endl;
+            cout <<  "----1" << endl;
+            if(h1->Integral(L,R)>a/2)
+            {
+                cout <<  "More than half :" << h1->Integral(L,R) << endl;
+                cout <<  "==========" << endl;
+                break;
+            }
+        }
+        else if(h1->GetBinContent(L-1)>h1->GetBinContent(R+1))
         {
             if(h1->GetBinContent(R+1)==0)
             {
@@ -640,7 +710,7 @@ int *cut_tt(int files, int energy)
             }
         }
         //-----------------------------------
-        if(h1->GetBinContent(L-1)==h1->GetBinContent(R+1))
+        else if(h1->GetBinContent(L-1)==h1->GetBinContent(R+1))
         {
             if(h1->GetBinContent(L-1)==0 && h1->GetBinContent(R+1)==0)
             {
@@ -663,7 +733,7 @@ int *cut_tt(int files, int energy)
                 else if(ratio_BinContent_2<ratio_BinContent_1)
                 {
                     cout <<  "YA10" << endl;
-                    cout <<  "Now we have" << h1->Integral(L,R+1) << "Total" << a << endl;
+                    cout <<  "Now we have" << h1->Integral(L-1,R) << "Total" << a << endl;
                     L=L;
                     R=R+1;
                     cout <<  "Left bin:" << L << endl;
@@ -956,7 +1026,7 @@ for ( int signal=0 ; signal <3 ; signal++)
           const float xmin_cut=0;
 
           const int nbins=100;
-          const int nbins_cut=100;
+          const int nbins_cut=240;
           for(int ih=0; ih < nhistos; ih++)
             {
             // [(xmax[ih]-xmin)/nbins]*L or R to find the mass_cut value
@@ -985,8 +1055,8 @@ for ( int signal=0 ; signal <3 ; signal++)
           int *Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
           int *Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
            //=====================================//
+            //=====Cut part=======//
           for(Long64_t jEntry=0; jEntry< genTree.GetEntriesFast() ;jEntry++){
-              cout << jEntry << endl;
             genTree.GetEntry(jEntry);
             caloTree.GetEntry(jEntry);
             genTree_cut.GetEntry(jEntry);
@@ -1019,6 +1089,7 @@ for ( int signal=0 ; signal <3 ; signal++)
               sub_cut[ih] = caloTree_cut.GetPtrFloat(Form("j_%s",histonames_cut[ih].data()));
             }
 
+            //=====matching the gen tree with rawhit and cluster=======// 
             for(int i=0; i< calo_njets; i++){
 
               
@@ -1069,14 +1140,10 @@ for ( int signal=0 ; signal <3 ; signal++)
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
-                 cout << "Storing rawhits" << endl;
-                 cout << ih << endl;
                  h_sub[ih]->Fill(sub[ih][i]);
                  }
                  for(int ih=0; ih < nhistos_cut; ih++)
                  {
-                 cout << "Storing cluster" << endl;
-                 cout << ih << endl;
                  h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                  }
               }
@@ -1086,14 +1153,10 @@ for ( int signal=0 ; signal <3 ; signal++)
                 if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;
                 for(int ih=0; ih < nhistos; ih++)
                 {
-                cout << "Storing rawhits" << endl;
-                cout << ih << endl;
                 h_sub[ih]->Fill(sub[ih][i]);
                 }
                 for(int ih=0; ih < nhistos_cut; ih++)
                 {
-                cout << "Storing cluster" << endl;
-                cout << ih << endl;
                 h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                 }
               }
@@ -1103,14 +1166,10 @@ for ( int signal=0 ; signal <3 ; signal++)
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                  {
-                     cout << "Storing rawhits" << endl;
-                     cout << ih << endl;
                      h_sub[ih]->Fill(sub[ih][i]);
                  }
                  for(int ih=0; ih < nhistos_cut; ih++)
                  {
-                     cout << "Storing cluster" << endl;
-                     cout << ih << endl;
                      h_sub_cut[ih]->Fill(sub_cut[ih][i]);
                  }
             }
@@ -1126,12 +1185,10 @@ for ( int signal=0 ; signal <3 ; signal++)
           TFile* outFile = new TFile(outputFile.data(),"recreate");
           for(int ih=0;ih<nhistos;ih++)
           {
-          cout << "Writing_files" << ih << endl;
           h_sub[ih]->Write();
           }
           for(int ih=0;ih<nhistos_cut;ih++)
           {
-          cout << "Writing_files" << ih << endl;
           h_sub_cut[ih]->Write();
           }
           outFile->Close();
@@ -1146,12 +1203,10 @@ for ( int signal=0 ; signal <3 ; signal++)
           TFile* outFile = new TFile(outputFile.data(),"recreate");
           for(int ih=0;ih<nhistos;ih++)
           {
-          cout << "Writing_files" << ih << endl;
           h_sub[ih]->Write();
           }
           for(int ih=0;ih<nhistos_cut;ih++)
           {
-          cout << "Writing_files" << ih << endl;
           h_sub_cut[ih]->Write();
           }
           outFile->Close();

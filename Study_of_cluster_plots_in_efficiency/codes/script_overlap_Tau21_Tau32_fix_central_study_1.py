@@ -327,10 +327,6 @@ for k in range(0,2):
         if(variable_array[k]=="tau32"):
             mg.GetYaxis().SetRangeUser(1,50)
             mg.GetXaxis().SetLimits(0.1,1)
-        mg.GetXaxis().SetLabelSize(0.05)
-        mg.GetYaxis().SetLabelSize(0.05)
-        mg.GetXaxis().SetLabelFont(60)
-        mg.GetYaxis().SetLabelFont(60)
 #G1.GetXaxis().SetRangeUser(0,1)
 #G1.GetYaxis().SetRangeUser(0.73,1.5)
 #G1.GetYaxis().SetRangeUser(0,1.5)

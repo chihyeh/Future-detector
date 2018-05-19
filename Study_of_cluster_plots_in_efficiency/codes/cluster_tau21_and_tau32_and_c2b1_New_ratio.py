@@ -65,7 +65,7 @@ for k in range(1,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
-                for Q in range(101):
+                for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -105,7 +105,37 @@ for k in range(1,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                    if(L==0 and R==100):
+                        break
+                    elif(L==0):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L,R+1)/a)
+                        yarray.append(1/((h2.Integral(L,R+1))/b))
+                        print h1.Integral(L,R+1), a
+                        print yarray
+                        L=L
+                        R=R+1
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(R==100):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L-1,R)/a)
+                        yarray.append(1/((h2.Integral(L-1,R))/b))
+                        print h1.Integral(L-1,R), a
+                        print yarray
+                        L=L-1
+                        R=R
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+
+
+                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
@@ -177,7 +207,7 @@ for k in range(1,3):
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
@@ -250,7 +280,7 @@ for k in range(1,3):
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
@@ -419,7 +449,7 @@ for k in range(1,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
-                for Q in range(101):
+                for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -459,7 +489,38 @@ for k in range(1,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                    if(L==0 and R==100):
+                        break
+                    elif(L==0):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L,R+1)/a)
+                        yarray.append(1/((h2.Integral(L,R+1))/b))
+                        print h1.Integral(L,R+1), a
+                        print yarray
+                        L=L
+                        R=R+1
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(R==100):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L-1,R)/a)
+                        yarray.append(1/((h2.Integral(L-1,R))/b))
+                        print h1.Integral(L-1,R), a
+                        print yarray
+                        L=L-1
+                        R=R
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(L==0 and R==100):
+                        break
+
+                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
@@ -531,7 +592,7 @@ for k in range(1,3):
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
@@ -604,7 +665,7 @@ for k in range(1,3):
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
@@ -778,7 +839,7 @@ for k in range(1,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
-                for Q in range(101):
+                for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -818,7 +879,36 @@ for k in range(1,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                    if(L==0 and R==100):
+                        break
+                    elif(L==0):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L,R+1)/a)
+                        yarray.append(1/((h2.Integral(L,R+1))/b))
+                        print h1.Integral(L,R+1), a
+                        print yarray
+                        L=L
+                        R=R+1
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(R==100):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L-1,R)/a)
+                        yarray.append(1/((h2.Integral(L-1,R))/b))
+                        print h1.Integral(L-1,R), a
+                        print yarray
+                        L=L-1
+                        R=R
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+
+                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
@@ -890,7 +980,7 @@ for k in range(1,3):
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
@@ -963,7 +1053,7 @@ for k in range(1,3):
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'

@@ -29,11 +29,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root",'r')
                 
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
@@ -68,7 +68,7 @@ for k in range(0,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
-                for Q in range(101):
+                for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -108,7 +108,36 @@ for k in range(0,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                    if(L==0 and R==100):
+                        break
+                    elif(L==0):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L,R+1)/a)
+                        yarray.append(1/((h2.Integral(L,R+1))/b))
+                        print h1.Integral(L,R+1), a
+                        print yarray
+                        L=L
+                        R=R+1
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(R==100):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L-1,R)/a)
+                        yarray.append(1/((h2.Integral(L-1,R))/b))
+                        print h1.Integral(L-1,R), a
+                        print yarray
+                        L=L-1
+                        R=R
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+
+                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
@@ -180,7 +209,7 @@ for k in range(0,3):
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
@@ -254,7 +283,7 @@ for k in range(0,3):
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
@@ -379,9 +408,9 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
+                f=TFile("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
+                c.Print("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
                   
                   
 
@@ -389,11 +418,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt.root",'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt.root",'r')
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
                 print h1,h2
@@ -428,7 +457,7 @@ for k in range(0,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
-                for Q in range(101):
+                for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -468,7 +497,35 @@ for k in range(0,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                    if(L==0 and R==100):
+                        break
+                    elif(L==0):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L,R+1)/a)
+                        yarray.append(1/((h2.Integral(L,R+1))/b))
+                        print h1.Integral(L,R+1), a
+                        print yarray
+                        L=L
+                        R=R+1
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(R==100):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L-1,R)/a)
+                        yarray.append(1/((h2.Integral(L-1,R))/b))
+                        print h1.Integral(L-1,R), a
+                        print yarray
+                        L=L-1
+                        R=R
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
@@ -540,7 +597,7 @@ for k in range(0,3):
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
@@ -613,7 +670,7 @@ for k in range(0,3):
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
@@ -736,9 +793,9 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
+                f=TFile("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
+                c.Print("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
 
 
 
@@ -747,11 +804,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww.root", 'r')
 
                 h1 = f1.Get("h_c2_b1")
                 h2 = f2.Get("h_c2_b1")
@@ -791,7 +848,7 @@ for k in range(0,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
-                for Q in range(101):
+                for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -832,7 +889,35 @@ for k in range(0,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                    if(L==0 and R==100):
+                        break
+                    elif(L==0):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L,R+1)/a)
+                        yarray.append(1/((h2.Integral(L,R+1))/b))
+                        print h1.Integral(L,R+1), a
+                        print yarray
+                        L=L
+                        R=R+1
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(R==100):
+                        print 'YA4'
+                        xarray.append(h1.Integral(L-1,R)/a)
+                        yarray.append(1/((h2.Integral(L-1,R))/b))
+                        print h1.Integral(L-1,R), a
+                        print yarray
+                        L=L-1
+                        R=R
+                        print str(L)
+                        print str(R)
+                        print str(h1.GetBinContent(L))
+                        print str(h1.GetBinContent(R))
+                        print '----2'
+                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
@@ -904,7 +989,7 @@ for k in range(0,3):
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    if(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
@@ -977,7 +1062,7 @@ for k in range(0,3):
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    if(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
@@ -1099,6 +1184,6 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
+                f=TFile("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
+                c.Print("Rawhit_0.25GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  17 MAY 2018 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  18 MAY 2018 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -954,12 +954,12 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/cluster_c2b1_5tev_eff_1_New2_after_cu
 t.eps>
-(epstopdf)                    date: 2018-05-17 12:19:13
-(epstopdf)                    size: 12650 bytes
+(epstopdf)                    date: 2018-05-18 21:39:56
+(epstopdf)                    size: 12656 bytes
 (epstopdf)             Output file: <figs/cluster_c2b1_5tev_eff_1_New2_after_cu
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 08:00:39
-(epstopdf)                    size: 11547 bytes
+(epstopdf)                    date: 2018-05-17 12:32:08
+(epstopdf)                    size: 11578 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_5tev_eff
 _1_New2_after_cut-eps-converted-to.pdf figs/cluster_c2b1_5tev_eff_1_New2_after_
 cut.eps>
@@ -970,26 +970,26 @@ ely (allowed).
 
 Package epstopdf Info: Result file: <figs/cluster_c2b1_5tev_eff_1_New2_after_cu
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 12:32:08
-(epstopdf)                    size: 11578 bytes.
+(epstopdf)                    date: 2018-05-18 21:57:35
+(epstopdf)                    size: 11565 bytes.
 
 <figs/cluster_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=20, 569.1
-2625pt x 395.4775pt>
+2625pt x 396.48125pt>
 File: figs/cluster_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use figs/cluster_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_c2b1_5tev_eff_1_New2_after_cut-eps-conver
 ted-to.pdf used on input line 176.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_c2b1_10tev_eff_1_New2_after_c
 ut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:13
-(epstopdf)                    size: 12598 bytes
+(epstopdf)                    date: 2018-05-18 21:39:56
+(epstopdf)                    size: 12603 bytes
 (epstopdf)             Output file: <figs/cluster_c2b1_10tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 08:00:40
-(epstopdf)                    size: 11541 bytes
+(epstopdf)                    date: 2018-05-17 12:32:09
+(epstopdf)                    size: 11535 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_10tev_ef
 f_1_New2_after_cut-eps-converted-to.pdf figs/cluster_c2b1_10tev_eff_1_New2_afte
 r_cut.eps>
@@ -1000,26 +1000,26 @@ afely (allowed).
 
 Package epstopdf Info: Result file: <figs/cluster_c2b1_10tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 12:32:09
-(epstopdf)                    size: 11535 bytes.
+(epstopdf)                    date: 2018-05-18 21:57:36
+(epstopdf)                    size: 11529 bytes.
 
 <figs/cluster_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=21, 569.
-12625pt x 395.4775pt>
+12625pt x 396.48125pt>
 File: figs/cluster_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/cluster_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_c2b1_10tev_eff_1_New2_after_cut-eps-conve
 rted-to.pdf used on input line 179.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_c2b1_20tev_eff_1_New2_after_c
 ut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:13
-(epstopdf)                    size: 12514 bytes
+(epstopdf)                    date: 2018-05-18 21:39:56
+(epstopdf)                    size: 12523 bytes
 (epstopdf)             Output file: <figs/cluster_c2b1_20tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 08:00:41
-(epstopdf)                    size: 11503 bytes
+(epstopdf)                    date: 2018-05-17 12:32:10
+(epstopdf)                    size: 11511 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_20tev_ef
 f_1_New2_after_cut-eps-converted-to.pdf figs/cluster_c2b1_20tev_eff_1_New2_afte
 r_cut.eps>
@@ -1030,26 +1030,26 @@ afely (allowed).
 
 Package epstopdf Info: Result file: <figs/cluster_c2b1_20tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 12:32:10
-(epstopdf)                    size: 11511 bytes.
+(epstopdf)                    date: 2018-05-18 21:57:37
+(epstopdf)                    size: 11510 bytes.
 
 <figs/cluster_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=22, 569.
-12625pt x 395.4775pt>
+12625pt x 396.48125pt>
 File: figs/cluster_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/cluster_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_c2b1_20tev_eff_1_New2_after_cut-eps-conve
 rted-to.pdf used on input line 182.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_c2b1_40tev_eff_1_New2_after_c
 ut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:13
-(epstopdf)                    size: 12443 bytes
+(epstopdf)                    date: 2018-05-18 21:39:57
+(epstopdf)                    size: 12448 bytes
 (epstopdf)             Output file: <figs/cluster_c2b1_40tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 08:00:42
-(epstopdf)                    size: 11513 bytes
+(epstopdf)                    date: 2018-05-17 12:32:10
+(epstopdf)                    size: 11517 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/cluster_c2b1_40tev_ef
 f_1_New2_after_cut-eps-converted-to.pdf figs/cluster_c2b1_40tev_eff_1_New2_afte
 r_cut.eps>
@@ -1060,18 +1060,18 @@ afely (allowed).
 
 Package epstopdf Info: Result file: <figs/cluster_c2b1_40tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-17 12:32:10
-(epstopdf)                    size: 11517 bytes.
+(epstopdf)                    date: 2018-05-18 21:57:38
+(epstopdf)                    size: 11531 bytes.
 
 <figs/cluster_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=23, 569.
-12625pt x 395.4775pt>
+12625pt x 396.48125pt>
 File: figs/cluster_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/cluster_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_c2b1_40tev_eff_1_New2_after_cut-eps-conve
 rted-to.pdf used on input line 185.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_c2b1_5tev_04_Man
 .eps>
 (epstopdf)                    date: 2018-03-16 10:58:43
@@ -1482,8 +1482,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_aft
 er_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:13
-(epstopdf)                    size: 12571 bytes
+(epstopdf)                    date: 2018-05-18 21:54:13
+(epstopdf)                    size: 12586 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_aft
 er_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:19
@@ -1492,21 +1492,28 @@ er_cut-eps-converted-to.pdf>
 v_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_5tev_eff_1_N
 ew2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 238.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut-
+eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut.eps)...ex
+ecuted safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_aft
+er_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:39
+(epstopdf)                    size: 11533 bytes.
 
 <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=36, 
-569.12625pt x 395.4775pt>
+569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut-eps-c
 onverted-to.pdf used on input line 238.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_af
 ter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:13
-(epstopdf)                    size: 12419 bytes
+(epstopdf)                    date: 2018-05-18 21:54:14
+(epstopdf)                    size: 12415 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_af
 ter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:20
@@ -1515,21 +1522,28 @@ ter_cut-eps-converted-to.pdf>
 ev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_10tev_eff_1
 _New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 241.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut
+-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_af
+ter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:40
+(epstopdf)                    size: 11439 bytes.
 
 <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=37,
- 569.12625pt x 395.4775pt>
+ 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut-eps-
 converted-to.pdf used on input line 241.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_af
 ter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:14
-(epstopdf)                    size: 12297 bytes
+(epstopdf)                    date: 2018-05-18 21:54:14
+(epstopdf)                    size: 12304 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_af
 ter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:21
@@ -1538,21 +1552,28 @@ ter_cut-eps-converted-to.pdf>
 ev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_20tev_eff_1
 _New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 244.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut
+-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_af
+ter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:41
+(epstopdf)                    size: 11377 bytes.
 
 <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=38,
- 569.12625pt x 395.4775pt>
+ 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut-eps-
 converted-to.pdf used on input line 244.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_af
 ter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:14
-(epstopdf)                    size: 12272 bytes
+(epstopdf)                    date: 2018-05-18 21:54:14
+(epstopdf)                    size: 12267 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_af
 ter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:22
@@ -1561,17 +1582,24 @@ ter_cut-eps-converted-to.pdf>
 ev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_40tev_eff_1
 _New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 247.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut
+-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_af
+ter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:41
+(epstopdf)                    size: 11427 bytes.
 
 <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=39,
- 569.12625pt x 395.4775pt>
+ 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut-eps-
 converted-to.pdf used on input line 247.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_c2b1_5tev_04_Ma
 n.eps>
 (epstopdf)                    date: 2018-03-16 11:03:47
@@ -1982,8 +2010,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_af
 ter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:35
-(epstopdf)                    size: 12528 bytes
+(epstopdf)                    date: 2018-05-18 21:53:17
+(epstopdf)                    size: 12541 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_af
 ter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:23
@@ -1992,21 +2020,28 @@ ter_cut-eps-converted-to.pdf>
 ev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_5tev_eff_1
 _New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 300.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_after_cut
+-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_after_cut.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_af
+ter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:42
+(epstopdf)                    size: 11497 bytes.
 
 <figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=52,
- 569.12625pt x 395.4775pt>
+ 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_c2b1_5tev_eff_1_New2_after_cut-eps-
 converted-to.pdf used on input line 300.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:35
-(epstopdf)                    size: 12379 bytes
+(epstopdf)                    date: 2018-05-18 21:53:17
+(epstopdf)                    size: 12394 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:23
@@ -2015,21 +2050,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_10tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 303.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:43
+(epstopdf)                    size: 11431 bytes.
 
 <figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=53
-, 569.12625pt x 395.4775pt>
+, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_c2b1_10tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 303.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:36
-(epstopdf)                    size: 12303 bytes
+(epstopdf)                    date: 2018-05-18 21:53:18
+(epstopdf)                    size: 12306 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:25
@@ -2038,21 +2080,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_20tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 306.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:44
+(epstopdf)                    size: 11380 bytes.
 
 <figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=54
-, 569.12625pt x 395.4775pt>
+, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_c2b1_20tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 306.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:36
-(epstopdf)                    size: 12245 bytes
+(epstopdf)                    date: 2018-05-18 21:53:18
+(epstopdf)                    size: 12242 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:25
@@ -2061,17 +2110,24 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_40tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 309.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:45
+(epstopdf)                    size: 11415 bytes.
 
 <figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=55
-, 569.12625pt x 395.4775pt>
+, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_c2b1_40tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 309.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Dis_cluster_010_tau21_5tev_04_Man.eps
 >
 (epstopdf)                    date: 2018-04-24 08:18:47
@@ -2479,8 +2535,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/cluster_tau21_5tev_eff_1_New2_after_c
 ut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:10
-(epstopdf)                    size: 13266 bytes
+(epstopdf)                    date: 2018-05-18 21:39:54
+(epstopdf)                    size: 13271 bytes
 (epstopdf)             Output file: <figs/cluster_tau21_5tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:27
@@ -2489,21 +2545,28 @@ ut-eps-converted-to.pdf>
 f_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau21_5tev_eff_1_New2_afte
 r_cut.eps>
 (epstopdf)             \includegraphics on input line 364.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau21_5tev_eff_1_New2_after_cut-eps-
+converted-to.pdf figs/cluster_tau21_5tev_eff_1_New2_after_cut.eps)...executed s
+afely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau21_5tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:46
+(epstopdf)                    size: 11952 bytes.
 
 <figs/cluster_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=68, 569.
-12625pt x 395.4775pt>
+12625pt x 396.48125pt>
 File: figs/cluster_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/cluster_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau21_5tev_eff_1_New2_after_cut-eps-conve
 rted-to.pdf used on input line 364.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau21_10tev_eff_1_New2_after_
 cut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:10
-(epstopdf)                    size: 13324 bytes
+(epstopdf)                    date: 2018-05-18 21:39:54
+(epstopdf)                    size: 13329 bytes
 (epstopdf)             Output file: <figs/cluster_tau21_10tev_eff_1_New2_after_
 cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:28
@@ -2512,21 +2575,28 @@ cut-eps-converted-to.pdf>
 ff_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau21_10tev_eff_1_New2_af
 ter_cut.eps>
 (epstopdf)             \includegraphics on input line 367.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau21_10tev_eff_1_New2_after_cut-eps
+-converted-to.pdf figs/cluster_tau21_10tev_eff_1_New2_after_cut.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau21_10tev_eff_1_New2_after_
+cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:47
+(epstopdf)                    size: 12005 bytes.
 
 <figs/cluster_tau21_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=69, 569
-.12625pt x 395.4775pt>
+.12625pt x 396.48125pt>
 File: figs/cluster_tau21_10tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/cluster_tau21_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau21_10tev_eff_1_New2_after_cut-eps-conv
 erted-to.pdf used on input line 367.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau21_20tev_eff_1_New2_after_
 cut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:11
-(epstopdf)                    size: 13257 bytes
+(epstopdf)                    date: 2018-05-18 21:39:54
+(epstopdf)                    size: 13272 bytes
 (epstopdf)             Output file: <figs/cluster_tau21_20tev_eff_1_New2_after_
 cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:29
@@ -2535,21 +2605,28 @@ cut-eps-converted-to.pdf>
 ff_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau21_20tev_eff_1_New2_af
 ter_cut.eps>
 (epstopdf)             \includegraphics on input line 370.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau21_20tev_eff_1_New2_after_cut-eps
+-converted-to.pdf figs/cluster_tau21_20tev_eff_1_New2_after_cut.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau21_20tev_eff_1_New2_after_
+cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:47
+(epstopdf)                    size: 11970 bytes.
 
 <figs/cluster_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=70, 569
-.12625pt x 395.4775pt>
+.12625pt x 396.48125pt>
 File: figs/cluster_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/cluster_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau21_20tev_eff_1_New2_after_cut-eps-conv
 erted-to.pdf used on input line 370.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau21_40tev_eff_1_New2_after_
 cut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:11
-(epstopdf)                    size: 13110 bytes
+(epstopdf)                    date: 2018-05-18 21:39:55
+(epstopdf)                    size: 13118 bytes
 (epstopdf)             Output file: <figs/cluster_tau21_40tev_eff_1_New2_after_
 cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:29
@@ -2558,17 +2635,24 @@ cut-eps-converted-to.pdf>
 ff_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau21_40tev_eff_1_New2_af
 ter_cut.eps>
 (epstopdf)             \includegraphics on input line 373.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau21_40tev_eff_1_New2_after_cut-eps
+-converted-to.pdf figs/cluster_tau21_40tev_eff_1_New2_after_cut.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau21_40tev_eff_1_New2_after_
+cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:48
+(epstopdf)                    size: 11926 bytes.
 
 <figs/cluster_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=71, 569
-.12625pt x 395.4775pt>
+.12625pt x 396.48125pt>
 File: figs/cluster_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/cluster_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau21_40tev_eff_1_New2_after_cut-eps-conv
 erted-to.pdf used on input line 373.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau21_5tev_04_Ma
 n.eps>
 (epstopdf)                    date: 2018-04-24 15:44:47
@@ -2979,8 +3063,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_af
 ter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:11
-(epstopdf)                    size: 13380 bytes
+(epstopdf)                    date: 2018-05-18 21:54:11
+(epstopdf)                    size: 13398 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_af
 ter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:30
@@ -2989,17 +3073,24 @@ ter_cut-eps-converted-to.pdf>
 ev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_5tev_eff_1
 _New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 425.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut
+-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_af
+ter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:49
+(epstopdf)                    size: 12051 bytes.
 
 <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=84,
- 569.12625pt x 395.4775pt>
+ 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut-eps-
 converted-to.pdf used on input line 425.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_a
 fter_cut.eps>
 (epstopdf)                    date: 2018-05-17 12:24:11
@@ -3025,8 +3116,8 @@ Package pdftex.def Info: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut-eps
 (pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:12
-(epstopdf)                    size: 12829 bytes
+(epstopdf)                    date: 2018-05-18 21:54:11
+(epstopdf)                    size: 12826 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:31
@@ -3035,21 +3126,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_20tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 431.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:50
+(epstopdf)                    size: 11692 bytes.
 
 <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=86
-, 569.12625pt x 395.4775pt>
+, 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 431.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:12
-(epstopdf)                    size: 12567 bytes
+(epstopdf)                    date: 2018-05-18 21:54:12
+(epstopdf)                    size: 12569 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:32
@@ -3058,17 +3156,24 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_40tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 434.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:51
+(epstopdf)                    size: 11612 bytes.
 
 <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=87
-, 569.12625pt x 395.4775pt>
+, 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 434.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau21_5tev_04_M
 an.eps>
 (epstopdf)                    date: 2018-04-24 15:46:31
@@ -3479,8 +3584,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:33
-(epstopdf)                    size: 13263 bytes
+(epstopdf)                    date: 2018-05-18 21:53:15
+(epstopdf)                    size: 13267 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:33
@@ -3489,21 +3594,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_5tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 487.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:52
+(epstopdf)                    size: 11987 bytes.
 
 <figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=10
-0, 569.12625pt x 395.4775pt>
+0, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau21_5tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 487.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_
 after_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:34
-(epstopdf)                    size: 13153 bytes
+(epstopdf)                    date: 2018-05-18 21:53:15
+(epstopdf)                    size: 13167 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_
 after_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:34
@@ -3512,21 +3624,28 @@ after_cut-eps-converted-to.pdf>
 0tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_10tev_e
 ff_1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 490.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_after_cut.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_
+after_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:53
+(epstopdf)                    size: 11880 bytes.
 
 <figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=1
-01, 569.12625pt x 395.4775pt>
+01, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_after_cut-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau21_10tev_eff_1_New2_after_cut-ep
 s-converted-to.pdf used on input line 490.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_
 after_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:34
-(epstopdf)                    size: 12774 bytes
+(epstopdf)                    date: 2018-05-18 21:53:15
+(epstopdf)                    size: 12786 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_
 after_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:34
@@ -3535,21 +3654,28 @@ after_cut-eps-converted-to.pdf>
 0tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_20tev_e
 ff_1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 493.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_after_cut.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_
+after_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:54
+(epstopdf)                    size: 11692 bytes.
 
 <figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=1
-02, 569.12625pt x 395.4775pt>
+02, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau21_20tev_eff_1_New2_after_cut-ep
 s-converted-to.pdf used on input line 493.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_
 after_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:34
-(epstopdf)                    size: 12507 bytes
+(epstopdf)                    date: 2018-05-18 21:53:16
+(epstopdf)                    size: 12509 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_
 after_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:35
@@ -3558,17 +3684,24 @@ after_cut-eps-converted-to.pdf>
 0tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_40tev_e
 ff_1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 496.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_after_cut.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_
+after_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:54
+(epstopdf)                    size: 11570 bytes.
 
 <figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=1
-03, 569.12625pt x 395.4775pt>
+03, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau21_40tev_eff_1_New2_after_cut-ep
 s-converted-to.pdf used on input line 496.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Dis_cluster_010_tau32_5tev_04_Man.eps
 >
 (epstopdf)                    date: 2018-04-24 08:18:52
@@ -3976,8 +4109,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/cluster_tau32_5tev_eff_1_New2_after_c
 ut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:11
-(epstopdf)                    size: 12854 bytes
+(epstopdf)                    date: 2018-05-18 21:39:55
+(epstopdf)                    size: 12891 bytes
 (epstopdf)             Output file: <figs/cluster_tau32_5tev_eff_1_New2_after_c
 ut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:36
@@ -3986,21 +4119,28 @@ ut-eps-converted-to.pdf>
 f_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau32_5tev_eff_1_New2_afte
 r_cut.eps>
 (epstopdf)             \includegraphics on input line 550.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau32_5tev_eff_1_New2_after_cut-eps-
+converted-to.pdf figs/cluster_tau32_5tev_eff_1_New2_after_cut.eps)...executed s
+afely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau32_5tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:56
+(epstopdf)                    size: 11632 bytes.
 
 <figs/cluster_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=116, 569
-.12625pt x 395.4775pt>
+.12625pt x 396.48125pt>
 File: figs/cluster_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use figs/cluster_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau32_5tev_eff_1_New2_after_cut-eps-conve
 rted-to.pdf used on input line 550.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau32_10tev_eff_1_New2_after_
 cut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:12
-(epstopdf)                    size: 12758 bytes
+(epstopdf)                    date: 2018-05-18 21:39:55
+(epstopdf)                    size: 12791 bytes
 (epstopdf)             Output file: <figs/cluster_tau32_10tev_eff_1_New2_after_
 cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:36
@@ -4009,21 +4149,28 @@ cut-eps-converted-to.pdf>
 ff_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau32_10tev_eff_1_New2_af
 ter_cut.eps>
 (epstopdf)             \includegraphics on input line 553.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau32_10tev_eff_1_New2_after_cut-eps
+-converted-to.pdf figs/cluster_tau32_10tev_eff_1_New2_after_cut.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau32_10tev_eff_1_New2_after_
+cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:57
+(epstopdf)                    size: 11561 bytes.
 
 <figs/cluster_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=117, 56
-9.12625pt x 395.4775pt>
+9.12625pt x 396.48125pt>
 File: figs/cluster_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/cluster_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau32_10tev_eff_1_New2_after_cut-eps-conv
 erted-to.pdf used on input line 553.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau32_20tev_eff_1_New2_after_
 cut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:12
-(epstopdf)                    size: 12735 bytes
+(epstopdf)                    date: 2018-05-18 21:39:55
+(epstopdf)                    size: 12725 bytes
 (epstopdf)             Output file: <figs/cluster_tau32_20tev_eff_1_New2_after_
 cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:37
@@ -4032,21 +4179,28 @@ cut-eps-converted-to.pdf>
 ff_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau32_20tev_eff_1_New2_af
 ter_cut.eps>
 (epstopdf)             \includegraphics on input line 556.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau32_20tev_eff_1_New2_after_cut-eps
+-converted-to.pdf figs/cluster_tau32_20tev_eff_1_New2_after_cut.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau32_20tev_eff_1_New2_after_
+cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:57
+(epstopdf)                    size: 11523 bytes.
 
 <figs/cluster_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=118, 56
-9.12625pt x 395.4775pt>
+9.12625pt x 396.48125pt>
 File: figs/cluster_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/cluster_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau32_20tev_eff_1_New2_after_cut-eps-conv
 erted-to.pdf used on input line 556.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau32_40tev_eff_1_New2_after_
 cut.eps>
-(epstopdf)                    date: 2018-05-17 12:19:12
-(epstopdf)                    size: 12655 bytes
+(epstopdf)                    date: 2018-05-18 21:39:56
+(epstopdf)                    size: 12657 bytes
 (epstopdf)             Output file: <figs/cluster_tau32_40tev_eff_1_New2_after_
 cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:37
@@ -4055,17 +4209,24 @@ cut-eps-converted-to.pdf>
 ff_1_New2_after_cut-eps-converted-to.pdf figs/cluster_tau32_40tev_eff_1_New2_af
 ter_cut.eps>
 (epstopdf)             \includegraphics on input line 559.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/cluster_tau32_40tev_eff_1_New2_after_cut-eps
+-converted-to.pdf figs/cluster_tau32_40tev_eff_1_New2_after_cut.eps)...executed
+ safely (allowed).
+
+Package epstopdf Info: Result file: <figs/cluster_tau32_40tev_eff_1_New2_after_
+cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:58
+(epstopdf)                    size: 11579 bytes.
 
 <figs/cluster_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=119, 56
-9.12625pt x 395.4775pt>
+9.12625pt x 396.48125pt>
 File: figs/cluster_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/cluster_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_tau32_40tev_eff_1_New2_after_cut-eps-conv
 erted-to.pdf used on input line 559.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_05GeV_010_tau32_5tev_04_Ma
 n.eps>
 (epstopdf)                    date: 2018-04-24 15:44:51
@@ -4476,8 +4637,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_af
 ter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:12
-(epstopdf)                    size: 12821 bytes
+(epstopdf)                    date: 2018-05-18 21:54:12
+(epstopdf)                    size: 12832 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_af
 ter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:38
@@ -4486,21 +4647,28 @@ ter_cut-eps-converted-to.pdf>
 ev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_5tev_eff_1
 _New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 612.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut
+-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_af
+ter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:57:59
+(epstopdf)                    size: 11619 bytes.
 
 <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=132
-, 569.12625pt x 395.4775pt>
+, 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut-eps-
 converted-to.pdf used on input line 612.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:12
-(epstopdf)                    size: 12819 bytes
+(epstopdf)                    date: 2018-05-18 21:54:12
+(epstopdf)                    size: 12841 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:39
@@ -4509,21 +4677,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_10tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 615.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:00
+(epstopdf)                    size: 11608 bytes.
 
 <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=13
-3, 569.12625pt x 395.4775pt>
+3, 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 615.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:13
-(epstopdf)                    size: 12709 bytes
+(epstopdf)                    date: 2018-05-18 21:54:13
+(epstopdf)                    size: 12699 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:39
@@ -4532,21 +4707,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_20tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 618.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:00
+(epstopdf)                    size: 11527 bytes.
 
 <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=13
-4, 569.12625pt x 395.4775pt>
+4, 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 618.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:13
-(epstopdf)                    size: 12661 bytes
+(epstopdf)                    date: 2018-05-18 21:54:13
+(epstopdf)                    size: 12660 bytes
 (epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:40
@@ -4555,17 +4737,24 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_40tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 621.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:01
+(epstopdf)                    size: 11562 bytes.
 
 <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=13
-5, 569.12625pt x 395.4775pt>
+5, 569.12625pt x 397.485pt>
 File: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 621.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Dis_Rawhit_025GeV_010_tau32_5tev_04_M
 an.eps>
 (epstopdf)                    date: 2018-04-24 15:46:34
@@ -4976,8 +5165,8 @@ T1/cmr/m/n/9 cm) in
 
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_a
 fter_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:34
-(epstopdf)                    size: 12827 bytes
+(epstopdf)                    date: 2018-05-18 21:53:16
+(epstopdf)                    size: 12844 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_a
 fter_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:41
@@ -4986,21 +5175,28 @@ fter_cut-eps-converted-to.pdf>
 tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_5tev_eff
 _1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 674.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_after_cu
+t-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_after_cut.eps).
+..executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_a
+fter_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:02
+(epstopdf)                    size: 11604 bytes.
 
 <figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=14
-8, 569.12625pt x 395.4775pt>
+8, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau32_5tev_eff_1_New2_after_cut-eps
 -converted-to.pdf used on input line 674.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_
 after_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:35
-(epstopdf)                    size: 12744 bytes
+(epstopdf)                    date: 2018-05-18 21:53:16
+(epstopdf)                    size: 12758 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_
 after_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:42
@@ -5009,21 +5205,28 @@ after_cut-eps-converted-to.pdf>
 0tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_10tev_e
 ff_1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 677.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_after_cut.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_
+after_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:03
+(epstopdf)                    size: 11583 bytes.
 
 <figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=1
-49, 569.12625pt x 395.4775pt>
+49, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau32_10tev_eff_1_New2_after_cut-ep
 s-converted-to.pdf used on input line 677.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_
 after_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:35
-(epstopdf)                    size: 12678 bytes
+(epstopdf)                    date: 2018-05-18 21:53:16
+(epstopdf)                    size: 12686 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_
 after_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:42
@@ -5032,21 +5235,28 @@ after_cut-eps-converted-to.pdf>
 0tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_20tev_e
 ff_1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 680.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_after_cut.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_
+after_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:04
+(epstopdf)                    size: 11515 bytes.
 
 <figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=1
-50, 569.12625pt x 395.4775pt>
+50, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau32_20tev_eff_1_New2_after_cut-ep
 s-converted-to.pdf used on input line 680.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_
 after_cut.eps>
-(epstopdf)                    date: 2018-05-17 12:24:35
-(epstopdf)                    size: 12575 bytes
+(epstopdf)                    date: 2018-05-18 21:53:17
+(epstopdf)                    size: 12572 bytes
 (epstopdf)             Output file: <figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_
 after_cut-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-17 12:27:43
@@ -5055,17 +5265,24 @@ after_cut-eps-converted-to.pdf>
 0tev_eff_1_New2_after_cut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_40tev_e
 ff_1_New2_after_cut.eps>
 (epstopdf)             \includegraphics on input line 683.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_after_c
+ut-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_after_cut.eps
+)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_
+after_cut-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-18 21:58:05
+(epstopdf)                    size: 11529 bytes.
 
 <figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf, id=1
-51, 569.12625pt x 395.4775pt>
+51, 569.12625pt x 397.485pt>
 File: figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_after_cut-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Rawhit_025GeV_tau32_40tev_eff_1_New2_after_cut-ep
 s-converted-to.pdf used on input line 683.
-(pdftex.def)             Requested size: 177.3999pt x 123.27261pt.
+(pdftex.def)             Requested size: 177.3999pt x 123.89836pt.
 Package epstopdf Info: Source file: <figs/cluster_tau21_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:30:39
 (epstopdf)                    size: 12046 bytes
@@ -5532,7 +5749,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 761.
 Here is how much of TeX's memory you used:
  9167 strings out of 492995
  170464 string characters out of 6132704
- 321818 words of memory out of 5000000
+ 321807 words of memory out of 5000000
  12235 multiletter control sequences out of 15000+600000
  12718 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5543,7 +5760,7 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on "fcc_Mannuwhitney eff_Ash.pdf" (22 pages, 1092974 bytes).
+Output written on "fcc_Mannuwhitney eff_Ash.pdf" (22 pages, 1093235 bytes).
 PDF statistics:
  2476 PDF objects out of 2487 (max. 8388607)
  1824 compressed objects within 19 object streams

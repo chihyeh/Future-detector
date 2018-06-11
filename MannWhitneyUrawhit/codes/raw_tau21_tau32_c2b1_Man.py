@@ -23,24 +23,25 @@ print variable[0],variable[1],variable[2]
 print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
+cut_value=0.25
 #---------------------------------------------setting the hisotgram in and normalize
 for k in range(0,3):
     if(variable[k]=="tau21"):
         for m in range(0,4):
             if(energy_array[1][m]<20):
-                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
             if(energy_array[1][m]>=20):
-                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
  
                         
             h1 = f1.Get("h_"+variable[k]+"_b1")
@@ -108,10 +109,10 @@ for k in range(0,3):
             gr.GetYaxis().SetTitleFont(22)
             gr.Draw()
             
-            f=TFile("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.root","RECREATE")
+            f=TFile("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.root","RECREATE")
             gr.Write()
-            c.Print("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.pdf")
-            c.Print("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.eps")
+            c.Print("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.pdf")
+            c.Print("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.eps")
 
 
                   
@@ -119,19 +120,19 @@ for k in range(0,3):
     elif(variable[k]=="tau32"):
         for m in range(0,4):
             if(energy_array[1][m]<20):
-                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar_Dis_25bins.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt_Dis_25bins.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar_Dis_25bins.root", 'r')
+                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt_Dis_25bins.root", 'r')
+                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar_Dis_25bins.root", 'r')
+                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt_Dis_25bins.root", 'r')
             if(energy_array[1][m]>=20):
-                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbar%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar_Dis_25bins.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt_Dis_25bins.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar_Dis_25bins.root", 'r')
+                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt_Dis_25bins.root", 'r')
+                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ttbar_Dis_25bins.root", 'r')
+                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_tt_Dis_25bins.root", 'r')
         
         
             h1 = f1.Get("h_"+variable[k]+"_b1")
@@ -199,27 +200,27 @@ for k in range(0,3):
             gr.GetYaxis().SetTitleFont(22)
             gr.Draw()
             
-            f=TFile("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.root","RECREATE")
+            f=TFile("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.root","RECREATE")
             gr.Write()
-            c.Print("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.pdf")
-            c.Print("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.eps")
+            c.Print("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.pdf")
+            c.Print("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.eps")
 
     elif(variable[k]=="c2b1"):
         for m in range(0,4):
             if(energy_array[1][m]<20):
-                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqbar%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
             if(energy_array[1][m]>=20):
-                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull010_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull009_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ww%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
-                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qq%rfull012_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhits_0.5GeV.root", 'r')
+                f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull010_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f3 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f4 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull009_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f5 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
+                f6 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull012_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.25GeV_for_ww_Dis_25bins.root", 'r')
         
         
             h1 = f1.Get("h_c2_b1")
@@ -287,9 +288,9 @@ for k in range(0,3):
             gr.GetYaxis().SetTitleFont(22)
             gr.Draw()
             
-            f=TFile("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.root","RECREATE")
+            f=TFile("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.root","RECREATE")
             gr.Write()
-            c.Print("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.pdf")
-            c.Print("raw_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_Man.eps")
+            c.Print("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.pdf")
+            c.Print("raw_"+str(cut_value)+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.eps")
 
 

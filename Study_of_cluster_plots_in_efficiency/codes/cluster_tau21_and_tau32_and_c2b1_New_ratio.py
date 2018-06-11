@@ -24,48 +24,51 @@ print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-for k in range(1,3):
+#================================================This part just run the files================================#
+for k in range(2,3):
     if(variable[k]=="tau21"):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
-                
-                h1 = f1.Get("h_"+variable[k]+"_b1")
-                h2 = f2.Get("h_"+variable[k]+"_b1")
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
+                #===============Get histogram==============#
+                h1 = f1.Get("h_"+variable[k]+"_b1") #Signal
+                h2 = f2.Get("h_"+variable[k]+"_b1") #Background
 
-                h1_Max_y=h1.GetBinContent(h1.GetMaximumBin())
-                h2_Max_y=h2.GetBinContent(h2.GetMaximumBin())
-                print h1_Max_y,h2_Max_y
-                Maximum_in_histogram=max(h1_Max_y,h2_Max_y)
-
+                #==============Define the Ratio histogram============#
                 h3 = TH1F("h3","Ratio histogram",100,0,1)
                 h3=h1.Clone("h3")
                 h3.Divide(h2)
 
-                #print h1,h2
-                #print variable[k]
-                #print '1'
-                #h1.Scale(1.0/h1.Integral())
-                #h2.Scale(1.0/h2.Integral())
-                  
+                #=============Use the normalization histogram to calculate===========#
+                h1.Sumw2()
+                h2.Sumw2()
+                h1.Scale(1.0/h1.Integral())
+                h2.Scale(1.0/h2.Integral())
+                #=============Integral the signal and background to be the signal efficiency and background efficiency denominator==========#
                 a=h1.Integral()
                 b=h2.Integral()
                 xarray=array("f",[])
                 yarray=array("f",[])
-                ratio_BinContent_1=0
-                ratio_BinContent_2=0
+                #=============Define the zero ratio histogram bin that we bump into=============#
+                ratio_BinContent_1=0 #This one is used to define left zero bin
+                ratio_BinContent_2=0 #This one is used to define right zero bin
+                #=============Find the Maximum bin in Ratio histogram============#
                 M=h3.GetMaximumBin()
-                L=M
-                R=M
+                #=============Define compare bin=>(left and right)=================#
+                L=M #Left
+                R=M #Right
                 print M
+                #=============From the highest bin, add the first bin in ROC curves==>(This is the first value in calculating the ROC curve)==========#
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
+                #============Start running the Method 2===============
                 for Q in range(120):
+                    #=================Just print the value I want to see==============#
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -77,19 +80,24 @@ for k in range(1,3):
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
+                    #=============This is used to define the zero bin in ratio histogram===================#
+                    #===The condition is : if we bump into R+1 or L-1 bin (Next bin) is zero, how do we define this bin=====#
+                    #h1.Integral(R+2,100)/h2.Integral(R+2,100)==>(General form)=======#
                     if(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)==0):
-                        ratio_BinContent_2=9999
+                        ratio_BinContent_2=9999 # Use h1.Integral(R+2,100)/h2.Integral(R+2,100) will be infinite. I want to add all right bin until signal finish running
                         print 'this bin is zero, after:no background'
                     if(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)!=0):
-                        ratio_BinContent_2=0
+                        ratio_BinContent_2=0 #Use h1.Integral(R+2,100)/h2.Integral(R+2,100)=0
                         print 'this bin is zero, after:no signal'
                     if(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)==0):
-                        ratio_BinContent_2=-1
+                        ratio_BinContent_2=-1 # However we compare, this sides won't keep adding. Because no bin content will smaller than 0.
                         print 'this bin is zero, after:no signal and background'
                     if(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)!=0):
-                        ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
-                        print 'this bin is not zero : right'
+                        ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100) #General form
+                        print 'this bin is zero : have signal and background'
                     
+                    #===ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)==>(General form)======#
+                    #I think all conditions are same as before, just the left side difference========#
                     if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)==0):
                         ratio_BinContent_1=9999
                         print 'this bin is zero, before:no background'
@@ -101,18 +109,22 @@ for k in range(1,3):
                         print 'this bin is zero, before:no signal and background'
                     if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)!=0):
                         ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
-                        print 'this bin is not zero : left'
+                        print 'this bin is zero , left:have signal and background'
                     #---------------------------
                     
                     #---------------------------
+                    #Set the boundary condition==>Because our meaningful bin is from 0-100#
                     if(L==0 and R==100):
                         break
+                    #=========Set the boundary condition======#
                     elif(L==0):
                         print 'YA4'
+                        #==Add signal and background efficiency==#
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
                         print h1.Integral(L,R+1), a
-                        print yarray
+                        
+                        #===Change the width for the next run===#
                         L=L
                         R=R+1
                         print str(L)
@@ -125,7 +137,8 @@ for k in range(1,3):
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
                         print h1.Integral(L-1,R), a
-                        print yarray
+                        
+                        #===Change the width for the next run===#
                         L=L-1
                         R=R
                         print str(L)
@@ -134,15 +147,18 @@ for k in range(1,3):
                         print str(h1.GetBinContent(R))
                         print '----2'
 
-
+                    #===============Compare right and left bin of the Ratio histogram==============#
                     elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
+                        #====If right side bin is zero====#
                         if(h3.GetBinContent(R+1)==0):
+                            #=====Compare left side and the right zero ratio histogram bin definition====#
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
+                                
+                                #===Change the width for the next run===#
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -155,7 +171,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
+                                
                                 L=L
                                 R=R+1
                                 print str(L)
@@ -170,7 +186,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
+                                    
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
@@ -183,7 +199,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
+                                    
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
@@ -193,11 +209,12 @@ for k in range(1,3):
                                     print str(h1.GetBinContent(R))
                                     print '----4'
                         #--------------------------------
+                        #normal condition#
                         else:
                             xarray.append(h1.Integral(L-1,R)/a)
                             yarray.append(1/(h2.Integral(L-1,R)/b))
                             print h1.Integral(L-1,R), a
-                            print yarray
+                            
                             C=h2.Integral(L-1,R)
                             L=L-1
                             R=R
@@ -208,14 +225,16 @@ for k in range(1,3):
                             print '----5'
                     #---------------------------
                     elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
+                        #====If left side bin is zero====#
                         if(h3.GetBinContent(L-1)==0):
+                            #=====Compare right side and the left zero ratio histogram bin definition====#
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
-                                C=h2.Integral(L,R+1)
+                                
+                                #===Change wodth===#
                                 L=L
                                 R=R+1
                                 print str(L)
@@ -224,11 +243,11 @@ for k in range(1,3):
                                 print str(h1.GetBinContent(R))
                                 print '----6'
                             elif(h3.GetBinContent(R+1)<ratio_BinContent_1):
-                                'YA5'
+                                print 'YA5'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
+                                
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -243,8 +262,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
-                                    C=h2.Integral(L-1,R)
+                                    
                                     L=L-1
                                     R=R
                                     print str(L)
@@ -256,8 +274,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
-                                    C=h2.Integral(L,R+1)
+                                    
                                     L=L
                                     R=R+1
                                     print str(L)
@@ -267,11 +284,11 @@ for k in range(1,3):
                                     print '----9'
                         #---------------------------
                         else:
+                            #normal condition#
                             xarray.append(h1.Integral(L,R+1)/a)
                             yarray.append(1/(h2.Integral(L,R+1)/b))
                             print h1.Integral(L,R+1), a
-                            print yarray
-                            C=h2.Integral(L,R+1)
+                            
                             L=L
                             R=R+1
                             print str(L)
@@ -281,14 +298,14 @@ for k in range(1,3):
                             print '----10'
         #-----------------------------------
                     elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                        #======Left and right side ratio histogram bin are both zero========#
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
-                                C=h2.Integral(L,R+1)
+                                
                                 L=L
                                 R=R+1
                                 print str(L)
@@ -301,7 +318,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
+                                
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -316,8 +333,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
-                                    C=h2.Integral(L-1,R)
+                                    
                                     L=L-1
                                     R=R
                                     print str(L)
@@ -330,7 +346,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
+                                    
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
@@ -340,14 +356,14 @@ for k in range(1,3):
                                     print str(h1.GetBinContent(R))
                                     print '----14'
                         else:
+                            #==normal condition==#
                             Random=randint(1,3)
                             print Random
                             if(Random==1):
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
-                                C=h2.Integral(L-1,R)
+                                
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -359,8 +375,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
-                                C=h2.Integral(L,R+1)
+                                
                                 L=L
                                 R=R+1
                                 print str(L)
@@ -403,9 +418,9 @@ for k in range(1,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_no_cut_25bins.root","RECREATE")
                 gr.Write()
-                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_no_cut_25bins.pdf")
                   
                   
 
@@ -413,11 +428,11 @@ for k in range(1,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ttbar.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_tt.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ttbar.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_tt.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_25bins.root", 'r')
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
                 print h1,h2
@@ -456,8 +471,8 @@ for k in range(1,3):
                     print 'background:'+str(h2.Integral(L,R))
                     print 'Ratio:'+str(h3.Integral(L,R))
                     print 'Ratio_total:'+str(h3.Integral())
-                    print str(h3.GetBinContent(L-1))
-                    print str(h3.GetBinContent(R+1))
+                    print 'Ratio_left'+str(h3.GetBinContent(L-1))
+                    print 'Ratio_right'+str(h3.GetBinContent(R+1))
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
@@ -496,7 +511,6 @@ for k in range(1,3):
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
                         print h1.Integral(L,R+1), a
-                        print yarray
                         L=L
                         R=R+1
                         print str(L)
@@ -509,7 +523,6 @@ for k in range(1,3):
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
                         print h1.Integral(L-1,R), a
-                        print yarray
                         L=L-1
                         R=R
                         print str(L)
@@ -527,7 +540,6 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -540,7 +552,6 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
                                 L=L
                                 R=R+1
                                 print str(L)
@@ -555,7 +566,6 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
@@ -568,7 +578,6 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
@@ -582,7 +591,6 @@ for k in range(1,3):
                             xarray.append(h1.Integral(L-1,R)/a)
                             yarray.append(1/(h2.Integral(L-1,R)/b))
                             print h1.Integral(L-1,R), a
-                            print yarray
                             C=h2.Integral(L-1,R)
                             L=L-1
                             R=R
@@ -599,7 +607,6 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
                                 C=h2.Integral(L,R+1)
                                 L=L
                                 R=R+1
@@ -613,7 +620,6 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -628,7 +634,6 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
@@ -641,7 +646,6 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
@@ -655,7 +659,7 @@ for k in range(1,3):
                             xarray.append(h1.Integral(L,R+1)/a)
                             yarray.append(1/(h2.Integral(L,R+1)/b))
                             print h1.Integral(L,R+1), a
-                            print yarray
+                            
                             C=h2.Integral(L,R+1)
                             L=L
                             R=R+1
@@ -672,7 +676,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
+                                
                                 C=h2.Integral(L,R+1)
                                 L=L
                                 R=R+1
@@ -686,7 +690,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
+                                
                                 L=L-1
                                 R=R
                                 print str(L)
@@ -701,7 +705,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
+                                    
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
@@ -714,7 +718,7 @@ for k in range(1,3):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
+                                    
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
@@ -730,7 +734,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
                                 print h1.Integral(L-1,R), a
-                                print yarray
+                                
                                 C=h2.Integral(L-1,R)
                                 L=L-1
                                 R=R
@@ -743,7 +747,7 @@ for k in range(1,3):
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 print h1.Integral(L,R+1), a
-                                print yarray
+                                
                                 C=h2.Integral(L,R+1)
                                 L=L
                                 R=R+1
@@ -754,8 +758,7 @@ for k in range(1,3):
                                 print '----15'
 #------------------------------------------
                 n=R-L
-                print n
-
+                print yarray
 
                 if(files_array[i]=="009"):
                     Color=2
@@ -788,22 +791,22 @@ for k in range(1,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
+                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_no_cut_25bins.root","RECREATE")
                 gr.Write()
-                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
+                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_no_cut_25bins.pdf")
 
 
 
 
     elif(variable[k]=="c2b1"):
-        for m in range(0,4):
-            for i in range(0,3):
+        for m in range(0,1):
+            for i in range(1,2):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_mass_cut_for_ww.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
 
                 h1 = f1.Get("h_c2_b1")
                 h2 = f2.Get("h_c2_b1")
@@ -824,13 +827,19 @@ for k in range(1,3):
                 #print h1,h2
                 #print variable[k]
                 #print '1'
-                #h1.Scale(1.0/h1.Integral())
-                #h2.Scale(1.0/h2.Integral())
+                h1.Scale(1.0/h1.Integral())
+                h2.Scale(1.0/h2.Integral())
                 
                 a=h1.Integral()
                 b=h2.Integral()
                 xarray=array("f",[])
                 yarray=array("f",[])
+                xarray_bin=array("f",[])
+                yarray_bin=array("f",[])
+                xarray_bin_left=array("f",[])
+                yarray_bin_right=array("f",[])
+                ratio_bin_left=array("f",[])
+                ratio_bin_right=array("f",[])
                 ratio_BinContent_1=0
                 ratio_BinContent_2=0
                 M=h3.GetMaximumBin()
@@ -839,6 +848,11 @@ for k in range(1,3):
                 print M
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
+                xarray_bin.append(h1.Integral(L,R))
+                yarray_bin.append(h2.Integral(L,R))
+                xarray_bin_left.append(L)
+                yarray_bin_right.append(R)
+
                 for Q in range(120):
                     print '==============================================='
                     print 'signal total'+str(a)
@@ -851,31 +865,40 @@ for k in range(1,3):
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
-                    if(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)==0):
-                        ratio_BinContent_2=9999
-                        print 'this bin is zero, after:no background'
-                    if(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)!=0):
-                        ratio_BinContent_2=0
-                        print 'this bin is zero, after:no signal'
-                    if(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)==0):
-                        ratio_BinContent_2=-1
-                        print 'this bin is zero, after:no signal and background'
-                    if(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)!=0):
-                        ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
-                        print 'this bin is not zero : right'
-                    
-                    if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)==0):
-                        ratio_BinContent_1=9999
-                        print 'this bin is zero, before:no background'
-                    if(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)!=0):
-                        ratio_BinContent_1=0
-                        print 'this bin is zero, before:no signal'
-                    if(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)==0):
+                    if(R<=98):
+                        if(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)==0):
+                            ratio_BinContent_2=9999
+                            print 'this bin is zero, after:no background'
+                        elif(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)!=0):
+                            ratio_BinContent_2=0
+                            print 'this bin is zero, after:no signal'
+                        elif(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)==0):
+                            ratio_BinContent_2=-1
+                            print 'this bin is zero, after:no signal and background'
+                        elif(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)!=0):
+                            ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
+                            print 'this bin is not zero : right'
+                    elif(R==99 and R==100):
+                            ratio_BinContent_2=-1
+                            print 'this bin is zero, after:no background or signal'
+    
+                    if(L>=2):
+                        if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)==0):
+                            ratio_BinContent_1=9999
+                            print 'this bin is zero, before:no background'
+                        elif(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)!=0):
+                            ratio_BinContent_1=0
+                            print 'this bin is zero, before:no signal'
+                        elif(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)==0):
+                            ratio_BinContent_1=-1
+                            print 'this bin is zero, before:no signal and background'
+                        elif(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)!=0):
+                            ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
+                            print 'this bin is not zero : left'
+                    elif(L==0 and R==1):
                         ratio_BinContent_1=-1
-                        print 'this bin is zero, before:no signal and background'
-                    if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)!=0):
-                        ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
-                        print 'this bin is not zero : left'
+                        print 'this bin is zero, before:no background or signal'
+
                     #---------------------------
                     
                     #---------------------------
@@ -885,10 +908,13 @@ for k in range(1,3):
                         print 'YA4'
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
+                        xarray_bin.append(h1.Integral(L,R+1))
+                        yarray_bin.append(h2.Integral(L,R+1))
                         print h1.Integral(L,R+1), a
-                        print yarray
                         L=L
                         R=R+1
+                        xarray_bin_left.append(L)
+                        yarray_bin_right.append(R)
                         print str(L)
                         print str(R)
                         print str(h1.GetBinContent(L))
@@ -898,10 +924,13 @@ for k in range(1,3):
                         print 'YA4'
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
+                        xarray_bin.append(h1.Integral(L-1,R))
+                        yarray_bin.append(h2.Integral(L-1,R))
                         print h1.Integral(L-1,R), a
-                        print yarray
                         L=L-1
                         R=R
+                        xarray_bin_left.append(L)
+                        yarray_bin_right.append(R)
                         print str(L)
                         print str(R)
                         print str(h1.GetBinContent(L))
@@ -910,14 +939,19 @@ for k in range(1,3):
 
                     elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(R+1)==0):
+                            ratio_bin_right.append(ratio_BinContent_2)
+                            ratio_bin_left.append(h3.GetBinContent(L-1))
                             if(h3.GetBinContent(L-1)>ratio_BinContent_2):
                                 print'YA4'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
+                                xarray_bin.append(h1.Integral(L-1,R))
+                                yarray_bin.append(h2.Integral(L-1,R))
                                 print h1.Integral(L-1,R), a
-                                print yarray
                                 L=L-1
                                 R=R
+                                xarray_bin_left.append(L)
+                                yarray_bin_right.append(R)
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -927,10 +961,13 @@ for k in range(1,3):
                                 print 'YA4'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
+                                xarray_bin.append(h1.Integral(L,R+1))
+                                yarray_bin.append(h2.Integral(L,R+1))
                                 print h1.Integral(L,R+1), a
-                                print yarray
                                 L=L
                                 R=R+1
+                                xarray_bin_left.append(L)
+                                yarray_bin_right.append(R)
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -942,11 +979,14 @@ for k in range(1,3):
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    xarray_bin.append(h1.Integral(L-1,R))
+                                    yarray_bin.append(h2.Integral(L-1,R))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -955,11 +995,14 @@ for k in range(1,3):
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    xarray_bin.append(h1.Integral(L,R+1))
+                                    yarray_bin.append(h2.Integral(L,R+1))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -967,13 +1010,18 @@ for k in range(1,3):
                                     print '----4'
                         #--------------------------------
                         else:
+                            ratio_bin_right.append(h3.GetBinContent(R+1))
+                            ratio_bin_left.append(h3.GetBinContent(L-1))
                             xarray.append(h1.Integral(L-1,R)/a)
                             yarray.append(1/(h2.Integral(L-1,R)/b))
+                            xarray_bin.append(h1.Integral(L-1,R))
+                            yarray_bin.append(h2.Integral(L-1,R))
                             print h1.Integral(L-1,R), a
-                            print yarray
                             C=h2.Integral(L-1,R)
                             L=L-1
                             R=R
+                            xarray_bin_left.append(L)
+                            yarray_bin_right.append(R)
                             print str(L)
                             print str(R)
                             print str(h1.GetBinContent(L))
@@ -982,15 +1030,20 @@ for k in range(1,3):
                     #---------------------------
                     elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
                         if(h3.GetBinContent(L-1)==0):
+                            ratio_bin_left.append(ratio_BinContent_1)
+                            ratio_bin_right.append(h3.GetBinContent(R+1))
                             if(h3.GetBinContent(R+1)>ratio_BinContent_1):
                                 print'YA5'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
+                                xarray_bin.append(h1.Integral(L,R+1))
+                                yarray_bin.append(h2.Integral(L,R+1))
                                 print h1.Integral(L,R+1), a
-                                print yarray
                                 C=h2.Integral(L,R+1)
                                 L=L
                                 R=R+1
+                                xarray_bin_left.append(L)
+                                yarray_bin_right.append(R)
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -1000,10 +1053,13 @@ for k in range(1,3):
                                 'YA5'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
+                                xarray_bin.append(h1.Integral(L-1,R))
+                                yarray_bin.append(h2.Integral(L-1,R))
                                 print h1.Integral(L-1,R), a
-                                print yarray
                                 L=L-1
                                 R=R
+                                xarray_bin_left.append(L)
+                                yarray_bin_right.append(R)
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -1015,11 +1071,14 @@ for k in range(1,3):
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    xarray_bin.append(h1.Integral(L-1,R))
+                                    yarray_bin.append(h2.Integral(L-1,R))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1028,11 +1087,14 @@ for k in range(1,3):
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    xarray_bin.append(h1.Integral(L,R+1))
+                                    yarray_bin.append(h2.Integral(L,R+1))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1040,13 +1102,18 @@ for k in range(1,3):
                                     print '----9'
                         #---------------------------
                         else:
+                            ratio_bin_left.append(h3.GetBinContent(L-1))
+                            ratio_bin_right.append(h3.GetBinContent(R+1))
                             xarray.append(h1.Integral(L,R+1)/a)
                             yarray.append(1/(h2.Integral(L,R+1)/b))
+                            xarray_bin.append(h1.Integral(L,R+1))
+                            yarray_bin.append(h2.Integral(L,R+1))
                             print h1.Integral(L,R+1), a
-                            print yarray
                             C=h2.Integral(L,R+1)
                             L=L
                             R=R+1
+                            xarray_bin_left.append(L)
+                            yarray_bin_right.append(R)
                             print str(L)
                             print str(R)
                             print str(h1.GetBinContent(L))
@@ -1054,16 +1121,22 @@ for k in range(1,3):
                             print '----10'
         #-----------------------------------
                     elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
+                        ratio_bin_left.append(ratio_BinContent_1)
+                        ratio_bin_right.append(ratio_BinContent_2)
+                          
                         if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
+                                xarray_bin.append(h1.Integral(L,R+1))
+                                yarray_bin.append(h2.Integral(L,R+1))
                                 print h1.Integral(L,R+1), a
-                                print yarray
                                 C=h2.Integral(L,R+1)
                                 L=L
                                 R=R+1
+                                xarray_bin_left.append(L)
+                                yarray_bin_right.append(R)
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -1073,10 +1146,13 @@ for k in range(1,3):
                                 print 'YA6'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
+                                xarray_bin.append(h1.Integral(L-1,R))
+                                yarray_bin.append(h2.Integral(L-1,R))
                                 print h1.Integral(L-1,R), a
-                                print yarray
                                 L=L-1
                                 R=R
+                                xarray_bin_left.append(L)
+                                yarray_bin_right.append(R)
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -1088,11 +1164,14 @@ for k in range(1,3):
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    xarray_bin.append(h1.Integral(L-1,R))
+                                    yarray_bin.append(h2.Integral(L-1,R))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1101,11 +1180,14 @@ for k in range(1,3):
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    xarray_bin.append(h1.Integral(L,R+1))
+                                    yarray_bin.append(h2.Integral(L,R+1))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1117,11 +1199,14 @@ for k in range(1,3):
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
+                                    xarray_bin.append(h1.Integral(L-1,R))
+                                    yarray_bin.append(h2.Integral(L-1,R))
                                     print h1.Integral(L-1,R), a
-                                    print yarray
                                     C=h2.Integral(L-1,R)
                                     L=L-1
                                     R=R
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1130,11 +1215,14 @@ for k in range(1,3):
                                 if(Random==2):
                                     xarray.append(h1.Integral(L,R+1)/a)
                                     yarray.append(1/(h2.Integral(L,R+1)/b))
+                                    xarray_bin.append(h1.Integral(L,R+1))
+                                    yarray_bin.append(h2.Integral(L,R+1))
                                     print h1.Integral(L,R+1), a
-                                    print yarray
                                     C=h2.Integral(L,R+1)
                                     L=L
                                     R=R+1
+                                    xarray_bin_left.append(L)
+                                    yarray_bin_right.append(R)
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1143,8 +1231,29 @@ for k in range(1,3):
                                                                                                                                                                                                 #------------------------------------------
                 n=R-L
                 print n
-                
-                
+                print '============================================================'
+                print 'signal_total :  ' + str(a)
+                print 'background_total : ' + str(b)
+                print '============================================================'
+                print 'signal efficiency :'
+                print  xarray_bin
+                print '============================================================'
+                print 'background efficiency :'
+                print  yarray_bin
+                print '============================================================'
+                print 'ratio histogram left bin Content : (width bin left that we want to compare)'
+                print  ratio_bin_left
+                print '============================================================'
+                print 'ratio histogram right bin Content : (width bin right that we want to compare)'
+                print  ratio_bin_right
+                print '============================================================'
+                print 'Left of width :'
+                print  xarray_bin_left
+                print '============================================================'
+                print 'Right of width :'
+                print  yarray_bin_right
+                print '============================================================'
+
                 if(files_array[i]=="009"):
                     Color=2
                     l=4
@@ -1176,6 +1285,6 @@ for k in range(1,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.root","RECREATE")
-                gr.Write()
-                c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_50%.pdf")
+#f=TFile("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_no_cut_25bins.root","RECREATE")
+#               gr.Write()
+#               c.Print("cluster_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_no_cut_25bins.pdf")

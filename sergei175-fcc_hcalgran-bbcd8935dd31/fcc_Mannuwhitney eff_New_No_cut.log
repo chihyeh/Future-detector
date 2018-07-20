@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  29 MAY 2018 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  14 JUL 2018 11:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -412,7 +412,29 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 71.
 
-(./fcc_Mannuwhitney eff_New_No_cut.aux)
+(./fcc_Mannuwhitney eff_New_No_cut.aux
+
+LaTeX Warning: Label `fig:cluster_c2b1_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_c2b1' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau32_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_U_summary' multiply defined.
+
+)
 \openout1 = `"fcc_Mannuwhitney eff_New_No_cut.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -429,8 +451,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
 LaTeX Font Info:    ... okay on input line 114.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
 LaTeX Font Info:    ... okay on input line 114.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen142
@@ -516,7 +537,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figs/Rawhit_05GeV_010_c2b1_5tev_04_no_cut_25bins_Ratio.pdf, id=4, 569.12625pt 
+<figs/Rawhit_05GeV_010_c2b1_5tev_04_no_cut_25bins_Ratio.pdf, id=8, 569.12625pt 
 x 543.02875pt>
 File: figs/Rawhit_05GeV_010_c2b1_5tev_04_no_cut_25bins_Ratio.pdf Graphic file (
 type pdf)
@@ -537,7 +558,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--197
  []
 
 
-<figs/Rawhit_05GeV_010_c2b1_10tev_04_no_cut_25bins_Ratio.pdf, id=5, 569.12625pt
+<figs/Rawhit_05GeV_010_c2b1_10tev_04_no_cut_25bins_Ratio.pdf, id=9, 569.12625pt
  x 543.02875pt>
 File: figs/Rawhit_05GeV_010_c2b1_10tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -558,8 +579,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--200
  []
 
 
-<figs/Rawhit_05GeV_010_c2b1_20tev_04_no_cut_25bins_Ratio.pdf, id=6, 569.12625pt
- x 543.02875pt>
+<figs/Rawhit_05GeV_010_c2b1_20tev_04_no_cut_25bins_Ratio.pdf, id=10, 569.12625p
+t x 543.02875pt>
 File: figs/Rawhit_05GeV_010_c2b1_20tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
 
@@ -579,8 +600,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
  []
 
 
-<figs/Rawhit_05GeV_010_c2b1_40tev_04_no_cut_25bins_Ratio.pdf, id=7, 569.12625pt
- x 543.02875pt>
+<figs/Rawhit_05GeV_010_c2b1_40tev_04_no_cut_25bins_Ratio.pdf, id=11, 569.12625p
+t x 543.02875pt>
 File: figs/Rawhit_05GeV_010_c2b1_40tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
 
@@ -600,8 +621,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--206
  []
 
 
-<figs/Rawhit_05GeV_009_c2b1_5tev_04_no_cut_25bins_Ratio.pdf, id=8, 569.12625pt 
-x 543.02875pt>
+<figs/Rawhit_05GeV_009_c2b1_5tev_04_no_cut_25bins_Ratio.pdf, id=12, 569.12625pt
+ x 543.02875pt>
 File: figs/Rawhit_05GeV_009_c2b1_5tev_04_no_cut_25bins_Ratio.pdf Graphic file (
 type pdf)
 
@@ -621,8 +642,8 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_c2b1_10tev_04_no_cut_25bins_Ratio.pdf, id=9, 569.12625pt
- x 543.02875pt>
+<figs/Rawhit_05GeV_009_c2b1_10tev_04_no_cut_25bins_Ratio.pdf, id=13, 569.12625p
+t x 543.02875pt>
 File: figs/Rawhit_05GeV_009_c2b1_10tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
 
@@ -642,7 +663,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_c2b1_20tev_04_no_cut_25bins_Ratio.pdf, id=10, 569.12625p
+<figs/Rawhit_05GeV_009_c2b1_20tev_04_no_cut_25bins_Ratio.pdf, id=14, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_009_c2b1_20tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -663,7 +684,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_c2b1_40tev_04_no_cut_25bins_Ratio.pdf, id=11, 569.12625p
+<figs/Rawhit_05GeV_009_c2b1_40tev_04_no_cut_25bins_Ratio.pdf, id=15, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_009_c2b1_40tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -684,7 +705,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_c2b1_5tev_04_no_cut_25bins_Ratio.pdf, id=12, 569.12625pt
+<figs/Rawhit_05GeV_012_c2b1_5tev_04_no_cut_25bins_Ratio.pdf, id=16, 569.12625pt
  x 543.02875pt>
 File: figs/Rawhit_05GeV_012_c2b1_5tev_04_no_cut_25bins_Ratio.pdf Graphic file (
 type pdf)
@@ -705,7 +726,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_c2b1_10tev_04_no_cut_25bins_Ratio.pdf, id=13, 569.12625p
+<figs/Rawhit_05GeV_012_c2b1_10tev_04_no_cut_25bins_Ratio.pdf, id=17, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_012_c2b1_10tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -726,7 +747,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_c2b1_20tev_04_no_cut_25bins_Ratio.pdf, id=14, 569.12625p
+<figs/Rawhit_05GeV_012_c2b1_20tev_04_no_cut_25bins_Ratio.pdf, id=18, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_012_c2b1_20tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -747,7 +768,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_c2b1_40tev_04_no_cut_25bins_Ratio.pdf, id=15, 569.12625p
+<figs/Rawhit_05GeV_012_c2b1_40tev_04_no_cut_25bins_Ratio.pdf, id=19, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_012_c2b1_40tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -782,7 +803,7 @@ _1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, id=
-16, 569.12625pt x 396.48125pt>
+20, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
  Graphic file (type pdf)
 
@@ -805,7 +826,7 @@ ff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, id
-=17, 569.12625pt x 396.48125pt>
+=21, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -829,7 +850,7 @@ ff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, id
-=18, 569.12625pt x 396.48125pt>
+=22, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -853,7 +874,7 @@ ff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, id
-=19, 569.12625pt x 396.48125pt>
+=23, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -862,15 +883,11 @@ f Graphic file (type pdf)
 Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no_cut_25bins-
 eps-converted-to.pdf used on input line 248.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-
-<figs/Rawhit_05GeV_010_c2b1_5tev_04_after_cut_25bins_Ratio.pdf, id=20, 569.1262
-5pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_c2b1_5tev_04_after_cut_25bins_Ratio.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_010_c2b1_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_5tev_04_after_cut_25bins_Ra
-tio.pdf used on input line 259.
+File: figs/Rawhit_05GeV_010_c2b1_5tev_04_no_cut_25bins_Ratio.pdf Graphic file (
+type pdf)
+ <use figs/Rawhit_05GeV_010_c2b1_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_5tev_04_no_cut_25bins_Ratio
+.pdf used on input line 259.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 259--259
@@ -883,15 +900,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--259
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_c2b1_10tev_04_after_cut_25bins_Ratio.pdf, id=21, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_c2b1_10tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_010_c2b1_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_10tev_04_after_cut_25bins_R
-atio.pdf used on input line 262.
+File: figs/Rawhit_05GeV_010_c2b1_10tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_010_c2b1_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_10tev_04_no_cut_25bins_Rati
+o.pdf used on input line 262.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 262--262
@@ -904,15 +917,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--262
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_c2b1_20tev_04_after_cut_25bins_Ratio.pdf, id=22, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_c2b1_20tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_010_c2b1_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_20tev_04_after_cut_25bins_R
-atio.pdf used on input line 265.
+File: figs/Rawhit_05GeV_010_c2b1_20tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_010_c2b1_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_20tev_04_no_cut_25bins_Rati
+o.pdf used on input line 265.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 265--265
@@ -925,15 +934,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--265
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_c2b1_40tev_04_after_cut_25bins_Ratio.pdf, id=23, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_c2b1_40tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_010_c2b1_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_40tev_04_after_cut_25bins_R
-atio.pdf used on input line 268.
+File: figs/Rawhit_05GeV_010_c2b1_40tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_010_c2b1_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_c2b1_40tev_04_no_cut_25bins_Rati
+o.pdf used on input line 268.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 268--268
@@ -946,15 +951,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--268
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_c2b1_5tev_04_after_cut_25bins_Ratio.pdf, id=24, 569.1262
-5pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_c2b1_5tev_04_after_cut_25bins_Ratio.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_009_c2b1_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_5tev_04_after_cut_25bins_Ra
-tio.pdf used on input line 271.
+File: figs/Rawhit_05GeV_009_c2b1_5tev_04_no_cut_25bins_Ratio.pdf Graphic file (
+type pdf)
+<use figs/Rawhit_05GeV_009_c2b1_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_5tev_04_no_cut_25bins_Ratio
+.pdf used on input line 271.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 271--271
@@ -967,15 +968,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--271
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_c2b1_10tev_04_after_cut_25bins_Ratio.pdf, id=25, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_c2b1_10tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_009_c2b1_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_10tev_04_after_cut_25bins_R
-atio.pdf used on input line 274.
+File: figs/Rawhit_05GeV_009_c2b1_10tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_009_c2b1_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_10tev_04_no_cut_25bins_Rati
+o.pdf used on input line 274.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 274--274
@@ -988,15 +985,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--274
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_c2b1_20tev_04_after_cut_25bins_Ratio.pdf, id=26, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_c2b1_20tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_009_c2b1_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_20tev_04_after_cut_25bins_R
-atio.pdf used on input line 277.
+File: figs/Rawhit_05GeV_009_c2b1_20tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_009_c2b1_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_20tev_04_no_cut_25bins_Rati
+o.pdf used on input line 277.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 277--277
@@ -1009,15 +1002,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--277
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_c2b1_40tev_04_after_cut_25bins_Ratio.pdf, id=27, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_c2b1_40tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_009_c2b1_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_40tev_04_after_cut_25bins_R
-atio.pdf used on input line 280.
+File: figs/Rawhit_05GeV_009_c2b1_40tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_009_c2b1_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_c2b1_40tev_04_no_cut_25bins_Rati
+o.pdf used on input line 280.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 280--280
@@ -1030,15 +1019,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--280
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_c2b1_5tev_04_after_cut_25bins_Ratio.pdf, id=28, 569.1262
-5pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_c2b1_5tev_04_after_cut_25bins_Ratio.pdf Graphic fil
-e (type pdf)
-
-<use figs/Rawhit_05GeV_012_c2b1_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_5tev_04_after_cut_25bins_Ra
-tio.pdf used on input line 283.
+File: figs/Rawhit_05GeV_012_c2b1_5tev_04_no_cut_25bins_Ratio.pdf Graphic file (
+type pdf)
+<use figs/Rawhit_05GeV_012_c2b1_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_5tev_04_no_cut_25bins_Ratio
+.pdf used on input line 283.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
@@ -1051,15 +1036,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_c2b1_10tev_04_after_cut_25bins_Ratio.pdf, id=29, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_c2b1_10tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_012_c2b1_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_10tev_04_after_cut_25bins_R
-atio.pdf used on input line 286.
+File: figs/Rawhit_05GeV_012_c2b1_10tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_012_c2b1_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_10tev_04_no_cut_25bins_Rati
+o.pdf used on input line 286.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 286--286
@@ -1072,15 +1053,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--286
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_c2b1_20tev_04_after_cut_25bins_Ratio.pdf, id=30, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_c2b1_20tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_012_c2b1_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_20tev_04_after_cut_25bins_R
-atio.pdf used on input line 289.
+File: figs/Rawhit_05GeV_012_c2b1_20tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_012_c2b1_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_20tev_04_no_cut_25bins_Rati
+o.pdf used on input line 289.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 289--289
@@ -1093,15 +1070,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--289
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_c2b1_40tev_04_after_cut_25bins_Ratio.pdf, id=31, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_c2b1_40tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_012_c2b1_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_40tev_04_after_cut_25bins_R
-atio.pdf used on input line 292.
+File: figs/Rawhit_05GeV_012_c2b1_40tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_012_c2b1_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_c2b1_40tev_04_no_cut_25bins_Rati
+o.pdf used on input line 292.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 292--292
@@ -1114,104 +1087,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--292
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_aft
-er_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:39
-(epstopdf)                    size: 11090 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_aft
-er_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:33
-(epstopdf)                    size: 10479 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_
+cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:50
+(epstopdf)                    size: 11107 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_
+cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:34
+(epstopdf)                    size: 10487 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_c2b1_5te
-v_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_5tev_
-eff_1_New2_after_cut_25bins.eps>
+v_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_5tev_eff
+_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
+ Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf, 
-id=32, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.
-pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.p
-df>
-Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bin
-s-eps-converted-to.pdf used on input line 301.
+<use figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_no_cut_25bins-e
+ps-converted-to.pdf used on input line 301.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_af
-ter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:39
-(epstopdf)                    size: 11052 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_af
-ter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:33
-(epstopdf)                    size: 10459 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no
+_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:50
+(epstopdf)                    size: 11081 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no
+_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:35
+(epstopdf)                    size: 10460 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_c2b1_10t
-ev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_10te
-v_eff_1_New2_after_cut_25bins.eps>
+ev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_10tev_e
+ff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf,
- id=33, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25bins-eps-converted-to.
-pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25bi
-ns-eps-converted-to.pdf used on input line 304.
+<use figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
+>
+Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_no_cut_25bins-
+eps-converted-to.pdf used on input line 304.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_af
-ter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:40
-(epstopdf)                    size: 10995 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_af
-ter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:34
-(epstopdf)                    size: 10439 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no
+_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:50
+(epstopdf)                    size: 11074 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no
+_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:36
+(epstopdf)                    size: 10464 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_c2b1_20t
-ev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_20te
-v_eff_1_New2_after_cut_25bins.eps>
+ev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_20tev_e
+ff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 307.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf,
- id=34, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_25bins-eps-converted-to.
-pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_25bi
-ns-eps-converted-to.pdf used on input line 307.
+<use figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
+>
+Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_no_cut_25bins-
+eps-converted-to.pdf used on input line 307.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_af
-ter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:40
-(epstopdf)                    size: 11004 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_af
-ter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:35
-(epstopdf)                    size: 10434 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no
+_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:50
+(epstopdf)                    size: 11028 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no
+_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:37
+(epstopdf)                    size: 10443 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_c2b1_40t
-ev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_40te
-v_eff_1_New2_after_cut_25bins.eps>
+ev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_40tev_e
+ff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf,
- id=35, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut_25bins-eps-converted-to.
-pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_cut_25bi
-ns-eps-converted-to.pdf used on input line 310.
+<use figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
+>
+Package pdftex.def Info: figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_no_cut_25bins-
+eps-converted-to.pdf used on input line 310.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 
-<figs/Rawhit_05GeV_010_tau21_5tev_04_no_cut_25bins_Ratio.pdf, id=36, 569.12625p
+<figs/Rawhit_05GeV_010_tau21_5tev_04_no_cut_25bins_Ratio.pdf, id=24, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau21_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -1232,7 +1192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--450
  []
 
 
-<figs/Rawhit_05GeV_010_tau21_10tev_04_no_cut_25bins_Ratio.pdf, id=37, 569.12625
+<figs/Rawhit_05GeV_010_tau21_10tev_04_no_cut_25bins_Ratio.pdf, id=25, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau21_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1253,7 +1213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 453--453
  []
 
 
-<figs/Rawhit_05GeV_010_tau21_20tev_04_no_cut_25bins_Ratio.pdf, id=38, 569.12625
+<figs/Rawhit_05GeV_010_tau21_20tev_04_no_cut_25bins_Ratio.pdf, id=26, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau21_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1274,7 +1234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 456--456
  []
 
 
-<figs/Rawhit_05GeV_010_tau21_40tev_04_no_cut_25bins_Ratio.pdf, id=39, 569.12625
+<figs/Rawhit_05GeV_010_tau21_40tev_04_no_cut_25bins_Ratio.pdf, id=27, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau21_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1295,7 +1255,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 459--459
  []
 
 
-<figs/Rawhit_05GeV_009_tau21_5tev_04_no_cut_25bins_Ratio.pdf, id=40, 569.12625p
+<figs/Rawhit_05GeV_009_tau21_5tev_04_no_cut_25bins_Ratio.pdf, id=28, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau21_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -1316,7 +1276,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_tau21_10tev_04_no_cut_25bins_Ratio.pdf, id=41, 569.12625
+<figs/Rawhit_05GeV_009_tau21_10tev_04_no_cut_25bins_Ratio.pdf, id=29, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau21_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1337,7 +1297,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_tau21_20tev_04_no_cut_25bins_Ratio.pdf, id=42, 569.12625
+<figs/Rawhit_05GeV_009_tau21_20tev_04_no_cut_25bins_Ratio.pdf, id=30, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau21_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1358,7 +1318,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_tau21_40tev_04_no_cut_25bins_Ratio.pdf, id=43, 569.12625
+<figs/Rawhit_05GeV_009_tau21_40tev_04_no_cut_25bins_Ratio.pdf, id=31, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau21_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1379,7 +1339,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau21_5tev_04_no_cut_25bins_Ratio.pdf, id=44, 569.12625p
+<figs/Rawhit_05GeV_012_tau21_5tev_04_no_cut_25bins_Ratio.pdf, id=32, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau21_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -1400,7 +1360,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau21_10tev_04_no_cut_25bins_Ratio.pdf, id=45, 569.12625
+<figs/Rawhit_05GeV_012_tau21_10tev_04_no_cut_25bins_Ratio.pdf, id=33, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau21_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1421,7 +1381,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau21_20tev_04_no_cut_25bins_Ratio.pdf, id=46, 569.12625
+<figs/Rawhit_05GeV_012_tau21_20tev_04_no_cut_25bins_Ratio.pdf, id=34, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau21_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1442,7 +1402,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau21_40tev_04_no_cut_25bins_Ratio.pdf, id=47, 569.12625
+<figs/Rawhit_05GeV_012_tau21_40tev_04_no_cut_25bins_Ratio.pdf, id=35, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau21_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1477,7 +1437,7 @@ ff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, id
-=48, 569.12625pt x 396.48125pt>
+=36, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -1501,7 +1461,7 @@ _eff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, i
-d=49, 569.12625pt x 396.48125pt>
+d=37, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -1525,7 +1485,7 @@ _eff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, i
-d=50, 569.12625pt x 396.48125pt>
+d=38, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -1549,7 +1509,7 @@ _eff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, i
-d=51, 569.12625pt x 396.48125pt>
+d=39, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -1558,15 +1518,11 @@ f>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_no_cut_25bins
 -eps-converted-to.pdf used on input line 501.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-
-<figs/Rawhit_05GeV_010_tau21_5tev_04_after_cut_25bins_Ratio.pdf, id=52, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau21_5tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau21_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_5tev_04_after_cut_25bins_R
-atio.pdf used on input line 512.
+File: figs/Rawhit_05GeV_010_tau21_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+ <use figs/Rawhit_05GeV_010_tau21_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_5tev_04_no_cut_25bins_Rati
+o.pdf used on input line 512.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 512--512
@@ -1579,15 +1535,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 512--512
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_tau21_10tev_04_after_cut_25bins_Ratio.pdf, id=53, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau21_10tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau21_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_10tev_04_after_cut_25bins_
-Ratio.pdf used on input line 515.
+File: figs/Rawhit_05GeV_010_tau21_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_010_tau21_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_10tev_04_no_cut_25bins_Rat
+io.pdf used on input line 515.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 515--515
@@ -1600,15 +1552,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 515--515
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_tau21_20tev_04_after_cut_25bins_Ratio.pdf, id=54, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau21_20tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau21_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_20tev_04_after_cut_25bins_
-Ratio.pdf used on input line 518.
+File: figs/Rawhit_05GeV_010_tau21_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_010_tau21_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_20tev_04_no_cut_25bins_Rat
+io.pdf used on input line 518.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 518--518
@@ -1621,15 +1569,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--518
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_tau21_40tev_04_after_cut_25bins_Ratio.pdf, id=55, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau21_40tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau21_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_40tev_04_after_cut_25bins_
-Ratio.pdf used on input line 521.
+File: figs/Rawhit_05GeV_010_tau21_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_010_tau21_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau21_40tev_04_no_cut_25bins_Rat
+io.pdf used on input line 521.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 521--521
@@ -1642,15 +1586,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--521
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau21_5tev_04_after_cut_25bins_Ratio.pdf, id=56, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau21_5tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau21_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_5tev_04_after_cut_25bins_R
-atio.pdf used on input line 524.
+File: figs/Rawhit_05GeV_009_tau21_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_009_tau21_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_5tev_04_no_cut_25bins_Rati
+o.pdf used on input line 524.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 524--524
@@ -1663,15 +1603,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 524--524
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau21_10tev_04_after_cut_25bins_Ratio.pdf, id=57, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau21_10tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau21_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_10tev_04_after_cut_25bins_
-Ratio.pdf used on input line 527.
+File: figs/Rawhit_05GeV_009_tau21_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_009_tau21_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_10tev_04_no_cut_25bins_Rat
+io.pdf used on input line 527.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 527--527
@@ -1684,15 +1620,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--527
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau21_20tev_04_after_cut_25bins_Ratio.pdf, id=58, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau21_20tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau21_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_20tev_04_after_cut_25bins_
-Ratio.pdf used on input line 530.
+File: figs/Rawhit_05GeV_009_tau21_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_009_tau21_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_20tev_04_no_cut_25bins_Rat
+io.pdf used on input line 530.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 530--530
@@ -1705,15 +1637,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 530--530
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau21_40tev_04_after_cut_25bins_Ratio.pdf, id=59, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau21_40tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau21_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_40tev_04_after_cut_25bins_
-Ratio.pdf used on input line 533.
+File: figs/Rawhit_05GeV_009_tau21_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_009_tau21_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau21_40tev_04_no_cut_25bins_Rat
+io.pdf used on input line 533.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 533--533
@@ -1726,15 +1654,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 533--533
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau21_5tev_04_after_cut_25bins_Ratio.pdf, id=60, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau21_5tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau21_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_5tev_04_after_cut_25bins_R
-atio.pdf used on input line 536.
+File: figs/Rawhit_05GeV_012_tau21_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_012_tau21_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_5tev_04_no_cut_25bins_Rati
+o.pdf used on input line 536.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 536--536
@@ -1747,15 +1671,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 536--536
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau21_10tev_04_after_cut_25bins_Ratio.pdf, id=61, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau21_10tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau21_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_10tev_04_after_cut_25bins_
-Ratio.pdf used on input line 539.
+File: figs/Rawhit_05GeV_012_tau21_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_012_tau21_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_10tev_04_no_cut_25bins_Rat
+io.pdf used on input line 539.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 539--539
@@ -1768,15 +1688,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 539--539
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau21_20tev_04_after_cut_25bins_Ratio.pdf, id=62, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau21_20tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau21_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_20tev_04_after_cut_25bins_
-Ratio.pdf used on input line 542.
+File: figs/Rawhit_05GeV_012_tau21_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_012_tau21_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_20tev_04_no_cut_25bins_Rat
+io.pdf used on input line 542.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 542--542
@@ -1789,15 +1705,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--542
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau21_40tev_04_after_cut_25bins_Ratio.pdf, id=63, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau21_40tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau21_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_40tev_04_after_cut_25bins_
-Ratio.pdf used on input line 545.
+File: figs/Rawhit_05GeV_012_tau21_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_012_tau21_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau21_40tev_04_no_cut_25bins_Rat
+io.pdf used on input line 545.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 545--545
@@ -1810,104 +1722,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 545--545
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_af
-ter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:36
-(epstopdf)                    size: 11362 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_af
-ter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:39
-(epstopdf)                    size: 10644 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no
+_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:48
+(epstopdf)                    size: 11381 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no
+_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:43
+(epstopdf)                    size: 10659 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_5t
-ev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_5te
-v_eff_1_New2_after_cut_25bins.eps>
+ev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_5tev_e
+ff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 553.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf,
- id=64, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.
-pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bi
-ns-eps-converted-to.pdf used on input line 553.
+<use figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
+>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_no_cut_25bins-
+eps-converted-to.pdf used on input line 553.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_a
-fter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:37
-(epstopdf)                    size: 11306 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_a
-fter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:40
-(epstopdf)                    size: 10609 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_n
+o_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:48
+(epstopdf)                    size: 11326 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_n
+o_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:44
+(epstopdf)                    size: 10628 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_10
-tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_10
-tev_eff_1_New2_after_cut_25bins.eps>
+tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_10tev
+_eff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 556.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
+df Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf
-, id=65, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_25bins-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf used on input line 556.
+<use figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_no_cut_25bins
+-eps-converted-to.pdf used on input line 556.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_a
-fter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:37
-(epstopdf)                    size: 11147 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_a
-fter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:40
-(epstopdf)                    size: 10525 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_n
+o_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:48
+(epstopdf)                    size: 11228 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_n
+o_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:44
+(epstopdf)                    size: 10567 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_20
-tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_20
-tev_eff_1_New2_after_cut_25bins.eps>
+tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_20tev
+_eff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 559.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
+df Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf
-, id=66, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut_25bins-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf used on input line 559.
+<use figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_no_cut_25bins
+-eps-converted-to.pdf used on input line 559.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_a
-fter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:37
-(epstopdf)                    size: 11071 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_a
-fter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:41
-(epstopdf)                    size: 10481 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_n
+o_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:48
+(epstopdf)                    size: 11142 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_n
+o_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:45
+(epstopdf)                    size: 10516 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau21_40
-tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_40
-tev_eff_1_New2_after_cut_25bins.eps>
+tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_40tev
+_eff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 562.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
+df Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf
-, id=67, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut_25bins-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf used on input line 562.
+<use figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_no_cut_25bins
+-eps-converted-to.pdf used on input line 562.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 
-<figs/Rawhit_05GeV_010_tau32_5tev_04_no_cut_25bins_Ratio.pdf, id=68, 569.12625p
+<figs/Rawhit_05GeV_010_tau32_5tev_04_no_cut_25bins_Ratio.pdf, id=40, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau32_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -1928,7 +1828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 699--699
  []
 
 
-<figs/Rawhit_05GeV_010_tau32_10tev_04_no_cut_25bins_Ratio.pdf, id=69, 569.12625
+<figs/Rawhit_05GeV_010_tau32_10tev_04_no_cut_25bins_Ratio.pdf, id=41, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau32_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1949,7 +1849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 702--702
  []
 
 
-<figs/Rawhit_05GeV_010_tau32_20tev_04_no_cut_25bins_Ratio.pdf, id=70, 569.12625
+<figs/Rawhit_05GeV_010_tau32_20tev_04_no_cut_25bins_Ratio.pdf, id=42, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau32_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1970,7 +1870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 705--705
  []
 
 
-<figs/Rawhit_05GeV_010_tau32_40tev_04_no_cut_25bins_Ratio.pdf, id=71, 569.12625
+<figs/Rawhit_05GeV_010_tau32_40tev_04_no_cut_25bins_Ratio.pdf, id=43, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_010_tau32_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -1991,7 +1891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 708--708
  []
 
 
-<figs/Rawhit_05GeV_009_tau32_5tev_04_no_cut_25bins_Ratio.pdf, id=72, 569.12625p
+<figs/Rawhit_05GeV_009_tau32_5tev_04_no_cut_25bins_Ratio.pdf, id=44, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau32_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -2012,7 +1912,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_tau32_10tev_04_no_cut_25bins_Ratio.pdf, id=73, 569.12625
+<figs/Rawhit_05GeV_009_tau32_10tev_04_no_cut_25bins_Ratio.pdf, id=45, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau32_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -2033,7 +1933,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_tau32_20tev_04_no_cut_25bins_Ratio.pdf, id=74, 569.12625
+<figs/Rawhit_05GeV_009_tau32_20tev_04_no_cut_25bins_Ratio.pdf, id=46, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau32_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -2054,7 +1954,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_009_tau32_40tev_04_no_cut_25bins_Ratio.pdf, id=75, 569.12625
+<figs/Rawhit_05GeV_009_tau32_40tev_04_no_cut_25bins_Ratio.pdf, id=47, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_009_tau32_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -2075,7 +1975,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau32_5tev_04_no_cut_25bins_Ratio.pdf, id=76, 569.12625p
+<figs/Rawhit_05GeV_012_tau32_5tev_04_no_cut_25bins_Ratio.pdf, id=48, 569.12625p
 t x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau32_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
 (type pdf)
@@ -2096,7 +1996,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau32_10tev_04_no_cut_25bins_Ratio.pdf, id=77, 569.12625
+<figs/Rawhit_05GeV_012_tau32_10tev_04_no_cut_25bins_Ratio.pdf, id=49, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau32_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -2117,7 +2017,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau32_20tev_04_no_cut_25bins_Ratio.pdf, id=78, 569.12625
+<figs/Rawhit_05GeV_012_tau32_20tev_04_no_cut_25bins_Ratio.pdf, id=50, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau32_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -2138,7 +2038,7 @@ T1/cmr/m/n/9 cm) in
  []
 
 
-<figs/Rawhit_05GeV_012_tau32_40tev_04_no_cut_25bins_Ratio.pdf, id=79, 569.12625
+<figs/Rawhit_05GeV_012_tau32_40tev_04_no_cut_25bins_Ratio.pdf, id=51, 569.12625
 pt x 543.02875pt>
 File: figs/Rawhit_05GeV_012_tau32_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
  (type pdf)
@@ -2173,7 +2073,7 @@ ff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, id
-=80, 569.12625pt x 396.48125pt>
+=52, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -2197,7 +2097,7 @@ _eff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, i
-d=81, 569.12625pt x 396.48125pt>
+d=53, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -2221,7 +2121,7 @@ _eff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, i
-d=82, 569.12625pt x 396.48125pt>
+d=54, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -2245,7 +2145,7 @@ _eff_1_New2_no_cut_25bins.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf, i
-d=83, 569.12625pt x 396.48125pt>
+d=55, 569.12625pt x 396.48125pt>
 File: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
 df Graphic file (type pdf)
 
@@ -2254,15 +2154,11 @@ f>
 Package pdftex.def Info: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_no_cut_25bins
 -eps-converted-to.pdf used on input line 750.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-
-<figs/Rawhit_05GeV_010_tau32_5tev_04_after_cut_25bins_Ratio.pdf, id=84, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau32_5tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau32_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_5tev_04_after_cut_25bins_R
-atio.pdf used on input line 761.
+File: figs/Rawhit_05GeV_010_tau32_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+ <use figs/Rawhit_05GeV_010_tau32_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_5tev_04_no_cut_25bins_Rati
+o.pdf used on input line 761.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 761--761
@@ -2275,15 +2171,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 761--761
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_tau32_10tev_04_after_cut_25bins_Ratio.pdf, id=85, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau32_10tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau32_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_10tev_04_after_cut_25bins_
-Ratio.pdf used on input line 764.
+File: figs/Rawhit_05GeV_010_tau32_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_010_tau32_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_10tev_04_no_cut_25bins_Rat
+io.pdf used on input line 764.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 764--764
@@ -2296,15 +2188,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 764--764
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_tau32_20tev_04_after_cut_25bins_Ratio.pdf, id=86, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau32_20tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau32_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_20tev_04_after_cut_25bins_
-Ratio.pdf used on input line 767.
+File: figs/Rawhit_05GeV_010_tau32_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_010_tau32_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_20tev_04_no_cut_25bins_Rat
+io.pdf used on input line 767.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 767--767
@@ -2317,15 +2205,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 767--767
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_010_tau32_40tev_04_after_cut_25bins_Ratio.pdf, id=87, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_010_tau32_40tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_010_tau32_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_40tev_04_after_cut_25bins_
-Ratio.pdf used on input line 770.
+File: figs/Rawhit_05GeV_010_tau32_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_010_tau32_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_010_tau32_40tev_04_no_cut_25bins_Rat
+io.pdf used on input line 770.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 770--770
@@ -2338,15 +2222,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 770--770
 \OT1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau32_5tev_04_after_cut_25bins_Ratio.pdf, id=88, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau32_5tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau32_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_5tev_04_after_cut_25bins_R
-atio.pdf used on input line 773.
+File: figs/Rawhit_05GeV_009_tau32_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_009_tau32_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_5tev_04_no_cut_25bins_Rati
+o.pdf used on input line 773.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 773--773
@@ -2359,15 +2239,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--773
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau32_10tev_04_after_cut_25bins_Ratio.pdf, id=89, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau32_10tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau32_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_10tev_04_after_cut_25bins_
-Ratio.pdf used on input line 776.
+File: figs/Rawhit_05GeV_009_tau32_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_009_tau32_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_10tev_04_no_cut_25bins_Rat
+io.pdf used on input line 776.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 776--776
@@ -2380,15 +2256,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 776--776
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau32_20tev_04_after_cut_25bins_Ratio.pdf, id=90, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau32_20tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau32_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_20tev_04_after_cut_25bins_
-Ratio.pdf used on input line 779.
+File: figs/Rawhit_05GeV_009_tau32_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_009_tau32_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_20tev_04_no_cut_25bins_Rat
+io.pdf used on input line 779.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 779--779
@@ -2401,15 +2273,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 779--779
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_009_tau32_40tev_04_after_cut_25bins_Ratio.pdf, id=91, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_009_tau32_40tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_009_tau32_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_40tev_04_after_cut_25bins_
-Ratio.pdf used on input line 782.
+File: figs/Rawhit_05GeV_009_tau32_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_009_tau32_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_009_tau32_40tev_04_no_cut_25bins_Rat
+io.pdf used on input line 782.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 782--782
@@ -2422,15 +2290,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 782--782
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau32_5tev_04_after_cut_25bins_Ratio.pdf, id=92, 569.126
-25pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau32_5tev_04_after_cut_25bins_Ratio.pdf Graphic fi
-le (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau32_5tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_5tev_04_after_cut_25bins_R
-atio.pdf used on input line 785.
+File: figs/Rawhit_05GeV_012_tau32_5tev_04_no_cut_25bins_Ratio.pdf Graphic file 
+(type pdf)
+<use figs/Rawhit_05GeV_012_tau32_5tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_5tev_04_no_cut_25bins_Rati
+o.pdf used on input line 785.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 785--785
@@ -2443,15 +2307,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 785--785
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau32_10tev_04_after_cut_25bins_Ratio.pdf, id=93, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau32_10tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau32_10tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_10tev_04_after_cut_25bins_
-Ratio.pdf used on input line 788.
+File: figs/Rawhit_05GeV_012_tau32_10tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_012_tau32_10tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_10tev_04_no_cut_25bins_Rat
+io.pdf used on input line 788.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 788--788
@@ -2464,15 +2324,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 788--788
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau32_20tev_04_after_cut_25bins_Ratio.pdf, id=94, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau32_20tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau32_20tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_20tev_04_after_cut_25bins_
-Ratio.pdf used on input line 791.
+File: figs/Rawhit_05GeV_012_tau32_20tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_012_tau32_20tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_20tev_04_no_cut_25bins_Rat
+io.pdf used on input line 791.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 791--791
@@ -2485,15 +2341,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 791--791
 T1/cmr/m/n/9 cm) in
  []
 
-
-<figs/Rawhit_05GeV_012_tau32_40tev_04_after_cut_25bins_Ratio.pdf, id=95, 569.12
-625pt x 543.02875pt>
-File: figs/Rawhit_05GeV_012_tau32_40tev_04_after_cut_25bins_Ratio.pdf Graphic f
-ile (type pdf)
-
-<use figs/Rawhit_05GeV_012_tau32_40tev_04_after_cut_25bins_Ratio.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_40tev_04_after_cut_25bins_
-Ratio.pdf used on input line 794.
+File: figs/Rawhit_05GeV_012_tau32_40tev_04_no_cut_25bins_Ratio.pdf Graphic file
+ (type pdf)
+<use figs/Rawhit_05GeV_012_tau32_40tev_04_no_cut_25bins_Ratio.pdf>
+Package pdftex.def Info: figs/Rawhit_05GeV_012_tau32_40tev_04_no_cut_25bins_Rat
+io.pdf used on input line 794.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 794--794
@@ -2506,101 +2358,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 794--794
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_af
-ter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:38
-(epstopdf)                    size: 11249 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_af
-ter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:45
-(epstopdf)                    size: 10552 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no
+_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:49
+(epstopdf)                    size: 11226 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no
+_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:49
+(epstopdf)                    size: 10538 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_5t
-ev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_5te
-v_eff_1_New2_after_cut_25bins.eps>
+ev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_5tev_e
+ff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 803.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf,
- id=96, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bins-eps-converted-to.
-pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bi
-ns-eps-converted-to.pdf used on input line 803.
+<use figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf
+>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_no_cut_25bins-
+eps-converted-to.pdf used on input line 803.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_a
-fter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:38
-(epstopdf)                    size: 11252 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_a
-fter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:45
-(epstopdf)                    size: 10562 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_n
+o_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:49
+(epstopdf)                    size: 11266 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_n
+o_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:49
+(epstopdf)                    size: 10566 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_10
-tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_10
-tev_eff_1_New2_after_cut_25bins.eps>
+tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_10tev
+_eff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 806.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
+df Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf
-, id=97, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_25bins-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf used on input line 806.
+<use figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_no_cut_25bins
+-eps-converted-to.pdf used on input line 806.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_a
-fter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:38
-(epstopdf)                    size: 11194 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_a
-fter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:46
-(epstopdf)                    size: 10532 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_n
+o_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:49
+(epstopdf)                    size: 11269 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_n
+o_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:50
+(epstopdf)                    size: 10589 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_20
-tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_20
-tev_eff_1_New2_after_cut_25bins.eps>
+tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_20tev
+_eff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 809.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
+df Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf
-, id=98, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut_25bins-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf used on input line 809.
+<use figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_no_cut_25bins
+-eps-converted-to.pdf used on input line 809.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_a
-fter_cut_25bins.eps>
-(epstopdf)                    date: 2018-05-28 00:52:39
-(epstopdf)                    size: 11194 bytes
-(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_a
-fter_cut_25bins-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-28 09:29:47
-(epstopdf)                    size: 10556 bytes
+Package epstopdf Info: Source file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_n
+o_cut_25bins.eps>
+(epstopdf)                    date: 2018-05-28 09:22:49
+(epstopdf)                    size: 11294 bytes
+(epstopdf)             Output file: <figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_n
+o_cut_25bins-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 09:30:51
+(epstopdf)                    size: 10614 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Rawhit_05GeV_tau32_40
-tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_40
-tev_eff_1_New2_after_cut_25bins.eps>
+tev_eff_1_New2_no_cut_25bins-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_40tev
+_eff_1_New2_no_cut_25bins.eps>
 (epstopdf)             \includegraphics on input line 812.
 Package epstopdf Info: Output file is already uptodate.
+File: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.p
+df Graphic file (type pdf)
 
-<figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut_25bins-eps-converted-to.pdf
-, id=99, 569.12625pt x 396.48125pt>
-File: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut_25bins-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut_25bins-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf used on input line 812.
+<use figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_no_cut_25bins-eps-converted-to.pd
+f>
+Package pdftex.def Info: figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_no_cut_25bins
+-eps-converted-to.pdf used on input line 812.
 (pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
 Package epstopdf Info: Source file: <figs/cluster_tau21_summary_U.eps>
 (epstopdf)                    date: 2018-03-16 11:30:39
@@ -2614,8 +2454,8 @@ _U-eps-converted-to.pdf figs/cluster_tau21_summary_U.eps>
 (epstopdf)             \includegraphics on input line 907.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_tau21_summary_U-eps-converted-to.pdf, id=100, 569.12625pt x 543.0
-2875pt>
+<figs/cluster_tau21_summary_U-eps-converted-to.pdf, id=56, 569.12625pt x 543.02
+875pt>
 File: figs/cluster_tau21_summary_U-eps-converted-to.pdf Graphic file (type pdf)
 
  <use figs/cluster_tau21_summary_U-eps-converted-to.pdf>
@@ -2634,8 +2474,8 @@ _U-eps-converted-to.pdf figs/cluster_tau32_summary_U.eps>
 (epstopdf)             \includegraphics on input line 910.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_tau32_summary_U-eps-converted-to.pdf, id=101, 569.12625pt x 543.0
-2875pt>
+<figs/cluster_tau32_summary_U-eps-converted-to.pdf, id=57, 569.12625pt x 543.02
+875pt>
 File: figs/cluster_tau32_summary_U-eps-converted-to.pdf Graphic file (type pdf)
 
  <use figs/cluster_tau32_summary_U-eps-converted-to.pdf>
@@ -2654,8 +2494,8 @@ U-eps-converted-to.pdf figs/cluster_c2b1_summary_U.eps>
 (epstopdf)             \includegraphics on input line 913.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/cluster_c2b1_summary_U-eps-converted-to.pdf, id=102, 569.12625pt x 543.02
-875pt>
+<figs/cluster_c2b1_summary_U-eps-converted-to.pdf, id=58, 569.12625pt x 543.028
+75pt>
 File: figs/cluster_c2b1_summary_U-eps-converted-to.pdf Graphic file (type pdf)
  <use figs/cluster_c2b1_summary_U-eps-converted-to.pdf>
 Package pdftex.def Info: figs/cluster_c2b1_summary_U-eps-converted-to.pdf used 
@@ -2673,8 +2513,8 @@ mmary_U-eps-converted-to.pdf figs/Rawhit_05GeV_tau21_summary_U.eps>
 (epstopdf)             \includegraphics on input line 925.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf, id=103, 569.12625pt x 
-543.02875pt>
+<figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf, id=59, 569.12625pt x 5
+43.02875pt>
 File: figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/Rawhit_05GeV_tau21_summary_U-eps-converted-to.pdf>
@@ -2693,8 +2533,8 @@ mmary_U-eps-converted-to.pdf figs/Rawhit_05GeV_tau32_summary_U.eps>
 (epstopdf)             \includegraphics on input line 928.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf, id=104, 569.12625pt x 
-543.02875pt>
+<figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf, id=60, 569.12625pt x 5
+43.02875pt>
 File: figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/Rawhit_05GeV_tau32_summary_U-eps-converted-to.pdf>
@@ -2713,8 +2553,8 @@ mary_U-eps-converted-to.pdf figs/Rawhit_05GeV_c2b1_summary_U.eps>
 (epstopdf)             \includegraphics on input line 931.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf, id=105, 569.12625pt x 5
-43.02875pt>
+<figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf, id=61, 569.12625pt x 54
+3.02875pt>
 File: figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use figs/Rawhit_05GeV_c2b1_summary_U-eps-converted-to.pdf>
@@ -2733,8 +2573,8 @@ ummary_U-eps-converted-to.pdf figs/Rawhit_025GeV_tau21_summary_U.eps>
 (epstopdf)             \includegraphics on input line 942.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf, id=106, 569.12625pt x
- 543.02875pt>
+<figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf, id=62, 569.12625pt x 
+543.02875pt>
 File: figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figs/Rawhit_025GeV_tau21_summary_U-eps-converted-to.pdf>
@@ -2753,8 +2593,8 @@ ummary_U-eps-converted-to.pdf figs/Rawhit_025GeV_tau32_summary_U.eps>
 (epstopdf)             \includegraphics on input line 945.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf, id=107, 569.12625pt x
- 543.02875pt>
+<figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf, id=63, 569.12625pt x 
+543.02875pt>
 File: figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use figs/Rawhit_025GeV_tau32_summary_U-eps-converted-to.pdf>
@@ -2773,8 +2613,8 @@ mmary_U-eps-converted-to.pdf figs/Rawhit_025GeV_c2b1_summary_U.eps>
 (epstopdf)             \includegraphics on input line 948.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf, id=108, 569.12625pt x 
-543.02875pt>
+<figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf, id=64, 569.12625pt x 5
+43.02875pt>
 File: figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf Graphic file (type
  pdf)
  <use figs/Rawhit_025GeV_c2b1_summary_U-eps-converted-to.pdf>
@@ -2822,33 +2662,14 @@ ier (name{figure.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.953 \end{document}
-                     <./figs/Rawhit_05GeV_010_c2b1_5tev_04_after_cut_25bins_Rat
-io.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_010_c2b1_10tev_04_afte
-r_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_010_c2
-b1_20tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Raw
-hit_05GeV_010_c2b1_40tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degr
-ees> <./figs/Rawhit_05GeV_009_c2b1_5tev_04_after_cut_25bins_Ratio.pdf, page is 
-rotated 90 degrees> <./figs/Rawhit_05GeV_009_c2b1_10tev_04_after_cut_25bins_Rat
-io.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_009_c2b1_20tev_04_afte
-r_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_009_c2
-b1_40tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Raw
-hit_05GeV_012_c2b1_5tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degre
-es> <./figs/Rawhit_05GeV_012_c2b1_10tev_04_after_cut_25bins_Ratio.pdf, page is 
-rotated 90 degrees> <./figs/Rawhit_05GeV_012_c2b1_20tev_04_after_cut_25bins_Rat
-io.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_012_c2b1_40tev_04_afte
-r_cut_25bins_Ratio.pdf, page is rotated 90 degrees>] [5pdfTeX warning (ext4): d
-estination with the same identifier (name{figure.4}) has been already used, dup
-licate ignored
+                    ] [5pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.953 \end{document}
-                     <./figs/Rawhit_05GeV_c2b1_5tev_eff_1_New2_after_cut_25bins
--eps-converted-to.pdf> <./figs/Rawhit_05GeV_c2b1_10tev_eff_1_New2_after_cut_25b
-ins-eps-converted-to.pdf> <./figs/Rawhit_05GeV_c2b1_20tev_eff_1_New2_after_cut_
-25bins-eps-converted-to.pdf> <./figs/Rawhit_05GeV_c2b1_40tev_eff_1_New2_after_c
-ut_25bins-eps-converted-to.pdf>] [6pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.5}) has been already used, duplicate ignored
+                    ] [6pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2883,33 +2704,14 @@ ntifier (name{figure.7}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.953 \end{document}
-                     <./figs/Rawhit_05GeV_010_tau21_5tev_04_after_cut_25bins_Ra
-tio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_010_tau21_10tev_04_af
-ter_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_010_
-tau21_20tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/
-Rawhit_05GeV_010_tau21_40tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 
-degrees> <./figs/Rawhit_05GeV_009_tau21_5tev_04_after_cut_25bins_Ratio.pdf, pag
-e is rotated 90 degrees> <./figs/Rawhit_05GeV_009_tau21_10tev_04_after_cut_25bi
-ns_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_009_tau21_20tev_
-04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV
-_009_tau21_40tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./
-figs/Rawhit_05GeV_012_tau21_5tev_04_after_cut_25bins_Ratio.pdf, page is rotated
- 90 degrees> <./figs/Rawhit_05GeV_012_tau21_10tev_04_after_cut_25bins_Ratio.pdf
-, page is rotated 90 degrees> <./figs/Rawhit_05GeV_012_tau21_20tev_04_after_cut
-_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_012_tau21_4
-0tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees>] [9pdfTeX warni
-ng (ext4): destination with the same identifier (name{figure.8}) has been alrea
-dy used, duplicate ignored
+                    ] [9pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.953 \end{document}
-                     <./figs/Rawhit_05GeV_tau21_5tev_eff_1_New2_after_cut_25bin
-s-eps-converted-to.pdf> <./figs/Rawhit_05GeV_tau21_10tev_eff_1_New2_after_cut_2
-5bins-eps-converted-to.pdf> <./figs/Rawhit_05GeV_tau21_20tev_eff_1_New2_after_c
-ut_25bins-eps-converted-to.pdf> <./figs/Rawhit_05GeV_tau21_40tev_eff_1_New2_aft
-er_cut_25bins-eps-converted-to.pdf>] [10pdfTeX warning (ext4): destination with
- the same identifier (name{figure.9}) has been already used, duplicate ignored
+                    ] [10pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2944,34 +2746,14 @@ entifier (name{figure.11}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.953 \end{document}
-                     <./figs/Rawhit_05GeV_010_tau32_5tev_04_after_cut_25bins_Ra
-tio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_010_tau32_10tev_04_af
-ter_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_010_
-tau32_20tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/
-Rawhit_05GeV_010_tau32_40tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 
-degrees> <./figs/Rawhit_05GeV_009_tau32_5tev_04_after_cut_25bins_Ratio.pdf, pag
-e is rotated 90 degrees> <./figs/Rawhit_05GeV_009_tau32_10tev_04_after_cut_25bi
-ns_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_009_tau32_20tev_
-04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV
-_009_tau32_40tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees> <./
-figs/Rawhit_05GeV_012_tau32_5tev_04_after_cut_25bins_Ratio.pdf, page is rotated
- 90 degrees> <./figs/Rawhit_05GeV_012_tau32_10tev_04_after_cut_25bins_Ratio.pdf
-, page is rotated 90 degrees> <./figs/Rawhit_05GeV_012_tau32_20tev_04_after_cut
-_25bins_Ratio.pdf, page is rotated 90 degrees> <./figs/Rawhit_05GeV_012_tau32_4
-0tev_04_after_cut_25bins_Ratio.pdf, page is rotated 90 degrees>] [13pdfTeX warn
-ing (ext4): destination with the same identifier (name{figure.12}) has been alr
-eady used, duplicate ignored
+                    ] [13pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.953 \end{document}
-                     <./figs/Rawhit_05GeV_tau32_5tev_eff_1_New2_after_cut_25bin
-s-eps-converted-to.pdf> <./figs/Rawhit_05GeV_tau32_10tev_eff_1_New2_after_cut_2
-5bins-eps-converted-to.pdf> <./figs/Rawhit_05GeV_tau32_20tev_eff_1_New2_after_c
-ut_25bins-eps-converted-to.pdf> <./figs/Rawhit_05GeV_tau32_40tev_eff_1_New2_aft
-er_cut_25bins-eps-converted-to.pdf>] [14pdfTeX warning (ext4): destination with
- the same identifier (name{figure.13}) has been already used, duplicate ignored
-
+                    ] [14pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3001,27 +2783,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 953.
 (./fcc_Mannuwhitney eff_New_No_cut.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 953.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 953.
+Package rerunfilecheck Info: File `"fcc_Mannuwhitney eff_New_No_cut".out' has n
+ot changed.
+(rerunfilecheck)             Checksum: A7B14D89E6FE71ED2C3C32A4F4185103;125.
 
 
-Package rerunfilecheck Warning: File `"fcc_Mannuwhitney eff_New_No_cut".out' ha
-s changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"fcc_Mannuwhitney eff_New_No_cut".o
-ut':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  A7B14D89E6FE71ED2C3C32A4F4185103;125.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 953.
  ) 
 Here is how much of TeX's memory you used:
- 8865 strings out of 492995
- 155687 string characters out of 6132704
- 284602 words of memory out of 5000000
- 12041 multiletter control sequences out of 15000+600000
+ 8627 strings out of 492995
+ 139352 string characters out of 6132704
+ 282769 words of memory out of 5000000
+ 11851 multiletter control sequences out of 15000+600000
  12718 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,7n,32p,803b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3031,11 +2806,11 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on "fcc_Mannuwhitney eff_New_No_cut.pdf" (16 pages, 1160237 byte
-s).
+Output written on "fcc_Mannuwhitney eff_New_No_cut.pdf" (16 pages, 649464 bytes
+).
 PDF statistics:
- 3917 PDF objects out of 4296 (max. 8388607)
- 1855 compressed objects within 19 object streams
+ 2137 PDF objects out of 2487 (max. 8388607)
+ 1079 compressed objects within 11 object streams
  138 named destinations out of 1000 (max. 500000)
- 526 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

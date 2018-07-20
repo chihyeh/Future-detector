@@ -172,15 +172,15 @@ for k in range(2,5):
         for j in range(0,3):
             for m in range(0,4):
                 if(energy_array[1][m]<20):
-                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
      
                             
                 h1 = f1.Get("h_"+variable[k]+"_b1")
@@ -254,17 +254,17 @@ for k in range(2,5):
                 h1_max=h1.GetBinContent(h1.GetMaximumBin())
                 
                 if((h3.GetBinContent(h3.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())) and (h3.GetBinContent(h3.GetMaximumBin())>h1.GetBinContent(h1.GetMaximumBin()))):
-                    h3.Draw("hist E")
+                    h3.Draw("hist")
                     h2.Draw("histsame")
                     h1.Draw("histsame")
                 elif((h3.GetBinContent(h3.GetMaximumBin())>h1.GetBinContent(h1.GetMaximumBin()))and (h3.GetBinContent(h3.GetMaximumBin())<h2.GetBinContent(h2.GetMaximumBin()))):
                     h2.Draw("hist")
                     h1.Draw("histsame")
-                    h3.Draw("histsame E")
+                    h3.Draw("histsame")
                 else:
                     h1.Draw("hist")
                     h2.Draw("histsame")
-                    h3.Draw("histsame E")
+                    h3.Draw("histsame")
                 
                 #leg.AddEntry("","MannWhitneyUtest:","")
                 #               leg.AddEntry("",a,"")
@@ -276,7 +276,7 @@ for k in range(2,5):
                 #c.Print("r009_tau32b1_20tev_04_after_cut_U.eps")
                 
                 #f=TFile("Dis_cluster_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_cut_Man_100.root","RECREATE")
-                c.Print("Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_cut_25bins_Ratio.pdf")
+                c.Print("Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_25bins_Ratio.pdf")
 #      c.Print("Dis_cluster_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_cut_Man_100.eps")
 
 
@@ -357,9 +357,9 @@ for k in range(2,5):
                 h2.GetYaxis().SetLabelFont(22)
                 h3.GetYaxis().SetLabelFont(22)
 
-                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet#rightarrowNocut","l")
+                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet#rightarrowNocut","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
                 leg.AddEntry(h3,"Ratio histogram","l")
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
                 h3_max=h3.GetBinContent(h3.GetMaximumBin())
@@ -367,17 +367,17 @@ for k in range(2,5):
                 h1_max=h1.GetBinContent(h1.GetMaximumBin())
 
                 if((h3.GetBinContent(h3.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())) and (h3.GetBinContent(h3.GetMaximumBin())>h1.GetBinContent(h1.GetMaximumBin()))):
-                    h3.Draw("hist E")
+                    h3.Draw("hist")
                     h2.Draw("histsame")
                     h1.Draw("histsame")
                 elif((h3.GetBinContent(h3.GetMaximumBin())>h1.GetBinContent(h1.GetMaximumBin()))and (h3.GetBinContent(h3.GetMaximumBin())<h2.GetBinContent(h2.GetMaximumBin()))):
                     h2.Draw("hist")
                     h1.Draw("histsame")
-                    h3.Draw("histsame E")
+                    h3.Draw("histsame")
                 else:
                     h2.Draw("hist")
                     h1.Draw("histsame")
-                    h3.Draw("histsame E")
+                    h3.Draw("histsame")
 
 #leg.AddEntry("","MannWhitneyUtest:","")
 #               leg.AddEntry("",a,"")
@@ -395,15 +395,15 @@ for k in range(2,5):
         for j in range(0,3):
             for m in range(0,4):
                 if(energy_array[1][m]<20):
-                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    #f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    #f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[j]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
                 
                 h1 = f1.Get("h_c2_b1")
                 h2 = f2.Get("h_c2_b1")
@@ -423,7 +423,7 @@ for k in range(2,5):
                 U_print_2_decimal=round(U_print,2)
                 a=str(U_print_2_decimal)
                 
-                leg = TLegend(0.1,0.7,0.4,0.9)
+                leg = TLegend(0.4,0.7,0.7,0.9)
                 leg.SetFillColor(0)
                 leg.SetFillStyle(0)
                 leg.SetTextSize(0.04)
@@ -476,17 +476,17 @@ for k in range(2,5):
                 h1_max=h1.GetBinContent(h1.GetMaximumBin())
                 
                 if((h3.GetBinContent(h3.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())) and (h3.GetBinContent(h3.GetMaximumBin())>h1.GetBinContent(h1.GetMaximumBin()))):
-                    h3.Draw("hist E")
+                    h3.Draw("hist")
                     h2.Draw("histsame")
                     h1.Draw("histsame")
                 elif((h3.GetBinContent(h3.GetMaximumBin())>h1.GetBinContent(h1.GetMaximumBin()))and (h3.GetBinContent(h3.GetMaximumBin())<h2.GetBinContent(h2.GetMaximumBin()))):
                     h2.Draw("hist")
                     h1.Draw("histsame")
-                    h3.Draw("histsame E")
+                    h3.Draw("histsame")
                 else:
                     h1.Draw("hist")
                     h2.Draw("histsame")
-                    h3.Draw("histsame E")
+                    h3.Draw("histsame")
             
             #leg.AddEntry("","MannWhitneyUtest:","")
             #               leg.AddEntry("",a,"")
@@ -498,7 +498,7 @@ for k in range(2,5):
                 #c.Print("r009_tau32b1_20tev_04_after_cut_U.eps")
                 
                 #f=TFile("Dis_cluster_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_cut_Man_100.root","RECREATE")
-                c.Print("Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_cut_25bins_Ratio.pdf")
+                c.Print("Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_25bins_Ratio.pdf")
 #      c.Print("Dis_cluster_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_cut_Man_100.eps")
 
 

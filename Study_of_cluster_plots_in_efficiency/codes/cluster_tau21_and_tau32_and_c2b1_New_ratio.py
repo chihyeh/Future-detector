@@ -1,6 +1,7 @@
 import ROOT
 import sys
 import math
+import numpy as np
 from random import randint
 from ROOT import TFile, TH1F, gDirectory, TCanvas, TPad, TProfile,TGraph, TGraphAsymmErrors,TGraphErrors
 from ROOT import TH1D, TH1, TH1I
@@ -489,16 +490,16 @@ for k in range(2,3):
                         ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
                         print 'this bin is not zero : right'
                     
-                    if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)==0):
+                    if(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)==0):
                         ratio_BinContent_1=9999
                         print 'this bin is zero, before:no background'
-                    if(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)!=0):
+                    if(h1.Integral(1,L-2)==0 and h2.Integral(1,L-2)!=0):
                         ratio_BinContent_1=0
                         print 'this bin is zero, before:no signal'
-                    if(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)==0):
+                    if(h1.Integral(1,L-2)==0 and h2.Integral(1,L-2)==0):
                         ratio_BinContent_1=-1
                         print 'this bin is zero, before:no signal and background'
-                    if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)!=0):
+                    if(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)!=0):
                         ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
                         print 'this bin is not zero : left'
                     #---------------------------
@@ -799,17 +800,17 @@ for k in range(2,3):
 
 
     elif(variable[k]=="c2b1"):
-        for m in range(0,1):
+        for m in range(1,2):
             for i in range(1,2):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_mode0_trawhit_0.5GeV_3_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_25bins.root", 'r')
 
-                h1 = f1.Get("h_c2_b1")
-                h2 = f2.Get("h_c2_b1")
+                h1 = f1.Get("h_tau32_b1")
+                h2 = f2.Get("h_tau32_b1")
                 print h1,h2
 
                 #h1.Scale(1.0/h1.Integral())
@@ -829,6 +830,7 @@ for k in range(2,3):
                 #print '1'
                 h1.Scale(1.0/h1.Integral())
                 h2.Scale(1.0/h2.Integral())
+                h3.Scale(1.0/h3.Integral())
                 
                 a=h1.Integral()
                 b=h2.Integral()
@@ -840,45 +842,79 @@ for k in range(2,3):
                 yarray_bin_right=array("f",[])
                 ratio_bin_left=array("f",[])
                 ratio_bin_right=array("f",[])
+                #==========Signal Bin Content, Background Bin Content and Ratio Bin Content===========#
+                SIG_bin_individual=array("f",[])
+                BKG_bin_individual=array("f",[])
+                RAT_bin_individual=array("f",[])
+                analysis_highest_array=array("f",[])
+                #=====================================================================================#
                 ratio_BinContent_1=0
                 ratio_BinContent_2=0
-                M=h3.GetMaximumBin()
-                L=M
-                R=M
-                print M
+                N_max_ratio_bin=0
+                #=====================================================================================#
+                for K in range(1,26):
+                    SIG_bin_individual.append(h1.GetBinContent(K))
+                    BKG_bin_individual.append(h2.GetBinContent(K))
+                    if(h1.GetBinContent(K)!=0 and h2.GetBinContent(K)==0):
+                        RAT_bin_individual.append(9999)
+                    else:
+                        RAT_bin_individual.append(h3.GetBinContent(K))
+                print RAT_bin_individual
+
+                for analysis_highest in range(25):
+                    if(RAT_bin_individual[analysis_highest]==9999):
+                        print RAT_bin_individual[analysis_highest]
+                        print 'no print'
+                        continue
+                    else:
+                        print RAT_bin_individual[analysis_highest]
+                        print 'print'
+                        analysis_highest_array.append(RAT_bin_individual[analysis_highest])
+                print analysis_highest_array
+                #======================================================================================#
+                M=max(analysis_highest_array)
+                for j in range(25):
+                    if ((RAT_bin_individual[j])!= M):
+                        continue
+                    else:
+                        N_max_ratio_bin=j
+                        break
+                L=N_max_ratio_bin+1
+                R=N_max_ratio_bin+1
+                print N_max_ratio_bin+1 #Transfer to getbincontent plane
+                #======================================================================================#
                 xarray.append(h1.Integral(L,R)/a)
                 yarray.append(1/(h2.Integral(L,R)/b))
                 xarray_bin.append(h1.Integral(L,R))
                 yarray_bin.append(h2.Integral(L,R))
                 xarray_bin_left.append(L)
                 yarray_bin_right.append(R)
+                Latest_Window=np.array([[L,R]])
 
-                for Q in range(120):
+                #=====================================================================================#
+
+                for Q in range(1,26):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
                     print 'background:'+str(h2.Integral(L,R))
-                    print 'Ratio:'+str(h3.Integral(L,R))
-                    print 'Ratio_total:'+str(h3.Integral())
-                    print str(h3.GetBinContent(L-1))
-                    print str(h3.GetBinContent(R+1))
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
-                    if(R<=98):
-                        if(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)==0):
+                    if(R<=23):
+                        if(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=9999
                             print 'this bin is zero, after:no background'
-                        elif(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)!=0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)!=0):
                             ratio_BinContent_2=0
                             print 'this bin is zero, after:no signal'
-                        elif(h1.Integral(R+2,100)==0 and h2.Integral(R+2,100)==0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=-1
                             print 'this bin is zero, after:no signal and background'
-                        elif(h1.Integral(R+2,100)!=0 and h2.Integral(R+2,100)!=0):
+                        elif(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)!=0):
                             ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
                             print 'this bin is not zero : right'
-                    elif(R==99 and R==100):
+                    elif(R==24):
                             ratio_BinContent_2=-1
                             print 'this bin is zero, after:no background or signal'
     
@@ -895,16 +931,16 @@ for k in range(2,3):
                         elif(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)!=0):
                             ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
                             print 'this bin is not zero : left'
-                    elif(L==0 and R==1):
+                    elif(L==1):
                         ratio_BinContent_1=-1
                         print 'this bin is zero, before:no background or signal'
 
                     #---------------------------
                     
                     #---------------------------
-                    if(L==0 and R==100):
+                    if(L==1 and R==25):
                         break
-                    elif(L==0):
+                    elif(L==1):
                         print 'YA4'
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -915,12 +951,14 @@ for k in range(2,3):
                         R=R+1
                         xarray_bin_left.append(L)
                         yarray_bin_right.append(R)
+                        Window=np.array([[L,R]])
+                        Latest_Window=np.concatenate((Latest_Window, Window))
                         print str(L)
                         print str(R)
                         print str(h1.GetBinContent(L))
                         print str(h1.GetBinContent(R))
                         print '----2'
-                    elif(R==100):
+                    elif(R==25):
                         print 'YA4'
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
@@ -931,17 +969,17 @@ for k in range(2,3):
                         R=R
                         xarray_bin_left.append(L)
                         yarray_bin_right.append(R)
+                        Window=np.array([[L,R]])
+                        Latest_Window=np.concatenate((Latest_Window, Window))
                         print str(L)
                         print str(R)
                         print str(h1.GetBinContent(L))
                         print str(h1.GetBinContent(R))
                         print '----2'
 
-                    elif(h3.GetBinContent(L-1)>h3.GetBinContent(R+1)):
-                        if(h3.GetBinContent(R+1)==0):
-                            ratio_bin_right.append(ratio_BinContent_2)
-                            ratio_bin_left.append(h3.GetBinContent(L-1))
-                            if(h3.GetBinContent(L-1)>ratio_BinContent_2):
+                    elif(RAT_bin_individual[L-2]>RAT_bin_individual[R]):
+                        if(RAT_bin_individual[R]==0):
+                            if(RAT_bin_individual[L-2]>ratio_BinContent_2):
                                 print'YA4'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -952,12 +990,14 @@ for k in range(2,3):
                                 R=R
                                 xarray_bin_left.append(L)
                                 yarray_bin_right.append(R)
+                                Window=np.array([[L,R]])
+                                Latest_Window=np.concatenate((Latest_Window, Window))
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----1'
-                            if(h3.GetBinContent(L-1)<ratio_BinContent_2):
+                            if(RAT_bin_individual[L-2]<ratio_BinContent_2):
                                 print 'YA4'
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -968,12 +1008,14 @@ for k in range(2,3):
                                 R=R+1
                                 xarray_bin_left.append(L)
                                 yarray_bin_right.append(R)
+                                Window=np.array([[L,R]])
+                                Latest_Window=np.concatenate((Latest_Window, Window))
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----2'
-                            if(h3.GetBinContent(L-1)==ratio_BinContent_2):
+                            if(RAT_bin_individual[L-2]==ratio_BinContent_2):
                                 print 'YA4'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -987,6 +1029,8 @@ for k in range(2,3):
                                     R=R
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1003,6 +1047,8 @@ for k in range(2,3):
                                     R=R+1
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1010,8 +1056,6 @@ for k in range(2,3):
                                     print '----4'
                         #--------------------------------
                         else:
-                            ratio_bin_right.append(h3.GetBinContent(R+1))
-                            ratio_bin_left.append(h3.GetBinContent(L-1))
                             xarray.append(h1.Integral(L-1,R)/a)
                             yarray.append(1/(h2.Integral(L-1,R)/b))
                             xarray_bin.append(h1.Integral(L-1,R))
@@ -1022,18 +1066,19 @@ for k in range(2,3):
                             R=R
                             xarray_bin_left.append(L)
                             yarray_bin_right.append(R)
+                            Window=np.array([[L,R]])
+                            Latest_Window=np.concatenate((Latest_Window, Window))
                             print str(L)
                             print str(R)
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----5'
                     #---------------------------
-                    elif(h3.GetBinContent(L-1)<h3.GetBinContent(R+1)):
-                        if(h3.GetBinContent(L-1)==0):
-                            ratio_bin_left.append(ratio_BinContent_1)
-                            ratio_bin_right.append(h3.GetBinContent(R+1))
-                            if(h3.GetBinContent(R+1)>ratio_BinContent_1):
-                                print'YA5'
+                    elif(RAT_bin_individual[L-2]<RAT_bin_individual[R]):
+                        if(RAT_bin_individual[L-2]==0):
+                            if(RAT_bin_individual[R]>ratio_BinContent_1):
+                                print 'L-2:'+str(L-2)
+                                print'signal from 0 to L-2'+str(h1.Integral(0,L-2))
                                 xarray.append(h1.Integral(L,R+1)/a)
                                 yarray.append(1/(h2.Integral(L,R+1)/b))
                                 xarray_bin.append(h1.Integral(L,R+1))
@@ -1044,12 +1089,15 @@ for k in range(2,3):
                                 R=R+1
                                 xarray_bin_left.append(L)
                                 yarray_bin_right.append(R)
+                                Window=np.array([[L,R]])
+                                Latest_Window=np.concatenate((Latest_Window, Window))
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
+                                print 'ratio_bin_left:'+str(ratio_BinContent_1)
                                 print '----6'
-                            if(h3.GetBinContent(R+1)<ratio_BinContent_1):
+                            if(RAT_bin_individual[R]<ratio_BinContent_1):
                                 'YA5'
                                 xarray.append(h1.Integral(L-1,R)/a)
                                 yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -1060,12 +1108,14 @@ for k in range(2,3):
                                 R=R
                                 xarray_bin_left.append(L)
                                 yarray_bin_right.append(R)
+                                Window=np.array([[L,R]])
+                                Latest_Window=np.concatenate((Latest_Window, Window))
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
                                 print str(h1.GetBinContent(R))
                                 print '----7'
-                            if(h3.GetBinContent(R+1)==ratio_BinContent_1):
+                            if(RAT_bin_individual[R]==ratio_BinContent_1):
                                 print 'YA5'
                                 Random=randint(1,3)
                                 if(Random==1):
@@ -1079,6 +1129,8 @@ for k in range(2,3):
                                     R=R
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1095,6 +1147,8 @@ for k in range(2,3):
                                     R=R+1
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1102,8 +1156,6 @@ for k in range(2,3):
                                     print '----9'
                         #---------------------------
                         else:
-                            ratio_bin_left.append(h3.GetBinContent(L-1))
-                            ratio_bin_right.append(h3.GetBinContent(R+1))
                             xarray.append(h1.Integral(L,R+1)/a)
                             yarray.append(1/(h2.Integral(L,R+1)/b))
                             xarray_bin.append(h1.Integral(L,R+1))
@@ -1114,17 +1166,16 @@ for k in range(2,3):
                             R=R+1
                             xarray_bin_left.append(L)
                             yarray_bin_right.append(R)
+                            Window=np.array([[L,R]])
+                            Latest_Window=np.concatenate((Latest_Window, Window))
                             print str(L)
                             print str(R)
                             print str(h1.GetBinContent(L))
                             print str(h1.GetBinContent(R))
                             print '----10'
         #-----------------------------------
-                    elif(h3.GetBinContent(L-1)==h3.GetBinContent(R+1)):
-                        ratio_bin_left.append(ratio_BinContent_1)
-                        ratio_bin_right.append(ratio_BinContent_2)
-                          
-                        if(h3.GetBinContent(L-1)==0 and h3.GetBinContent(R+1)==0):
+                    elif(RAT_bin_individual[L-2]==RAT_bin_individual[R]):
+                        if(RAT_bin_individual[L-2]==0 and RAT_bin_individual[R]==0):
                             if(ratio_BinContent_2>ratio_BinContent_1):
                                 print 'YA6'
                                 xarray.append(h1.Integral(L,R+1)/a)
@@ -1137,6 +1188,8 @@ for k in range(2,3):
                                 R=R+1
                                 xarray_bin_left.append(L)
                                 yarray_bin_right.append(R)
+                                Window=np.array([[L,R]])
+                                Latest_Window=np.concatenate((Latest_Window, Window))
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -1153,6 +1206,8 @@ for k in range(2,3):
                                 R=R
                                 xarray_bin_left.append(L)
                                 yarray_bin_right.append(R)
+                                Window=np.array([[L,R]])
+                                Latest_Window=np.concatenate((Latest_Window, Window))
                                 print str(L)
                                 print str(R)
                                 print str(h1.GetBinContent(L))
@@ -1172,6 +1227,8 @@ for k in range(2,3):
                                     R=R
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1188,6 +1245,8 @@ for k in range(2,3):
                                     R=R+1
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1207,6 +1266,8 @@ for k in range(2,3):
                                     R=R
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1223,6 +1284,8 @@ for k in range(2,3):
                                     R=R+1
                                     xarray_bin_left.append(L)
                                     yarray_bin_right.append(R)
+                                    Window=np.array([[L,R]])
+                                    Latest_Window=np.concatenate((Latest_Window, Window))
                                     print str(L)
                                     print str(R)
                                     print str(h1.GetBinContent(L))
@@ -1230,7 +1293,7 @@ for k in range(2,3):
                                     print '----15'
                                                                                                                                                                                                 #------------------------------------------
                 n=R-L
-                print n
+                '''print n
                 print '============================================================'
                 print 'signal_total :  ' + str(a)
                 print 'background_total : ' + str(b)
@@ -1252,7 +1315,26 @@ for k in range(2,3):
                 print '============================================================'
                 print 'Right of width :'
                 print  yarray_bin_right
-                print '============================================================'
+                print '============================================================'''
+                print 'ratio CONTENT 10'
+                print RAT_bin_individual[9]
+                print '============================================================='
+                print 'ratio CONTENT 1'
+                print RAT_bin_individual[0]
+                print '============================================================='
+                print 'Signal bin content from the first bin to the lastest bin:'
+                print SIG_bin_individual
+                print '============================================================='
+                print 'Background bin content from the first bin to the lastest bin:'
+                print BKG_bin_individual
+                print '============================================================='
+                print 'Ratio bin content from the first bin to the lastest bin:'
+                print RAT_bin_individual
+                print '============================================================='
+                print 'Window:'
+                print Latest_Window
+
+
 
                 if(files_array[i]=="009"):
                     Color=2

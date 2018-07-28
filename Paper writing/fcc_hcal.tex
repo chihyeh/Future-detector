@@ -1,0 +1,318 @@
+%yright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+% \documentclass[preprint,11pt]{elsarticle}
+\documentclass[final,1p,11pt]{elsarticle}
+
+%\documentclass[final,1p,times]{elsarticle}
+
+
+%% Use the option review to obtain double line spacing
+%%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+
+\usepackage{epsfig}
+%\usepackage{cite}
+%\usepackage{mcite}
+\usepackage{array,tabularx,epsfig,mathrsfs,graphicx,rotating}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{ragged2e}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+% Custom colors
+\usepackage{color}
+\usepackage{float}
+\usepackage{verbatim}
+
+% to cross text
+\usepackage[normalem]{ulem} % either use this (simple) or
+\usepackage{soul} % use this (many fancier options)
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+
+
+
+\graphicspath{{figs/}}
+
+
+\pdfinfo{
+   /Author (Chekanov et al)
+   /Title  (Studies of granularity of a hadronic calorimeter for tens-of-TeV jets  at a 100 TeV pp collider)
+   /CreationDate (D:2017)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+
+\textheight=22cm
+\textwidth=14.5cm
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\la}{\langle}
+\newcommand{\promc}{{\sc ProMC}}
+\newcommand{\ra}{\rangle}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\Ec}{\mathcal{E}}
+\newcommand{\Fc}{\mathcal{F}}
+\newcommand{\Za}{\mathrm{Z_1}}
+\newcommand{\Zb}{\mathrm{Z_2}}
+\newcommand{\Zn}{\mathrm{Z_n}}
+\newcommand{\F}{\mathrm{F}}
+
+\chardef\til=126
+\newcommand{\mev}{{\,\mathrm{MeV}}}
+\newcommand{\gev}{{\,\mathrm{GeV}}}
+\newcommand{\tev}{{\,\mathrm{TeV}}}
+\newcommand{\GEANTfour} {\textsc{geant4}}
+\newcommand{\pythia} {\textsc{Pythia8}}
+
+
+\journal{XXX-XXX}
+
+
+
+\begin{document}
+
+\definecolor{mygreen}{rgb}{0,0.6,0} \definecolor{mygray}{rgb}{0.5,0.5,0.5} \definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+ backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+ basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+ breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+ breaklines=true,                 % sets automatic line breaking
+ captionpos=b,                    % sets the caption-position to bottom
+ commentstyle=\color{mygreen},    % comment style
+ deletekeywords={...},            % if you want to delete keywords from the given language
+ escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+ extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+ keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+ frame=tb,
+ keywordstyle=\color{blue},       % keyword style
+ language=Python,                 % the language of the code
+ otherkeywords={*,...},            % if you want to add more keywords to the set
+ rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+ showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+ showstringspaces=false,          % underline spaces within strings only
+ showtabs=false,                  % show tabs within strings adding particular underscores
+ stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+ stringstyle=\color{mymauve},     % string literal style
+ tabsize=2,                        % sets default tabsize to 2 spaces
+ title=\lstname,                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+ numberstyle=\footnotesize,
+ basicstyle=\small,
+ basewidth={0.5em,0.5em}
+}
+
+
+\begin{frontmatter}
+
+\title{
+Studies of granularity of a hadronic calorimeter for tens-of-TeV jets  at a 100~TeV $pp$ collider 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[add1]{S.V.~Chekanov}
+\ead{chekanov@anl.gov}
+
+\author[addDuke,add2]{A.V.~Kotwal}
+\ead{ashutosh.kotwal@duke.edu}
+
+\author[add1]{J.~Proudfoot}
+\ead{proudfoot@anl.gov}
+
+\author[addDuke]{S.~Sen}
+\ead{sourav.sen@duke.edu}
+
+\author[add2]{N.V.~Tran}
+\ead{ntran@fnal.gov}
+
+\author[add3]{S.-S.~Yu}
+\ead{syu@cern.ch}
+
+\author[add3]{Chih-Hsiang Yeh}
+\ead{jwzuzelski18@gmail.com}
+
+\address[add1]{
+HEP Division, Argonne National Laboratory,
+9700 S.~Cass Avenue,
+Argonne, IL 60439, USA. 
+}
+
+\address[addDuke]{
+Department of Physics, Duke University, USA
+}
+
+\address[add2]{
+Fermi National Accelerator Laboratory
+}
+
+\address[addMSU]{
+Department of Physics, Michigan State University, 220
+Trowbridge Road, East Lansing, MI 48824 
+}
+
+
+\address[add3]{
+Department of Physics, National Central University, Chung-Li, Taoyuan City 32001, Taiwan
+}
+
+
+\begin{abstract}
+Texts
+
+\end{abstract}
+
+\begin{keyword}
+multi-TeV physics, $pp$ collider, future hadron colliders, FCC, SppC
+\end{keyword}
+
+
+
+\end{frontmatter}
+
+
+% put line numbers
+% \linenumbers
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Particle collisions at energies  beyond those attained at the LHC will lead to many challenges for detector technologies.
+Future experiments, such as high-energy LHC (HE-LHC),
+future circular $pp$ colliders of the European initiative, FCC-hh~\cite{Benedikt:2206376} and the Chinese initiative, SppC~\cite{Tang:2015qga} will be required to measure high-momentum bosons ($W$, $Z$, $H$) and top quarks with strongly 
+collimated decay products that form jets.  Studies of jet substructure can help identify such particles.
+
+The reconstruction of jet substructure  variables for collimated jets with transverse momentum above 10 TeV 
+require an appropriate detector design. The most important for reconstruction of such jets are tracking and calorimeter.
+Recently, a number of studies \cite{Calkins:2013ega,Chekanov:2015ihl,Coleman:2017fiq} 
+have been discussed using various fast simulation tools, such as 
+Delphes  \cite{deFavereau:2013fsa}, in which momenta of particles
+are smeared to mimic detector response. 
+
+A major step towards the usage of full Geant4 simulation to verify the granularity requirements 
+for calorimeters was made in \cite{Chekanov:2016ppq}.
+The studies included in this paper have illustrated a significant impact 
+of granularity of electromagnetic (ECAL) and hadronic (HCAL) calorimeters on the
+shape of hadronic showers  calculated using calorimeter hits 
+for two particles separated  by some angle. It was concluded that high granularity is essential 
+in resolving two close-by particles for energies above 100 GeV. 
+
+This paper makes another step in understanding understanding of this problem in terms 
+of high-level physics quantities typically used in physics analyses.
+Similar to the studies presented in \cite{Chekanov:2016ppq}, this paper is based on full
+Geant4 simulation with realistic jet reconstruction.
+
+\section{Simulation of detector response and event reconstruction}
+ 
+The description of the detector and software used for this paper is discussed in \cite{Chekanov:2016ppq}. 
+We use the SiFCC detector geometry with a software package that
+represents a versatile environment for simulations
+of detector performance, testing new technology options, event reconstruction techniques for future
+100~TeV colliders.
+
+The \GEANTfour\ (version 10.3)~\cite{Allison2016186} simulation of calorimeter response was complemented 
+with the full reconstruction of calorimeter clusters formed by the Pandora algorithm \cite{Charles:2009ta,Marshall:2013bda}.
+Calorimeter clusters were built from calorimeter hits in the  ECAL and HCAL after applying the corresponding sampling fractions.
+No other corrections are applied.
+Hadronic jets were 
+reconstructed with the {\sc FastJet} package~\cite{fastjet} using the anti-$k_T$ algorithm \cite{Cacciari:2008gp}
+with  a distance parameter of 0.5. 
+
+In the following discussion, we use the simulations of a heavy $Z'$ boson, 
+a hypothetical gauge boson  that arises from extensions of the electroweak symmetry of the Standard Model.
+The $Z'$ bosons were simulated with the masses, $M=5$, $10$, $20$ and $40$~TeV. The lowest value 
+represents a typical mass that is within the reach of the LHC experiments. The  value $40$~TeV 
+represents the physics reach of 100~TeV colliders. The $Z'$ particles are forced to decay to 
+to two light-flavor jets ($q\bar{q}$), $W^+W^-$ or $t\bar{t}$, where
+$W$ and $t$ decay hadronically. In all such scenarios, two highly boosted
+jets are produced,  which are typically back-to-back in the laboratory frame.
+Typical transverse momenta of such jets are $\simeq M/2$.
+The main difference between considered decay types lays in different jet substructure. In the case of the $q\bar{q}$ decays,
+jets do not have any internal structure. In the case of  $W^+W^-$, each jet  originates from $W$, thus it has two
+subjects because of the decay $W\rightarrow q\bar{q}$. In the case of hadronic top decays, jets have three subjects due
+to the decay $t \rightarrow  W^+\>b \rightarrow q\bar{q} b$    
+The signal events were generated using the \pythia generator with the default settings,
+ignoring interference with SM processes.
+The event samples used in this paper are  available from the
+HepSim  database~\cite{Chekanov:2014fga}.
+
+
+
+%%%%%%%%%%%%%% sections 
+\input{fcc_jets.tex}
+
+\input{fcc_Mass_soft_drop_for_paper.tex}
+
+\input{fcc_efficiency_and_Mann_after_mass_cut_for_paper.tex}
+
+
+
+
+
+
+\section*{Acknowledgements}
+This research was performed using resources provided by the Open Science Grid,
+which is supported by the National Science Foundation and the U.S. Department of Energy's Office of Science. 
+We gratefully acknowledge the computing resources provided on Blues, 
+a high-performance computing cluster operated by the Laboratory Computing Resource Center at Argonne National Laboratory.
+Argonne National Laboratory's work was supported by the U.S. Department of Energy, Office of Science under contract DE-AC02-06CH11357.
+The Fermi National Accelerator Laboratory (Fermilab) is operated by Fermi Research Alliance, LLC under Contract No. DE-AC02-07CH11359 with the United States Department of Energy.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%% references %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{References}
+
+\bibliographystyle{elsarticle-num}
+\def\bibname{\Large\bf References}
+\def\refname{\Large\bf References}
+\pagestyle{plain}
+\bibliography{biblio}
+
+
+
+\end{document}

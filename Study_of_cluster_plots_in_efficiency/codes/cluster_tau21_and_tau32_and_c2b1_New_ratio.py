@@ -182,7 +182,7 @@ for k in range(2,3):
                                 print '----2'
                             elif(h3.GetBinContent(L-1)==ratio_BinContent_2):
                                 print 'YA4'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -258,7 +258,7 @@ for k in range(2,3):
                                 print '----7'
                             elif(h3.GetBinContent(R+1)==ratio_BinContent_1):
                                 print 'YA5'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -329,7 +329,7 @@ for k in range(2,3):
                                 print '----12'
                             elif(ratio_BinContent_2==ratio_BinContent_1):
                                 print 'YA6'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -358,7 +358,7 @@ for k in range(2,3):
                                     print '----14'
                         else:
                             #==normal condition==#
-                            Random=randint(1,3)
+                            Random=randint(1,2)
                             print Random
                             if(Random==1):
                                 xarray.append(h1.Integral(L-1,R)/a)
@@ -562,7 +562,7 @@ for k in range(2,3):
                                 print '----2'
                             elif(h3.GetBinContent(L-1)==ratio_BinContent_2):
                                 print 'YA4'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -630,7 +630,7 @@ for k in range(2,3):
                                 print '----7'
                             elif(h3.GetBinContent(R+1)==ratio_BinContent_1):
                                 print 'YA5'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -701,7 +701,7 @@ for k in range(2,3):
                                 print '----12'
                             elif(ratio_BinContent_2==ratio_BinContent_1):
                                 print 'YA6'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -729,7 +729,7 @@ for k in range(2,3):
                                     print str(h1.GetBinContent(R))
                                     print '----14'
                         else:
-                            Random=randint(1,3)
+                            Random=randint(1,2)
                             print Random
                             if(Random==1):
                                 xarray.append(h1.Integral(L-1,R)/a)
@@ -800,17 +800,17 @@ for k in range(2,3):
 
 
     elif(variable[k]=="c2b1"):
-        for m in range(1,2):
-            for i in range(1,2):
+        for m in range(3,4):
+            for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_25bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_25bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins.root", 'r')
 
-                h1 = f1.Get("h_tau32_b1")
-                h2 = f2.Get("h_tau32_b1")
+                h1 = f1.Get("h_c2_b1")
+                h2 = f2.Get("h_c2_b1")
                 print h1,h2
 
                 #h1.Scale(1.0/h1.Integral())
@@ -828,6 +828,9 @@ for k in range(2,3):
                 #print h1,h2
                 #print variable[k]
                 #print '1'
+                h1.Sumw2()
+                h2.Sumw2()
+                h3.Sumw2()
                 h1.Scale(1.0/h1.Integral())
                 h2.Scale(1.0/h2.Integral())
                 h3.Scale(1.0/h3.Integral())
@@ -912,29 +915,25 @@ for k in range(2,3):
                             ratio_BinContent_2=-1
                             print 'this bin is zero, after:no signal and background'
                         elif(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)!=0):
-                            ratio_BinContent_2=h1.Integral(R+2,100)/h2.Integral(R+2,100)
+                            ratio_BinContent_2=h1.Integral(R+2,25)/h2.Integral(R+2,25)
                             print 'this bin is not zero : right'
-                    elif(R==24):
-                            ratio_BinContent_2=-1
-                            print 'this bin is zero, after:no background or signal'
-    
-                    if(L>=2):
-                        if(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)==0):
+                    if(R==24):
+                        ratio_BinContent_2=-1
+                    if(L>=3):
+                        if(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)==0):
                             ratio_BinContent_1=9999
                             print 'this bin is zero, before:no background'
-                        elif(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)!=0):
+                        elif(h1.Integral(1,L-2)==0 and h2.Integral(1,L-2)!=0):
                             ratio_BinContent_1=0
                             print 'this bin is zero, before:no signal'
-                        elif(h1.Integral(0,L-2)==0 and h2.Integral(0,L-2)==0):
+                        elif(h1.Integral(1,L-2)==0 and h2.Integral(1,L-2)==0):
                             ratio_BinContent_1=-1
                             print 'this bin is zero, before:no signal and background'
-                        elif(h1.Integral(0,L-2)!=0 and h2.Integral(0,L-2)!=0):
-                            ratio_BinContent_1=h1.Integral(0,L-2)/h2.Integral(0,L-2)
+                        elif(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)!=0):
+                            ratio_BinContent_1=h1.Integral(1,L-2)/h2.Integral(1,L-2)
                             print 'this bin is not zero : left'
-                    elif(L==1):
+                    if(L==2):
                         ratio_BinContent_1=-1
-                        print 'this bin is zero, before:no background or signal'
-
                     #---------------------------
                     
                     #---------------------------
@@ -1017,7 +1016,7 @@ for k in range(2,3):
                                 print '----2'
                             if(RAT_bin_individual[L-2]==ratio_BinContent_2):
                                 print 'YA4'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -1117,7 +1116,7 @@ for k in range(2,3):
                                 print '----7'
                             if(RAT_bin_individual[R]==ratio_BinContent_1):
                                 print 'YA5'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -1215,7 +1214,7 @@ for k in range(2,3):
                                 print '----12'
                             elif(ratio_BinContent_2==ratio_BinContent_1):
                                 print 'YA6'
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)
                                     yarray.append(1/(h2.Integral(L-1,R)/b))
@@ -1253,7 +1252,7 @@ for k in range(2,3):
                                     print str(h1.GetBinContent(R))
                                     print '----14'
                             else:
-                                Random=randint(1,3)
+                                Random=randint(1,2)
                                 print Random
                                 if(Random==1):
                                     xarray.append(h1.Integral(L-1,R)/a)

@@ -30,11 +30,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root",'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root",'r')
                 
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
@@ -73,7 +73,7 @@ for k in range(0,3):
                 ratio_BinContent_2=0
                 N_max_ratio_bin=0
                 #=====================================================================================#
-                for K in range(1,51):
+                for K in range(1,26):
                     SIG_bin_individual.append(h1.GetBinContent(K))
                     BKG_bin_individual.append(h2.GetBinContent(K))
                     if(h1.GetBinContent(K)!=0 and h2.GetBinContent(K)==0):
@@ -82,7 +82,7 @@ for k in range(0,3):
                         RAT_bin_individual.append(h3.GetBinContent(K))
                 print RAT_bin_individual
                 
-                for analysis_highest in range(50):
+                for analysis_highest in range(25):
                     if(RAT_bin_individual[analysis_highest]==9999):
                         print RAT_bin_individual[analysis_highest]
                         print 'no print'
@@ -94,7 +94,7 @@ for k in range(0,3):
                 print analysis_highest_array
                 #======================================================================================#
                 M=max(analysis_highest_array)
-                for j in range(50):
+                for j in range(25):
                     if ((RAT_bin_individual[j])!= M):
                         continue
                     else:
@@ -113,7 +113,7 @@ for k in range(0,3):
                 Latest_Window=np.array([[L,R]])
                 
                 #=====================================================================================#
-                for Q in range(1,51):
+                for Q in range(1,26):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -121,20 +121,20 @@ for k in range(0,3):
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
-                    if(R<=48):
-                        if(h1.Integral(R+2,50)!=0 and h2.Integral(R+2,50)==0):
+                    if(R<=23):
+                        if(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=9999
                             print 'this bin is zero, after:no background'
-                        elif(h1.Integral(R+2,50)==0 and h2.Integral(R+2,50)!=0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)!=0):
                             ratio_BinContent_2=0
                             print 'this bin is zero, after:no signal'
-                        elif(h1.Integral(R+2,50)==0 and h2.Integral(R+2,50)==0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=-1
                             print 'this bin is zero, after:no signal and background'
-                        elif(h1.Integral(R+2,50)!=0 and h2.Integral(R+2,50)!=0):
-                            ratio_BinContent_2=h1.Integral(R+2,50)/h2.Integral(R+2,50)
+                        elif(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)!=0):
+                            ratio_BinContent_2=h1.Integral(R+2,25)/h2.Integral(R+2,25)
                             print 'this bin is not zero : right'
-                    if(R==49):
+                    if(R==24):
                         ratio_BinContent_2=-1
                     if(L>=3):
                         if(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)==0):
@@ -154,10 +154,10 @@ for k in range(0,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(L==1 and R==50):
+                    if(L==1 and R==25):
                         print '========================================================================Fuck'
                         break
-                    elif(L==1 and R!=50):
+                    elif(L==1 and R!=25):
                         print 'YA4'
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -175,7 +175,7 @@ for k in range(0,3):
                         print str(h1.GetBinContent(L))
                         print str(h1.GetBinContent(R))
                         print '----2'
-                    elif(R==50 and L!=1):
+                    elif(R==25 and L!=1):
                         print 'YA4'
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
@@ -563,9 +563,9 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_50bins.root","RECREATE")
+                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_25bins_new.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_50bins.pdf")
+                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_25bins_new.pdf")
                   
                   
 
@@ -573,11 +573,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_50bins.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_50bins.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_25bins_new.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_25bins_new.root",'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_50bins.root",'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_50bins.root",'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ttbar_Dis_25bins_new.root",'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_tt_Dis_25bins_new.root",'r')
                 h1 = f1.Get("h_"+variable[k]+"_b1")
                 h2 = f2.Get("h_"+variable[k]+"_b1")
                 print h1,h2
@@ -622,7 +622,7 @@ for k in range(0,3):
                 ratio_BinContent_2=0
                 N_max_ratio_bin=0
                 #=====================================================================================#
-                for K in range(1,51):
+                for K in range(1,26):
                     SIG_bin_individual.append(h1.GetBinContent(K))
                     BKG_bin_individual.append(h2.GetBinContent(K))
                     if(h1.GetBinContent(K)!=0 and h2.GetBinContent(K)==0):
@@ -631,7 +631,7 @@ for k in range(0,3):
                         RAT_bin_individual.append(h3.GetBinContent(K))
                 print RAT_bin_individual
                 
-                for analysis_highest in range(50):
+                for analysis_highest in range(25):
                     if(RAT_bin_individual[analysis_highest]==9999):
                         print RAT_bin_individual[analysis_highest]
                         print 'no print'
@@ -643,7 +643,7 @@ for k in range(0,3):
                 print analysis_highest_array
                 #======================================================================================#
                 M=max(analysis_highest_array)
-                for j in range(50):
+                for j in range(25):
                     if ((RAT_bin_individual[j])!= M):
                         continue
                     else:
@@ -662,7 +662,7 @@ for k in range(0,3):
                 Latest_Window=np.array([[L,R]])
                 
                 #=====================================================================================#
-                for Q in range(1,51):
+                for Q in range(1,26):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -670,20 +670,20 @@ for k in range(0,3):
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
-                    if(R<=48):
-                        if(h1.Integral(R+2,50)!=0 and h2.Integral(R+2,50)==0):
+                    if(R<=23):
+                        if(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=9999
                             print 'this bin is zero, after:no background'
-                        elif(h1.Integral(R+2,50)==0 and h2.Integral(R+2,50)!=0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)!=0):
                             ratio_BinContent_2=0
                             print 'this bin is zero, after:no signal'
-                        elif(h1.Integral(R+2,50)==0 and h2.Integral(R+2,50)==0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=-1
                             print 'this bin is zero, after:no signal and background'
-                        elif(h1.Integral(R+2,50)!=0 and h2.Integral(R+2,50)!=0):
-                            ratio_BinContent_2=h1.Integral(R+2,50)/h2.Integral(R+2,50)
+                        elif(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)!=0):
+                            ratio_BinContent_2=h1.Integral(R+2,25)/h2.Integral(R+2,25)
                             print 'this bin is not zero : right'
-                    if(R==49):
+                    if(R==24):
                         ratio_BinContent_2=-1
                     if(L>=3):
                         if(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)==0):
@@ -703,10 +703,10 @@ for k in range(0,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(L==1 and R==50):
+                    if(L==1 and R==25):
                         print '========================================================================Fuck'
                         break
-                    elif(L==1 and R!=50):
+                    elif(L==1 and R!=25):
                         print 'YA4'
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -724,7 +724,7 @@ for k in range(0,3):
                         print str(h1.GetBinContent(L))
                         print str(h1.GetBinContent(R))
                         print '----2'
-                    elif(R==50 and L!=1):
+                    elif(R==25 and L!=1):
                         print 'YA4'
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
@@ -1115,9 +1115,9 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_50bins.root","RECREATE")
+                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_25bins_new.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_50bins.pdf")
+                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_25bins_new.pdf")
 
 
 
@@ -1126,11 +1126,11 @@ for k in range(0,3):
         for m in range(0,4):
             for i in range(0,3):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_50bins.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[i]+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+str(files_array[i])+"_onlyhadronic/radius0.4_jetsubstructure_trawhits_mass_cut_0.5GeV_for_ww_Dis_25bins_new.root", 'r')
 
                 h1 = f1.Get("h_c2_b1")
                 h2 = f2.Get("h_c2_b1")
@@ -1175,7 +1175,7 @@ for k in range(0,3):
                 ratio_BinContent_2=0
                 N_max_ratio_bin=0
                 #=====================================================================================#
-                for K in range(1,51):
+                for K in range(1,26):
                     SIG_bin_individual.append(h1.GetBinContent(K))
                     BKG_bin_individual.append(h2.GetBinContent(K))
                     if(h1.GetBinContent(K)!=0 and h2.GetBinContent(K)==0):
@@ -1184,7 +1184,7 @@ for k in range(0,3):
                         RAT_bin_individual.append(h3.GetBinContent(K))
                 print RAT_bin_individual
                 
-                for analysis_highest in range(50):
+                for analysis_highest in range(25):
                     if(RAT_bin_individual[analysis_highest]==9999):
                         print RAT_bin_individual[analysis_highest]
                         print 'no print'
@@ -1196,7 +1196,7 @@ for k in range(0,3):
                 print analysis_highest_array
                 #======================================================================================#
                 M=max(analysis_highest_array)
-                for j in range(50):
+                for j in range(25):
                     if ((RAT_bin_individual[j])!= M):
                         continue
                     else:
@@ -1215,7 +1215,7 @@ for k in range(0,3):
                 Latest_Window=np.array([[L,R]])
                 
                 #=====================================================================================#
-                for Q in range(1,51):
+                for Q in range(1,26):
                     print '==============================================='
                     print 'signal total'+str(a)
                     print 'signal:'+str(h1.Integral(L,R))
@@ -1223,20 +1223,20 @@ for k in range(0,3):
                     print '==============================================='
                     print 'next-step'
                     #---------------------------
-                    if(R<=48):
-                        if(h1.Integral(R+2,50)!=0 and h2.Integral(R+2,50)==0):
+                    if(R<=23):
+                        if(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=9999
                             print 'this bin is zero, after:no background'
-                        elif(h1.Integral(R+2,50)==0 and h2.Integral(R+2,50)!=0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)!=0):
                             ratio_BinContent_2=0
                             print 'this bin is zero, after:no signal'
-                        elif(h1.Integral(R+2,50)==0 and h2.Integral(R+2,50)==0):
+                        elif(h1.Integral(R+2,25)==0 and h2.Integral(R+2,25)==0):
                             ratio_BinContent_2=-1
                             print 'this bin is zero, after:no signal and background'
-                        elif(h1.Integral(R+2,50)!=0 and h2.Integral(R+2,50)!=0):
+                        elif(h1.Integral(R+2,25)!=0 and h2.Integral(R+2,25)!=0):
                             ratio_BinContent_2=h1.Integral(R+2,50)/h2.Integral(R+2,50)
                             print 'this bin is not zero : right'
-                    if(R==49):
+                    if(R==24):
                         ratio_BinContent_2=-1
                     if(L>=3):
                         if(h1.Integral(1,L-2)!=0 and h2.Integral(1,L-2)==0):
@@ -1256,10 +1256,10 @@ for k in range(0,3):
                     #---------------------------
                     
                     #---------------------------
-                    if(L==1 and R==50):
+                    if(L==1 and R==25):
                         print '========================================================================Fuck'
                         break
-                    elif(L==1 and R!=50):
+                    elif(L==1 and R!=25):
                         print 'YA4'
                         xarray.append(h1.Integral(L,R+1)/a)
                         yarray.append(1/((h2.Integral(L,R+1))/b))
@@ -1277,7 +1277,7 @@ for k in range(0,3):
                         print str(h1.GetBinContent(L))
                         print str(h1.GetBinContent(R))
                         print '----2'
-                    elif(R==50 and L!=1):
+                    elif(R==25 and L!=1):
                         print 'YA4'
                         xarray.append(h1.Integral(L-1,R)/a)
                         yarray.append(1/((h2.Integral(L-1,R))/b))
@@ -1664,6 +1664,6 @@ for k in range(0,3):
                 print files_array[i]
                 print variable[k]
                 print str(energy_array[1][m])
-                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_50bins.root","RECREATE")
+                f=TFile("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_25bins_new.root","RECREATE")
                 gr.Write()
-                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_50bins.pdf")
+                c.Print("Rawhit_0.5GeV_r"+files_array[i]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_eff_log_New2_after_cut_25bins_new.pdf")

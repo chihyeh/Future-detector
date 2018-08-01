@@ -1299,8 +1299,8 @@ for ( int signal=0 ; signal <3 ; signal++)
                  //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
                  if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;//Change there for different bins
                  for(int ih=0; ih < nhistos; ih++)
-                 if(sub[ih][i]<0)
                  {
+                 if(sub[ih][i]<0)
                  {
                      cout<< "Smaller than 0: " << sub[ih][i] << endl;
                      cout<< "After trimming: " << sub[ih][i]+0.001 << endl;

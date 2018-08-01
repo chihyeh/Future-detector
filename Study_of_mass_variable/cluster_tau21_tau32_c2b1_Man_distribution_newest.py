@@ -23,17 +23,16 @@ print files_array[0],files_array[1],files_array[2]
 l=9
 p=1
 #---------------------------------------------setting the hisotgram in and normalize
-#Always remember !! Bin(0) is overflow number, we can't use it. Intergral(1,bin number)=Intergral()-->Doesn't include the overflow and underflow-->Can use directly.
 for k in range(0,4):
     if(variable[k]=="mass_mmdt_tt"):
         for n in range(0,3):
             for m in range(0,4):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root", 'r')
                 
                 
                 h1 = f1.Get("h_mass_mmdt")
@@ -104,20 +103,20 @@ for k in range(0,4):
                 leg.Draw()
                 c.Draw()
                 
-                f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt.root","RECREATE")
-                c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt.pdf")
-                c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt.eps")
+                #      f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_no_UOF.root","RECREATE")
+                #    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_no_UOF.pdf")
+                c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_no_UOF.eps")
 
 
     elif(variable[k]=="mass_mmdt"):
         for n in range(0,3):
             for m in range(0,4):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root", 'r')
             
             
                 h1 = f1.Get("h_mass_mmdt")
@@ -182,18 +181,18 @@ for k in range(0,4):
                 leg.Draw()
                 c.Draw()
 
-                f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.root","RECREATE")
-                c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.pdf")
-                c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04.eps")
+#f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_UOF.root","RECREATE")
+#               c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_UOF.pdf")
+                c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_UOF.eps")
     elif(variable[k]=="mass_sdb2_ww"):
         for n in range(0,3):
             for m in range(0,4):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800_no_UOF.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1600_no_UOF.root", 'r')
         
         
                 h1 = f1.Get("h_mass_sdb2")
@@ -261,22 +260,22 @@ for k in range(0,4):
                 leg.Draw()
                 c.Draw()
                 if(energy_array[1][m]<20):
-                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800.root","RECREATE")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800.pdf")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800.eps")
+                    #f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800_no_UOF.root","RECREATE")
+                    #c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800_no_UOF.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_800_no_UOF.eps")
                 if(energy_array[1][m]>=20):
-                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600.root","RECREATE")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600.pdf")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600.eps")
+                    #f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600_no_UOF.root","RECREATE")
+                    #c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600_no_UOF.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600_no_UOF.eps")
     elif(variable[k]=="mass_sdb2_tt"):
         for n in range(0,3):
             for m in range(0,4):
                 if(energy_array[1][m]<20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200_no_UOF.root", 'r')
                 if(energy_array[1][m]>=20):
-                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
-                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400.root", 'r')
+                    f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400_no_UOF.root", 'r')
+                    f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_2400_no_UOF.root", 'r')
         
         
                 h1 = f1.Get("h_mass_sdb2")
@@ -344,13 +343,13 @@ for k in range(0,4):
                 leg.Draw()
                 c.Draw()
                 if(energy_array[1][m]<20):
-                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.root","RECREATE")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.pdf")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.eps")
+                    #f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.root","RECREATE")
+                    #c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_1200_no_UOF.eps")
                 if(energy_array[1][m]>=20):
-                    f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.root","RECREATE")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.pdf")
-                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.eps")
+                    #f=TFile("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.root","RECREATE")
+                    #c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400.pdf")
+                    c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_tt_2400_no_UOF.eps")
 
     if(variable[k]=="tau21"):
         for n in range(0,3):

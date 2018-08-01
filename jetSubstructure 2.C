@@ -983,8 +983,6 @@ void jetSubstructure(float radius=0.4, int mode=0)
     char const *Signal_use[] = {"ww", "ttbar","qq",};
     const int nhistos=3;//ntemp_histos;
     const int nhistos_cut=1;
-    int nbins_cut=0;
-    float xmax_cut[nhistos_cut]={0};
 
 for ( int signal=0 ; signal <3 ; signal++)
 {
@@ -1049,6 +1047,8 @@ for ( int signal=0 ; signal <3 ; signal++)
             
           std::cout << "Total number of histograms is " << nhistos << std::endl;
           const float xmax[nhistos]={1,0.3,1};
+            int nbins_cut=0;
+            float xmax_cut[nhistos_cut]={0};
         //======================This range is from the previous study================//
             //=====it just set range, actually, it doesn't influence the results, because we won't approach to the boundary condition.
             if(Signal_use[signal]=="ww")
@@ -1056,25 +1056,23 @@ for ( int signal=0 ; signal <3 ; signal++)
                 cout << Signal_use[signal] << endl;
                 xmax_cut[nhistos_cut]={800};
                 nbins_cut=160;
-                cout << xmax_cut[nhistos_cut] << endl;
+                cout << xmax_cut[0] << endl;
                 cout << nbins_cut << endl;
             }
             if(Signal_use[signal]=="ttbar")
             {
-                cout << Signal_use[signal] << endl;
                 xmax_cut[nhistos_cut]={1200};
                 nbins_cut=240;
-                cout << xmax_cut[nhistos_cut] << endl;
-                cout << nbins_cut << endl;
             }
             if(Signal_use[signal]=="qq")//Need to chanage when cut is different!!
             {
-                cout << Signal_use[signal] << endl;
                 xmax_cut[nhistos_cut]={1200};
                 nbins_cut=240;
-                cout << xmax_cut[nhistos_cut] << endl;
-                cout << nbins_cut << endl;
             }
+            cout << xmax[0] << endl;
+            cout << xmax[1] << endl;
+            cout << xmax[2] << endl;
+            cout << xmax[3] << endl;
 
           TH1F* h_sub[nhistos];
           TH1F* h_sub_cut[nhistos_cut];

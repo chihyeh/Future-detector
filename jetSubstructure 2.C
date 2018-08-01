@@ -981,6 +981,10 @@ void jetSubstructure(float radius=0.4, int mode=0)
     int Enevec[4]={5,10,20,40};
     int *Enevec_use=Enevec;
     char const *Signal_use[] = {"ww", "ttbar","qq",};
+    const int nhistos=3;//ntemp_histos;
+    const int nhistos_cut=1;
+    int nbins_cut=0;
+    float xmax_cut[nhistos_cut]={0};
 
 for ( int signal=0 ; signal <3 ; signal++)
 {
@@ -1042,29 +1046,34 @@ for ( int signal=0 ; signal <3 ; signal++)
         
 
           //  int ntemp_histos=sizeof(histonames)/sizeof(histonames[0]);
-          const int nhistos=3;//ntemp_histos;
-          const int nhistos_cut=1;
             
           std::cout << "Total number of histograms is " << nhistos << std::endl;
           const float xmax[nhistos]={1,0.3,1};
-            const int nbins_cut=0;
-            const float xmax_cut[nhistos_cut]={0};
         //======================This range is from the previous study================//
             //=====it just set range, actually, it doesn't influence the results, because we won't approach to the boundary condition.
             if(Signal_use[signal]=="ww")
             {
-                const float xmax_cut[nhistos_cut]={800};
-                const int nbins_cut=160;
+                cout << Signal_use[signal] << endl;
+                xmax_cut[nhistos_cut]={800};
+                nbins_cut=160;
+                cout << xmax_cut[nhistos_cut] << endl;
+                cout << nbins_cut << endl;
             }
             if(Signal_use[signal]=="ttbar")
             {
-                const float xmax_cut[nhistos_cut]={1200};
-                const int nbins_cut=240;
+                cout << Signal_use[signal] << endl;
+                xmax_cut[nhistos_cut]={1200};
+                nbins_cut=240;
+                cout << xmax_cut[nhistos_cut] << endl;
+                cout << nbins_cut << endl;
             }
-            if(Signal_use[signal]=="qq")//Need to chanage when cut is different!! 
+            if(Signal_use[signal]=="qq")//Need to chanage when cut is different!!
             {
-                const float xmax_cut[nhistos_cut]={1200};
-                const int nbins_cut=240;
+                cout << Signal_use[signal] << endl;
+                xmax_cut[nhistos_cut]={1200};
+                nbins_cut=240;
+                cout << xmax_cut[nhistos_cut] << endl;
+                cout << nbins_cut << endl;
             }
 
           TH1F* h_sub[nhistos];
@@ -1072,7 +1081,10 @@ for ( int signal=0 ; signal <3 ; signal++)
           const float xmin=0;
           const float xmin_cut=0;
 
+            cout << "====================================" << endl;
             cout << xmax_cut[0] << endl;
+            cout << xmax_cut[1] << endl;
+            cout << xmax_cut[2] << endl;
             cout << nbins_cut << endl;
             break;
           const int nbins=25;

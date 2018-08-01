@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  1 AUG 2018 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.27)  1 AUG 2018 19:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -386,6 +386,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box34
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
 (/usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box35
 \UL@hyphenbox=\box36
@@ -410,27 +414,48 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen140
 \SOUL@ulht=\dimen141
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 71.
+Package hyperref Info: Option `colorlinks' set `true' on input line 72.
 
-(./fcc_Mass_soft_drop_for_paper_new_no_UOF.aux)
+(./fcc_Mass_soft_drop_for_paper_new_no_UOF.aux
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+
+LaTeX Warning: Label `fig:cluster_tau21_tau32' multiply defined.
+
+)
 \openout1 = `fcc_Mass_soft_drop_for_paper_new_no_UOF.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen142
@@ -481,9 +506,9 @@ LaTeX Font Info:    ... okay on input line 114.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 114.
+LaTeX Info: Redefining \selectfont on input line 115.
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 114.
+Package hyperref Info: Link coloring ON on input line 115.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -493,27 +518,27 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
 
 (./fcc_Mass_soft_drop_for_paper_new_no_UOF.out)
 (./fcc_Mass_soft_drop_for_paper_new_no_UOF.out)
-\@outlinefile=\write4
-\openout4 = `fcc_Mass_soft_drop_for_paper_new_no_UOF.out'.
+\@outlinefile=\write5
+\openout5 = `fcc_Mass_soft_drop_for_paper_new_no_UOF.out'.
 
 \c@lstlisting=\count131
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 115.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 116.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -524,35 +549,30 @@ UOF.eps>
 (epstopdf)                    size: 13550 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_5tev_04_no_
 UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:37
+(epstopdf)                    size: 10837 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_5tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_5tev_04
 _no_UOF.eps>
-(epstopdf)             \includegraphics on input line 127.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps
--converted-to.pdf figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF.eps)...executed
- safely (allowed).
+(epstopdf)             \includegraphics on input line 128.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_5tev_04_no_
-UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:37
-(epstopdf)                    size: 10837 bytes.
-
-<figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf, id=4, 569.
-12625pt x 543.02875pt>
+<figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf, id=16, 569
+.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps-conv
-erted-to.pdf used on input line 127.
+erted-to.pdf used on input line 128.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []\OT1/cmr/m/n/9 (a) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -563,35 +583,30 @@ _UOF.eps>
 (epstopdf)                    size: 13726 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_10tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:39
+(epstopdf)                    size: 11250 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_10tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_10tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 130.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_10tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:39
-(epstopdf)                    size: 11250 bytes.
-
-<figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf, id=5, 569
-.12625pt x 543.02875pt>
+<figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf, id=17, 56
+9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 130.
+verted-to.pdf used on input line 131.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 []\OT1/cmr/m/n/9 (b) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -602,35 +617,30 @@ _UOF.eps>
 (epstopdf)                    size: 14244 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_20tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:40
+(epstopdf)                    size: 11223 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_20tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_20tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 133.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 134.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_20tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:40
-(epstopdf)                    size: 11223 bytes.
-
-<figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf, id=6, 569
-.12625pt x 543.02875pt>
+<figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf, id=18, 56
+9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 133.
+verted-to.pdf used on input line 134.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []\OT1/cmr/m/n/9 (c) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -641,35 +651,30 @@ _UOF.eps>
 (epstopdf)                    size: 14159 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_40tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:41
+(epstopdf)                    size: 11230 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_40tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_40tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 136.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 137.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_40tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:41
-(epstopdf)                    size: 11230 bytes.
-
-<figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf, id=7, 569
-.12625pt x 543.02875pt>
+<figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf, id=19, 56
+9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_40tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 136.
+verted-to.pdf used on input line 137.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
 []\OT1/cmr/m/n/9 (d) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -680,35 +685,30 @@ UOF.eps>
 (epstopdf)                    size: 12800 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_5tev_04_no_
 UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:42
+(epstopdf)                    size: 10626 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_5tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_5tev_04
 _no_UOF.eps>
-(epstopdf)             \includegraphics on input line 139.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF-eps
--converted-to.pdf figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF.eps)...executed
- safely (allowed).
+(epstopdf)             \includegraphics on input line 140.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_5tev_04_no_
-UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:42
-(epstopdf)                    size: 10626 bytes.
-
-<figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf, id=8, 569.
-12625pt x 543.02875pt>
+<figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf, id=20, 569
+.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_5tev_04_no_UOF-eps-conv
-erted-to.pdf used on input line 139.
+erted-to.pdf used on input line 140.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []\OT1/cmr/m/n/9 (e) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -719,35 +719,30 @@ _UOF.eps>
 (epstopdf)                    size: 14118 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_10tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:43
+(epstopdf)                    size: 11127 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_10tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_10tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 142.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 143.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_10tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:43
-(epstopdf)                    size: 11127 bytes.
-
-<figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf, id=9, 569
-.12625pt x 543.02875pt>
+<figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf, id=21, 56
+9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_10tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 142.
+verted-to.pdf used on input line 143.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 []\OT1/cmr/m/n/9 (f) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -758,35 +753,30 @@ _UOF.eps>
 (epstopdf)                    size: 13972 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_20tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:44
+(epstopdf)                    size: 11325 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_20tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_20tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 145.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 146.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_20tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:44
-(epstopdf)                    size: 11325 bytes.
-
-<figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf, id=10, 56
+<figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf, id=22, 56
 9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_20tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 145.
+verted-to.pdf used on input line 146.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
 []\OT1/cmr/m/n/9 (g) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -797,35 +787,30 @@ _UOF.eps>
 (epstopdf)                    size: 14382 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_40tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:45
+(epstopdf)                    size: 11261 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_40tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_40tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 148.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 149.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_40tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:45
-(epstopdf)                    size: 11261 bytes.
-
-<figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf, id=11, 56
+<figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf, id=23, 56
 9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_40tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 148.
+verted-to.pdf used on input line 149.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 []\OT1/cmr/m/n/9 (h) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -836,35 +821,30 @@ UOF.eps>
 (epstopdf)                    size: 12684 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_5tev_04_no_
 UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:46
+(epstopdf)                    size: 10539 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_5tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_5tev_04
 _no_UOF.eps>
-(epstopdf)             \includegraphics on input line 151.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF-eps
--converted-to.pdf figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF.eps)...executed
- safely (allowed).
+(epstopdf)             \includegraphics on input line 152.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_5tev_04_no_
-UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:46
-(epstopdf)                    size: 10539 bytes.
-
-<figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf, id=12, 569
+<figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf, id=24, 569
 .12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf Graphi
 c file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_5tev_04_no_UOF-eps-conv
-erted-to.pdf used on input line 151.
+erted-to.pdf used on input line 152.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []\OT1/cmr/m/n/9 (i) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -875,35 +855,30 @@ _UOF.eps>
 (epstopdf)                    size: 14052 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_10tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:46
+(epstopdf)                    size: 10999 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_10tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_10tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 154.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 155.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_10tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:46
-(epstopdf)                    size: 10999 bytes.
-
-<figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf, id=13, 56
+<figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf, id=25, 56
 9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_10tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 154.
+verted-to.pdf used on input line 155.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 []\OT1/cmr/m/n/9 (j) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--154
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -914,35 +889,30 @@ _UOF.eps>
 (epstopdf)                    size: 14051 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_20tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:47
+(epstopdf)                    size: 11129 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_20tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_20tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 157.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 158.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_20tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:47
-(epstopdf)                    size: 11129 bytes.
-
-<figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf, id=14, 56
+<figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf, id=26, 56
 9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_20tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 157.
+verted-to.pdf used on input line 158.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 []\OT1/cmr/m/n/9 (k) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -953,170 +923,65 @@ _UOF.eps>
 (epstopdf)                    size: 14098 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_40tev_04_no
 _UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:48
+(epstopdf)                    size: 11147 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_40tev_04_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_40tev_
 04_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 160.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF-ep
-s-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF.eps)...execut
-ed safely (allowed).
+(epstopdf)             \includegraphics on input line 161.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_40tev_04_no
-_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:48
-(epstopdf)                    size: 11147 bytes.
-
-<figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf, id=15, 56
+<figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf, id=27, 56
 9.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_40tev_04_no_UOF-eps-con
-verted-to.pdf used on input line 160.
+verted-to.pdf used on input line 161.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
 []\OT1/cmr/m/n/9 (l) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_5tev_eff_1_centra
-l_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:58
-(epstopdf)                    size: 11338 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_5tev_eff_1_centra
-l_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:35
-(epstopdf)                    size: 11985 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_5
-tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_5
-tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 171.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf
-, id=16, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_ww_qq_log-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_ww_qq_
-log-eps-converted-to.pdf used on input line 171.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_10tev_eff_1_centr
-al_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:58
-(epstopdf)                    size: 11363 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_10tev_eff_1_centr
-al_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:36
-(epstopdf)                    size: 11863 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_1
-0tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_
-10tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 174.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pd
-f, id=17, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_ww_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_ww_qq
-_log-eps-converted-to.pdf used on input line 174.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_20tev_eff_1_centr
-al_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:59
-(epstopdf)                    size: 10996 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_20tev_eff_1_centr
-al_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:37
-(epstopdf)                    size: 11637 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_2
-0tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_
-20tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 177.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pd
-f, id=18, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_ww_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_ww_qq
-_log-eps-converted-to.pdf used on input line 177.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_40tev_eff_1_centr
-al_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:59
-(epstopdf)                    size: 11212 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_40tev_eff_1_centr
-al_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:38
-(epstopdf)                    size: 11562 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_4
-0tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_
-40tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 180.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pd
-f, id=19, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_ww_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_ww_qq
-_log-eps-converted-to.pdf used on input line 180.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Excluding 'comment' comment.
 Package epstopdf Info: Source file: <figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_
 tt_no_UOF.eps>
 (epstopdf)                    date: 2018-08-01 18:58:28
 (epstopdf)                    size: 13035 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_
 tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:49
+(epstopdf)                    size: 10441 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_t
 t_5tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 190.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_U
-OF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_UOF.eps
-)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_
-tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:49
-(epstopdf)                    size: 10441 bytes.
+(epstopdf)             \includegraphics on input line 193.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf, id=2
-0, 569.12625pt x 543.02875pt>
+8, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_UOF-ep
-s-converted-to.pdf used on input line 190.
+s-converted-to.pdf used on input line 193.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 []\OT1/cmr/m/n/9 (a) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1127,35 +992,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 13828 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_tt_10tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:50
+(epstopdf)                    size: 11105 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_
 tt_10tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 193.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_tt_10tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:50
-(epstopdf)                    size: 11105 bytes.
+(epstopdf)             \includegraphics on input line 196.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-21, 569.12625pt x 543.02875pt>
+29, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 193.
+ps-converted-to.pdf used on input line 196.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 []\OT1/cmr/m/n/9 (b) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--193
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1166,35 +1026,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 15019 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_tt_20tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:51
+(epstopdf)                    size: 11564 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_
 tt_20tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 196.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_tt_20tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:51
-(epstopdf)                    size: 11564 bytes.
+(epstopdf)             \includegraphics on input line 199.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-22, 569.12625pt x 543.02875pt>
+30, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 196.
+ps-converted-to.pdf used on input line 199.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 []\OT1/cmr/m/n/9 (c) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1205,35 +1060,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 14468 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_mmdt_tt_40tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:52
+(epstopdf)                    size: 11555 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_
 tt_40tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 199.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_mmdt_tt_40tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_mmdt_tt_40tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_mmdt_tt_40tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:52
-(epstopdf)                    size: 11555 bytes.
+(epstopdf)             \includegraphics on input line 202.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-23, 569.12625pt x 543.02875pt>
+31, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_mmdt_tt_40tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 199.
+ps-converted-to.pdf used on input line 202.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\OT1/cmr/m/n/9 (d) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1244,35 +1094,30 @@ tt_no_UOF.eps>
 (epstopdf)                    size: 13351 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_
 tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:52
+(epstopdf)                    size: 10742 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_t
 t_5tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 202.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_U
-OF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_UOF.eps
-)...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 205.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_
-tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:52
-(epstopdf)                    size: 10742 bytes.
-
-<figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf, id=2
-4, 569.12625pt x 543.02875pt>
+<figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf, id=3
+2, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_tt_5tev_04_tt_no_UOF-ep
-s-converted-to.pdf used on input line 202.
+s-converted-to.pdf used on input line 205.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\OT1/cmr/m/n/9 (e) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1283,35 +1128,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 14537 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_tt_10tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:53
+(epstopdf)                    size: 11374 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_
 tt_10tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 205.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_tt_10tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_tt_10tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_tt_10tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:53
-(epstopdf)                    size: 11374 bytes.
+(epstopdf)             \includegraphics on input line 208.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-25, 569.12625pt x 543.02875pt>
+33, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_tt_10tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 205.
+ps-converted-to.pdf used on input line 208.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 []\OT1/cmr/m/n/9 (f) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1322,35 +1162,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 15076 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_tt_20tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:54
+(epstopdf)                    size: 11784 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_
 tt_20tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 208.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_tt_20tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_tt_20tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_tt_20tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:54
-(epstopdf)                    size: 11784 bytes.
+(epstopdf)             \includegraphics on input line 211.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-26, 569.12625pt x 543.02875pt>
+34, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_tt_20tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 208.
+ps-converted-to.pdf used on input line 211.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--208
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 []\OT1/cmr/m/n/9 (g) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--208
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1361,35 +1196,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 14373 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_mmdt_tt_40tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:54
+(epstopdf)                    size: 11402 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_
 tt_40tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 211.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_mmdt_tt_40tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_mmdt_tt_40tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_mmdt_tt_40tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:54
-(epstopdf)                    size: 11402 bytes.
+(epstopdf)             \includegraphics on input line 214.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-27, 569.12625pt x 543.02875pt>
+35, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_mmdt_tt_40tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 211.
+ps-converted-to.pdf used on input line 214.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []\OT1/cmr/m/n/9 (h) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1400,35 +1230,30 @@ tt_no_UOF.eps>
 (epstopdf)                    size: 12298 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_
 tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:55
+(epstopdf)                    size: 10293 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_t
 t_5tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 214.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_U
-OF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF.eps
-)...executed safely (allowed).
+(epstopdf)             \includegraphics on input line 217.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_
-tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:55
-(epstopdf)                    size: 10293 bytes.
-
-<figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf, id=2
-8, 569.12625pt x 543.02875pt>
+<figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf, id=3
+6, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF-ep
-s-converted-to.pdf used on input line 214.
+s-converted-to.pdf used on input line 217.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []\OT1/cmr/m/n/9 (i) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1439,35 +1264,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 14251 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_tt_10tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:56
+(epstopdf)                    size: 11181 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_
 tt_10tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 217.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_tt_10tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:56
-(epstopdf)                    size: 11181 bytes.
+(epstopdf)             \includegraphics on input line 220.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-29, 569.12625pt x 543.02875pt>
+37, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 217.
+ps-converted-to.pdf used on input line 220.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 []\OT1/cmr/m/n/9 (j) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1478,35 +1298,30 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 14879 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_tt_20tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:56
+(epstopdf)                    size: 11531 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_
 tt_20tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 220.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_tt_20tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:56
-(epstopdf)                    size: 11531 bytes.
+(epstopdf)             \includegraphics on input line 223.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-30, 569.12625pt x 543.02875pt>
+38, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 220.
+ps-converted-to.pdf used on input line 223.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []\OT1/cmr/m/n/9 (k) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1517,170 +1332,65 @@ _tt_no_UOF.eps>
 (epstopdf)                    size: 14285 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_mmdt_tt_40tev_04
 _tt_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:57
+(epstopdf)                    size: 11445 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_
 tt_40tev_04_tt_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 223.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_mmdt_tt_40tev_04
-_tt_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:57
-(epstopdf)                    size: 11445 bytes.
+(epstopdf)             \includegraphics on input line 226.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf, id=
-31, 569.12625pt x 543.02875pt>
+39, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_UOF-e
-ps-converted-to.pdf used on input line 223.
+ps-converted-to.pdf used on input line 226.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 []\OT1/cmr/m/n/9 (l) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--223
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_5tev_eff_1_centra
-l_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:56
-(epstopdf)                    size: 10842 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_5tev_eff_1_centra
-l_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:39
-(epstopdf)                    size: 11291 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_5
-tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_5
-tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 233.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf
-, id=32, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_tt_qq_log-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_tt_qq_
-log-eps-converted-to.pdf used on input line 233.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_10tev_eff_1_centr
-al_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:57
-(epstopdf)                    size: 11625 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_10tev_eff_1_centr
-al_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:40
-(epstopdf)                    size: 11425 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_1
-0tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_
-10tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 236.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pd
-f, id=33, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_tt_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_tt_qq
-_log-eps-converted-to.pdf used on input line 236.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_20tev_eff_1_centr
-al_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:57
-(epstopdf)                    size: 11227 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_20tev_eff_1_centr
-al_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:41
-(epstopdf)                    size: 11307 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_2
-0tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_
-20tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 239.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pd
-f, id=34, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_tt_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_20tev_eff_1_central_fix_tt_qq
-_log-eps-converted-to.pdf used on input line 239.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_mmdt_40tev_eff_1_centr
-al_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:27:58
-(epstopdf)                    size: 11001 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_mmdt_40tev_eff_1_centr
-al_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:41
-(epstopdf)                    size: 11340 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_mmdt_4
-0tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_mmdt_
-40tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 242.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pd
-f, id=35, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_tt_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_mmdt_40tev_eff_1_central_fix_tt_qq
-_log-eps-converted-to.pdf used on input line 242.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Excluding 'comment' comment.
 Package epstopdf Info: Source file: <figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_
 800_no_UOF.eps>
 (epstopdf)                    date: 2018-08-01 18:58:41
 (epstopdf)                    size: 12658 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_
 800_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:58
+(epstopdf)                    size: 10413 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_
 ww_5tev_04_800_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 253.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_
-800_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:58
-(epstopdf)                    size: 10413 bytes.
+(epstopdf)             \includegraphics on input line 258.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf, id=
-36, 569.12625pt x 543.02875pt>
+40, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_UOF-e
-ps-converted-to.pdf used on input line 253.
+ps-converted-to.pdf used on input line 258.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\OT1/cmr/m/n/9 (a) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1691,36 +1401,31 @@ _800_no_UOF.eps>
 (epstopdf)                    size: 13674 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_ww_10tev_04
 _800_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:11:59
+(epstopdf)                    size: 10953 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2
 _ww_10tev_04_800_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 256.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no
-_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no_UOF
-.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_ww_10tev_04
-_800_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:11:59
-(epstopdf)                    size: 10953 bytes.
+(epstopdf)             \includegraphics on input line 261.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf, id
-=37, 569.12625pt x 543.02875pt>
+=41, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pd
 f Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf
 >
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no_UOF-
-eps-converted-to.pdf used on input line 256.
+eps-converted-to.pdf used on input line 261.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 []\OT1/cmr/m/n/9 (b) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1731,36 +1436,31 @@ _1600_no_UOF.eps>
 (epstopdf)                    size: 14914 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_ww_20tev_04
 _1600_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:00
+(epstopdf)                    size: 11628 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb
 2_ww_20tev_04_1600_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 259.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_n
-o_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_no_U
-OF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_ww_20tev_04
-_1600_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:00
-(epstopdf)                    size: 11628 bytes.
+(epstopdf)             \includegraphics on input line 264.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pdf, i
-d=38, 569.12625pt x 543.02875pt>
+d=42, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.p
 df Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pd
 f>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_no_UOF
--eps-converted-to.pdf used on input line 259.
+-eps-converted-to.pdf used on input line 264.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
 []\OT1/cmr/m/n/9 (c) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1771,36 +1471,31 @@ _1600_no_UOF.eps>
 (epstopdf)                    size: 15673 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_ww_40tev_04
 _1600_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:00
+(epstopdf)                    size: 11990 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb
 2_ww_40tev_04_1600_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 262.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_ww_40tev_04_1600_n
-o_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_ww_40tev_04_1600_no_U
-OF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_ww_40tev_04
-_1600_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:00
-(epstopdf)                    size: 11990 bytes.
+(epstopdf)             \includegraphics on input line 267.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pdf, i
-d=39, 569.12625pt x 543.02875pt>
+d=43, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_010_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.p
 df Graphic file (type pdf)
 
 <use figs/Dis_cluster_010_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pd
 f>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_ww_40tev_04_1600_no_UOF
--eps-converted-to.pdf used on input line 262.
+-eps-converted-to.pdf used on input line 267.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 []\OT1/cmr/m/n/9 (d) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -1811,35 +1506,30 @@ Package epstopdf Info: Source file: <figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_
 (epstopdf)                    size: 12856 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_
 800_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:01
+(epstopdf)                    size: 10530 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_
 ww_5tev_04_800_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 265.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_800_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_800_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_
-800_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:01
-(epstopdf)                    size: 10530 bytes.
+(epstopdf)             \includegraphics on input line 270.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf, id=
-40, 569.12625pt x 543.02875pt>
+44, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_ww_5tev_04_800_no_UOF-e
-ps-converted-to.pdf used on input line 265.
+ps-converted-to.pdf used on input line 270.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 []\OT1/cmr/m/n/9 (e) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1850,36 +1540,31 @@ _800_no_UOF.eps>
 (epstopdf)                    size: 13918 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_ww_10tev_04
 _800_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:02
+(epstopdf)                    size: 11027 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2
 _ww_10tev_04_800_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 268.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_ww_10tev_04_800_no
-_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_ww_10tev_04_800_no_UOF
-.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_ww_10tev_04
-_800_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:02
-(epstopdf)                    size: 11027 bytes.
+(epstopdf)             \includegraphics on input line 273.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf, id
-=41, 569.12625pt x 543.02875pt>
+=45, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pd
 f Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf
 >
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_ww_10tev_04_800_no_UOF-
-eps-converted-to.pdf used on input line 268.
+eps-converted-to.pdf used on input line 273.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\OT1/cmr/m/n/9 (f) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1890,36 +1575,31 @@ _1600_no_UOF.eps>
 (epstopdf)                    size: 14893 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_ww_20tev_04
 _1600_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:02
+(epstopdf)                    size: 11774 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb
 2_ww_20tev_04_1600_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 271.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_ww_20tev_04_1600_n
-o_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_ww_20tev_04_1600_no_U
-OF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_ww_20tev_04
-_1600_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:02
-(epstopdf)                    size: 11774 bytes.
+(epstopdf)             \includegraphics on input line 276.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pdf, i
-d=42, 569.12625pt x 543.02875pt>
+d=46, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.p
 df Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pd
 f>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_ww_20tev_04_1600_no_UOF
--eps-converted-to.pdf used on input line 271.
+-eps-converted-to.pdf used on input line 276.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []\OT1/cmr/m/n/9 (g) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1930,36 +1610,31 @@ _1600_no_UOF.eps>
 (epstopdf)                    size: 15839 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_ww_40tev_04
 _1600_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:03
+(epstopdf)                    size: 12019 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb
 2_ww_40tev_04_1600_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 274.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_n
-o_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_no_U
-OF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_ww_40tev_04
-_1600_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:03
-(epstopdf)                    size: 12019 bytes.
+(epstopdf)             \includegraphics on input line 279.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pdf, i
-d=43, 569.12625pt x 543.02875pt>
+d=47, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.p
 df Graphic file (type pdf)
 
 <use figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pd
 f>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_no_UOF
--eps-converted-to.pdf used on input line 274.
+-eps-converted-to.pdf used on input line 279.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []\OT1/cmr/m/n/9 (h) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -1970,35 +1645,30 @@ Package epstopdf Info: Source file: <figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_
 (epstopdf)                    size: 12740 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_
 800_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:04
+(epstopdf)                    size: 10398 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_
 ww_5tev_04_800_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 277.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_800_no_
-UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_800_no_UOF.e
-ps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_
-800_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:04
-(epstopdf)                    size: 10398 bytes.
+(epstopdf)             \includegraphics on input line 282.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf, id=
-44, 569.12625pt x 543.02875pt>
+48, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf
  Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_800_no_UOF-eps-converted-to.pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_ww_5tev_04_800_no_UOF-e
-ps-converted-to.pdf used on input line 277.
+ps-converted-to.pdf used on input line 282.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []\OT1/cmr/m/n/9 (i) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2009,36 +1679,31 @@ _800_no_UOF.eps>
 (epstopdf)                    size: 13937 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_ww_10tev_04
 _800_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:05
+(epstopdf)                    size: 10944 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2
 _ww_10tev_04_800_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 280.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no
-_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no_UOF
-.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_ww_10tev_04
-_800_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:05
-(epstopdf)                    size: 10944 bytes.
+(epstopdf)             \includegraphics on input line 285.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf, id
-=45, 569.12625pt x 543.02875pt>
+=49, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pd
 f Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no_UOF-eps-converted-to.pdf
 >
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no_UOF-
-eps-converted-to.pdf used on input line 280.
+eps-converted-to.pdf used on input line 285.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 []\OT1/cmr/m/n/9 (j) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2049,36 +1714,31 @@ _1600_no_UOF.eps>
 (epstopdf)                    size: 15216 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_ww_20tev_04
 _1600_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:06
+(epstopdf)                    size: 11935 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb
 2_ww_20tev_04_1600_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 283.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_n
-o_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_no_U
-OF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_ww_20tev_04
-_1600_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:06
-(epstopdf)                    size: 11935 bytes.
+(epstopdf)             \includegraphics on input line 288.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pdf, i
-d=46, 569.12625pt x 543.02875pt>
+d=50, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.p
 df Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_no_UOF-eps-converted-to.pd
 f>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_no_UOF
--eps-converted-to.pdf used on input line 283.
+-eps-converted-to.pdf used on input line 288.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
 []\OT1/cmr/m/n/9 (k) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2089,154 +1749,49 @@ _1600_no_UOF.eps>
 (epstopdf)                    size: 15773 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_ww_40tev_04
 _1600_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:07
+(epstopdf)                    size: 11946 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb
 2_ww_40tev_04_1600_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 286.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_n
-o_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_no_U
-OF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_ww_40tev_04
-_1600_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:07
-(epstopdf)                    size: 11946 bytes.
+(epstopdf)             \includegraphics on input line 291.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pdf, i
-d=47, 569.12625pt x 543.02875pt>
+d=51, 569.12625pt x 543.02875pt>
 File: figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.p
 df Graphic file (type pdf)
 
 <use figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_no_UOF-eps-converted-to.pd
 f>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_no_UOF
--eps-converted-to.pdf used on input line 286.
+-eps-converted-to.pdf used on input line 291.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--286
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
 []\OT1/cmr/m/n/9 (l) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--286
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_5tev_eff_1_centra
-l_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:01
-(epstopdf)                    size: 11522 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_5tev_eff_1_centra
-l_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:42
-(epstopdf)                    size: 12010 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_5
-tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_5
-tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 297.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf
-, id=48, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_ww_qq_log-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_ww_qq_
-log-eps-converted-to.pdf used on input line 297.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_10tev_eff_1_centr
-al_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:02
-(epstopdf)                    size: 11323 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_10tev_eff_1_centr
-al_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:43
-(epstopdf)                    size: 11855 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_1
-0tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_
-10tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 300.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pd
-f, id=49, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_ww_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_ww_qq
-_log-eps-converted-to.pdf used on input line 300.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_20tev_eff_1_centr
-al_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:02
-(epstopdf)                    size: 11403 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_20tev_eff_1_centr
-al_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:44
-(epstopdf)                    size: 11563 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_2
-0tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_
-20tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 303.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pd
-f, id=50, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_ww_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_ww_qq
-_log-eps-converted-to.pdf used on input line 303.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_40tev_eff_1_centr
-al_fix_ww_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:03
-(epstopdf)                    size: 11636 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_40tev_eff_1_centr
-al_fix_ww_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:45
-(epstopdf)                    size: 11703 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_4
-0tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_
-40tev_eff_1_central_fix_ww_qq_log.eps>
-(epstopdf)             \includegraphics on input line 306.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_ww_qq_log-eps-converted-to.pd
-f, id=51, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_ww_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_ww_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_ww_qq
-_log-eps-converted-to.pdf used on input line 306.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
+Excluding 'comment' comment.
 Package epstopdf Info: Source file: <figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_
 tt_1200_no_UOF.eps>
 (epstopdf)                    date: 2018-08-01 18:58:49
 (epstopdf)                    size: 12784 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_
 tt_1200_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:08
+(epstopdf)                    size: 10304 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_s
 db2_tt_5tev_04_tt_1200_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 316.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200
-_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_
-no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_
-tt_1200_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:08
-(epstopdf)                    size: 10304 bytes.
+(epstopdf)             \includegraphics on input line 322.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.pdf,
  id=52, 569.12625pt x 543.02875pt>
@@ -2246,15 +1801,15 @@ File: figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to
 <use figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.
 pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_U
-OF-eps-converted-to.pdf used on input line 316.
+OF-eps-converted-to.pdf used on input line 322.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
 []\OT1/cmr/m/n/9 (a) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2265,18 +1820,13 @@ _tt_1200_no_UOF.eps>
 (epstopdf)                    size: 13678 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_tt_10tev_04
 _tt_1200_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:08
+(epstopdf)                    size: 10883 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_
 sdb2_tt_10tev_04_tt_1200_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 319.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_tt_10tev_04_tt_120
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_tt_10tev_04_tt_120
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_tt_10tev_04
-_tt_1200_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:08
-(epstopdf)                    size: 10883 bytes.
+(epstopdf)             \includegraphics on input line 325.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf
 , id=53, 569.12625pt x 543.02875pt>
@@ -2286,15 +1836,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_010_mass_sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_tt_10tev_04_tt_1200_no_
-UOF-eps-converted-to.pdf used on input line 319.
+UOF-eps-converted-to.pdf used on input line 325.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 []\OT1/cmr/m/n/9 (b) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2305,18 +1855,13 @@ _tt_2400_no_UOF.eps>
 (epstopdf)                    size: 16581 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_tt_20tev_04
 _tt_2400_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:09
+(epstopdf)                    size: 11744 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_
 sdb2_tt_20tev_04_tt_2400_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 322.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_tt_20tev_04_tt_240
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_tt_20tev_04_tt_240
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_tt_20tev_04
-_tt_2400_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:09
-(epstopdf)                    size: 11744 bytes.
+(epstopdf)             \includegraphics on input line 328.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf
 , id=54, 569.12625pt x 543.02875pt>
@@ -2326,15 +1871,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_010_mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_tt_20tev_04_tt_2400_no_
-UOF-eps-converted-to.pdf used on input line 322.
+UOF-eps-converted-to.pdf used on input line 328.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
 []\OT1/cmr/m/n/9 (c) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2345,18 +1890,13 @@ _tt_2400_no_UOF.eps>
 (epstopdf)                    size: 18638 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_010_mass_sdb2_tt_40tev_04
 _tt_2400_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:10
+(epstopdf)                    size: 12797 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_010_mass_
 sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_
 sdb2_tt_40tev_04_tt_2400_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 325.
-runsystem(repstopdf --outfile=figs/Dis_cluster_010_mass_sdb2_tt_40tev_04_tt_240
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_010_mass_sdb2_tt_40tev_04_tt_240
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_010_mass_sdb2_tt_40tev_04
-_tt_2400_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:10
-(epstopdf)                    size: 12797 bytes.
+(epstopdf)             \includegraphics on input line 331.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_010_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf
 , id=55, 569.12625pt x 543.02875pt>
@@ -2366,15 +1906,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_010_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_010_mass_sdb2_tt_40tev_04_tt_2400_no_
-UOF-eps-converted-to.pdf used on input line 325.
+UOF-eps-converted-to.pdf used on input line 331.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
 []\OT1/cmr/m/n/9 (d) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
 \OT1/cmr/m/n/9 20$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 20(cm$\OMS/cmsy/m/n/9 ^^B$
 \OT1/cmr/m/n/9 cm) in
  []
@@ -2385,18 +1925,13 @@ tt_1200_no_UOF.eps>
 (epstopdf)                    size: 12886 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_
 tt_1200_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:11
+(epstopdf)                    size: 10435 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_s
 db2_tt_5tev_04_tt_1200_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 328.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_tt_1200
-_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_tt_1200_
-no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_
-tt_1200_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:11
-(epstopdf)                    size: 10435 bytes.
+(epstopdf)             \includegraphics on input line 334.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.pdf,
  id=56, 569.12625pt x 543.02875pt>
@@ -2406,15 +1941,15 @@ File: figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to
 <use figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.
 pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_tt_5tev_04_tt_1200_no_U
-OF-eps-converted-to.pdf used on input line 328.
+OF-eps-converted-to.pdf used on input line 334.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 []\OT1/cmr/m/n/9 (e) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2425,18 +1960,13 @@ _tt_1200_no_UOF.eps>
 (epstopdf)                    size: 14670 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_tt_10tev_04
 _tt_1200_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:11
+(epstopdf)                    size: 11261 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_
 sdb2_tt_10tev_04_tt_1200_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 331.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_tt_10tev_04_tt_120
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_tt_10tev_04_tt_120
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_tt_10tev_04
-_tt_1200_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:11
-(epstopdf)                    size: 11261 bytes.
+(epstopdf)             \includegraphics on input line 337.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf
 , id=57, 569.12625pt x 543.02875pt>
@@ -2446,15 +1976,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_009_mass_sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_tt_10tev_04_tt_1200_no_
-UOF-eps-converted-to.pdf used on input line 331.
+UOF-eps-converted-to.pdf used on input line 337.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 []\OT1/cmr/m/n/9 (f) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2465,18 +1995,13 @@ _tt_2400_no_UOF.eps>
 (epstopdf)                    size: 18085 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_tt_20tev_04
 _tt_2400_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:12
+(epstopdf)                    size: 12444 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_
 sdb2_tt_20tev_04_tt_2400_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 334.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_tt_20tev_04_tt_240
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_tt_20tev_04_tt_240
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_tt_20tev_04
-_tt_2400_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:12
-(epstopdf)                    size: 12444 bytes.
+(epstopdf)             \includegraphics on input line 340.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf
 , id=58, 569.12625pt x 543.02875pt>
@@ -2486,15 +2011,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_009_mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_tt_20tev_04_tt_2400_no_
-UOF-eps-converted-to.pdf used on input line 334.
+UOF-eps-converted-to.pdf used on input line 340.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
 []\OT1/cmr/m/n/9 (g) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2505,18 +2030,13 @@ _tt_2400_no_UOF.eps>
 (epstopdf)                    size: 18689 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_009_mass_sdb2_tt_40tev_04
 _tt_2400_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:13
+(epstopdf)                    size: 12762 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_009_mass_
 sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_
 sdb2_tt_40tev_04_tt_2400_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 337.
-runsystem(repstopdf --outfile=figs/Dis_cluster_009_mass_sdb2_tt_40tev_04_tt_240
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_009_mass_sdb2_tt_40tev_04_tt_240
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_009_mass_sdb2_tt_40tev_04
-_tt_2400_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:13
-(epstopdf)                    size: 12762 bytes.
+(epstopdf)             \includegraphics on input line 343.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_009_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf
 , id=59, 569.12625pt x 543.02875pt>
@@ -2526,15 +2046,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_009_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_009_mass_sdb2_tt_40tev_04_tt_2400_no_
-UOF-eps-converted-to.pdf used on input line 337.
+UOF-eps-converted-to.pdf used on input line 343.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 []\OT1/cmr/m/n/9 (h) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 \OT1/cmr/m/n/9 5$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 5(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2550,7 +2070,7 @@ tt_1200_no_UOF-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_s
 db2_tt_5tev_04_tt_1200_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 340.
+(epstopdf)             \includegraphics on input line 346.
 Package epstopdf Info: Output file is already uptodate.
 File: figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to
 .pdf Graphic file (type pdf)
@@ -2558,15 +2078,15 @@ File: figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to
 <use figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UOF-eps-converted-to.
 pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_U
-OF-eps-converted-to.pdf used on input line 340.
+OF-eps-converted-to.pdf used on input line 346.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
 []\OT1/cmr/m/n/9 (i) 5TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2577,18 +2097,13 @@ _tt_1200_no_UOF.eps>
 (epstopdf)                    size: 14499 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_tt_10tev_04
 _tt_1200_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:13
+(epstopdf)                    size: 11027 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_
 sdb2_tt_10tev_04_tt_1200_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 343.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_tt_10tev_04_tt_120
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_tt_10tev_04_tt_120
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_tt_10tev_04
-_tt_1200_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:13
-(epstopdf)                    size: 11027 bytes.
+(epstopdf)             \includegraphics on input line 349.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf
 , id=60, 569.12625pt x 543.02875pt>
@@ -2598,15 +2113,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_012_mass_sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_tt_10tev_04_tt_1200_no_
-UOF-eps-converted-to.pdf used on input line 343.
+UOF-eps-converted-to.pdf used on input line 349.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
 []\OT1/cmr/m/n/9 (j) 10TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2617,18 +2132,13 @@ _tt_2400_no_UOF.eps>
 (epstopdf)                    size: 18001 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_tt_20tev_04
 _tt_2400_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:14
+(epstopdf)                    size: 12227 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_
 sdb2_tt_20tev_04_tt_2400_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 346.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_tt_20tev_04_tt_240
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_tt_20tev_04_tt_240
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_tt_20tev_04
-_tt_2400_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:14
-(epstopdf)                    size: 12227 bytes.
+(epstopdf)             \includegraphics on input line 352.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf
 , id=61, 569.12625pt x 543.02875pt>
@@ -2638,15 +2148,15 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_012_mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_tt_20tev_04_tt_2400_no_
-UOF-eps-converted-to.pdf used on input line 346.
+UOF-eps-converted-to.pdf used on input line 352.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []\OT1/cmr/m/n/9 (k) 20TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
@@ -2657,18 +2167,13 @@ _tt_2400_no_UOF.eps>
 (epstopdf)                    size: 18627 bytes
 (epstopdf)             Output file: <figs/Dis_cluster_012_mass_sdb2_tt_40tev_04
 _tt_2400_no_UOF-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-08-01 19:12:15
+(epstopdf)                    size: 12701 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/Dis_cluster_012_mass_
 sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_
 sdb2_tt_40tev_04_tt_2400_no_UOF.eps>
-(epstopdf)             \includegraphics on input line 349.
-runsystem(repstopdf --outfile=figs/Dis_cluster_012_mass_sdb2_tt_40tev_04_tt_240
-0_no_UOF-eps-converted-to.pdf figs/Dis_cluster_012_mass_sdb2_tt_40tev_04_tt_240
-0_no_UOF.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figs/Dis_cluster_012_mass_sdb2_tt_40tev_04
-_tt_2400_no_UOF-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-01 19:12:15
-(epstopdf)                    size: 12701 bytes.
+(epstopdf)             \includegraphics on input line 355.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs/Dis_cluster_012_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf
 , id=62, 569.12625pt x 543.02875pt>
@@ -2678,116 +2183,21 @@ o.pdf Graphic file (type pdf)
 <use figs/Dis_cluster_012_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to
 .pdf>
 Package pdftex.def Info: figs/Dis_cluster_012_mass_sdb2_tt_40tev_04_tt_2400_no_
-UOF-eps-converted-to.pdf used on input line 349.
+UOF-eps-converted-to.pdf used on input line 355.
 (pdftex.def)             Requested size: 90.76479pt x 86.59636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 []\OT1/cmr/m/n/9 (l) 40TeV at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 \OT1/cmr/m/n/9 1$\OMS/cmsy/m/n/9 ^^B$\OT1/cmr/m/n/9 1(cm$\OMS/cmsy/m/n/9 ^^B$\O
 T1/cmr/m/n/9 cm) in
  []
 
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_5tev_eff_1_centra
-l_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:00
-(epstopdf)                    size: 11147 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_5tev_eff_1_centra
-l_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:46
-(epstopdf)                    size: 11504 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_5
-tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_5
-tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 360.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf
-, id=63, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_tt_qq_log-eps-converted-to
-.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_tt_qq_
-log-eps-converted-to.pdf used on input line 360.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_10tev_eff_1_centr
-al_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:00
-(epstopdf)                    size: 11834 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_10tev_eff_1_centr
-al_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:47
-(epstopdf)                    size: 11460 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_1
-0tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_
-10tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 363.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pd
-f, id=64, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_tt_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_tt_qq
-_log-eps-converted-to.pdf used on input line 363.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_20tev_eff_1_centr
-al_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:01
-(epstopdf)                    size: 11992 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_20tev_eff_1_centr
-al_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:48
-(epstopdf)                    size: 11451 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_2
-0tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_
-20tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 366.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pd
-f, id=65, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_tt_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_20tev_eff_1_central_fix_tt_qq
-_log-eps-converted-to.pdf used on input line 366.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package epstopdf Info: Source file: <figs/A_Cluster_mass_sdb2_40tev_eff_1_centr
-al_fix_tt_qq_log.eps>
-(epstopdf)                    date: 2018-07-29 16:28:01
-(epstopdf)                    size: 10909 bytes
-(epstopdf)             Output file: <figs/A_Cluster_mass_sdb2_40tev_eff_1_centr
-al_fix_tt_qq_log-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-29 16:29:48
-(epstopdf)                    size: 11425 bytes
-(epstopdf)             Command: <repstopdf --outfile=figs/A_Cluster_mass_sdb2_4
-0tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pdf figs/A_Cluster_mass_sdb2_
-40tev_eff_1_central_fix_tt_qq_log.eps>
-(epstopdf)             \includegraphics on input line 369.
-Package epstopdf Info: Output file is already uptodate.
-
-<figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_tt_qq_log-eps-converted-to.pd
-f, id=66, 569.12625pt x 396.48125pt>
-File: figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_tt_qq_log-eps-converted-
-to.pdf Graphic file (type pdf)
-
-<use figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_tt_qq_log-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figs/A_Cluster_mass_sdb2_40tev_eff_1_central_fix_tt_qq
-_log-eps-converted-to.pdf used on input line 369.
-(pdftex.def)             Requested size: 177.3999pt x 123.58548pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Excluding 'comment' comment.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTe
@@ -2796,7 +2206,7 @@ n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.375 \end{document}
+l.382 \end{document}
                      <./figs/Dis_cluster_010_mass_mmdt_5tev_04_no_UOF-eps-conve
 rted-to.pdf> <./figs/Dis_cluster_010_mass_mmdt_10tev_04_no_UOF-eps-converted-to
 .pdf> <./figs/Dis_cluster_010_mass_mmdt_20tev_04_no_UOF-eps-converted-to.pdf> <
@@ -2813,18 +2223,7 @@ me{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.375 \end{document}
-                     <./figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_ww_qq_l
-og-eps-converted-to.pdf> <./figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_ww
-_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_mmdt_20tev_eff_1_central_f
-ix_ww_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_mmdt_40tev_eff_1_cent
-ral_fix_ww_qq_log-eps-converted-to.pdf>] [4pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.3}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.375 \end{document}
+l.382 \end{document}
                      <./figs/Dis_cluster_010_mass_mmdt_tt_5tev_04_tt_no_UOF-eps
 -converted-to.pdf> <./figs/Dis_cluster_010_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-
 converted-to.pdf> <./figs/Dis_cluster_010_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-c
@@ -2837,23 +2236,12 @@ ed-to.pdf> <./figs/Dis_cluster_012_mass_mmdt_tt_5tev_04_tt_no_UOF-eps-converted
 -to.pdf> <./figs/Dis_cluster_012_mass_mmdt_tt_10tev_04_tt_no_UOF-eps-converted-
 to.pdf> <./figs/Dis_cluster_012_mass_mmdt_tt_20tev_04_tt_no_UOF-eps-converted-t
 o.pdf> <./figs/Dis_cluster_012_mass_mmdt_tt_40tev_04_tt_no_UOF-eps-converted-to
-.pdf>] [5pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.4}) has been already used, duplicate ignored
+.pdf>] [4pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.375 \end{document}
-                     <./figs/A_Cluster_mass_mmdt_5tev_eff_1_central_fix_tt_qq_l
-og-eps-converted-to.pdf> <./figs/A_Cluster_mass_mmdt_10tev_eff_1_central_fix_tt
-_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_mmdt_20tev_eff_1_central_f
-ix_tt_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_mmdt_40tev_eff_1_cent
-ral_fix_tt_qq_log-eps-converted-to.pdf>] [6pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.5}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.375 \end{document}
+l.382 \end{document}
                      <./figs/Dis_cluster_010_mass_sdb2_ww_5tev_04_800_no_UOF-ep
 s-converted-to.pdf> <./figs/Dis_cluster_010_mass_sdb2_ww_10tev_04_800_no_UOF-ep
 s-converted-to.pdf> <./figs/Dis_cluster_010_mass_sdb2_ww_20tev_04_1600_no_UOF-e
@@ -2866,23 +2254,12 @@ eps-converted-to.pdf> <./figs/Dis_cluster_009_mass_sdb2_ww_40tev_04_1600_no_UOF
 eps-converted-to.pdf> <./figs/Dis_cluster_012_mass_sdb2_ww_10tev_04_800_no_UOF-
 eps-converted-to.pdf> <./figs/Dis_cluster_012_mass_sdb2_ww_20tev_04_1600_no_UOF
 -eps-converted-to.pdf> <./figs/Dis_cluster_012_mass_sdb2_ww_40tev_04_1600_no_UO
-F-eps-converted-to.pdf>] [7pdfTeX warning (ext4): destination with the same ide
-ntifier (name{figure.6}) has been already used, duplicate ignored
+F-eps-converted-to.pdf>] [5pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.375 \end{document}
-                     <./figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_ww_qq_l
-og-eps-converted-to.pdf> <./figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_ww
-_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_sdb2_20tev_eff_1_central_f
-ix_ww_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_sdb2_40tev_eff_1_cent
-ral_fix_ww_qq_log-eps-converted-to.pdf>] [8pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.7}) has been already used, duplicate ignor
-ed
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.375 \end{document}
+l.382 \end{document}
                      <./figs/Dis_cluster_012_mass_sdb2_tt_5tev_04_tt_1200_no_UO
 F-eps-converted-to.pdf> <./figs/Dis_cluster_010_mass_sdb2_tt_10tev_04_tt_1200_n
 o_UOF-eps-converted-to.pdf> <./figs/Dis_cluster_010_mass_sdb2_tt_20tev_04_tt_24
@@ -2894,58 +2271,40 @@ _20tev_04_tt_2400_no_UOF-eps-converted-to.pdf> <./figs/Dis_cluster_009_mass_sdb
 2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf> <./figs/Dis_cluster_012_mass
 _sdb2_tt_10tev_04_tt_1200_no_UOF-eps-converted-to.pdf> <./figs/Dis_cluster_012_
 mass_sdb2_tt_20tev_04_tt_2400_no_UOF-eps-converted-to.pdf> <./figs/Dis_cluster_
-012_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf>] [9pdfTeX warnin
-g (ext4): destination with the same identifier (name{figure.8}) has been alread
-y used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.375 \end{document}
-                     <./figs/A_Cluster_mass_sdb2_5tev_eff_1_central_fix_tt_qq_l
-og-eps-converted-to.pdf> <./figs/A_Cluster_mass_sdb2_10tev_eff_1_central_fix_tt
-_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_sdb2_20tev_eff_1_central_f
-ix_tt_qq_log-eps-converted-to.pdf> <./figs/A_Cluster_mass_sdb2_40tev_eff_1_cent
-ral_fix_tt_qq_log-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
+012_mass_sdb2_tt_40tev_04_tt_2400_no_UOF-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
 
 (./fcc_Mass_soft_drop_for_paper_new_no_UOF.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 375.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 375.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
+Package rerunfilecheck Info: File `fcc_Mass_soft_drop_for_paper_new_no_UOF.out'
+ has not changed.
+(rerunfilecheck)             Checksum: 3FE08AD7BDE5BD4748E84D8637148180;224.
 
 
-Package rerunfilecheck Warning: File `fcc_Mass_soft_drop_for_paper_new_no_UOF.o
-ut' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `fcc_Mass_soft_drop_for_paper_new_no
-_UOF.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  3FE08AD7BDE5BD4748E84D8637148180;224.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 8597 strings out of 492995
- 143943 string characters out of 6132704
- 253917 words of memory out of 5000000
- 11867 multiletter control sequences out of 15000+600000
+ 8536 strings out of 492995
+ 138127 string characters out of 6132704
+ 238791 words of memory out of 5000000
+ 11842 multiletter control sequences out of 15000+600000
  13064 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,7n,32p,405b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,7n,32p,400b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on fcc_Mass_soft_drop_for_paper_new_no_UOF.pdf (9 pages, 548719 
+Output written on fcc_Mass_soft_drop_for_paper_new_no_UOF.pdf (5 pages, 428590 
 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 808 compressed objects within 9 object streams
- 85 named destinations out of 1000 (max. 500000)
- 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1053,26 +1053,19 @@ for ( int signal=0 ; signal <3 ; signal++)
             //=====it just set range, actually, it doesn't influence the results, because we won't approach to the boundary condition.
             if(Signal_use[signal]=="ww")
             {
-                cout << Signal_use[signal] << endl;
-                xmax_cut[nhistos_cut]={800};
+                xmax_cut[0]={800};
                 nbins_cut=160;
-                cout << xmax_cut[0] << endl;
-                cout << nbins_cut << endl;
             }
             if(Signal_use[signal]=="ttbar")
             {
-                xmax_cut[nhistos_cut]={1200};
+                xmax_cut[0]={1200};
                 nbins_cut=240;
             }
             if(Signal_use[signal]=="qq")//Need to chanage when cut is different!!
             {
-                xmax_cut[nhistos_cut]={1200};
+                xmax_cut[0]={1200};
                 nbins_cut=240;
             }
-            cout << xmax[0] << endl;
-            cout << xmax[1] << endl;
-            cout << xmax[2] << endl;
-            cout << xmax[3] << endl;
 
           TH1F* h_sub[nhistos];
           TH1F* h_sub_cut[nhistos_cut];
@@ -1081,8 +1074,6 @@ for ( int signal=0 ; signal <3 ; signal++)
 
             cout << "====================================" << endl;
             cout << xmax_cut[0] << endl;
-            cout << xmax_cut[1] << endl;
-            cout << xmax_cut[2] << endl;
             cout << nbins_cut << endl;
             break;
           const int nbins=25;
@@ -1198,38 +1189,164 @@ for ( int signal=0 ; signal <3 ; signal++)
                   //int *Cut_ww=cut_ww(1,Enevec_use[energy]);
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
-                 {
-                 h_sub[ih]->Fill(sub[ih][i]);
-                 }
+                  {
+                  if(sub[ih][i]<0)
+                  {
+                      cout<< "Smaller than 0: " << sub[ih][i] << endl;
+                      cout<< "After trimming: " << sub[ih][i]+0.001 << endl;
+                      h_sub[ih]->Fill(sub[ih][i]+0.001);
+                  }
+                  else if(sub[ih][i]<=-1)
+                  {
+                      cout << "Weird ! Tau and C variables are smaller than 1" << endl;
+                      cout << "=============================================================================" << endl;
+                      break;
+                  }
+                  else if(sub[ih][i]>xmax[ih])
+                  {
+                      cout<< "Bigger than " << xmax[ih] <<":"<<sub[ih][i] << endl;
+                      cout<< "After trimming: " << xmax[ih]-xmax[ih]/nbins/2 << endl;
+                      h_sub[ih]->Fill(xmax[ih]-xmax[ih]/nbins/2);
+                  }
+                  else
+                  {
+                      h_sub[ih]->Fill(sub[ih][i]);
+                  }
+                  }
                  for(int ih=0; ih < nhistos_cut; ih++)
-                 {
-                 h_sub_cut[ih]->Fill(sub_cut[ih][i]);
-                 }
+                  {
+                  if(sub_cut[ih][i]<0)
+                  {
+                      cout<< "Smaller than 0: " << sub_cut[ih][i] << endl;
+                      cout<< "After trimming: " << sub_cut[ih][i]+0.001 << endl;
+                      h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
+                  }
+                  else if(sub_cut[ih][i]<=-1)
+                  {
+                      cout << "Weird ! Mass variables are smaller than 1" << endl;
+                      cout << "=============================================================================" << endl;
+                      break;
+                  }
+                  else if(sub_cut[ih][i]>xmax_cut[ih])
+                  {
+                      cout<< "Bigger than " << xmax_cut[ih] <<":"<<sub_cut[ih][i] << endl;
+                      cout<< "After trimming: " << xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2 << endl;
+                      h_sub_cut[ih]->Fill(xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2);
+                  }
+                  else
+                  {
+                      h_sub_cut[ih]->Fill(sub_cut[ih][i]);
+                  }
+                  }
               }
               if(Signal_use[signal]=="ttbar")
               {
                 //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
                 if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;
                 for(int ih=0; ih < nhistos; ih++)
-                {
-                h_sub[ih]->Fill(sub[ih][i]);
-                }
+                  {
+                  if(sub[ih][i]<0)
+                  {
+                      cout<< "Smaller than 0: " << sub[ih][i] << endl;
+                      cout<< "After trimming: " << sub[ih][i]+0.001 << endl;
+                      h_sub[ih]->Fill(sub[ih][i]+0.001);
+                  }
+                  else if(sub[ih][i]<=-1)
+                  {
+                      cout << "Weird ! Tau and C variables are smaller than 1" << endl;
+                      cout << "=============================================================================" << endl;
+                      break;
+                  }
+                  else if(sub[ih][i]>xmax[ih])
+                  {
+                      cout<< "Bigger than " << xmax[ih] <<":"<<sub[ih][i] << endl;
+                      cout<< "After trimming: " << xmax[ih]-xmax[ih]/nbins/2 << endl;
+                      h_sub[ih]->Fill(xmax[ih]-xmax[ih]/nbins/2);
+                  }
+                  else
+                  {
+                      h_sub[ih]->Fill(sub[ih][i]);
+                  }
+                  }
                 for(int ih=0; ih < nhistos_cut; ih++)
-                {
-                h_sub_cut[ih]->Fill(sub_cut[ih][i]);
-                }
+                  {
+                  if(sub_cut[ih][i]<0)
+                  {
+                      cout<< "Smaller than 0: " << sub_cut[ih][i] << endl;
+                      cout<< "After trimming: " << sub_cut[ih][i]+0.001 << endl;
+                      h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
+                  }
+                  else if(sub_cut[ih][i]<=-1)
+                  {
+                      cout << "Weird ! Mass variables are smaller than 1" << endl;
+                      cout << "=============================================================================" << endl;
+                      break;
+                  }
+                  else if(sub_cut[ih][i]>xmax_cut[ih])
+                  {
+                      cout<< "Bigger than " << xmax_cut[ih] <<":"<<sub_cut[ih][i] << endl;
+                      cout<< "After trimming: " << xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2 << endl;
+                      h_sub_cut[ih]->Fill(xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2);
+                  }
+                  else
+                  {
+                      h_sub_cut[ih]->Fill(sub_cut[ih][i]);
+                  }
+                  }
               }
              if(Signal_use[signal]=="qq")
              {
                  //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
                  if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;//Change there for different bins
                  for(int ih=0; ih < nhistos; ih++)
+                 if(sub[ih][i]<0)
+                 {
+                 {
+                     cout<< "Smaller than 0: " << sub[ih][i] << endl;
+                     cout<< "After trimming: " << sub[ih][i]+0.001 << endl;
+                     h_sub[ih]->Fill(sub[ih][i]+0.001);
+                 }
+                 else if(sub[ih][i]<=-1)
+                 {
+                     cout << "Weird ! Tau and C variables are smaller than 1" << endl;
+                     cout << "=============================================================================" << endl;
+                     break;
+                 }
+                 else if(sub[ih][i]>xmax[ih])
+                 {
+                     cout<< "Bigger than " << xmax[ih] <<":"<<sub[ih][i] << endl;
+                     cout<< "After trimming: " << xmax[ih]-xmax[ih]/nbins/2 << endl;
+                     h_sub[ih]->Fill(xmax[ih]-xmax[ih]/nbins/2);
+                 }
+                 else
                  {
                      h_sub[ih]->Fill(sub[ih][i]);
                  }
+                 }
                  for(int ih=0; ih < nhistos_cut; ih++)
                  {
+                 if(sub_cut[ih][i]<0)
+                 {
+                     cout<< "Smaller than 0: " << sub_cut[ih][i] << endl;
+                     cout<< "After trimming: " << sub_cut[ih][i]+0.001 << endl;
+                     h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
+                 }
+                 else if(sub_cut[ih][i]<=-1)
+                 {
+                     cout << "Weird ! Mass variables are smaller than 1" << endl;
+                     cout << "=============================================================================" << endl;
+                     break;
+                 }
+                 else if(sub_cut[ih][i]>xmax_cut[ih])
+                 {
+                     cout<< "Bigger than " << xmax_cut[ih] <<":"<<sub_cut[ih][i] << endl;
+                     cout<< "After trimming: " << xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2 << endl;
+                     h_sub_cut[ih]->Fill(xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2);
+                 }
+                 else
+                 {
                      h_sub_cut[ih]->Fill(sub_cut[ih][i]);
+                 }
                  }
             }
             }// end of loop over calo jets
@@ -1238,7 +1355,7 @@ for ( int signal=0 ; signal <3 ; signal++)
            //===========================================================//
           if((Signal_use[signal]=="ttbar")||(Signal_use[signal]=="ww"))
           {
-          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_" + treeName + "_mass_cut_0.5GeV_for_"+Form("%s",Signal_use[signal])+"_Dis_25bins_new.root";
+          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_" + treeName + "_mass_cut_0.5GeV_for_"+Form("%s",Signal_use[signal])+"_Dis_25bin_no_UOF.root";
           cout << "writing output to " << outputFile.data() << endl;
           cout << "====================================================================================================" << endl;
           TFile* outFile = new TFile(outputFile.data(),"recreate");
@@ -1256,7 +1373,7 @@ for ( int signal=0 ; signal <3 ; signal++)
 
           if(Signal_use[signal]=="qq")
           {
-          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_"+ treeName + "_mass_cut_0.5GeV_for_tt_Dis_25bins_new.root";
+          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_"+ treeName + "_mass_cut_0.5GeV_for_tt_Dis_25bins_no_UOF.root";
           cout << "writing output to " << outputFile.data() << endl;
           cout << "====================================================================================================" << endl;
           TFile* outFile = new TFile(outputFile.data(),"recreate");

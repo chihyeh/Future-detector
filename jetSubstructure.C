@@ -438,10 +438,11 @@ int *cut_ww(int files, int energy)
             }
         }
     }
-    int static cut[2]={L,R};
+    int cut[2]={L,R};
     int *cut_use=cut;
     delete h1;
     delete f1;
+    cout << "L: " << cut[0] << "R: " << cut[1] << endl;
     cout << "L: " << L << "R: " << R << endl;
     return(cut_use);
 }
@@ -853,10 +854,11 @@ int *cut_tt(int files, int energy)
             }
         }
     }
-    int static cut[2]={L,R};
+    int cut[2]={L,R};
     int *cut_use=cut;
     delete h1;
     delete f1;
+    cout << "L: " << cut[0] << "R: " << cut[1] << endl;
     cout << "L: " << L<< "R: "<<R << endl;
     return(cut_use);
 }
@@ -980,11 +982,11 @@ void jetSubstructure(float radius=0.4, int mode=0)
     const int nhistos=3;//ntemp_histos;
     const int nhistos_cut=1;
 
-for ( int signal=0 ; signal <3 ; signal++)
+for ( int signal=2 ; signal <3 ; signal++)
 {
-    for ( int Dir=0 ; Dir <3 ; Dir++)
+    for ( int Dir=2 ; Dir <3 ; Dir++)
     {
-        for(int energy=0 ; energy < 4 ; energy++)
+        for(int energy=1 ; energy < 3 ; energy++)
         {
             int *Cut_ww=0;
             int *Cut_tt=0;
@@ -1099,8 +1101,8 @@ for ( int signal=0 ; signal <3 ; signal++)
             Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
             Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
             cout << Dirvec_use[Dir] << Enevec_use[energy] << endl;
-            cout << "Cut_tt[0] " << Cut_tt[0] << "Cut_tt[1]"<< Cut_tt[1] << endl;
-            cout << "Cut_ww[0] " << Cut_ww[0] << "Cut_ww[1]"<< Cut_ww[1] << endl;
+            cout << "Cut_tt[0] " << Cut_ww[0] << "Cut_tt[1]"<< Cut_ww[1] << endl;
+            cout << "Cut_ww[0] " << Cut_tt[0] << "Cut_ww[1]"<< Cut_tt[1] << endl;
 
            //=====================================//
             //=====Cut part=======//
@@ -1353,7 +1355,6 @@ for ( int signal=0 ; signal <3 ; signal++)
           outFile->Close();
           }
             //===========================================================//
-          
         }
     }
 }

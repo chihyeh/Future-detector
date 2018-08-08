@@ -80,8 +80,8 @@ if(variable[k]=="tau21"):
 
 
 
-    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins.pdf")
-    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins.eps")
+#    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins_no_UOF.pdf")
+    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins_no_UOF.eps")
 
 if(variable[k+1]=="tau32"):
     f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_5tev_04_after_cut_Man.root")
@@ -149,8 +149,8 @@ if(variable[k+1]=="tau32"):
 
 
 
-    c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins.pdf")
-    c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins.eps")
+#   c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins_no_UOF.pdf")
+    c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins_no_UOF.eps")
 
 if(variable[k+2]=="c2b1"):
     f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_5tev_04_after_cut_Man.root")
@@ -218,7 +218,7 @@ if(variable[k+2]=="c2b1"):
 
 
 
-    c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins.pdf")
-    c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins.eps")
+# c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins_no_UOF.pdf")
+    c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins_no_UOF.eps")
 
 

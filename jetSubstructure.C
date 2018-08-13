@@ -32,16 +32,71 @@ float myDeltaR(float eta1, float eta2, float phi1, float phi2)
   return dr;
 }
 
-int *cut_ww(int files, int energy)
+vector<int> cut_ww(int files, int energy)
 {
     //This one is the 160 bins histogram, range is 800. ==>Although it doesn't matter at the boundary condition, because we don't use that.
     TFile* f1 = TFile::Open(Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_wwrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root",energy,energy,files));
     TH1F *h1;
     h1=(TH1F*) f1->Get("h_mass_mmdt");
     float a=h1->Integral();
-    int M=h1->GetMaximumBin();
-    int L=M;
-    int R=M;
+    cout << "Area of the signal: " << a << endl;
+    cout << "Files name: " << Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_wwrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root",energy,energy,files) << endl;
+    int numbin=h1->GetXaxis()->GetNbins();
+    int i;
+    vector<int>error={0,0};
+    //Check the overflow and underflow again
+    if(h1->GetBinContent(0)!=0)
+    {
+        cout << "Check the histograms about the UF" << endl;
+        cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+        return(error);
+    }
+    if(h1->GetBinContent(numbin+1)!=0)
+    {
+        cout << "Check the histograms about the OF" << endl;
+        cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+        return(error);
+    }
+    if(numbin!=160)
+    {
+        cout << "Check the bin number" << endl;
+        cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+        return(error);
+    }
+    //Get bin numebr
+    cout << "bin number: " << numbin << endl;
+    //Run all to find the median bin
+    for(i=1;i<(numbin+1);i++)
+    {
+        cout << "bin number: " << numbin << endl;
+        //p+1 is the median bin (0.5 is because it is the normalize bin, the middle is 0.5 ( 1/2 ) )
+        if(h1->Integral(1,i)<(h1->Integral()/2))
+        {
+            cout << "Find median run number: " << i << endl;
+            cout << "   " << h1->Integral(1,i) << "   "<< h1->Integral()/2 << "   " << h1->Integral(1,i+1) <<   endl;
+            if((h1->Integral()/2)<h1->Integral(1,i+1))
+            {
+                cout << "Find median run number: " << i << endl;
+                cout << "   " << h1->Integral(1,i) << "   "<< h1->Integral()/2 << "   " << h1->Integral(1,i+1) <<   endl;
+                cout << "Find it!: " << i << endl;
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        else
+        {
+            cout << "Find median run number: " << i << endl;
+            cout << "Continue" << endl;
+            continue;
+        }
+    }
+    int Median_bin=i+1;
+    cout << "Median_bin: " << i+1 << endl;
+    int L=Median_bin;
+    int R=Median_bin;
     float ratio_BinContent_1=0;
     float ratio_BinContent_2=0;
     for(int Q=0 ; Q<161 ; Q++)
@@ -438,29 +493,84 @@ int *cut_ww(int files, int energy)
             }
         }
     }
-    int cut[2]={L,R};
-    int *cut_use=cut;
+    vector<int> cut_use = {L,R};
     delete h1;
     delete f1;
-    cout << "L: " << cut[0] << "R: " << cut[1] << endl;
-    cout << "L: " << L << "R: " << R << endl;
+    cout << "L: " << L<< "R: "<<R << endl;
     return(cut_use);
+ 
 }
     //------------------------------------------
 
 
 //This one function is same as before, just the ttbar cut (files name are different//
-int *cut_tt(int files, int energy)
+vector<int> cut_tt(int files, int energy)
 {
     TFile* f1 = TFile::Open(Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_ttbarrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root",energy,energy,files));
     TH1F *h1;
     h1=(TH1F*) f1->Get("h_mass_mmdt");
     float a=h1->Integral();
-    int M=h1->GetMaximumBin();
-    int L=M;
-    int R=M;
+    cout << "Files name: " << Form("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev%dmumu_pythia6_zprime%dtev_ttbarrfull%03d_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root",energy,energy,files) << endl;
+    cout << "Area of the signal: " << a << endl;
+    int numbin=h1->GetXaxis()->GetNbins();
+    int i;
+    vector<int> error={0,0};
+    //Check the overflow and underflow again
+    if(h1->GetBinContent(0)!=0)
+    {
+        cout << "Check the histograms about the UF" << endl;
+        cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+        return(error);
+    }
+    if(h1->GetBinContent(numbin+1)!=0)
+    {
+        cout << "Check the histograms about the OF" << endl;
+        cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+        return(error);
+    }
+    if(numbin!=240)
+    {
+        cout << "Check the bin number" << endl;
+        cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
+        return(error);
+    }
+    //Get bin numebr
+    cout << "bin number: " << numbin << endl;
+    //Run all to find the median bin
+    for(i=1;i<(numbin+1);i++)
+    {
+        cout << "bin number: " << numbin << endl;
+        //p+1 is the median bin (0.5 is because it is the normalize bin, the middle is 0.5 ( 1/2 ) )
+        if(h1->Integral(1,i)<(h1->Integral()/2))
+        {
+            cout << "Find median run number: " << i << endl;
+            cout << "   " << h1->Integral(1,i) << "   "<< h1->Integral()/2 << "   " << h1->Integral(1,i+1) <<   endl;
+            if((h1->Integral()/2)<h1->Integral(1,i+1))
+            {
+                cout << "Find median run number: " << i << endl;
+                cout << "   " << h1->Integral(1,i) << "   "<< h1->Integral()/2 << "   " << h1->Integral(1,i+1) <<   endl;
+                cout << "Find it!: " << i << endl;
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
+        else
+        {
+            cout << "Find median run number: " << i << endl;
+            cout << "Continue" << endl;
+            continue;
+        }
+    }
+    int Median_bin=i+1;
+    cout << "Median_bin: " << i+1 << endl;
+    int L=Median_bin;
+    int R=Median_bin;
     float ratio_BinContent_1=0;
     float ratio_BinContent_2=0;
+
     for( int Q=0 ; Q<241 ; Q++)
     {
         cout <<  "Run number: " << Q << endl;
@@ -854,13 +964,14 @@ int *cut_tt(int files, int energy)
             }
         }
     }
-    int cut[2]={L,R};
-    int *cut_use=cut;
+    //int static cut[2]={L,R};
+    //int *cut_use=cut;
+    vector<int> cut_use = {L,R};
     delete h1;
     delete f1;
-    cout << "L: " << cut[0] << "R: " << cut[1] << endl;
     cout << "L: " << L<< "R: "<<R << endl;
     return(cut_use);
+ 
 }
 
 /*float cluster_mass_cut(int subjet , int energy, int signal, int Dir, float radius=0.4, int mode=0)
@@ -982,14 +1093,12 @@ void jetSubstructure(float radius=0.4, int mode=0)
     const int nhistos=3;//ntemp_histos;
     const int nhistos_cut=1;
 
-for ( int signal=2 ; signal <3 ; signal++)
+for ( int signal=0 ; signal <3 ; signal++)
 {
-    for ( int Dir=2 ; Dir <3 ; Dir++)
+    for ( int Dir=0 ; Dir <3 ; Dir++)
     {
-        for(int energy=1 ; energy < 3 ; energy++)
+        for(int energy=0 ; energy < 4 ; energy++)
         {
-            int *Cut_ww=0;
-            int *Cut_tt=0;
             cout << "===========================================" << endl;
             cout << "signal:" << Signal_use[signal] << endl;
             cout << "files:" << Dirvec_use[Dir] << endl;
@@ -1063,8 +1172,8 @@ for ( int signal=2 ; signal <3 ; signal++)
             }
             if(Signal_use[signal]=="qq")//Need to chanage when cut is different!!
             {
-                xmax_cut[0]={1200};
-                nbins_cut=240;
+                xmax_cut[0]={800};
+                nbins_cut=160;
             }
 
           TH1F* h_sub[nhistos];
@@ -1098,11 +1207,11 @@ for ( int signal=2 ; signal <3 ; signal++)
           TreeReader genTree_cut(inputFile_cut.data(),"tGEN_nonu");
           TreeReader caloTree_cut(inputFile_cut.data(),treeName_cut.data());
            //============ Cut function============//
-            Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
-            Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
+            vector<int> Cut_ww=cut_ww(Dirvec_use[Dir],Enevec_use[energy]);
+            vector<int> Cut_tt=cut_tt(Dirvec_use[Dir],Enevec_use[energy]);
             cout << Dirvec_use[Dir] << Enevec_use[energy] << endl;
-            cout << "Cut_tt[0] " << Cut_ww[0] << "Cut_tt[1]"<< Cut_ww[1] << endl;
-            cout << "Cut_ww[0] " << Cut_tt[0] << "Cut_ww[1]"<< Cut_tt[1] << endl;
+            cout << "Cut_tt[0] " << Cut_tt[0] << "Cut_tt[1]"<< Cut_tt[1] << endl;
+            cout << "Cut_ww[0] " << Cut_ww[0] << "Cut_ww[1]"<< Cut_ww[1] << endl;
 
            //=====================================//
             //=====Cut part=======//
@@ -1190,40 +1299,47 @@ for ( int signal=2 ; signal <3 ; signal++)
                  if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;
                  for(int ih=0; ih < nhistos; ih++)
                   {
-                  if(sub[ih][i]<0)
-                  {
-                  }
-                  else if(sub[ih][i]<=-1)
-                  {
-                      break;
-                  }
-                  else if(sub[ih][i]>xmax[ih])
-                  {
-                      h_sub[ih]->Fill(xmax[ih]-xmax[ih]/nbins/2);
-                  }
-                  else
-                  {
-                      h_sub[ih]->Fill(sub[ih][i]);
-                  }
+                      if(sub[ih][i]<0)
+                      {
+                          cout << "=============================================================================" << endl;
+                          h_sub[ih]->Fill(sub[ih][i]+0.001);
+                      }
+                      else if(sub[ih][i]<=-1)
+                      {
+                          cout << "=============================================================================" << endl;
+                          break;
+                      }
+                      else if(sub[ih][i]>xmax[ih])
+                      {
+                          cout << "=============================================================================" << endl;
+                          h_sub[ih]->Fill(xmax[ih]-0.001);
+                      }
+                      else
+                      {
+                          h_sub[ih]->Fill(sub[ih][i]);
+                      }
                   }
                  for(int ih=0; ih < nhistos_cut; ih++)
                   {
                   if(sub_cut[ih][i]<0)
-                  {
-                      h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
-                  }
-                  else if(sub_cut[ih][i]<=-1)
-                  {
-                      break;
-                  }
-                  else if(sub_cut[ih][i]>xmax_cut[ih])
-                  {
-                      h_sub_cut[ih]->Fill(xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2);
-                  }
-                  else
-                  {
-                      h_sub_cut[ih]->Fill(sub_cut[ih][i]);
-                  }
+                      {
+                          cout << "=============================================================================" << endl;
+                          h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
+                      }
+                      else if(sub_cut[ih][i]<=-1)
+                      {
+                          cout << "=============================================================================" << endl;
+                          break;
+                      }
+                      else if(sub_cut[ih][i]>xmax_cut[ih])
+                      {
+                          cout << "=============================================================================" << endl;
+                          h_sub_cut[ih]->Fill(xmax_cut[i]-0.001);
+                      }
+                      else
+                      {
+                          h_sub_cut[ih]->Fill(sub_cut[ih][i]);
+                      }
                   }
               }
               if(Signal_use[signal]=="ttbar")
@@ -1234,6 +1350,7 @@ for ( int signal=2 ; signal <3 ; signal++)
                   {
                       if(sub[ih][i]<0)
                       {
+                          cout << "=============================================================================" << endl;
                           h_sub[ih]->Fill(sub[ih][i]+0.001);
                       }
                       else if(sub[ih][i]<=-1)
@@ -1243,7 +1360,8 @@ for ( int signal=2 ; signal <3 ; signal++)
                       }
                       else if(sub[ih][i]>xmax[ih])
                       {
-                          h_sub[ih]->Fill(xmax[ih]-xmax[ih]/nbins/2);
+                          cout << "=============================================================================" << endl;
+                          h_sub[ih]->Fill(xmax[ih]-0.001);
                       }
                       else
                       {
@@ -1254,6 +1372,7 @@ for ( int signal=2 ; signal <3 ; signal++)
                   {
                       if(sub_cut[ih][i]<0)
                       {
+                          cout << "=============================================================================" << endl;
                           h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
                       }
                       else if(sub_cut[ih][i]<=-1)
@@ -1263,7 +1382,8 @@ for ( int signal=2 ; signal <3 ; signal++)
                       }
                       else if(sub_cut[ih][i]>xmax_cut[ih])
                       {
-                          h_sub_cut[ih]->Fill(xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2);
+                          cout << "=============================================================================" << endl;
+                          h_sub_cut[ih]->Fill(xmax_cut[ih]-0.001);
                       }
                       else
                       {
@@ -1274,11 +1394,12 @@ for ( int signal=2 ; signal <3 ; signal++)
              if(Signal_use[signal]=="qq")
              {
                  //int *Cut_tt=cut_tt(1,Enevec_use[energy]);
-                 if((sub_cut[0][i]<((Cut_tt[0])*5))||(sub_cut[0][i]>((Cut_tt[1])*5)))continue;//Change there for different bins
+                 if((sub_cut[0][i]<((Cut_ww[0])*5))||(sub_cut[0][i]>((Cut_ww[1])*5)))continue;//Change there for different bins
                  for(int ih=0; ih < nhistos; ih++)
                  {
                      if(sub[ih][i]<0)
                      {
+                         cout << "=============================================================================" << endl;
                          h_sub[ih]->Fill(sub[ih][i]+0.001);
                      }
                      else if(sub[ih][i]<=-1)
@@ -1288,7 +1409,8 @@ for ( int signal=2 ; signal <3 ; signal++)
                      }
                      else if(sub[ih][i]>xmax[ih])
                      {
-                         h_sub[ih]->Fill(xmax[ih]-xmax[ih]/nbins/2);
+                         cout << "=============================================================================" << endl;
+                         h_sub[ih]->Fill(xmax[ih]-0.001);
                      }
                      else
                      {
@@ -1299,6 +1421,7 @@ for ( int signal=2 ; signal <3 ; signal++)
                  {
                      if(sub_cut[ih][i]<0)
                      {
+                         cout << "=============================================================================" << endl;
                          h_sub_cut[ih]->Fill(sub_cut[ih][i]+0.001);
                      }
                      else if(sub_cut[ih][i]<=-1)
@@ -1308,7 +1431,8 @@ for ( int signal=2 ; signal <3 ; signal++)
                      }
                      else if(sub_cut[ih][i]>xmax_cut[ih])
                      {
-                         h_sub_cut[ih]->Fill(xmax_cut[ih]-xmax_cut[ih]/nbins_cut/2);
+                         cout << "=============================================================================" << endl;
+                         h_sub_cut[ih]->Fill(xmax_cut[ih]-0.001);
                      }
                      else
                      {
@@ -1322,7 +1446,7 @@ for ( int signal=2 ; signal <3 ; signal++)
            //===========================================================//
           if((Signal_use[signal]=="ttbar")||(Signal_use[signal]=="ww"))
           {
-          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_" + treeName + "_mass_cut_0.5GeV_for_"+Form("%s",Signal_use[signal])+"_Dis_25bin_no_UOF.root";
+          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_" + treeName + "_mass_cut_0.5GeV_for_"+Form("%s",Signal_use[signal])+"_Dis_25bins_no_UOF_new.root";
           cout << "writing output to " << outputFile.data() << endl;
           cout << "====================================================================================================" << endl;
           TFile* outFile = new TFile(outputFile.data(),"recreate");
@@ -1340,7 +1464,7 @@ for ( int signal=2 ; signal <3 ; signal++)
 
           if(Signal_use[signal]=="qq")
           {
-          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_"+ treeName + "_mass_cut_0.5GeV_for_tt_Dis_25bins_no_UOF.root";
+          string outputFile = inputDir + "/radius" + Form("%0.1f",radius)+ "_jetsubstructure_"+ treeName + "_mass_cut_0.5GeV_for_ww_Dis_25bins_no_UOF_new.root";
           cout << "writing output to " << outputFile.data() << endl;
           cout << "====================================================================================================" << endl;
           TFile* outFile = new TFile(outputFile.data(),"recreate");

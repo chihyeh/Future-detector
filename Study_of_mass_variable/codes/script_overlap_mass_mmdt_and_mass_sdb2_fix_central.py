@@ -84,7 +84,7 @@ for k in range(0,2):
             #print "width="+str(width_array[1][i])
             #f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_"+detector_size_array[i]+"_tau21_b1_"+str(energy_array[1][j])+"tev_04_eff_error_no_UOF.root",'r')
             #f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r010_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_no_UOF.root",'r')
-            f4= ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_010_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_"+str(central_energy_1)+"GeV_"+signal_we_want[d]+"_qq_log_no_UOF.root",'r')
+            f4= ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_010_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_Median_bin_"+str(central_energy_1)+"GeV_"+signal_we_want[d]+"_qq_log_no_UOF.root",'r')
             G4=f4.Get("Graph")
             G4.SetLineStyle(1)
             #f1 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r010_mass_mmdt_40tev_eff_1_width_40GeV_fix_tt_no_UOF.root",'r')
@@ -92,14 +92,14 @@ for k in range(0,2):
             #f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_"+detector_size_array[i]+"_tau21_b1_5_"+str(energy_array[1][j])+"tev_04_eff_error_no_UOF.root",'r')
             #f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r009_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_no_UOF.root",'r')
             
-            f5 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_009_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_"+str(central_energy_2)+"GeV_"+signal_we_want[d]+"_qq_log_no_UOF.root",'r')
+            f5 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_009_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_Median_bin_"+str(central_energy_2)+"GeV_"+signal_we_want[d]+"_qq_log_no_UOF.root",'r')
             G5=f5.Get("Graph")
             G5.SetLineStyle(7)
             #f2 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r009_mass_mmdt_40tev_eff_1_width_40GeV_fix_tt_no_UOF.root",'r')
             #G2=f2.Get("Graph")
             #f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_"+detector_size_array[i]+"_tau21_b2_"+str(energy_array[1][j])+"tev_04_eff_error_no_UOF.root",'r')
             #f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r012_"+variable_array[k]+"_"+str(energy_array[1][j])+"tev_04_eff_no_UOF.root",'r')
-            f6 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_012_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_"+str(central_energy_3)+"GeV_"+signal_we_want[d]+"_qq_log_no_UOF.root",'r')
+            f6 = ROOT.TFile.Open("/Users/ms08962476/github/Study_of_mass_variable/codes/A_Cluster_012_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_Median_bin_"+str(central_energy_3)+"GeV_"+signal_we_want[d]+"_qq_log_no_UOF.root",'r')
             G6=f6.Get("Graph")
             G6.SetLineStyle(10)
             #f3 = ROOT.TFile.Open("/Users/ms08962476/MannWhitneyU/cluster_r012_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_1_width_40GeV_fix_"+signal_we_want[k]+"_no_UOF.root",'r')
@@ -269,12 +269,7 @@ for k in range(0,2):
     #leg.AddEntry(G4,"z'->qq(truth-level-20*20)","l")
     #leg.AddEntry(G5,"z'->qq(truth-level-5*5)","l")
     #leg.AddEntry(G6,"z'->qq(truth-level-1*1)","l")
-            leg1=TLegend(0.05,0.3,0.35,0.4)
-            leg1.SetFillColor(0)
-            leg1.SetFillStyle(0)
-            leg1.SetTextSize(0.05)
-            leg1.SetBorderSize(0)
-            leg1.SetTextFont(22)
+    #leg1=TLegend(0.05,0.3,0.35,0.4)
             #if(variable_array[i]=="c2b1_5"):
             #    leg1.AddEntry("","Z'("+str(energy_array[1][j])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jets","")
             #if(variable_array[i]=="c2b1_7"):
@@ -282,14 +277,26 @@ for k in range(0,2):
             #if(variable_array[i]=="c2b2"):
             #leg1.AddEntry("","Z'("+str(energy_array[1][j])+"TeV)#rightarrowt#bar{t}#rightarrow3 jets","")
             if(signal_we_want[d]=="ww"):
+                leg1=TLegend(0.5,0.8,0.6,0.9)
+                leg1.SetFillColor(0)
+                leg1.SetFillStyle(0)
+                leg1.SetTextSize(0.05)
+                leg1.SetBorderSize(0)
+                leg1.SetTextFont(22)
                 leg1.AddEntry("","Z'("+str(energy_array[1][i])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jets","")
             #if(variable_array[i]=="c2b1"):
             if(signal_we_want[d]=="tt"):
+                leg1=TLegend(0.55,0.8,0.65,0.9)
+                leg1.SetFillColor(0)
+                leg1.SetFillStyle(0)
+                leg1.SetTextSize(0.05)
+                leg1.SetBorderSize(0)
+                leg1.SetTextFont(22)
                 leg1.AddEntry("","Z'("+str(energy_array[1][i])+"TeV)#rightarrowt#bar{t}#rightarrow3 jets","")
             
             
-            
-            leg = TLegend(0.1,0.1,0.5,0.3)
+            leg=TLegend(0.5,0.6,0.95,0.8)
+            #leg = TLegend(0.1,0.1,0.5,0.3)
             leg.SetFillColor(0)
             leg.SetFillStyle(0)
             leg.SetTextSize(0.05)
@@ -324,7 +331,7 @@ for k in range(0,2):
     #c.Print("cluster_"+detector_size_array[i]+"_c_variable_"+str(energy_array[1][j])+"tev_04_eff.eps")
     #c.Print("cluster_"+detector_size_array[i]+"_tau21_compare_different_beta_"+str(energy_array[1][j])+"tev.pdf")
     #       c.Print("cluster_"+detector_size_array[i]+"_tau21_compare_different_beta_"+str(energy_array[1][j])+"tev.eps")
-            c.Print("A_Cluster_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_"+signal_we_want[d]+"_qq_log_no_UOF.eps")
+            c.Print("A_Cluster_"+variable_array[k]+"_"+str(energy_array[1][i])+"tev_eff_1_central_fix_at_Median_bin_"+signal_we_want[d]+"_qq_log_no_UOF.eps")
     #c.Print("cluster_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_40GeV_"+signal_we_want[k]+"_qq.eps")
     #c.Print("cluster_mass_sdb2_"+str(energy_array[1][j])+"tev_eff_fixed_width_to_40GeV_"+signal_we_want[k]+"_qq.pdf")
     #c.Print("cluster_"+variable_array[k]+"_c_variable_"+str(energy_array[1][j])+"tev_04_eff_error.pdf")

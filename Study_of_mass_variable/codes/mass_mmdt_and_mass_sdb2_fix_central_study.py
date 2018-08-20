@@ -188,10 +188,11 @@ for k in range(0,2):
                             central_energy=(p+1)*5-20
 
                 for j in range(0,9):
+                    print j
                     xarray=array("f",[])
                     yarray=array("f",[])
                     for d in range(central_energy/5+j-7,central_energy/5+j+1):
-                        
+                        print d
                         xarray.append(h1.Integral(d,(central_energy/5+central_energy/5+1+2*j)-d)/a)
                 #xarray.append(h1.Integral(0,0+i)/a)
                         yarray.append(1/(h2.Integral(d,(central_energy/5+central_energy/5+1+2*j)-d)/b))

@@ -1,29 +1,118 @@
-%yright 2007, 2008, 2009 Elsevier Ltd
-%% 
-%% This file is part of the 'Elsarticle Bundle'.
-%% ---------------------------------------------
-%% 
-%% It may be distributed under the conditions of the LaTeX Project Public
-%% License, either version 1.2 of this license or (at your option) any
-%% later version.  The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.2 or later is part of all distributions of LaTeX
-%% version 1999/12/01 or later.
-%% 
-%% The list of all files belonging to the 'Elsarticle Bundle' is
-%% given in the file `manifest.txt'.
-%% 
+\documentclass[final,1p,11pt]{elsarticle}
 
-%% Template article for Elsevier's document class `elsarticle'
-%% with numbered style bibliographic references
-%% SP 2008/03/01
+%\documentclass[final,1p,times]{elsarticle}
 
-% \documentclass[preprint,11pt]{elsarticle}
-\section{Soft drop method in future collider performance}
-In this section, we use the specific method about the soft-drop to study the performance of the detector in the different cell sizes.  In the Figure , , , , are the distribution of the signal and background. 
-\subsection{Analysis method}
-In this analysis, We fix the central at the median in signal distribution, and we use the different width to open the window to draw ROC curves.
+
+%% Use the option review to obtain double line spacing
+%%\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+
+\usepackage{epsfig}
+%\usepackage{cite}
+%\usepackage{mcite}
+\usepackage{array,tabularx,epsfig,mathrsfs,graphicx,rotating}
+\usepackage{ifthen}
+\usepackage{amsfonts}
+\usepackage{ragged2e}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+% Custom colors
+\usepackage{color}
+\usepackage{float}
+\usepackage{verbatim}
+
+% to cross text
+\usepackage[normalem]{ulem} % either use this (simple) or
+\usepackage{soul} % use this (many fancier options)
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+
+
+
+\graphicspath{{figs/}}
+
+
+\pdfinfo{
+   /Author (Chekanov et al)
+   /Title  (Studies of granularity of a hadronic calorimeter for tens-of-TeV jets  at a 100 TeV pp collider)
+   /CreationDate (D:2017)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+
+\textheight=22cm
+\textwidth=14.5cm
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\la}{\langle}
+\newcommand{\promc}{{\sc ProMC}}
+\newcommand{\ra}{\rangle}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\Ec}{\mathcal{E}}
+\newcommand{\Fc}{\mathcal{F}}
+\newcommand{\Za}{\mathrm{Z_1}}
+\newcommand{\Zb}{\mathrm{Z_2}}
+\newcommand{\Zn}{\mathrm{Z_n}}
+\newcommand{\F}{\mathrm{F}}
+
+\chardef\til=126
+\newcommand{\mev}{{\,\mathrm{MeV}}}
+\newcommand{\gev}{{\,\mathrm{GeV}}}
+\newcommand{\tev}{{\,\mathrm{TeV}}}
+\newcommand{\GEANTfour} {\textsc{geant4}}
+\newcommand{\pythia} {\textsc{Pythia8}}
+
+
+\journal{XXX-XXX}
+
+
+
+\begin{document}
+\section{Soft drop mass in future collider performance}
+In this section, we use the specific method about the soft-drop to study the performance of the detector in the different detector cell sizes in different center-of-mass(c.m.) energy.  In the Figure , , , , are the distribution of the signal and background. 
+\section{The theory of Soft drop}
+Soft-drop, take literally, is the technique that can drop the soft mass which is smaller than set threshold. The formula is as following:
+\begin{equation} \label{eq:soft-drop}
+\frac{min(PT_{1},PT_{2})}{PT_{1}+PT_{2}}>Z_{cut}(\frac{\Delta R_{12}}{R_{0}}^{\beta})
+\end{equation}
+$PT_{1}$,$PT_{2}$ are the subjets when jets are declustered. $Z_{cut}$ is soft drop threshold. $\Delta R_{12}$ are the subjets distance in the rapidity-azimuth plane. $\beta$ is the exponent angular.
+\begin{enumerate}
+\item First, using the Anti-kt algorithm to reconstruct particles as many jets.
+\item Second, starting our soft-drop task. Using the Cambridge-Aachen (C/A) algorithm to decluster the jets to the last step. Two subjets will emerge.
+\item Third, comparing this two subjets in the formula \ref{eq:soft-drop}, if they pass, the original jets will be conserved. Nonetheless, removing the soft subjet, and using the bigger one to represent the original jet.
+\item In the end, when the jets can't decluster to the subjets, it is done.
+\end{enumerate}
+By using a different $\beta$ value, the effect of selecting jets is different. In our study, we use $\beta=0$ and $\beta=2$. For $\beta=0$, the selection only depends on the $Z_{cut}$. For $\beta=2$, the selection depends on the angle of subjets and $Z_{cut}$, and it can remove both "soft" and "wid\subsection{Analysis method}
+In this analysis, We fix the central at the median bin right boundary in signal distribution, and using the different width to draw ROC curves.
 \subsection{The conclusion of the results}
+
 
  
 %50bins
@@ -279,7 +368,7 @@ In this analysis, We fix the central at the median in signal distribution, and w
 \label{fig:cluster_tau21_tau32}
 \end{figure}
 
-
+\end{document}
 
 
 

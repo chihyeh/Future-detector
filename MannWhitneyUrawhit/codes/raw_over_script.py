@@ -14,10 +14,10 @@ variable=("tau21","tau32","c2b1")
 k=0
 cut_value=0.5
 if(variable[k]=="tau21"):
-    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_5tev_04_after_cut_Man.root")
-    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_10tev_04_after_cut_Man.root")
-    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_20tev_04_after_cut_Man.root")
-    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_40tev_04_after_cut_Man.root")
+    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_5tev_04_after_cut_Man_75%.root")
+    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_10tev_04_after_cut_Man_75%.root")
+    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_20tev_04_after_cut_Man_75%.root")
+    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau21_40tev_04_after_cut_Man_75%.root")
 
 
     G1 = f1.Get("Graph") #change the names of the histograms to the TH1's present in f1 and f2
@@ -81,13 +81,13 @@ if(variable[k]=="tau21"):
 
 
 #    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins_no_UOF.pdf")
-    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins_no_UOF_new.eps")
+    c.Print("raw_"+str(cut_value)+"_tau21_summary_U_after_cut_25bins_no_UOF_new_75pa.eps")
 
 if(variable[k+1]=="tau32"):
-    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_5tev_04_after_cut_Man.root")
-    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_10tev_04_after_cut_Man.root")
-    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_20tev_04_after_cut_Man.root")
-    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_40tev_04_after_cut_Man.root")
+    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_5tev_04_after_cut_Man_75%.root")
+    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_10tev_04_after_cut_Man_75%.root")
+    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_20tev_04_after_cut_Man_75%.root")
+    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_tau32_40tev_04_after_cut_Man_75%.root")
     
     
     G1 = f1.Get("Graph") #change the names of the histograms to the TH1's present in f1 and f2
@@ -150,13 +150,13 @@ if(variable[k+1]=="tau32"):
 
 
 #   c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins_no_UOF.pdf")
-    c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins_no_UOF_new.eps")
+    c.Print("raw_"+str(cut_value)+"_tau32_summary_U_after_cut_25bins_no_UOF_new_75pa.eps")
 
 if(variable[k+2]=="c2b1"):
-    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_5tev_04_after_cut_Man.root")
-    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_10tev_04_after_cut_Man.root")
-    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_20tev_04_after_cut_Man.root")
-    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_40tev_04_after_cut_Man.root")
+    f1 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_5tev_04_after_cut_Man_75%.root")
+    f2 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_10tev_04_after_cut_Man_75%.root")
+    f3 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_20tev_04_after_cut_Man_75%.root")
+    f4 = ROOT.TFile.Open("/Users/ms08962476/github/MannWhitneyUrawhit/codes/raw_"+str(cut_value)+"_c2b1_40tev_04_after_cut_Man_75%.root")
     
     
     G1 = f1.Get("Graph") #change the names of the histograms to the TH1's present in f1 and f2
@@ -219,6 +219,6 @@ if(variable[k+2]=="c2b1"):
 
 
 # c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins_no_UOF.pdf")
-    c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins_no_UOF_new.eps")
+    c.Print("raw_"+str(cut_value)+"_c2b1_summary_U_after_cut_25bins_no_UOF_new_75pa.eps")
 
 

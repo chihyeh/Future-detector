@@ -106,7 +106,7 @@ for k in range(0,3):
         
         #f=TFile("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75%.root","RECREATE")
                 #c.Print("Dis_Rawhit_0.5GeV_"+files_array[k]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.pdf")
-                c.Print("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75pa.eps")
+                c.Print("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75pa_for_paper.eps")
 
 
                   
@@ -192,7 +192,7 @@ for k in range(0,3):
                 
                 #f=TFile("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75%.root","RECREATE")
                 #c.Print("Dis_Rawhit_0.5GeV_"+files_array[k]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.pdf")
-                c.Print("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75pa.eps")
+                c.Print("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75pa_for_paper.eps")
 
     elif(variable[k]=="c2b1"):
         for j in range(0,3):
@@ -274,6 +274,6 @@ for k in range(0,3):
                 
                 #f=TFile("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75%.root","RECREATE")
                 #c.Print("Dis_Rawhit_0.5GeV_"+files_array[k]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man.pdf")
-                c.Print("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75pa.eps")
+                c.Print("Dis_Rawhit_0.5GeV_"+files_array[j]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_after_cut_Man_25_no_UOF_new_75pa_for_paper.eps")
 
 

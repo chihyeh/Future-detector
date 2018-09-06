@@ -50,25 +50,14 @@ int main(int argc, char** argv){
 
   makePlots *M;
   M = new makePlots(chain,chain2,chain3,filename);
-  std::vector<std::string> Found_energy = {"50","80","100","150"};
-  std::string found_energy="";
-  for (int i=0;i<filename.size();i++)
-  {
-        cout << filename << endl;
-        cout << filename.find(Found_energy[i]) << endl;
-        int found = filename.find(Found_energy[i]);
-        if(found!=1)
-        {
-            continue;
-            
-        }
-        if(std::string::npos!=1)
-        {
-            found_energy=Found_energy[i];
-            break;
-            
-        }
-    }
+    std::vector<std::string> Found_energy = {"50","80","100","150"};
+    std::string found_energy="";
+    int start = filename.find_last_of("/");
+    int end = filename.find(".root");
+    string f_substr = filename.substr(start+1,end-start-1);
+    int start_1 = f_substr.find_first_of("_");
+    int end_1 = f_substr.find_last_of("G");
+    string f_substr_1 = f_substr.substr(start_1+1,end_1-start_1-1);
     TFile* Pi_histo = TFile::Open(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/root_plot_delcut/MC_%sGeV_Pi_delta_cut.root",found_energy));
     TFile* Ele_histo = TFile::Open(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/root_plot_delcut/MC_%sGeV_Ele_delta_cut.root",found_energy));
     TH1D *h_Pi;

@@ -2,6 +2,23 @@
 #include <fstream>
 #include <iostream>
 #include <string>         // std::string
+#include <iostream>
+#include <fstream>
+#include <math.h>
+#include <iomanip>
+#include "TApplication.h"
+#include "TCanvas.h"
+#include "TGraph.h"
+#include "TMultiGraph.h"
+#include "TLegend.h"
+#include "TStyle.h"
+#include "TFile.h"
+#include "TTree.h"
+#include "TChain.h"
+#include "TH1.h"
+#include "TH2.h"
+#include "TH3.h"
+#include <utility>
 
 int main(int argc, char** argv){
 
@@ -80,11 +97,11 @@ int main(int argc, char** argv){
         {
             if(Ele_cut<30)
             {
-                continue
+                continue;
             }
             else
             {
-            int ELE_CUT=(Ele_cut-1)*5
+                int ELE_CUT=(Ele_cut-1)*5;
             cout << "ELE_CUT: " << ELE_CUT << endl;
             break;
             }

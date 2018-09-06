@@ -75,12 +75,14 @@ int main(int argc, char** argv){
     TH1D *h_Ele;
     h_Pi=(TH1D*) Pi_histo->Get("total_energy");
     h_Ele=(TH1D*) Ele_histo->Get("total_energyL3");
+    int ELE_CUT=0;
+    int PI_CUT=0;
     //find the second high
     for (int Pi_cut=1 ; Pi_cut < h_Pi->GetSize()-2 ; Pi_cut++)
     {
          if(h_Pi->GetBinContent(Pi_cut)<1000)
         {
-            int PI_CUT=(Pi_cut-1)*5
+            PI_CUT=(Pi_cut-1)*5;
             cout << "PI_CUT: " << PI_CUT << endl;
             break;
         }
@@ -101,7 +103,7 @@ int main(int argc, char** argv){
             }
             else
             {
-                int ELE_CUT=(Ele_cut-1)*5;
+            ELE_CUT=(Ele_cut-1)*5;
             cout << "ELE_CUT: " << ELE_CUT << endl;
             break;
             }

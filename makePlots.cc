@@ -398,7 +398,7 @@ double* makePlots::Set_X0(double X0_arr[]){
   return X0_arr;
 }
 
-void makePlots::my_Loop(){
+void makePlots::my_Loop(int Pi_energy_cut_Total, int Ele_energy_cut_L3){
   
   int NLAYER = 28;
   double ENEPERMIP = 86.5e-03;
@@ -412,21 +412,32 @@ void makePlots::my_Loop(){
   int start = fname.find_last_of("/");
   int end = fname.find(".root");
   string f_substr = fname.substr(start+1,end-start-1);
-  sprintf(title,"root_plot/%s_delta_cut.root",f_substr.c_str());
+  sprintf(title,"root_plot/%s_Contamination_cut.root",f_substr.c_str());
   cout << "output name : " << title << endl;
+  TH1D *h_E1devE7[NLAYER];
+  TH1D *h_E7devE19[NLAYER];
+
+  for(int iL = 0; iL < NLAYER ; ++iL)
+  {
+    sprintf(title,"layer%i_E1devE7",iL);
+    h_E1devE7[iL] = new TH1D(title,title,101,0,1.01);
+    sprintf(title,"layer%i_E7devE19",iL);
+    h_E7devE19[iL] = new TH1D(title,title,101,0,1.01);
+  }
+
   TFile outf(title,"recreate");
   //Shower depth
   sprintf(title,"shower_depth");
   TH1D *shower_depth = new TH1D(title,title,112,0,28);
   //Total energy
   sprintf(title,"total_energy");
-  TH1D *total_energy = new TH1D(title,title,1600,0,16000);
+  TH1D *total_energy = new TH1D(title,title,4000,0,20000);
   //First layer energy
   sprintf(title,"total_energyf1");
   TH1D *total_energyf1 = new TH1D(title,title,1600,0,16000);
   //The last three layers
   sprintf(title,"total_energyL3");
-  TH1D *total_energyL3 = new TH1D(title,title,1600,0,16000);
+  TH1D *total_energyL3 = new TH1D(title,title,60,0,300);
   //Shower depth cut ( set by Chia-Hong )
   sprintf(title,"Etotal vs SHD");
   TH2D *cut_plot = new TH2D(title,title,112,0,28,150,0,15000);
@@ -448,9 +459,31 @@ void makePlots::my_Loop(){
     total_energy->Fill(totalE);
     total_energyf1->Fill(layerE[0]);
     total_energyL3->Fill(layerE[25]+layerE[26]+layerE[27]);
+
     //Shower depth study
-    for(int iL = 0 ; iL < NLAYER ; ++iL){
-      SHD_Elayer += X0_layer[iL]*layerE[iL];}
+    for(int iL = 0 ; iL < NLAYER ; ++iL)
+    {
+      SHD_Elayer += X0_layer[iL]*layerE[iL];
+      if( layerE1[iL] != 0)
+      {
+        if(SHD_Elayer < 6 || SHD_Elayer > 16)
+        {
+            continue;
+        }
+        else if(totalE < Pi_energy_cut_Total)
+        {
+            continue;
+        }
+        else if(layerE[25]+layerE[26]+layerE[27] > Ele_energy_cut_L3)
+        {
+            continue
+        }
+        double E1devE7  = layerE1[iL]/layerE7[iL];
+        double E7devE19 = layerE7[iL]/layerE19[iL];
+        h_E1devE7 [iL]->Fill(E1devE7);
+        h_E7devE19[iL]->Fill(E7devE19);
+      }
+    }
     SHD_Elayer /= totalE;
     //cout << SHD_Elayer << " , " << totalE << endl;
     shower_depth->Fill(SHD_Elayer);

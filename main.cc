@@ -58,8 +58,9 @@ int main(int argc, char** argv){
     int start_1 = f_substr.find_first_of("_");
     int end_1 = f_substr.find_last_of("G");
     string f_substr_1 = f_substr.substr(start_1+1,end_1-start_1-1);
-    TFile* Pi_histo = TFile::Open(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/root_plot_delcut/MC_%sGeV_Pi_delta_cut.root",found_energy));
-    TFile* Ele_histo = TFile::Open(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/root_plot_delcut/MC_%sGeV_Ele_delta_cut.root",found_energy));
+    f_substr_1=found_energy;
+    TFile* Pi_histo = TFile::Open(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/root_plot_delcut/MC_%sGeV_Pi_delta_cut.root",found_energy.c_str()));
+    TFile* Ele_histo = TFile::Open(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/root_plot_delcut/MC_%sGeV_Ele_delta_cut.root",found_energy.c_str()));
     TH1D *h_Pi;
     TH1D *h_Ele;
     h_Pi=(TH1D*) Pi_histo->Get("total_energy");

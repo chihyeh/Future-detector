@@ -23,14 +23,12 @@ class makePlots{
   makePlots( TChain *c1,TChain *c2,TChain *c3,string filename );
  
   ~makePlots();
-
-  void my_Loop();
+  
   void Loop();
   void Event_Display(); //Actually shows the average over some events
 
   
   //member
-  bool Is_Data;
   int  beamE;
   int  PID; // 0 for electron, 1 for pion, 2 for muon
   string beam_str; // "Ele","Pi","Mu"
@@ -54,9 +52,7 @@ class makePlots{
   // Tool functions
   void InitTH2Poly(TH2Poly& poly); //Give frame to TH2Poly
   void root_logon();
-  double* Set_X0(double X0_arr[]);
 
-  
   ///////////////////////////////
   // Declaration of leaf types //
   ///////////////////////////////

@@ -14,7 +14,6 @@
 #include "TChain.h"
 #include "TH1.h"
 #include "TH2.h"
-#include "TH3.h"
 #include <utility>
 
 //Constructor
@@ -114,6 +113,17 @@ void makePlots::Init(){
   T_Rechit->SetBranchAddress("rechit_toaRise", &rechit_toaRise);
   T_Rechit->SetBranchAddress("rechit_toaFall", &rechit_toaFall);
   
+  T_DWC->SetBranchAddress("impactX_HGCal_layer_1", &impactX_HGCal_layer_1);
+  T_DWC->SetBranchAddress("impactY_HGCal_layer_1", &impactY_HGCal_layer_1);
+  T_DWC->SetBranchAddress("impactX_HGCal_layer_2", &impactX_HGCal_layer_2);
+  T_DWC->SetBranchAddress("impactY_HGCal_layer_2", &impactY_HGCal_layer_2);
+  T_DWC->SetBranchAddress("impactX_HGCal_layer_3", &impactX_HGCal_layer_3);
+  T_DWC->SetBranchAddress("impactY_HGCal_layer_3", &impactY_HGCal_layer_3);
+  T_DWC->SetBranchAddress("impactX_HGCal_layer_4", &impactX_HGCal_layer_4);
+  T_DWC->SetBranchAddress("impactY_HGCal_layer_4", &impactY_HGCal_layer_4);
+  T_DWC->SetBranchAddress("impactX_HGCal_layer_5", &impactX_HGCal_layer_5);
+  T_DWC->SetBranchAddress("impactY_HGCal_layer_5", &impactY_HGCal_layer_5);
+
   T_DWC ->SetBranchAddress("ntracks", &ntracks);
   T_DWC->SetBranchAddress("trackChi2_X", &trackChi2_X);
   T_DWC->SetBranchAddress("trackChi2_Y", &trackChi2_Y);
@@ -155,11 +165,7 @@ void makePlots::Init_Runinfo(){
     cout << "unknown PDGID QQ" << endl;
     beam_str = "??";
     PID = -1;}
-  size_t found = fname.find("MC");
-  if( found != std::string::npos )
-    Is_Data = 0;
-  else
-    Is_Data = 1;
+
   cout << beam_str.c_str()  << " , "<< beamE << "GeV\n" << endl;
 }
 
@@ -182,31 +188,92 @@ void makePlots::Loop(){
   
   int NLAYER = 28;
   double ENEPERMIP = 86.5e-03;
+  double X0_arr[NLAYER];
+  double *X0_layer = Set_X0(X0_arr);
 
-  double X0_arr[28];
-  double *SHD_layer = Set_X0(X0_arr);
-  
+
   Init();
-
-  TCanvas *c1 = new TCanvas();
   
   char title[100];
   int start = fname.find_last_of("/");
   int end = fname.find(".root");
   string f_substr = fname.substr(start+1,end-start-1);
-  sprintf(title,"root_plot/%s_result.root",f_substr.c_str());
+  sprintf(title,"Select_plot/%s_cut_comparison_result.root",f_substr.c_str());
   cout << "output name : " << title << endl;
   TFile outf(title,"recreate");
-  TH1D *h_E1devE7[NLAYER]; 
-  TH1D *h_E7devE19[NLAYER];
-  
-  for(int iL = 0; iL < NLAYER ; ++iL){
+  //TH1D *h_E1devE7[NLAYER]; 
+  //TH1D *h_E7devE19[NLAYER];
+  /*TH1D *h_DWCf3_Dis_X;
+  TH1D *h_DWCf3_Dis_Y;
+  TH1D *h_DWCf5_Dis_X;
+  TH1D *h_DWCf5_Dis_Y;
+*/ 
+  TH1D *shower_depth;
+  TH1D *total_energy;
+  TH1D *total_energy_last_three_layer;
+  TH1D *h_layer_8_9_10_E1devE7;
+  TH1D *h_layer_8_9_10_E7devE19;
+  TH1D *h_layer_9_10_11_E1devE7;
+  TH1D *h_layer_9_10_11_E7devE19;
+  TH1D *h_layer_8_E1devE7;
+  TH1D *h_layer_8_E7devE19;
+  TH1D *h_layer_9_E1devE7;
+  TH1D *h_layer_9_E7devE19;
+  TH1D *h_layer_10_E1devE7;
+  TH1D *h_layer_10_E7devE19;
+  TH1D *h_layer_11_E1devE7;
+  TH1D *h_layer_11_E7devE19;
+  TH1D *h_layer_total_E1devE7;
+  TH1D *h_layer_total_E7devE19;
+
+  /*for(int iL = 0; iL < NLAYER ; ++iL){
     sprintf(title,"layer%i_E1devE7",iL);
     h_E1devE7[iL] = new TH1D(title,title,101,0,1.01);
     sprintf(title,"layer%i_E7devE19",iL);
     h_E7devE19[iL] = new TH1D(title,title,101,0,1.01);
-  }
-  
+  }*/
+  /*h_DWCf3_Dis_X = new TH1D ("h_DWCf3_Dis_X","h_DWCf3_Dis_X",40,-20,20);
+  h_DWCf3_Dis_Y = new TH1D ("h_DWCf3_Dis_Y","h_DWCf3_Dis_Y",40,-20,20);
+  h_DWCf5_Dis_X = new TH1D ("h_DWCf5_Dis_X","h_DWCf5_Dis_X",40,-20,20);
+  h_DWCf5_Dis_Y = new TH1D ("h_DWCf5_Dis_Y","h_DWCf5_Dis_Y",40,-20,20);
+  */
+    sprintf(title,"shower_depth");
+    shower_depth = new TH1D (title,title,112,0,28);
+    sprintf(title,"total_energy");
+    total_energy = new TH1D (title,title,4000,0,20000);
+    sprinft(title,"total_energy_last_three_layer");
+    total_energy_last_three_layer = new TH1D (title,title,60,0,300);
+
+    sprintf(title,"layer_8_9_10_E1devE7");
+    h_layer_8_9_10_E1devE7 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_8_9_10_E7devE19");
+    h_layer_8_9_10_E7devE19 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_9_10_11_E1devE7");
+    h_layer_9_10_11_E1devE7 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_9_10_11_E7devE19");
+    h_layer_9_10_11_E7devE19 = new TH1D(title,title,100,0,1);
+
+    sprintf(title,"layer_8_E1devE7");
+    h_layer_8_E1devE7 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_8_E7devE19");
+    h_layer_8_E7devE19 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_9_E1devE7");
+    h_layer_9_E1devE7 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_9_E7devE19");
+    h_layer_9_E7devE19 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_10_E1devE7");
+    h_layer_10_E1devE7 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_10_E7devE19");
+    h_layer_10_E7devE19 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_11_E1devE7");
+    h_layer_11_E1devE7 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_11_E7devE19");
+    h_layer_11_E7devE19 = new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_total_E1devE7");
+    h_layer_total_E1devE7= new TH1D(title,title,100,0,1);
+    sprintf(title,"layer_total_E7devE19");
+    h_layer_total_E7devE19= new TH1D(title,title,100,0,1);
+
   for(int ev = 0; ev < nevents; ++ev){
     if(ev %10000 == 0) cout << "Processing event: "<< ev << endl;
  
@@ -216,31 +283,90 @@ void makePlots::Loop(){
     // Event Selection
     if ( Nhits < 200 ) continue;
     if ( dwcReferenceType != 15) continue;
+    if ( impactX_HGCal_layer_1>1 || impactX_HGCal_layer_1<-1) continue; 
+    if ( impactY_HGCal_layer_1>1 || impactY_HGCal_layer_1<-1) continue;
+    if ( impactX_HGCal_layer_2>1 || impactX_HGCal_layer_2<-1) continue;
+    if ( impactY_HGCal_layer_2>1 || impactY_HGCal_layer_2<-1) continue;
+    if ( impactX_HGCal_layer_3>1 || impactX_HGCal_layer_3<-1) continue;
+    if ( impactY_HGCal_layer_3>1 || impactY_HGCal_layer_3<-1) continue;
+    if ( impactX_HGCal_layer_4>1 || impactX_HGCal_layer_4<-1) continue;
+    if ( impactY_HGCal_layer_4>1 || impactY_HGCal_layer_4<-1) continue;
+    if ( impactX_HGCal_layer_5>1 || impactX_HGCal_layer_5<-1) continue;
+    if ( impactY_HGCal_layer_5>1 || impactY_HGCal_layer_5<-1) continue;
+            double SHD_Elayer = 0;
 
-    TH3D Evt_dis("","",56,0,28,24,-6,6,24,-6,6);
-    
+   // cout << "impactX_HGCAL_layer_1" << impactX_HGCal_layer_1 << endl;
+    /*
+    h_DWCf3_Dis_X->Fill(impactX_HGCal_layer_1);
+    h_DWCf3_Dis_X->Fill(impactX_HGCal_layer_2);
+    h_DWCf3_Dis_X->Fill(impactX_HGCal_layer_3);
+    h_DWCf3_Dis_Y->Fill(impactY_HGCal_layer_1);
+    h_DWCf3_Dis_Y->Fill(impactY_HGCal_layer_2);
+    h_DWCf3_Dis_Y->Fill(impactY_HGCal_layer_3);
+
+    h_DWCf5_Dis_X->Fill(impactX_HGCal_layer_1);
+    h_DWCf5_Dis_X->Fill(impactX_HGCal_layer_2);
+    h_DWCf5_Dis_X->Fill(impactX_HGCal_layer_3);
+    h_DWCf5_Dis_X->Fill(impactX_HGCal_layer_4);
+    h_DWCf5_Dis_X->Fill(impactX_HGCal_layer_5);
+
+    h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_1);
+    h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_2);
+    h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_3);
+    h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_4);
+    h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_5);
+    */
+     total_energy->Fill(totalE);
+     total_energy_last_three_layer->Fill(layerE[25]+layerE[26]+layerE[27]);
     for(int iL = 0; iL < NLAYER ; ++iL){
-      if( layerE1[iL] != 0){
+	SHD_Elayer += X0_layer[iL]*layerE[iL];
+        if( layerE1[iL] != 0){
+         double E1devE7  = layerE1[iL]/layerE7[iL];
+         double E7devE19 = layerE7[iL]/layerE19[iL];
+
+        if( iL >= 7 && iL <= 9 )
+	{
+	h_layer_8_9_10_E1devE7->Fill(E1devE7);
+	h_layer_8_9_10_E7devE19->Fill(E7devE19);
+	}
+        if( iL >= 8 && iL <= 10 )
+        {
+        h_layer_9_10_11_E1devE7->Fill(E1devE7);
+        h_layer_9_10_11_E7devE19->Fill(E7devE19);
+        }
+
+	if( iL == 7 )
+	{
+	h_layer_8_E1devE7->Fill(E1devE7);
+	h_layer_8_E7devE19->Fill(E7devE19);
+	}
+	if( iL == 8 )
+	{
+	h_layer_9_E1devE7->Fill(E1devE7);
+	h_layer_9_E7devE19->Fill(E7devE19);
+	}
+	if( iL == 9)
+	{
+	h_layer_10_E1devE7->Fill(E1devE7);
+	h_layer_10_E7devE19->Fill(E7devE19);
+	}
+	if( iL == 10 )
+	{
+	h_layer_11_E1devE7->Fill(E1devE7);
+	h_layer_11_E7devE19->Fill(E7devE19);
+	}
+}
+      /*if( layerE1[iL] != 0){
 	double E1devE7  = layerE1[iL]/layerE7[iL];
 	double E7devE19 = layerE7[iL]/layerE19[iL];
 	h_E1devE7 [iL]->Fill(E1devE7);
-	h_E7devE19[iL]->Fill(E7devE19);}
+ 	h_E7devE19[iL]->Fill(E7devE19);}*/
+       
 
-      //If one wants to do sth with hits
-      vector<double> x,y,z,ene;
-      x   = hit_x->at(iL);
-      y   = hit_y->at(iL);
-      z   = hit_z->at(iL);
-      ene = hit_mip->at(iL);
-      for(int iH = 0; iH < layerNhit[iL] ; ++iH){
-	//cout << ene[iH] << endl;
-	Evt_dis.Fill(SHD_layer[iL],x[iH],y[iH],ene[iH]);
-      }}
-    Evt_dis.Draw("BOX2");
-    Evt_dis.SetMarkerSize(0.6);
-    Evt_dis.SetMarkerStyle(20);
-    
-    c1->WaitPrimitive();
+        //If one wants to do sth with hits
+     }
+      SHD_Elayer /= totalE;
+      shower_depth->Fill(SHD_Elayer);
   }
   
   outf.Write();
@@ -347,135 +473,54 @@ void makePlots::InitTH2Poly(TH2Poly& poly)
   file.close();
 
 }
-
+{
 double* makePlots::Set_X0(double X0_arr[]){
-
-  // len["Cu"] = 1.436; //cm                                  
-  // len["W"] = 0.35; //cm                                  
-  // len["Lead"] = 0.56; //cm                               
-  // len["Pb"] = 0.56; //cm                                 
-  // len["CuW"] = 0.43; //cm                                
-  // len["Al"] = 8.897; //cm
-
-  // 4-July-2018
-  // In all the checks done, Pb is 4.9 mm (~0.875 X0) and 
-  // Cu is 6 mm (~0.42 X0)  
-
-  // 10-July-2018
-  // Odd layers have this config: 
-  // Fe(0.3)-Pb(4.9)-Fe(0.3)-Air (4.6) - PCB - Si
-  // Even layers have this config: 
-  // Kapton(0.01)-CuW(1.2)-Cu(6)-CuW-Kapton-Si
-
-  // 17-July-2018
-  // Fe-Pb-Fe-Air-PCB-Si 
-  // Kap-CuW-Cu-CuW-Si
-
-  /*
-  // 17-July-2018
-  1 0.933   2 0.976   3 0.909   4 0.976   5 0.909
-  6 0.976   7 0.909   8 0.976   9 0.909   10 0.976
-  11 0.909  12 0.976  13 0.909  14 0.976  15 0.909
-  16 1.143  17 0.909  18 0.976  19 0.909  20 1.43
-  21 0.909  22 0.976  23 0.909  24 0.976  25 0.909
-  26 0.976  27 0.909  28 0.976
-  */
-  double single_layer_X0[28];
-  for( int i = 0 ; i < 28 ; ++i){
-    if ( i % 2 == 0) single_layer_X0[i] = 0.909;
-    else single_layer_X0[i] = 0.976;
-  }
-  single_layer_X0[0]  = 0.933;
-  single_layer_X0[15] = 1.143;
-  single_layer_X0[19] = 1.43;
-
-  double X0_sum = 0.;
-  for(int iL = 0 ; iL < 28 ; ++iL){
-    X0_sum += single_layer_X0[iL];
-    X0_arr[iL] = X0_sum;
-  }
+        
+        // len["Cu"] = 1.436; //cm
+        // len["W"] = 0.35; //cm
+        // len["Lead"] = 0.56; //cm
+        // len["Pb"] = 0.56; //cm
+        // len["CuW"] = 0.43; //cm
+        // len["Al"] = 8.897; //cm
+        
+        // 4-July-2018
+        // In all the checks done, Pb is 4.9 mm (~0.875 X0) and
+        // Cu is 6 mm (~0.42 X0)
+        
+        // 10-July-2018
+        // Odd layers have this config:
+        // Fe(0.3)-Pb(4.9)-Fe(0.3)-Air (4.6) - PCB - Si
+        // Even layers have this config:
+        // Kapton(0.01)-CuW(1.2)-Cu(6)-CuW-Kapton-Si
+        
+        // 17-July-2018
+        // Fe-Pb-Fe-Air-PCB-Si
+        // Kap-CuW-Cu-CuW-Si
+        
+        /*
+         // 17-July-2018
+         1 0.933   2 0.976   3 0.909   4 0.976   5 0.909
+         6 0.976   7 0.909   8 0.976   9 0.909   10 0.976
+         11 0.909  12 0.976  13 0.909  14 0.976  15 0.909
+         16 1.143  17 0.909  18 0.976  19 0.909  20 1.43
+         21 0.909  22 0.976  23 0.909  24 0.976  25 0.909
+         26 0.976  27 0.909  28 0.976
+         */
+        double single_layer_X0[28];
+        for( int i = 0 ; i < 28 ; ++i){
+            if ( i % 2 == 0) single_layer_X0[i] = 0.909;
+            else single_layer_X0[i] = 0.976;
+        }
+        single_layer_X0[0]  = 0.933;
+        single_layer_X0[15] = 1.143;
+        single_layer_X0[19] = 1.43;
+        
+        double X0_sum = 0.;
+        for(int iL = 0 ; iL < 28 ; ++iL){
+            X0_sum += single_layer_X0[iL];
+            X0_arr[iL] = X0_sum;
+        }
+        
+        return X0_arr;
+    }
   
-  return X0_arr;
-}
-
-void makePlots::my_Loop(){
-  
-  int NLAYER = 28;
-  double ENEPERMIP = 86.5e-03;
-
-  double X0_arr[NLAYER];
-  double *X0_layer = Set_X0(X0_arr);
-  
-  Init();
-    TCanvas *c1 = new TCanvas();
-    
-    char title[100];
-    int start = fname.find_last_of("/");
-    int end = fname.find(".root");
-    string f_substr = fname.substr(start+1,end-start-1);
-    sprintf(title,"root_plot_delcut_data/%s_result_delta.root",f_substr.c_str());
-    cout << "output name : " << title << endl;
-    TFile outf(title,"recreate");
-    //TH1D *h_E1devE7[NLAYER];
-    //TH1D *h_E7devE19[NLAYER];
-    TH1D *shower_depth;
-    TH1D *total_energy;
-    TH1D *total_energyL3;
-    /*for(int iL = 0; iL < NLAYER ; ++iL)
-    {
-        sprintf(title,"layer%i_E1devE7",iL);
-        h_E1devE7[iL] = new TH1D(title,title,101,0,1.01);
-        sprintf(title,"layer%i_E7devE19",iL);
-        h_E7devE19[iL] = new TH1D(title,title,101,0,1.01);
-    }*/
-    sprintf(title,"shower_depth");
-    shower_depth = new TH1D(title,title,101,0,1.0);
-    sprintf(title,"total_energy");
-    total_energy = new TH1D(title,title,101,0,1.0);
-    sprintf(title,"total_energyL3");
-    total_energyL3 = new TH1D(title,title,101,0,1.0);
-
-  for(int ev = 0; ev < nevents; ++ev){
-    if(ev %10000 == 0) cout << "Processing event: "<< ev << endl;
- 
-    GetData(ev);
-    int Nhits = NRechits;
-
-    // Event Selection
-    //if ( Nhits < 200 ) continue;
-    if ( dwcReferenceType != 15) continue;
-
-    double SHD_Elayer = 0;
-    total_energy->Fill(totalE);
-    total_energyL3->Fill(layerE[25]+layerE[26]+layerE[27]);
-
-      
-    for(int iL = 0 ; iL < NLAYER ; ++iL)
-      {
-      SHD_Elayer += X0_layer[iL]*layerE[iL];
-      /*if(SHD_Elayer<6 || SHD_Elayer>16)
-          {
-              continue;
-          }
-      else if(totalE < Pion_cut)
-          {
-              continue;
-          }
-      else if(layerE[25]+layerE[26]+layerE[27] > Ele_cut)
-          {
-              continue;
-          }
-      else if ( layerE1[iL] != 0){
-        double E1devE7  = layerE1[iL]/layerE7[iL];
-        double E7devE19 = layerE7[iL]/layerE19[iL];
-        h_E1devE7 [iL]->Fill(E1devE7);
-        h_E7devE19[iL]->Fill(E7devE19);}*/
-      }
-      shower_depth->Fill(SHD_Elayer);
-    //cout << SHD_Elayer << " , " << totalE << endl;
-    
-  }
-    outf.Write();
-    outf.Close();
-
-}

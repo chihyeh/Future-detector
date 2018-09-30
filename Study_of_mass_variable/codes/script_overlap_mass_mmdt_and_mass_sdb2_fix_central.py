@@ -11,7 +11,7 @@ from ROOT import TPaveText
 from ROOT import TLatex
 from array import array
 detector_size_array=("r009","r010","r012")
-energy_array=("f",[5,10,20,40])
+energy_array=("f",[20])
 variable_array=("mass_mmdt","mass_sdb2")
 #variable_array=("tau21","tau32","c2b1")
 #variable_array=("tau21b0b0_ww","tau32b0b0_tt","tau21b2b0_ww","tau32b2b0_tt","tau21b2b2_ww","tau32b2b2_tt","c2b1_b0_ww","c2b1_b2_ww")
@@ -21,7 +21,7 @@ signal_we_want=("tt","ww")
 #for j in range(0,2):
 for k in range(0,2):
     for d in range(0,2):
-        for i in range(0,4):
+        for i in range(0,1):
             if(variable_array[k]=="mass_sdb2"):
                 if(signal_we_want[d]=="tt"):
                     if(energy_array[1][i]<20):
@@ -283,7 +283,7 @@ for k in range(0,2):
                 leg1.SetTextSize(0.05)
                 leg1.SetBorderSize(0)
                 leg1.SetTextFont(22)
-                leg1.AddEntry("","Z'("+str(energy_array[1][i])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jets","")
+                leg1.AddEntry("","Z'#rightarrowW^{+}W^{-}#rightarrow2 jets","")
             #if(variable_array[i]=="c2b1"):
             if(signal_we_want[d]=="tt"):
                 leg1=TLegend(0.55,0.8,0.65,0.9)
@@ -292,7 +292,7 @@ for k in range(0,2):
                 leg1.SetTextSize(0.05)
                 leg1.SetBorderSize(0)
                 leg1.SetTextFont(22)
-                leg1.AddEntry("","Z'("+str(energy_array[1][i])+"TeV)#rightarrowt#bar{t}#rightarrow3 jets","")
+                leg1.AddEntry("","Z'#rightarrowt#bar{t}#rightarrow2 jets","")
             
             
             leg=TLegend(0.5,0.6,0.95,0.8)
@@ -302,9 +302,9 @@ for k in range(0,2):
             leg.SetTextSize(0.05)
             leg.SetTextFont(22)
             leg.SetBorderSize(0)
-            leg.AddEntry(G4,"20#times20 cm HCAL","l")
-            leg.AddEntry(G5,"5#times5 cm HCAL","l")
-            leg.AddEntry(G6,"1#times1 cm HCAL","l")
+            leg.AddEntry(G4,"20#times20 cm^{2} HCAL","l")
+            leg.AddEntry(G5,"5#times5 cm^{2} HCAL","l")
+            leg.AddEntry(G6,"1#times1 cm^{2} HCAL","l")
             
             
             #leg.AddEntry(G1,"#tau_{21} #beta=1","l")

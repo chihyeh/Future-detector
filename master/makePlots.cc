@@ -219,7 +219,7 @@ void makePlots::GetData(int evt){
 }
 
 void makePlots::Getinfo(int ihit,int &layer,double &x, double &y,double &z,double &ene){
-    float scale_factor=0.8;
+    float scale_factor=0.85;
     layer = rechit_layer->at(ihit);
     x     = rechit_x    ->at(ihit);
     y     = rechit_y    ->at(ihit);
@@ -234,9 +234,9 @@ void makePlots::NtupleMaker(){
   Init();
   char title[50];
   if(Is_Data)
-    sprintf(title,"output_root_wrong/Run%i_%iGeV_%s.root",runN,beamE,beam_str.c_str());
+    sprintf(title,"Dis_ring_enegy/Run%i_%iGeV_%s.root",runN,beamE,beam_str.c_str());
   else
-    sprintf(title,"output_root_Dis/MC_%iGeV_%s_scale.root",beamE,beam_str.c_str());
+    sprintf(title,"Dis_ring_enegy/MC_%iGeV_%s_scale_0.85.root",beamE,beam_str.c_str());
   cout << "output file: " << title << endl;
   TFile outf(title,"recreate");
   TTree *outT1 = T_Rechit->CopyTree("");
@@ -255,6 +255,10 @@ void makePlots::NtupleMaker(){
   double E_7[NLAYER];
   double E_19[NLAYER];
   double E_37[NLAYER];
+  double E_63[NLAYER];
+  double E_out_19[NLAYER];
+  double E_out_37[NLAYER];
+  double E_out_63[NLAYER];
 
 
   outT3->Branch("hit_mip","std::vector< std::vector<double> >",&hit_tmp);
@@ -268,6 +272,10 @@ void makePlots::NtupleMaker(){
   outT3->Branch("layerE7",E_7,"layerE7[28]/D");
   outT3->Branch("layerE19",E_19,"layerE19[28]/D");
   outT3->Branch("layerE37",E_37,"layerE37[28]/D");
+  outT3->Branch("layerE63",E_63,"layerE63[28]/D");
+  outT3->Branch("layerEout19",E_out_19,"layerEout19[28]/D");
+  outT3->Branch("layerEout37",E_out_37,"layerEout37[28]/D");
+  outT3->Branch("layerEout63",E_out_63,"layerEout63[28]/D");
 
   
   
@@ -286,7 +294,11 @@ void makePlots::NtupleMaker(){
       E_1[iL] = 0;
       E_7[iL] = 0;
       E_19[iL] = 0;
-      E_37[iL] = 0;}
+      E_37[iL] = 0;
+      E_63[iL] = 0;
+      E_out_19[iL] = 0;
+      E_out_37[iL] = 0
+      E_out_63[iL] = 0 ;}
     
     int layer;
     double posx,posy,posz,energy;
@@ -322,7 +334,11 @@ void makePlots::NtupleMaker(){
 	if( dR < 1.12455*1.2) E_7[iL] += hit_tmp[iL].at(iH);
 	if( dR < 1.12455*2*1.2) E_19[iL] += hit_tmp[iL].at(iH);
 	if( dR < 1.12455*3*1.2) E_37[iL] += hit_tmp[iL].at(iH);
-	layerE[iL] += hit_tmp[iL].at(iH);}      
+    if( dR < 1.12455*4*1.2) E_63[iL] += hit_tmp[iL].at(iH);
+    if( dR >= 1.12455*2*1.2) E_out_19[iL] += hit_tmp[iL].at(iH);
+    if( dR >= 1.12455*3*1.2) E_out_37[iL] += hit_tmp[iL].at(iH);
+    if( dR >= 1.12455*4*1.2) E_out_63[iL] += hit_tmp[iL].at(iH);
+	layerE[iL] += hit_tmp[iL].at(iH);}
     }
     outT3->Fill();
   }

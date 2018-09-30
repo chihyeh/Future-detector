@@ -86,7 +86,7 @@ for k in range(0,3):
 
     #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
                 leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow2 jet","l")
 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
                     h1.Draw("hist")
@@ -95,8 +95,6 @@ for k in range(0,3):
                     h2.Draw("hist")
                     h1.Draw("histsame")
 
-                leg.AddEntry("","MannWhitneyUtest:","")
-                leg.AddEntry("",a,"")
                 leg.Draw()
                 c.Draw()
 
@@ -170,9 +168,9 @@ for k in range(0,3):
                 
                 
                 
-                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
+                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow2 jet","l")
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow2 jet","l")
                 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
                     h1.Draw("hist")
@@ -181,8 +179,6 @@ for k in range(0,3):
                     h2.Draw("hist")
                     h1.Draw("histsame")
             
-                leg.AddEntry("","MannWhitneyUtest:","")
-                leg.AddEntry("",a,"")
                 leg.Draw()
                 c.Draw()
                 
@@ -254,7 +250,7 @@ for k in range(0,3):
                 
                 #leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
                 leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow2 jet","l")
                 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
                     h1.Draw("hist")

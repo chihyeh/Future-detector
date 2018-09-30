@@ -16,7 +16,7 @@ files1="009"
 files2="010"
 files3="012"
 files_array=(files1,files2,files3)
-energy_array=("f",[5,10,20,40])
+energy_array=("f",[20])
 variable=("mass_mmdt_tt","mass_mmdt","mass_sdb2_ww","mass_sdb2_tt","tau21","tau32","c2b1")
 print variable[0],variable[1],variable[2]
 print files_array[0],files_array[1],files_array[2]
@@ -26,7 +26,7 @@ p=1
 for k in range(0,4):
     if(variable[k]=="mass_mmdt_tt"):
         for n in range(0,3):
-            for m in range(0,4):
+            for m in range(0,1):
                 if(energy_array[1][m]<20):
                     f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root", 'r')
                     f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_1200_no_UOF.root", 'r')
@@ -74,7 +74,6 @@ for k in range(0,4):
                 h2.GetXaxis().SetLabelFont(22)
                 h1.GetYaxis().SetLabelFont(22)
                 h2.GetYaxis().SetLabelFont(22)
-                
                 
                 #Get bin numebr
                 numbin=h1.GetXaxis().GetNbins()
@@ -88,15 +87,19 @@ for k in range(0,4):
                 print str(h1.Integral()/2)
 
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h1,"Z'#rightarrowt#bar{t}#rightarrow2 jet","l")
+                leg.AddEntry(h2,"Z'#rightarrowq#bar{q}#rightarrow2 jet","l")
                 leg.AddEntry("","Median:","")
                 leg.AddEntry("",str((p)*5)+" to "+str((p+1)*5),"")
                 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h1.Draw("hist")
                     h2.Draw("histsame")
                 else:
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h2.Draw("hist")
                     h1.Draw("histsame")
             
@@ -110,7 +113,7 @@ for k in range(0,4):
 
     elif(variable[k]=="mass_mmdt"):
         for n in range(0,3):
-            for m in range(0,4):
+            for m in range(0,1):
                 if(energy_array[1][m]<20):
                     f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root", 'r')
                     f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_mmdt_800_no_UOF.root", 'r')
@@ -165,16 +168,20 @@ for k in range(0,4):
                 print str(h1.Integral()/2)
                 
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h1,"Z'#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
+                leg.AddEntry(h2,"Z'#rightarrowq#bar{q}#rightarrow2 jet","l")
                 leg.AddEntry("","Median:","")
                 leg.AddEntry("",str((p)*5)+" to "+str((p+1)*5),"")
                 print str((p)*5), str((p+1)*5)
 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h1.Draw("hist")
                     h2.Draw("histsame")
                 else:
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h2.Draw("hist")
                     h1.Draw("histsame")
                 
@@ -186,7 +193,7 @@ for k in range(0,4):
                 c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_no_UOF.eps")
     elif(variable[k]=="mass_sdb2_ww"):
         for n in range(0,3):
-            for m in range(0,4):
+            for m in range(0,1):
                 if(energy_array[1][m]<20):
                     f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_wwrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800_no_UOF.root", 'r')
                     f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_800_no_UOF.root", 'r')
@@ -245,15 +252,19 @@ for k in range(0,4):
                 print str(h1.Integral()/2)
                 
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h1,"Z'#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
+                leg.AddEntry(h2,"Z'#rightarrowq#bar{q}#rightarrow2 jet","l")
                 leg.AddEntry("","Median:","")
                 leg.AddEntry("",str((p)*5)+" to "+str((p+1)*5),"")
                 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h1.Draw("hist")
                     h2.Draw("histsame")
                 else:
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h2.Draw("hist")
                     h1.Draw("histsame")
             
@@ -269,7 +280,7 @@ for k in range(0,4):
                     c.Print("Dis_cluster_"+files_array[n]+"_"+variable[k]+"_"+str(energy_array[1][m])+"tev_04_1600_no_UOF.eps")
     elif(variable[k]=="mass_sdb2_tt"):
         for n in range(0,3):
-            for m in range(0,4):
+            for m in range(0,1):
                 if(energy_array[1][m]<20):
                     f1 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_ttbarrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200_no_UOF.root", 'r')
                     f2 = ROOT.TFile.Open("/Users/ms08962476/FD/VHEPP/analyze/onlyhadron/tev"+str(energy_array[1][m])+"mumu_pythia6_zprime"+str(energy_array[1][m])+"tev_qqrfull"+files_array[n]+"_onlyhadronic/radius0.4_jetsubstructure_tcalo_for_sdb2_1200_no_UOF.root", 'r')
@@ -328,15 +339,19 @@ for k in range(0,4):
                 print str(h1.Integral()/2)
                 
                 #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-                leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h1,"Z'#rightarrowt#bar{t}#rightarrow2 jet","l")
+                leg.AddEntry(h2,"Z'#rightarrowq#bar{q}#rightarrow2 jet","l")
                 leg.AddEntry("","Median:","")
                 leg.AddEntry("",str((p)*5)+" to "+str((p+1)*5),"")
                 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h1.Draw("hist")
                     h2.Draw("histsame")
                 else:
+                    h1.Rebin(2)
+                    h2.Rebin(2)
                     h2.Draw("hist")
                     h1.Draw("histsame")
                 
@@ -408,7 +423,7 @@ for k in range(0,4):
 
     #leg.AddEntry(h1,"Z'(20TeV)#rightarrowt#bar{t}#rightarrow3 jet","l")
                 leg.AddEntry(h1,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowW^{+}W^{-}#rightarrow2 jet","l")
-                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow1 jet","l")
+                leg.AddEntry(h2,"Z'("+str(energy_array[1][m])+"TeV)#rightarrowq#bar{q}#rightarrow2 jet","l")
 
                 if(h1.GetBinContent(h1.GetMaximumBin())>h2.GetBinContent(h2.GetMaximumBin())):
                     h1.Draw("hist")

@@ -130,8 +130,10 @@ class makePlots{
    Double_t        layerE7[28];
    Double_t        layerE19[28];
    Double_t        layerE37[28];
-   
-   
+   Double_t        layerE63[28];
+   Double_t        layerEout19[28];
+   Double_t        layerEout37[28];
+   Double_t        layerEout63[28];
 };
 
 #endif

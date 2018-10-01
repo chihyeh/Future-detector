@@ -212,15 +212,15 @@ void makePlots::Loop(){
   TH1D *h_DWCf5_Dis_X;
   TH1D *h_DWCf5_Dis_Y;
 */
-  TH1D *totalE;
-  TH1D *layerE19;
-  TH1D *layerE37;
-  TH1D *layerE63;
-  TH1D *layerEout19;
-  TH1D *layerEout37;
-  TH1D *layerEout63;
-  TH1D *layer_8_to_15_E1devE7;
-  TH1D *layer_8_to_15_E7devE19;
+  TH1D *h_totalE;
+  TH1D *h_layerE19;
+  TH1D *h_layerE37;
+  TH1D *h_layerE63;
+  TH1D *h_layerEout19;
+  TH1D *h_layerEout37;
+  TH1D *h_layerEout63;
+  TH1D *h_layer_8_to_15_E1devE7;
+  TH1D *h_layer_8_to_15_E7devE19;
  /* TH1D *shower_depth;
   TH1D *total_energy;
   TH1D *total_energy_last_three_layer;
@@ -251,23 +251,23 @@ void makePlots::Loop(){
   h_DWCf5_Dis_Y = new TH1D ("h_DWCf5_Dis_Y","h_DWCf5_Dis_Y",40,-20,20);
   */
     sprintf(title,"totalE");
-    totalE = new TH1D (title,title,1000,0,20000);
+    h_totalE = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layerE19");
-    layerE19 = new TH1D (title,title,1000,0,20000);
+    h_layerE19 = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layerE37");
-    layerE37 = new TH1D (title,title,1000,0,20000);
+    h_layerE37 = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layerE63");
-    layerE63 = new TH1D (title,title,1000,0,20000);
+    h_layerE63 = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layerEout19");
-    layerEout19 = new TH1D (title,title,1000,0,20000);
+    h_layerEout19 = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layerEout37");
-    layerEout37 = new TH1D (title,title,1000,0,20000);
+    h_layerEout37 = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layerEout63");
-    layerEout63 = new TH1D (title,title,1000,0,20000);
+    h_layerEout63 = new TH1D (title,title,1000,0,20000);
     sprintf(title,"layer_8_to_15_E1devE7");
-    layer_8_to_15_E1devE7 = new TH1D(title,title,100,0,1);
+    h_layer_8_to_15_E1devE7 = new TH1D(title,title,100,0,1);
     sprintf(title,"layer_8_to_15_E7devE19");
-    layer_8_to_15_E7devE19 = new TH1D(title,title,100,0,1);
+    h_layer_8_to_15_E7devE19 = new TH1D(title,title,100,0,1);
 
    /* sprintf(title,"shower_depth");
     shower_depth = new TH1D (title,title,112,0,28);
@@ -348,7 +348,7 @@ void makePlots::Loop(){
     h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_4);
     h_DWCf5_Dis_Y->Fill(impactY_HGCal_layer_5);
     */
-     totalE->Fill(totalE);
+     h_totalE->Fill(totalE);
       
     for(int iL = 0; iL < NLAYER ; ++iL){
 	SHD_Elayer += X0_layer[iL]*layerE[iL];
@@ -357,19 +357,19 @@ void makePlots::Loop(){
          double E7devE19 = layerE7[iL]/layerE19[iL];
         //h_layer_total_E1devE7->Fill(E1devE7);
         //h_layer_total_E7devE19->Fill(E7devE19);
-        layerE19->Fill(layerE19[iL]);
-        layerE37->Fill(layerE37[iL]);
-        layerE63->Fill(layerE63[iL]);
-        layerEout19->Fill(layerEout19[iL]);
-        layerEout37->Fill(layerEout37[iL]);
-        layerEout63->Fill(layerEout63[iL]);
+        h_layerE19->Fill(layerE19[iL]);
+        h_layerE37->Fill(layerE37[iL]);
+        h_layerE63->Fill(layerE63[iL]);
+        h_layerEout19->Fill(layerEout19[iL]);
+        h_layerEout37->Fill(layerEout37[iL]);
+        h_layerEout63->Fill(layerEout63[iL]);
         if(iL>=8 && iL <=15)
         {
-            layer_8_to_15_E1devE7->Fill(E1devE7);
+            h_layer_8_to_15_E1devE7->Fill(E1devE7);
         }
         if(iL>=8 && iL <=15)
         {
-            layer_8_to_15_E7devE19->Fill(E7devE19);
+            h_layer_8_to_15_E7devE19->Fill(E7devE19);
         }
         /*if( iL >= 7 && iL <= 9 )
 	{

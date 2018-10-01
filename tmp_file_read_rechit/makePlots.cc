@@ -146,7 +146,11 @@ void makePlots::Init(){
   T_rechit_var->SetBranchAddress("layerE7", layerE7);
   T_rechit_var->SetBranchAddress("layerE19", layerE19);
   T_rechit_var->SetBranchAddress("layerE37", layerE37);
-  
+  T_rechit_var->SetBranchAddress("layerE63",layerE63);
+  T_rechit_var->SetBranchAddress("layerEout19",layerEout19);
+  T_rechit_var->SetBranchAddress("layerEout37",layerEout37);
+  T_rechit_var->SetBranchAddress("layerEout63",layerEout63);
+
   Init_Runinfo();
 }
 void makePlots::Init_Runinfo(){

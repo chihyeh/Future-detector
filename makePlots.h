@@ -24,7 +24,7 @@ class makePlots{
  
   ~makePlots();
   
-  void Loop(cut_point);
+  void Loop(float cut_point);
   void Event_Display(); //Actually shows the average over some events
   void my_Loop();
   

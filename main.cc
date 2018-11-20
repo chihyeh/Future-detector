@@ -14,34 +14,34 @@
 #include <typeinfo>
 #include "TH2Poly.h"
 
-float SIG_eff(int energy, float cut_point){
+float SIG_eff(int energy, float cut_point_1){
     float a;
     TApplication *app = new TApplication("app",0,0);
-    TChain *chain = new TChain("hits");
+    TChain *chain1 = new TChain("hits");
     TChain *chain2 = new TChain("impactPoints");
     TChain *chain3 = new TChain("rechit_var");
     
     chain1->Add(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Ele_scale_0.85.root",energy));
     chain2->Add(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Ele_scale_0.85.root",energy));
     chain3->Add(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Ele_scale_0.85.root",energy));
-    makePlots M(chain,chain2,chain3,Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Ele_scale_0.85.root",energy));
-    a=M.Loop(cut_point);
+    makePlots M(chain1,chain2,chain3,Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Ele_scale_0.85.root",energy));
+    a=M.Loop(cut_point_1);
     cout << a << endl;
     return (a);
 }
 
-float BKG_rej(int energy, float cut_point){
+float BKG_rej(int energy, float cut_point_2){
     float b;
     TApplication *app = new TApplication("app",0,0);
-    TChain *chain = new TChain("hits");
+    TChain *chain1 = new TChain("hits");
     TChain *chain2 = new TChain("impactPoints");
     TChain *chain3 = new TChain("rechit_var");
     
     chain1->Add(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Pi.root",energy));
     chain2->Add(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Pi.root",energy));
     chain3->Add(Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Pi.root",energy));
-    makePlots M(chain,chain2,chain3,Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Pi.root",energy));
-    b=M.Loop(cut_point);
+    makePlots M(chain1,chain2,chain3,Form("/afs/cern.ch/work/c/chyeh/CMSSW_9_3_0/src/2018TBAnalysis/Dis_ring_energy/MC_%dGeV_Pi.root",energy));
+    b=M.Loop(cut_point_2);
     cout << 1/b << endl;
     return (1/b);
 }

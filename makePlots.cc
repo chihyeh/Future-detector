@@ -188,7 +188,7 @@ void makePlots::Getinfo(int ihit,int &layer,double &x, double &y,double &z,doubl
     ene   = rechit_energy->at(ihit);
 }
 
-float makePlots::Loop(float cut_point){
+vector<float> makePlots::Loop(){
   
   int NLAYER = 28;
   double ENEPERMIP = 86.5e-03;
@@ -614,8 +614,11 @@ float makePlots::Loop(float cut_point){
     h_layer_total_E7devE37= new TH1D(title,title,100,0,1);*/
   int delta_event=0;
   int electron_event=0;
-  int event_pass=0;
-  int event_total=0;
+    float event_pass_2=0;
+    float event_pass_3=0;
+    float event_pass_4=0;
+  float event_total=0;
+  vector<float> cut;
   //int check_point8=0;
   //int check_point8_1=0;
   //int check_point8_2=0;
@@ -779,7 +782,7 @@ float makePlots::Loop(float cut_point){
         h_Ratio_out_total_layerE37->Fill(InitlayerE37out/totalE);
         */
        // h_Ratio_out_total_layerE63->Fill(InitlayerE63out/totalE);
-    float energy_first_10layers_5=0;
+      float energy_first_10layers_5=0;
     for(int iL = 0 ; iL < 10 ; iL++)
     {
             if(iL<10)
@@ -792,11 +795,19 @@ float makePlots::Loop(float cut_point){
     
        event_total=event_total+1;
     
-    if(energy_first_10layers_5/totalE > cut_point)
-    {
-       event_pass=event_pass+1;
-    }
-    
+      if(energy_first_10layers_5/totalE > 0.2)
+      {
+          event_pass_2=event_pass_2+1;
+      }
+      if(energy_first_10layers_5/totalE > 0.3)
+      {
+          event_pass_3=event_pass_3+1;
+      }
+      if(energy_first_10layers_5/totalE > 0.4)
+      {
+          event_pass_4=event_pass_4+1;
+      }
+
     h_energy_to_10_Delta_ray_no_cut->Fill(energy_first_10layers_5/totalE);
     SHD_Elayer /= totalE;
 	//h_shower_depth_vs_totalE_ring_cut->Fill(SHD_Elayer);
@@ -1354,7 +1365,11 @@ float makePlots::Loop(float cut_point){
   */
   outf.Write();
   outf.Close();
-  return(event_pass/event_total);
+  cut.push_back(event_pass_2/event_total);
+cut.push_back(event_pass_3/event_total);
+cut.push_back(event_pass_4/event_total);
+
+  return(cut);
 }
 
 void makePlots::Event_Display(){

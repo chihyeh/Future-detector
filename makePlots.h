@@ -24,9 +24,9 @@ class makePlots{
  
   ~makePlots();
   
-  void Loop();
+  void Loop(cut_point);
   void Event_Display(); //Actually shows the average over some events
-
+  void my_Loop();
   
   //member
   int  beamE;
@@ -52,10 +52,11 @@ class makePlots{
   // Tool functions
   void InitTH2Poly(TH2Poly& poly); //Give frame to TH2Poly
   void root_logon();
-
+  double* Set_X0(double X0_arr[]);
   ///////////////////////////////
   // Declaration of leaf types //
-  ///////////////////////////////
+
+
   /*Data*/
   //For Rechit
    UInt_t          event;
@@ -97,6 +98,17 @@ class makePlots{
 
    // For ImpactPoints (from Delayed wire chamber)
    Int_t           ntracks;
+   Float_t        impactX_HGCal_layer_1;
+   Float_t        impactY_HGCal_layer_1;
+   Float_t        impactX_HGCal_layer_2;
+   Float_t        impactY_HGCal_layer_2;
+   Float_t        impactX_HGCal_layer_3;
+   Float_t        impactY_HGCal_layer_3;
+   Float_t        impactX_HGCal_layer_4;
+   Float_t        impactY_HGCal_layer_4;
+   Float_t        impactX_HGCal_layer_5;
+   Float_t        impactY_HGCal_layer_5;
+
    // ignore the layers currently
    Float_t         trackChi2_X;
    Float_t         trackChi2_Y;
@@ -118,7 +130,11 @@ class makePlots{
    Double_t        layerE7[28];
    Double_t        layerE19[28];
    Double_t        layerE37[28];
-   
+      Double_t        layerE63[28];
+   Double_t        layerE19out[28];
+   Double_t        layerE37out[28];
+   Double_t        layerE63out[28];
+
    
 };
 

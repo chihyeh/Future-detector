@@ -188,7 +188,7 @@ void makePlots::Getinfo(int ihit,int &layer,double &x, double &y,double &z,doubl
     ene   = rechit_energy->at(ihit);
 }
 
-void makePlots::Loop(float cut_point){
+float makePlots::Loop(float cut_point){
   
   int NLAYER = 28;
   double ENEPERMIP = 86.5e-03;

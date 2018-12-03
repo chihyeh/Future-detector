@@ -17,53 +17,12 @@
 #include <utility>
 
 //Constructor
-makePlots::makePlots(){}
-makePlots::makePlots( TChain *c1,TChain *c2,TChain *c3,string filename ):T_Rechit(c1),T_DWC(c2),T_rechit_var(c3)
+makePlots::makePlots(){
+    TestRun = false;
+    Init();}
+makePlots::makePlots( TChain *c1,TChain *c2,TChain *c3,string filename ):T_Rechit(c1),T_DWC(c2),T_Meta(c3)
 {
-  cout << "Constructor of makePlot ... \n\n" << endl;
-  fname = filename;
-  // Set object pointer(Data)
-  rechit_detid = 0;
-  rechit_module = 0;
-  rechit_layer = 0;
-  rechit_chip = 0;
-  rechit_channel = 0;
-  rechit_type = 0;
-  rechit_x = 0;
-  rechit_y = 0;
-  rechit_z = 0;
-  rechit_iu = 0;
-  rechit_iv = 0;
-  rechit_energy = 0;
-  rechit_energy_noHG = 0;
-  rechit_amplitudeHigh = 0;
-  rechit_amplitudeLow = 0;
-  rechit_hg_goodFit = 0;
-  rechit_lg_goodFit = 0;
-  rechit_hg_saturated = 0;
-  rechit_lg_saturated = 0;
-  rechit_fully_calibrated = 0;
-  rechit_TS2High = 0;
-  rechit_TS2Low = 0;
-  rechit_TS3High = 0;
-  rechit_TS3Low = 0;
-  rechit_Tot = 0;
-  rechit_time = 0;
-  rechit_timeMaxHG = 0;
-  rechit_timeMaxLG = 0;
-  rechit_toaRise = 0;
-  rechit_toaFall = 0;
-  TestRun = false;
-  //Rechit_var
-  hit_mip = 0;
-  hit_x = 0;
-  hit_y = 0;
-  hit_z = 0;
-
-}
-makePlots::makePlots( TChain *c1,TChain *c2,string filename ):T_Rechit(c1),T_rechit_var(c2)
-{
-    cout << "Constructor of makePlot ... \n\n" << endl;
+    cout << "Data: Constructor of makePlot ... \n\n" << endl;
     fname = filename;
     // Set object pointer(Data)
     rechit_detid = 0;
@@ -96,13 +55,82 @@ makePlots::makePlots( TChain *c1,TChain *c2,string filename ):T_Rechit(c1),T_rec
     rechit_timeMaxLG = 0;
     rechit_toaRise = 0;
     rechit_toaFall = 0;
-    TestRun = true;    //Rechit_var
-    
-    hit_mip = 0;
-    hit_x = 0;
-    hit_y = 0;
-    hit_z = 0;
-    
+    TestRun = false;
+    Init();
+}
+makePlots::makePlots( TChain *c1,TChain *c2,string filename ):T_Rechit(c1),T_DWC(c2){
+    cout << "MC: Constructor of makePlot ... \n\n" << endl;
+    fname = filename;
+    // Set object pointer(Data)
+    rechit_detid = 0;
+    rechit_module = 0;
+    rechit_layer = 0;
+    rechit_chip = 0;
+    rechit_channel = 0;
+    rechit_type = 0;
+    rechit_x = 0;
+    rechit_y = 0;
+    rechit_z = 0;
+    rechit_iu = 0;
+    rechit_iv = 0;
+    rechit_energy = 0;
+    rechit_energy_noHG = 0;
+    rechit_amplitudeHigh = 0;
+    rechit_amplitudeLow = 0;
+    rechit_hg_goodFit = 0;
+    rechit_lg_goodFit = 0;
+    rechit_hg_saturated = 0;
+    rechit_lg_saturated = 0;
+    rechit_fully_calibrated = 0;
+    rechit_TS2High = 0;
+    rechit_TS2Low = 0;
+    rechit_TS3High = 0;
+    rechit_TS3Low = 0;
+    rechit_Tot = 0;
+    rechit_time = 0;
+    rechit_timeMaxHG = 0;
+    rechit_timeMaxLG = 0;
+    rechit_toaRise = 0;
+    rechit_toaFall = 0;
+    TestRun = false;
+    Init();
+}
+makePlots::makePlots( TChain *c1,string filename ):T_Rechit(c1){
+    cout << "Test Data: Constructor of makePlot ... \n\n" << endl;
+    fname = filename;
+    // Set object pointer(Data)
+    rechit_detid = 0;
+    rechit_module = 0;
+    rechit_layer = 0;
+    rechit_chip = 0;
+    rechit_channel = 0;
+    rechit_type = 0;
+    rechit_x = 0;
+    rechit_y = 0;
+    rechit_z = 0;
+    rechit_iu = 0;
+    rechit_iv = 0;
+    rechit_energy = 0;
+    rechit_energy_noHG = 0;
+    rechit_amplitudeHigh = 0;
+    rechit_amplitudeLow = 0;
+    rechit_hg_goodFit = 0;
+    rechit_lg_goodFit = 0;
+    rechit_hg_saturated = 0;
+    rechit_lg_saturated = 0;
+    rechit_fully_calibrated = 0;
+    rechit_TS2High = 0;
+    rechit_TS2Low = 0;
+    rechit_TS3High = 0;
+    rechit_TS3Low = 0;
+    rechit_Tot = 0;
+    rechit_time = 0;
+    rechit_timeMaxHG = 0;
+    rechit_timeMaxLG = 0;
+    rechit_toaRise = 0;
+    rechit_toaFall = 0;
+    TestRun = true;
+    Init();
 }
 
 //Destructor

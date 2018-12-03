@@ -17,19 +17,25 @@
 
 using namespace std;
 
+const double ENEPERMIP = 86.5e-06; //(GeV) Based on 150GeV muon for 300um Si
+
 class makePlots{
  public:
-  makePlots();
-  makePlots( TChain *c1,TChain *c2,TChain *c3,string filename );
- 
-  ~makePlots();
-  
-  vector<float> Loop();
-  void Event_Display(); //Actually shows the average over some events
-  void my_Loop();
+    makePlots();
+    makePlots( TChain *c1,TChain *c2,TChain *c3,string filename );
+    makePlots( TChain *c1,TChain *c2,string filename );
+    makePlots( TChain *c1,string filename );
+    
+    ~makePlots();
+    
+  void Loop();
+  void Event_Display(); // ignoreEE when you only want to see FH part
+  // hitmap == 1 is one want to see hit map or it will fill by energy(mip) normalized by total energy
   
   //member
+  bool Is_Data;
   int  beamE;
+  int  runN; //0 for MC
   int  PID; // 0 for electron, 1 for pion, 2 for muon
   string beam_str; // "Ele","Pi","Mu"
 
@@ -41,8 +47,22 @@ class makePlots{
   TFile        *Inputfile;
   TTree        *T_Rechit;
   TTree        *T_DWC;
-  TTree        *T_rechit_var;
+  TTree        *T_Meta;
+  TTree        *T_MC;
   int          nevents;
+  bool         TestRun;
+  int          NLAYER;
+  int          NLAYER_EE;
+  int          NLAYER_FH;
+  int          setup_config;
+  //********************* SETUP_CONFIG *****************************
+  //0 For 28EE(+4*1cm Fe)+ 12FH(7module*9layer + 1module*3layer)  **
+  //1 For 28EE+ 11FH(1*2 + 7module*9layer)                        **
+  //  (only air between last EE and first 7 module  FH)           **
+  //2 For 0EE + 9FH (7module*9layer, not sure about the absorber) **
+  //3 For 8EE(+4*1cm Fe) + 12FH(7module*12layer)                  **
+  // New EE setup on http://cmsonline.cern.ch/cms-elog/1069915    **
+  //****************************************************************
   
   // Mainframe functions
   void Init();
@@ -51,19 +71,18 @@ class makePlots{
   void Getinfo(int nhit, int &layer,double &x, double &y,double &z,double &ene);    
   // Tool functions
   void InitTH2Poly(TH2Poly& poly); //Give frame to TH2Poly
-  void root_logon();
   double* Set_X0(double X0_arr[]);
+  
   ///////////////////////////////
   // Declaration of leaf types //
-
-
+  ///////////////////////////////
   /*Data*/
   //For Rechit
    UInt_t          event;
    UInt_t          run;
    Int_t           pdgID;
-   Float_t         beamEnergy;
-   Float_t         trueBeamEnergy;
+   Float_t        beamEnergy;
+   Float_t        trueBeamEnergy;
    Int_t           NRechits;
    vector<unsigned int> *rechit_detid;
    vector<unsigned int> *rechit_module;
@@ -98,17 +117,6 @@ class makePlots{
 
    // For ImpactPoints (from Delayed wire chamber)
    Int_t           ntracks;
-   Float_t        impactX_HGCal_layer_1;
-   Float_t        impactY_HGCal_layer_1;
-   Float_t        impactX_HGCal_layer_2;
-   Float_t        impactY_HGCal_layer_2;
-   Float_t        impactX_HGCal_layer_3;
-   Float_t        impactY_HGCal_layer_3;
-   Float_t        impactX_HGCal_layer_4;
-   Float_t        impactY_HGCal_layer_4;
-   Float_t        impactX_HGCal_layer_5;
-   Float_t        impactY_HGCal_layer_5;
-
    // ignore the layers currently
    Float_t         trackChi2_X;
    Float_t         trackChi2_Y;
@@ -118,23 +126,19 @@ class makePlots{
    Double_t        b_x;
    Double_t        b_y;
 
-   // For rechit_var
-   vector<vector<double> > *hit_mip;
-   vector<vector<double> > *hit_x;
-   vector<vector<double> > *hit_y;
-   vector<vector<double> > *hit_z;
-   Int_t           layerNhit[28];
-   Double_t        totalE;
-   Double_t        layerE[28];
-   Double_t        layerE1[28];
-   Double_t        layerE7[28];
-   Double_t        layerE19[28];
-   Double_t        layerE37[28];
-      Double_t        layerE63[28];
-   Double_t        layerE19out[28];
-   Double_t        layerE37out[28];
-   Double_t        layerE63out[28];
+   // TBD
 
+   // For metadata
+   Int_t           configuration;
+   Float_t         biasCurrentCh0;
+   Float_t         biasCurrentCh1;
+   Float_t         biasCurrentCh2;
+   Float_t         biasCurrentCh3;
+   Float_t         humidity_RHDP4;
+   Float_t         TCassette07;
+   Float_t         tablePositionY;
+   Float_t         humidity_air;
+   Float_t         temperature_air;
    
 };
 

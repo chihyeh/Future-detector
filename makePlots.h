@@ -140,6 +140,22 @@ class makePlots{
    Float_t         humidity_air;
    Float_t         temperature_air;
    
+    vector<vector<double> > *hit_mip;
+    vector<vector<double> > *hit_x;
+    vector<vector<double> > *hit_y;
+    vector<vector<double> > *hit_z;
+    Double_t        totalE;
+    Double_t        totalE_CEE;
+    Double_t        totalE_CEH;
+    Int_t           NLAYER;
+    Int_t           layerNhit[28];
+    Double_t        layerE[28];
+    Double_t        layerE1[28];
+    Double_t        layerE7[28];
+    Double_t        layerE19[28];
+    Double_t        layerE37[28];
+    
+
 };
 
 #endif

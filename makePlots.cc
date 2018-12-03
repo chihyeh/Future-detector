@@ -260,14 +260,17 @@ void makePlots::Init_Runinfo(){
 void makePlots::GetData(int evt){
     if(TestRun){
         T_Rechit-> GetEntry(evt);
+        T_rechit_var  -> GetEntry(evt);
     }
     if(!TestRun){
         if(Is_Data){
             T_Rechit-> GetEntry(evt);
             T_DWC   -> GetEntry(evt);
-            T_Meta  -> GetEntry(evt);}
+            T_Meta  -> GetEntry(evt);
+            T_rechit_var  -> GetEntry(evt);}
         else{
-            T_Rechit-> GetEntry(evt);}
+            T_Rechit-> GetEntry(evt);
+            T_rechit_var  -> GetEntry(evt);}
     }
 }
 
@@ -301,9 +304,9 @@ void makePlots::Loop(){
   TH1F *h_Erec_CEE;
   TH1F *h_Erec_CEH;
 
-  sprintf(title,"h_Erec_CEE",)
+  sprintf(title,"h_Erec_CEE")
   h_Erec_CEE = new TH1F(title,title,400,0,16000);
-  sprintf(title,"h_Erec_CEH",)
+  sprintf(title,"h_Erec_CEH")
   h_Erec_CEH = new TH1F(title,title,400,0,16000);
     
   for(int iL = 0; iL < NLAYER ; ++iL){

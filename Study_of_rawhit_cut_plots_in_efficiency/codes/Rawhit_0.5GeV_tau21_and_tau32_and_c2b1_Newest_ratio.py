@@ -41,6 +41,7 @@ for k in range(0,1):
 
                 h3 = TH1F("h3","Ratio histogram",100,0,1)
                 h3=h1.Clone("h3")
+                h3.Sumw2()
                 h3.Divide(h2)
 
                 #print h1,h2
@@ -588,6 +589,7 @@ for k in range(0,1):
 
                 h3 = TH1F("h3","Ratio histogram",100,0,1)
                 h3=h1.Clone("h3")
+                h3.Sumw2()
                 h3.Divide(h2)
                 
                 #print h1,h2
@@ -596,7 +598,6 @@ for k in range(0,1):
                 
                 h1.Sumw2()
                 h2.Sumw2()
-                h3.Sumw2()
                 h1.Scale(1.0/h1.Integral())
                 h2.Scale(1.0/h2.Integral())
                 h3.Scale(1.0/h3.Integral())
@@ -1140,6 +1141,7 @@ for k in range(0,1):
 
                 h3 = TH1F("h3","Ratio histogram",100,0,0.3)
                 h3=h1.Clone("h3")
+                h3.Sumw2()
                 h3.Divide(h2)
                 
                 #print h1,h2
@@ -1148,7 +1150,6 @@ for k in range(0,1):
                 
                 h1.Sumw2()
                 h2.Sumw2()
-                h3.Sumw2()
                 h1.Scale(1.0/h1.Integral())
                 h2.Scale(1.0/h2.Integral())
                 h3.Scale(1.0/h3.Integral())

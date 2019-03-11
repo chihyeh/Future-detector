@@ -240,8 +240,8 @@ void makePlots::Loop(){
         h_E7devE19[iL] = new TH1D(title,title,101,0,1.01);
     }
    */
-  TH1F *h_Erec_CEE = new TH1F(title,title,400,0,16000);
-  TH1F *h_Erec_CEH = new TH1F(title,title,400,0,16000);
+  TH1F *h_Erec_CEE = new TH1F("totalE_CEE","totalE_CEE",400,0,16000);
+  TH1F *h_Erec_CEH = new TH1F("totalE_CEH","totalE_CEH",400,0,16000);
     
 
 

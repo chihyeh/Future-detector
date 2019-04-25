@@ -37,7 +37,7 @@ vector<float> Energy_ratio_Data_MC(vector<float> Data_Parameters, vector<float> 
 {
 vector<float> Ratio_parameters;
 Ratio_parameters.push_back((Data_Parameters[0])/(MC_Parameters[0]));
-cout << "(f2->GetParameter(1))/(f1->GetParameter(1))" << ((Data_Parameters[0])/(MC_Parameters[0]) << endl;
+cout << "(f2->GetParameter(1))/(f1->GetParameter(1))" << ((Data_Parameters[0])/(MC_Parameters[0])) << endl;
 Ratio_parameters.push_back( ((Data_Parameters[0])/(MC_Parameters[0]))*sqrt( ((Data_Parameters[2])/(Data_Parameters[0]))*((Data_Parameters[2])/(Data_Parameters[0]))+ ((MC_Parameters[2])/(MC_Parameters[0]))*((MC_Parameters[2])/(MC_Parameters[0]))));
 cout << "((Data_Parameters[0])/(MC_Parameters[0]))*sqrt( ((Data_Parameters[2])/(Data_Parameters[0]))*((Data_Parameters[2])/(Data_Parameters[0]))+ ((MC_Parameters[2])/(MC_Parameters[0]))*((MC_Parameters[2])/(MC_Parameters[0]))):" << ((Data_Parameters[0])/(MC_Parameters[0]))*sqrt( ((Data_Parameters[2])/(Data_Parameters[0]))*((Data_Parameters[2])/(Data_Parameters[0]))+ ((MC_Parameters[2])/(MC_Parameters[0]))*((MC_Parameters[2])/(MC_Parameters[0]))) << endl;
 return(Ratio_parameters);
@@ -178,7 +178,8 @@ for(int i = 0 ; i < 9 ; i++)
   Data = new makePlots(chain,chain2,chain3,filename);
   Data->Is_Data = 1 ;
   vector<TH1F*> h_Data_Histo;
-  h_Data_Histo = Data->GetHistoE(1,1,i);
+  if(beam_energy_number[i]< 200){h_Data_Histo = Data->GetHistoE(1.04,1,i);}
+  if(beam_energy_number[i]>=200){h_Data_Histo = Data->GetHistoE(1.06,1,i);}
   Data_Fit_Par = Two_fits(h_Data_Histo,1,beam_energy_number_float[i]);
 //==========Get MC totalE Histo=======//
   makePlots *MC;
@@ -198,25 +199,25 @@ for(int i = 0 ; i < 9 ; i++)
   //cout << "MC_Fit_Par[0]/Data_Fit_Par[0]:" << MC_Fit_Par[0]/Data_Fit_Par[0] << endl;
 
   //=================================//
-  DataE_Mean.push_back(h_Data_Histo[0]);
-  McE_Mean.push_back(h_MC_Histo[0]);
-  DataE_MeanError.push_back(h_Data_Histo[2]);
-  McE_MeanError.push_back(h_MC_Histo[2]);
+  DataE_Mean.push_back(Data_Fit_Par[0]);
+  McE_Mean.push_back(MC_Fit_Par[0]);
+  DataE_MeanError.push_back(Data_Fit_Par[2]);
+  McE_MeanError.push_back(MC_Fit_Par[2]);
     //==========Mean Width========//
-  DataE_width.push_back(h_Data_Histo[1]);
-  McE_width.push_back(h_MC_Histo[1]);
-  DataE_widthError.push_back(h_Data_Histo[3]);
-  McE_widthError.push_back(h_MC_Histo[3]);
+  DataE_width.push_back(Data_Fit_Par[1]);
+  McE_width.push_back(MC_Fit_Par[1]);
+  DataE_widthError.push_back(Data_Fit_Par[3]);
+  McE_widthError.push_back(MC_Fit_Par[3]);
     //==========MeanError==========//
   Data_Width_Div_MeanE.push_back(Data_Fit_Par[5]);
   MC_Width_Div_MeanE.push_back(MC_Fit_Par[5]);
   Data_Width_Div_MeanE_Error.push_back(Data_Fit_Par[5]);
   MC_Width_Div_MeanE_Error.push_back(MC_Fit_Par[6]);
   //===============================//
-  E_minus_Ebeam_dev_Ebeam_Data.push_back(E_minus_Ebeam_dev_Ebeam(h_Data_Histo[0],beam_energy_number_float[i])[0]);
-  E_minus_Ebeam_dev_Ebeam_Data_Error.push_back(E_minus_Ebeam_dev_Ebeam(h_MC_Histo[0],beam_energy_number_float[i])[0]);
-  E_minus_Ebeam_dev_Ebeam_MC.push_back(E_minus_Ebeam_dev_Ebeam(h_Data_Histo[0],beam_energy_number_float[i])[1]);
-  E_minus_Ebeam_dev_Ebeam_MC_Error.push_back(E_minus_Ebeam_dev_Ebeam(h_MC_Histo[0],beam_energy_number_float[i])[1]);
+  E_minus_Ebeam_dev_Ebeam_Data.push_back(E_minus_Ebeam_dev_Ebeam(Data_Fit_Par[0],beam_energy_number_float[i])[0]);
+  E_minus_Ebeam_dev_Ebeam_Data_Error.push_back(E_minus_Ebeam_dev_Ebeam(MC_Fit_Par[0],beam_energy_number_float[i])[0]);
+  E_minus_Ebeam_dev_Ebeam_MC.push_back(E_minus_Ebeam_dev_Ebeam(Data_Fit_Par[0],beam_energy_number_float[i])[1]);
+  E_minus_Ebeam_dev_Ebeam_MC_Error.push_back(E_minus_Ebeam_dev_Ebeam(MC_Fit_Par[0],beam_energy_number_float[i])[1]);
   //===============================//
   chain ->Clear();
   chain2->Clear();
@@ -238,7 +239,7 @@ filename1.clear();
 
     h_resolution_fit_MC   ->Write("SigmaE_dev_E_MC");
     h_resolution_fit_Data ->Write("SigmaE_dev_E_data");
-    h_energy_ratio_Data_MC->Write("h_energy_ratio_Data_MC");
+    //h_energy_ratio_Data_MC->Write("h_energy_ratio_Data_MC");
     h_energy_E_minus_Ebeam_dev_Ebeam_Data->Write("E_minus_Ebeam_dev_Ebeam_Data");
     h_energy_E_minus_Ebeam_dev_Ebeam_MC->Write("E_minus_Ebeam_dev_Ebeam_MC");
     

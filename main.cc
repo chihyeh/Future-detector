@@ -43,7 +43,7 @@ cout << "((Data_Parameters[0])/(MC_Parameters[0]))*sqrt( ((Data_Parameters[2])/(
 return(Ratio_parameters);
 }
 
-vector<float> Two_fits(vector<TH1F*> Fit_His, int Data_type)
+vector<float> Two_fits(vector<TH1F*> Fit_His, int Data_type, float True_Beam_energy)
 {
 //======Confirm the data type=====//
 float Extra;
@@ -68,7 +68,7 @@ TF1 *f1 = new TF1("f1","gaus");
 maxBin=Fit_His[0]->GetMaximumBin();
 //-----First fit max point and sigma------------//
 maxpv = Fit_His[0]->GetBinCenter(maxBin);
-sigma=sqrt(Noise*Noise+Sampl*Sampl*beam_energy_number_float[i]+Linear*Linear*beam_energy_number_float[i]*beam_energy_number_float[i]);//Theory
+sigma=sqrt(Noise*Noise+Sampl*Sampl*(True_Beam_energy)+Linear*Linear*(True_Beam_energy*True_Beam_energy));//Theory
 Fit_His[0]->Draw("histo");
 Fit_His[0]->Fit("f1","","histo",maxpv-SigmaDown*sigma,maxpv+SigmaUp*sigma);
 //----After first fit, get the max point and sigma----//
@@ -176,8 +176,8 @@ for(int i = 0 ; i < 9 ; i++)
   Data = new makePlots(chain,chain2,chain3,filename);
   Data->Is_Data = 1 ;
   vector<TH1F*> h_Data_Histo;
-  h_Data_Histo = Data->GetHistoE(1,1,i);
-  Data_Fit_Par = Two_fits(h_Data_Histo,1);
+  h_Data_Histo = Data->GetHistoE(1.,1,i);
+  Data_Fit_Par = Two_fits(h_Data_Histo,1,beam_energy_number_float[i]);
 //==========Get MC totalE Histo=======//
   makePlots *MC;
   TChain *chain4 = new TChain("hits");
@@ -190,8 +190,8 @@ for(int i = 0 ; i < 9 ; i++)
   MC = new makePlots(chain4,chain5,chain6,filename1);
   MC->Is_Data = 0 ;
   vector<TH1F*> h_MC_Histo;
-  h_MC_Histo = MC->GetHistoE(1,1,i);
-  MC_Fit_Par = Two_fits(h_MC_Histo,0);
+  h_MC_Histo = MC->GetHistoE(1.,1,i);
+  MC_Fit_Par = Two_fits(h_MC_Histo,0,beam_energy_number_float[i]);
     
   cout << "Data_Fit_Par[0]/MC_Fit_Par[0]:" << Data_Fit_Par[0]/MC_Fit_Par[0] << endl;
 /*
@@ -217,8 +217,6 @@ for(int i = 0 ; i < 9 ; i++)
   E_minus_Ebeam_dev_Ebeam_MC_Error.push_back();
  */
   //===============================//
-  f1->Clear();
-  f2->Clear();
   chain ->Clear();
   chain2->Clear();
   chain3->Clear();

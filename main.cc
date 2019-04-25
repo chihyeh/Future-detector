@@ -161,6 +161,8 @@ for(int i = 0 ; i < 9 ; i++)
 {
     vector<float> Data_Fit_Par;
     vector<float> MC_Fit_Par;
+    vector<float> Data_Linearity;
+    vector<float> MC_Linearity;
   int config;
   if(beam_energy_number[i]< 200)config=2;
   if(beam_energy_number[i]>=200)config=1;
@@ -181,6 +183,7 @@ for(int i = 0 ; i < 9 ; i++)
   if(beam_energy_number[i]< 200){h_Data_Histo = Data->GetHistoE(1.04,1,i);}
   if(beam_energy_number[i]>=200){h_Data_Histo = Data->GetHistoE(1.06,1,i);}
   Data_Fit_Par = Two_fits(h_Data_Histo,1,beam_energy_number_float[i]);
+  Data_Linearity = E_minus_Ebeam_dev_Ebeam(Data_Fit_Par[0],beam_energy_number_float[i])
 //==========Get MC totalE Histo=======//
   makePlots *MC;
   TChain *chain4 = new TChain("hits");
@@ -195,7 +198,7 @@ for(int i = 0 ; i < 9 ; i++)
   vector<TH1F*> h_MC_Histo;
   h_MC_Histo = MC->GetHistoE(1,1,i);
   MC_Fit_Par = Two_fits(h_MC_Histo,0,beam_energy_number_float[i]);
-    
+  MC_Linearity = E_minus_Ebeam_dev_Ebeam(MC_Fit_Par[0],beam_energy_number_float[i])
   //cout << "MC_Fit_Par[0]/Data_Fit_Par[0]:" << MC_Fit_Par[0]/Data_Fit_Par[0] << endl;
 
   //=================================//
@@ -214,10 +217,10 @@ for(int i = 0 ; i < 9 ; i++)
   Data_Width_Div_MeanE_Error.push_back(Data_Fit_Par[5]);
   MC_Width_Div_MeanE_Error.push_back(MC_Fit_Par[6]);
   //===============================//
-  E_minus_Ebeam_dev_Ebeam_Data.push_back(E_minus_Ebeam_dev_Ebeam(Data_Fit_Par[0],beam_energy_number_float[i])[0]);
-  E_minus_Ebeam_dev_Ebeam_Data_Error.push_back(E_minus_Ebeam_dev_Ebeam(MC_Fit_Par[0],beam_energy_number_float[i])[0]);
-  E_minus_Ebeam_dev_Ebeam_MC.push_back(E_minus_Ebeam_dev_Ebeam(Data_Fit_Par[0],beam_energy_number_float[i])[1]);
-  E_minus_Ebeam_dev_Ebeam_MC_Error.push_back(E_minus_Ebeam_dev_Ebeam(MC_Fit_Par[0],beam_energy_number_float[i])[1]);
+  E_minus_Ebeam_dev_Ebeam_Data.push_back(Data_Linearity[0]);
+  E_minus_Ebeam_dev_Ebeam_Data_Error.push_back(MC_Linearity[0]);
+  E_minus_Ebeam_dev_Ebeam_MC.push_back(Data_Linearity[1]);
+  E_minus_Ebeam_dev_Ebeam_MC_Error.push_back(MC_Linearity[1]);
   //===============================//
   chain ->Clear();
   chain2->Clear();
@@ -225,6 +228,10 @@ for(int i = 0 ; i < 9 ; i++)
   chain4->Clear();
   chain5->Clear();  
   chain6->Clear();
+  Data_Fit_Par->Clear();
+  MC_Fit_Par->Clear();
+  Data_Linearity->Clear();
+  MC_Linearity->Clear();
 filename.clear();
 filename1.clear();
 }

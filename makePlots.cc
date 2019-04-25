@@ -348,7 +348,7 @@ TGraphErrors* makePlots::GetTGraphErrors(vector<float> X, vector<float> Y, vecto
 
 
 //========GetHistoE=======//
-vector<TH1F*> makePlots::GetHistoE(float Scale=1 ,int arg_method,int energy_arrangement){
+vector<TH1F*> makePlots::GetHistoE(float Scale ,int arg_method,int energy_arrangement){
   Init();
   cout << "In loop of GetHistoE function" << endl;
 //============Method_choose========//

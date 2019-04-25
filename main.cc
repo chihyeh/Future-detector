@@ -86,6 +86,7 @@ Store_numbers.push_back(f1->GetParError(2));
 Store_numbers.push_back(f1->GetChisquare()/f1->GetNDF());
 Store_numbers.push_back((f1->GetParameter(2)/f1->GetParameter(1)));
 Store_numbers.push_back(((f1->GetParameter(2))/(f1->GetParameter(1)))*sqrt(((f1->GetParError(1))/(f1->GetParameter(1)))*((f1->GetParError(1))/(f1->GetParameter(1)))+((f1->GetParError(2))/(f1->GetParameter(2)))*((f1->GetParError(2))/(f1->GetParameter(2)))));
+    cout << "==================================================" << endl;
 cout << "f1->GetParameter(1):"<< f1->GetParameter(1) << endl;
 cout << "f1->GetParameter(2):"<< f1->GetParameter(2) << endl;
 cout << "f1->GetParError(1):" << f1->GetParError(1) << endl;
@@ -93,6 +94,7 @@ cout << "f1->GetParError(2):" << f1->GetParError(2) << endl;
 cout << "f1->GetChisquare()/f1->GetNDF()" << f1->GetChisquare()/f1->GetNDF() << endl;
 cout << "Width_Div_Mean:" << f1->GetParameter(2)/f1->GetParameter(1) << endl;
 cout << "Width_Div_Mean_Error:" << ((f1->GetParameter(2))/(f1->GetParameter(1)))*sqrt(((f1->GetParError(1))/(f1->GetParameter(1)))*((f1->GetParError(1))/(f1->GetParameter(1)))+((f1->GetParError(2))/(f1->GetParameter(2)))*((f1->GetParError(2))/(f1->GetParameter(2)))+(Extra)*(Extra)) << endl;
+cout << "==================================================" << endl;
 //===================================================//
 return(Store_numbers);
 }
@@ -116,10 +118,10 @@ vector<float> McE_width;
 vector<float> DataE_widthError;
 vector<float> McE_widthError;
 //==========MeanError==========//
-vector<float> Data_MeanDivError;
-vector<float> MC_MeanDivError;
-vector<float> Data_MeanDivError_Error;
-vector<float> MC_MeanDivError_Error;
+vector<float> Data_Width_Div_MeanE;
+vector<float> MC_Width_Div_MeanE;
+vector<float> Data_Width_Div_MeanE_Error;
+vector<float> MC_Width_Div_MeanE_Error;
 //==========Chi2test_store========//
 vector<float> Chi2test_data;
 vector<float> Chi2test_MC; 
@@ -176,7 +178,7 @@ for(int i = 0 ; i < 9 ; i++)
   Data = new makePlots(chain,chain2,chain3,filename);
   Data->Is_Data = 1 ;
   vector<TH1F*> h_Data_Histo;
-  h_Data_Histo = Data->GetHistoE(1.,1,i);
+  h_Data_Histo = Data->GetHistoE(1,1,i);
   Data_Fit_Par = Two_fits(h_Data_Histo,1,beam_energy_number_float[i]);
 //==========Get MC totalE Histo=======//
   makePlots *MC;
@@ -190,32 +192,31 @@ for(int i = 0 ; i < 9 ; i++)
   MC = new makePlots(chain4,chain5,chain6,filename1);
   MC->Is_Data = 0 ;
   vector<TH1F*> h_MC_Histo;
-  h_MC_Histo = MC->GetHistoE(1.,1,i);
+  h_MC_Histo = MC->GetHistoE(1,1,i);
   MC_Fit_Par = Two_fits(h_MC_Histo,0,beam_energy_number_float[i]);
     
-  cout << "Data_Fit_Par[0]/MC_Fit_Par[0]:" << Data_Fit_Par[0]/MC_Fit_Par[0] << endl;
-/*
+  //cout << "MC_Fit_Par[0]/Data_Fit_Par[0]:" << MC_Fit_Par[0]/Data_Fit_Par[0] << endl;
+
   //=================================//
-  DataE_Mean.push_back();
-  McE_Mean.push_back();
-  DataE_MeanError.push_back();
-  McE_MeanError.push_back();
+  DataE_Mean.push_back(h_Data_Histo[0]);
+  McE_Mean.push_back(h_MC_Histo[0]);
+  DataE_MeanError.push_back(h_Data_Histo[2]);
+  McE_MeanError.push_back(h_MC_Histo[2]);
     //==========Mean Width========//
-  DataE_width.push_back();
-  McE_width.push_back();
-  DataE_widthError.push_back();
-  McE_widthError.push_back();
+  DataE_width.push_back(h_Data_Histo[1]);
+  McE_width.push_back(h_MC_Histo[1]);
+  DataE_widthError.push_back(h_Data_Histo[3]);
+  McE_widthError.push_back(h_MC_Histo[3]);
     //==========MeanError==========//
-  Data_MeanDivError.push_back();
-  MC_MeanDivError.push_back();
-  Data_MeanDivError_Error.push_back();
-  MC_MeanDivError_Error.push_back();
+  Data_Width_Div_MeanE.push_back(Data_Fit_Par[5]);
+  MC_Width_Div_MeanE.push_back(MC_Fit_Par[5]);
+  Data_Width_Div_MeanE_Error.push_back(Data_Fit_Par[5]);
+  MC_Width_Div_MeanE_Error.push_back(MC_Fit_Par[6]);
   //===============================//
-  E_minus_Ebeam_dev_Ebeam_Data.push_back();
-  E_minus_Ebeam_dev_Ebeam_Data_Error.push_back();
-  E_minus_Ebeam_dev_Ebeam_MC.push_back();
-  E_minus_Ebeam_dev_Ebeam_MC_Error.push_back();
- */
+  E_minus_Ebeam_dev_Ebeam_Data.push_back(E_minus_Ebeam_dev_Ebeam(h_Data_Histo[0],beam_energy_number_float[i])[0]);
+  E_minus_Ebeam_dev_Ebeam_Data_Error.push_back(E_minus_Ebeam_dev_Ebeam(h_MC_Histo[0],beam_energy_number_float[i])[0]);
+  E_minus_Ebeam_dev_Ebeam_MC.push_back(E_minus_Ebeam_dev_Ebeam(h_Data_Histo[0],beam_energy_number_float[i])[1]);
+  E_minus_Ebeam_dev_Ebeam_MC_Error.push_back(E_minus_Ebeam_dev_Ebeam(h_MC_Histo[0],beam_energy_number_float[i])[1]);
   //===============================//
   chain ->Clear();
   chain2->Clear();
@@ -226,10 +227,10 @@ for(int i = 0 ; i < 9 ; i++)
 filename.clear();
 filename1.clear();
 }
-    /*
-    TGraphErrors *h_resolution_fit_Data  = new TGraphErrors(9,&beam_energy_number_float[0],&Data_MeanDivError[0],&Data_X_no_error[0],&Data_MeanDivError_Error[0]);
-    TGraphErrors *h_resolution_fit_MC= new TGraphErrors(9,&beam_energy_number_float[0],&MC_MeanDivError[0]  ,&MC_X_no_error[0]  ,&MC_MeanDivError_Error[0]);
-    TGraphErrors *h_energy_ratio_Data_MC = new TGraphErrors(9,&beam_energy_number_float[0],&Ratio_Energy[0], &MC_X_no_error[0], &Ratio_Energy_Error[0]);
+    
+    TGraphErrors *h_resolution_fit_Data  = new TGraphErrors(9,&beam_energy_number_float[0],&Data_Width_Div_MeanE[0],&Data_X_no_error[0],&Data_Width_Div_MeanE_Error[0]);
+    TGraphErrors *h_resolution_fit_MC= new TGraphErrors(9,&beam_energy_number_float[0],&MC_Width_Div_MeanE[0]  ,&MC_X_no_error[0]  ,&MC_Width_Div_MeanE_Error[0]);
+    //TGraphErrors *h_energy_ratio_Data_MC = new TGraphErrors(9,&beam_energy_number_float[0],&Ratio_Energy[0], &MC_X_no_error[0], &Ratio_Energy_Error[0]);
 
     TGraphErrors *h_energy_E_minus_Ebeam_dev_Ebeam_Data = new TGraphErrors(9,&beam_energy_number_float[0],&E_minus_Ebeam_dev_Ebeam_Data[0], &MC_X_no_error[0], &E_minus_Ebeam_dev_Ebeam_Data_Error[0]);
        
@@ -240,7 +241,7 @@ filename1.clear();
     h_energy_ratio_Data_MC->Write("h_energy_ratio_Data_MC");
     h_energy_E_minus_Ebeam_dev_Ebeam_Data->Write("E_minus_Ebeam_dev_Ebeam_Data");
     h_energy_E_minus_Ebeam_dev_Ebeam_MC->Write("E_minus_Ebeam_dev_Ebeam_MC");
-     */
+    
   
     outf.Write();
     outf.Close();

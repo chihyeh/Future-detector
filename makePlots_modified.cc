@@ -461,25 +461,21 @@ return(h_layer_energy_return);
 }
 //=========Loop function=======//
 
-void makePlots::Loop(float True_energy, float Calib_energy)
+vector<TH2F*> makePlots::Loop_for_TH2F(float True_energy, float Calib_energy)
 {
-  
+    vector<TH2F*> Return_TH2F;
   double ENEPERMIP = 86.5e-03; // in MeV
   Init();
   double X0_arr[NLAYER_ALL];
   double *X0_layer = Set_X0(X0_arr);
   cout << "nevents" << nevents << endl;
   char title[100]; char title1[100];
-  int start = fname.find_last_of("/");
-  int end = fname.find(".root");
-  string f_substr = fname.substr(start+1,end-start-1);
-  sprintf(title,"Resolution_Modify_MCv1_Datav13_SF^-1_SD_correct/%s_SF-1_SD_plots_check.root",f_substr.c_str());
-  cout << "output name : " << title << endl;
-  cout << "Is_Data:" << Is_Data << endl;
-  TFile outf(title,"recreate");
 //=======================Claim_variables====================//
-  sprintf(title1,"Run%i_SF-1_SD_Data",runN);
-  TH2F *SFvsSD  = new TH2F(title1,title1,112,0,28,10000,0,200);
+    float xmax;
+    if(arg_method==0)xmax=200;
+    if(arg_method==1)xmax=1;
+  sprintf(title1,"TH2F_Run%i_SF-1_SD_Data",runN);
+  TH2F *TH2F_SFvsSD  = new TH2F(title1,title1,112,0,28,1000,0,xmax);
 
   cout << "Is_Data: " << Is_Data << endl;
   //===============parameters for calculate E10 related number========//
@@ -521,9 +517,7 @@ void makePlots::Loop(float True_energy, float Calib_energy)
           SFvsSD->Fill( (Shower_depth_CEE), (True_energy/Calib_energy) );
     }
   }
-  outf.Write();
-  outf.Close();
-
+    Return_TH2F.push_back(TH2F_SFvsSD);
 }
 
 void makePlots::Event_Display(){

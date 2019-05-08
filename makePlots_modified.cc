@@ -348,37 +348,16 @@ TGraphErrors* makePlots::GetTGraphErrors(vector<float> X, vector<float> Y, vecto
 
 
 //========GetHistoE=======//
-vector<TH1F*> makePlots::GetHistoE(float Scale ,int arg_method,int energy_arrangement){
+vector<TH1F*> makePlots::Loop_for_TH1F(vector<float> dEdXMEVperMIP, vector<float> INVSF, float Scale ,int arg_method,int energy_arrangement){
    
   char title[100];char title1[100];char title2[100]; char title3[100];char title4[100];
-  cout << "In loop of GetHistoE function" << endl;
-
-  
+    cout << "Welcome to TH1F world!" << endl;
   double ENEPERMIP = 86.5e-03; // in MeV
   Init();
-    
-
 // arg_method=0 for no scale, arg_method=1 for dEdX, arg_method=2 for SF //
     if(arg_method==0) cout << "No scale, Raw data to see it" << endl;
     if(arg_method==1) cout << "dEdX Method - Calibration" << endl;
     if(arg_method==2) cout << "Sf   Method - Calibration" << endl;
-//================Beam energies===============//
-vector<float> beam_energy_number_float={20.0,30.0,49.99,79.93,99.83,149.14,197.32,243.61,287.18};
-//=================MIP to MeV for dEdX ( Individual number )=======//
-  vector<float> dEdXMEVperMIP={
-  10.058,//Layer 1
-  9.6,9.6,9.6,9.6,9.6,9.6,9.6,9.6,9.6,9.6,9.6,9.6,9.6,//Layers 2-14
-  11.109,11.109,//L 15-16
-  9.6,9.6,//
-  11.109,11.109,//L 19-20
-  9.6,9.6,//L 21-22
-  10.354,10.354,//L 23-24
-  9.6,9.6,9.6,//L 25-27
-  6.595
-};
-//================SF number that are applied in energies totalE==========//
-  vector<float> INVSF = {109.464 , 109.259 , 109.154 , 109.189 , 109.223 , 109.319 , 109.416 , 109.479 , 109.515}; //BeamPosInZM800
-  vector<float> G4CLOS = {-0.00600267 , -0.00544777 , -0.00522089 , -0.00519003 , -0.00521041 , -0.00538487 , -0.00556459 -0.00572116 , -0.00581031};
 //===============Claim the histograms with range and parameters ( Pay attention! The range will impact on the resolution of the linearity ! )===========//
   int Bin;
   if(arg_method==0)Bin=100000;
@@ -387,7 +366,6 @@ vector<float> beam_energy_number_float={20.0,30.0,49.99,79.93,99.83,149.14,197.3
   
   TH1F *h_layer_energy[30];
   vector<TH1F*> h_layer_energy_return;
-  TH2F *SFvsSD; 
 
     if(Is_Data==1)
 	{
@@ -414,7 +392,7 @@ vector<float> beam_energy_number_float={20.0,30.0,49.99,79.93,99.83,149.14,197.3
     GetData(ev);
     int Nhits = NRechits;
 //=======Raw_Hits_energy=====//
-    
+/*
     vector<float> RawEne_Layer;
     for(int iL = 0; iL < NLAYER_EE ; ++iL)
 	{
@@ -430,7 +408,7 @@ vector<float> beam_energy_number_float={20.0,30.0,49.99,79.93,99.83,149.14,197.3
 	if(ene[iH]>0 and ene[iH]<200)  (Raw_totalE_Check) = (Raw_totalE_Check) + ene[iH];	
         }
 	RawEne_Layer.push_back(Raw_totalE_Check);
-	}
+	}*/
 //=====================================//
     for(int iL = 0; iL < NLAYER_EE ; ++iL)
     {
@@ -457,13 +435,19 @@ vector<float> beam_energy_number_float={20.0,30.0,49.99,79.93,99.83,149.14,197.3
 	if(totalE > 0) h_layer_energy[0]->Fill( (totalE) );	
 	}
        h_layer_energy_return.push_back(h_layer_energy[0]);
+    
 return(h_layer_energy_return);
 }
 //=========Loop function=======//
 
-vector<TH2F*> makePlots::Loop_for_TH2F(float True_energy, float Calib_energy)
+vector<TH2F*> makePlots::Loop_for_TH2F(vector<float> dEdXMEVperMIP, vector<float> INVSF, float Scale ,int arg_method,int energy_arrangement,float True_energy)
 {
     vector<TH2F*> Return_TH2F;
+    cout << "Welcome to TH2F world!" << endl;
+    if(arg_method==0) cout << "No scale, Raw data to see it" << endl;
+    if(arg_method==1) cout << "dEdX Method - Calibration" << endl;
+    if(arg_method==2) cout << "Sf   Method - Calibration" << endl;
+
   double ENEPERMIP = 86.5e-03; // in MeV
   Init();
   double X0_arr[NLAYER_ALL];
@@ -475,17 +459,17 @@ vector<TH2F*> makePlots::Loop_for_TH2F(float True_energy, float Calib_energy)
     if(arg_method==0)xmax=200;
     if(arg_method==1)xmax=1;
   sprintf(title1,"TH2F_Run%i_SF-1_SD_Data",runN);
-  TH2F *TH2F_SFvsSD  = new TH2F(title1,title1,112,0,28,1000,0,xmax);
+  TH2F *TH2F_SFvsSD  = new TH2F(title1,title1,112,0,28,xmax/1000,0,xmax);
 
   cout << "Is_Data: " << Is_Data << endl;
   //===============parameters for calculate E10 related number========//
 
   for(int ev = 0; ev < nevents; ++ev){
     if(ev %10000 == 0) cout << "Processing event: "<< ev << endl;
-    
+      float totalE=0;
     GetData(ev);
     int Nhits = NRechits;
-
+//=======================================
     double Shower_depth_CEE = 0;
     double Shower_depth_total = 0;
     
@@ -502,19 +486,42 @@ vector<TH2F*> makePlots::Loop_for_TH2F(float True_energy, float Calib_energy)
     }
          Shower_depth_CEE /= totalE_CEE;
 	     Shower_depth_total /= ( totalE_CEE + totalE_CEH );
-       //=====================//
+//=======================================
+      for(int iL = 0; iL < NLAYER_EE ; ++iL)
+      {
+          
+          //=======Different abilities of Converting the MIPs to GeV since the 200m and 300m======//
+          float Convert_par;
+          if(iL < 26) Convert_par=85.5e-06;
+          if(iL > 26) Convert_par=57.6e-06;
+          //=============Different method======================//
+          if(Is_Data==1)
+          {
+              if(arg_method==0){if( b_x > (-1.7) and b_x < (-0.7)and b_y > (0) and b_y < (1.5))totalE = totalE + ((layerE[iL]*(1))*(Scale)*(1)*(Convert_par));}
+              if(arg_method==1){if( b_x > (-1.7) and b_x < (-0.7)and b_y > (0) and b_y < (1.5))totalE = totalE + (layerE[iL]*(dEdXMEVperMIP[iL]*(10e+06))*(Scale)*(1)/(10e+09));}
+              if(arg_method==2){if( b_x > (-1.7) and b_x < (-0.7)and b_y > (0) and b_y < (1.5))totalE = totalE + ((1.054)*(layerE[iL]*(1))*(Scale)*(1)*(Convert_par)*INVSF[energy_arrangement]);}
+          }
+          
+          if(Is_Data==0)
+          {
+              if(arg_method==0){totalE = totalE + ((layerE[iL]*(1))*(1)*(Convert_par));}
+              if(arg_method==1){totalE = totalE + (layerE[iL]*(dEdXMEVperMIP[iL]*(10e+06))*(1)/(10e+09));}
+              if(arg_method==2){totalE = totalE + ((1.054)*layerE[iL]*(1))*(1)*(Convert_par)*INVSF[energy_arrangement];}
+          }
+      }
+
 
   if(Is_Data)
     {
 	
       if(b_x > -1.7 and b_x < -0.7 and b_y > 0 and b_y < 1.5)
       {
-          SFvsSD->Fill( (Shower_depth_CEE), (True_energy/Calib_energy) );
+          SFvsSD->Fill( (Shower_depth_CEE), (True_energy/totalE) );
       }
 	}
    else//for MC
     {
-          SFvsSD->Fill( (Shower_depth_CEE), (True_energy/Calib_energy) );
+          SFvsSD->Fill( (Shower_depth_CEE), (True_energy/totalE) );
     }
   }
     Return_TH2F.push_back(TH2F_SFvsSD);

@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+CURRENT_DIR=`pwd`
+
+# source ./msetup.sh
+
+export MYLIB=./lib/src/
+export LD_LIBRARY_PATH=$MYLIB:$LD_LIBRARY_PATH
+
+#rm -f ana
+#make -f Makefile
+rm -f  data.in
+DAT="pgun_p211_1gev_eta0_001_hepsim"
+ls -1 data/p211/$DAT* > data.in
+./ana
+mv root/output.root root/$DAT.root
+
+DAT="pgun_p1000010020_1gev_eta0_001_hepsim"
+ls -1 data/p1000010020/$DAT* > data.in
+./ana
+mv root/output.root root/$DAT.root
+
+
+
+
+

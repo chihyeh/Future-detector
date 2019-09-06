@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+CURRENT_DIR=`pwd`
+
+source ./msetup.sh
+
+
+./A_RUN rfull009 10
